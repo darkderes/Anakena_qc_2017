@@ -500,9 +500,9 @@ namespace Anakena_2017
 				this.update_encabezado();
 				this.update_envases();
 				this.update_inpurezas();
-				this.update_AnalisisExterno();
-				this.update_AnalisisInterno();
-				MessageBox.Show("Datos modificados correctamente", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                this.update_AnalisisExterno();
+                this.update_AnalisisInterno();
+                MessageBox.Show("Datos modificados correctamente", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 				base.Close();
 			}
 		}
@@ -513,7 +513,7 @@ namespace Anakena_2017
 
 		private void Btn_Print_Click_1(object sender, EventArgs e)
 		{
-            FormReport s = new FormReport();
+            FormReport s = new FormReport(Convert.ToInt32(Lbl_Analisis.Text), lbl_condiciones.Text);
             s.ShowDialog();
 			
 		}
@@ -589,7 +589,7 @@ namespace Anakena_2017
             {
                 case System.Windows.Forms.DialogResult.OK:
                     {
-                        base.Close();
+                        this.Close();
                         break;
                     }
             }
@@ -597,14 +597,8 @@ namespace Anakena_2017
 
 		private void button8_Click(object sender, EventArgs e)
 		{
-            FormReport s = new FormReport();
+            FormReport s = new FormReport(Convert.ToInt32(Lbl_Analisis.Text),lbl_condiciones.Text);
             s.ShowDialog();
-			//FormReporte formReporte = new FormReporte();
-			//formReporte.mireporte.SetDatabaseLogon("SA", "Pall2015");
-			//formReporte.analisis = Convert.ToInt32(this.Lbl_Analisis.Text);
-			//formReporte.calificacion = this.lbl_condiciones.Text;
-			//formReporte.crystalReportViewer1.Visible = false;
-			//formReporte.ShowDialog();
 		}
 
 		private void CmbPatio_SelectedIndexChanged(object sender, EventArgs e)
@@ -875,6 +869,8 @@ namespace Anakena_2017
 				num9 = num12;
 			}
 			this.extraerMedicion("Extra_Light");
+            //if((min != "0")&&(max != "0"))
+            //{ 
 			int num13 = 0;
 			if (!(Convert.ToInt32(this.Txt_Extra.Text) < Convert.ToInt32(this.min) ? true : Convert.ToInt32(this.Txt_Extra.Text) > 100))
 			{
@@ -892,6 +888,30 @@ namespace Anakena_2017
 			{
 				num9 = num13;
 			}
+            //}
+            //else
+            //{
+                this.extraerMedicion("Light");
+                int num14 = 0;
+                if (!(Convert.ToInt32(Txt_Light.Text) < Convert.ToInt32(this.min) ? true : Convert.ToInt32(Txt_Light.Text) > 100))
+                {
+                    num14 = 1;
+                }
+                else if (!(Convert.ToInt32(Txt_Light.Text) < Convert.ToInt32(this.max) ? true : Convert.ToInt32(Txt_Light.Text) >= Convert.ToInt32(this.min)))
+                {
+                    num14 = 2;
+                }
+                else if (Convert.ToInt32(Txt_Light.Text) < Convert.ToInt32(this.max))
+                {
+                    num14 = 3;
+                }
+                if (num9 < num14)
+                {
+                    num9 = num14;
+                }
+
+            //}
+
 			if (!(num9 == 3 || num5 == 3 ? false : num2 != 3))
 			{
 				this.lbl_condiciones.Text = "ROJO";
@@ -916,7 +936,7 @@ namespace Anakena_2017
 			SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
 			sqlCommand.CommandType = CommandType.StoredProcedure;
 			sqlCommand.Parameters.AddWithValue("@Parametro", parametro);
-            sqlCommand.Parameters.AddWithValue("@Variedad", cmbVariedad.SelectedValue.ToString());
+            sqlCommand.Parameters.AddWithValue("@Variedad", cmbVariedad.Text);
             sqlDataAdapter.Fill(new DataSet(), "producto");
 			SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
 			try
@@ -1513,6 +1533,7 @@ namespace Anakena_2017
             this.Txt_Pelon.Name = "Txt_Pelon";
             this.Txt_Pelon.Size = new System.Drawing.Size(40, 20);
             this.Txt_Pelon.TabIndex = 26;
+            this.Txt_Pelon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Pelon_KeyPress);
             // 
             // label54
             // 
@@ -2249,7 +2270,7 @@ namespace Anakena_2017
             // 
             this.Btn_Print.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Print.BackgroundImage")));
             this.Btn_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Print.Location = new System.Drawing.Point(46, 97);
+            this.Btn_Print.Location = new System.Drawing.Point(45, 98);
             this.Btn_Print.Name = "Btn_Print";
             this.Btn_Print.Size = new System.Drawing.Size(137, 36);
             this.Btn_Print.TabIndex = 26;
@@ -2264,7 +2285,7 @@ namespace Anakena_2017
             this.groupBox10.Controls.Add(this.Btn_Salir);
             this.groupBox10.Location = new System.Drawing.Point(1002, 490);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(224, 253);
+            this.groupBox10.Size = new System.Drawing.Size(224, 251);
             this.groupBox10.TabIndex = 28;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Opciones";
@@ -2295,7 +2316,7 @@ namespace Anakena_2017
             // 
             this.Btn_Modificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Modificar.BackgroundImage")));
             this.Btn_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Modificar.Location = new System.Drawing.Point(46, 32);
+            this.Btn_Modificar.Location = new System.Drawing.Point(46, 37);
             this.Btn_Modificar.Name = "Btn_Modificar";
             this.Btn_Modificar.Size = new System.Drawing.Size(136, 36);
             this.Btn_Modificar.TabIndex = 23;
@@ -2904,9 +2925,9 @@ namespace Anakena_2017
 			}
 			else if ((e.KeyChar != Convert.ToChar(Keys.Return) ? false : this.Txt_Palos.Text != ""))
 			{
-				this.groupBox4.Enabled = true;
-				this.Txt_Partidas.Enabled = true;
-				this.Txt_Partidas.Focus();
+			//	((this.groupBox4.Enabled = true;
+                Txt_Pelon.Enabled = true;
+                Txt_Pelon.Focus();
 			}
 		}
 
@@ -3273,5 +3294,20 @@ namespace Anakena_2017
 				this.cn.Cerrar();
 			}
 		}
-	}
+
+        private void Txt_Pelon_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar) || e.KeyChar == '\b' || e.KeyChar == '\r' ? true : e.KeyChar == '.'))
+            {
+                MessageBox.Show("Solo se permiten numeros decimales con '.'", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+            }
+            else if ((e.KeyChar != Convert.ToChar(Keys.Return) ? false : this.Txt_Palos.Text != ""))
+            {
+              	this.groupBox4.Enabled = true;
+                Txt_Partidas.Enabled = true;
+                Txt_Partidas.Focus();
+            }
+        }
+    }
 }

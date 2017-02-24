@@ -20,9 +20,9 @@ namespace Anakena_2017 {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("Prueba_2017DataSet1")]
+    [global::System.Xml.Serialization.XmlRootAttribute("Prueba_2017DataSet")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class Prueba_2017DataSet1 : global::System.Data.DataSet {
+    public partial class Prueba_2017DataSet : global::System.Data.DataSet {
         
         private spBusqueda_Variedad_DecisionDataTable tablespBusqueda_Variedad_Decision;
         
@@ -150,7 +150,7 @@ namespace Anakena_2017 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public Prueba_2017DataSet1() {
+        public Prueba_2017DataSet() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -161,7 +161,7 @@ namespace Anakena_2017 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected Prueba_2017DataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected Prueba_2017DataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -1027,7 +1027,7 @@ namespace Anakena_2017 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            Prueba_2017DataSet1 cln = ((Prueba_2017DataSet1)(base.Clone()));
+            Prueba_2017DataSet cln = ((Prueba_2017DataSet)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -1639,9 +1639,9 @@ namespace Anakena_2017 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "Prueba_2017DataSet1";
+            this.DataSetName = "Prueba_2017DataSet";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/Prueba_2017DataSet1.xsd";
+            this.Namespace = "http://tempuri.org/Prueba_2017DataSet.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tablespBusqueda_Variedad_Decision = new spBusqueda_Variedad_DecisionDataTable();
@@ -2145,7 +2145,7 @@ namespace Anakena_2017 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+            Prueba_2017DataSet ds = new Prueba_2017DataSet();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -2562,7 +2562,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2837,7 +2837,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3112,7 +3112,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3387,7 +3387,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3707,7 +3707,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4048,7 +4048,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4381,7 +4381,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4658,7 +4658,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4935,7 +4935,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5300,7 +5300,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5665,7 +5665,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -6030,7 +6030,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -6696,7 +6696,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -6976,7 +6976,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -7241,7 +7241,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -7516,7 +7516,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -7763,7 +7763,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -8105,7 +8105,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -8354,7 +8354,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -8760,7 +8760,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -9024,7 +9024,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -9303,7 +9303,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -9820,7 +9820,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -10189,7 +10189,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -10558,7 +10558,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -10937,7 +10937,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -11185,7 +11185,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -11433,7 +11433,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -11681,7 +11681,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -11929,7 +11929,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -12177,7 +12177,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -12470,7 +12470,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -12764,7 +12764,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -13107,7 +13107,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -13355,7 +13355,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -13650,7 +13650,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -13898,7 +13898,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -14221,7 +14221,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -14590,7 +14590,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -14837,7 +14837,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -15096,7 +15096,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -15449,7 +15449,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -15822,7 +15822,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -16128,7 +16128,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -16391,7 +16391,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -16670,7 +16670,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -17413,7 +17413,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -17660,7 +17660,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -17907,7 +17907,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -18154,7 +18154,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -18402,7 +18402,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -18650,7 +18650,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -18927,7 +18927,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -19191,7 +19191,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -20710,7 +20710,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -22229,7 +22229,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -22506,7 +22506,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -22685,6 +22685,10 @@ namespace Anakena_2017 {
             private global::System.Data.DataColumn columnAmarillo_Extra_Light;
             
             private global::System.Data.DataColumn columnverde_Extra_Light;
+            
+            private global::System.Data.DataColumn columnAmarillo_Light;
+            
+            private global::System.Data.DataColumn columnverde_Light;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -23177,6 +23181,22 @@ namespace Anakena_2017 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Amarillo_LightColumn {
+                get {
+                    return this.columnAmarillo_Light;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn verde_LightColumn {
+                get {
+                    return this.columnverde_Light;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -23268,7 +23288,9 @@ namespace Anakena_2017 {
                         int Amarillo_Ambar, 
                         int verde_ambar, 
                         int Amarillo_Extra_Light, 
-                        int verde_Extra_Light) {
+                        int verde_Extra_Light, 
+                        int Amarillo_Light, 
+                        int verde_Light) {
                 spTraerReporteRow rowspTraerReporteRow = ((spTraerReporteRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -23327,7 +23349,9 @@ namespace Anakena_2017 {
                         Amarillo_Ambar,
                         verde_ambar,
                         Amarillo_Extra_Light,
-                        verde_Extra_Light};
+                        verde_Extra_Light,
+                        Amarillo_Light,
+                        verde_Light};
                 rowspTraerReporteRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowspTraerReporteRow);
                 return rowspTraerReporteRow;
@@ -23414,6 +23438,8 @@ namespace Anakena_2017 {
                 this.columnverde_ambar = base.Columns["verde_ambar"];
                 this.columnAmarillo_Extra_Light = base.Columns["Amarillo_Extra_Light"];
                 this.columnverde_Extra_Light = base.Columns["verde_Extra_Light"];
+                this.columnAmarillo_Light = base.Columns["Amarillo_Light"];
+                this.columnverde_Light = base.Columns["verde_Light"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -23533,6 +23559,10 @@ namespace Anakena_2017 {
                 base.Columns.Add(this.columnAmarillo_Extra_Light);
                 this.columnverde_Extra_Light = new global::System.Data.DataColumn("verde_Extra_Light", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnverde_Extra_Light);
+                this.columnAmarillo_Light = new global::System.Data.DataColumn("Amarillo_Light", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAmarillo_Light);
+                this.columnverde_Light = new global::System.Data.DataColumn("verde_Light", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnverde_Light);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnNum_Analisis}, true));
                 this.columnNum_Analisis.AutoIncrement = true;
@@ -23541,10 +23571,11 @@ namespace Anakena_2017 {
                 this.columnNum_Analisis.Unique = true;
                 this.columnNum_Lote.AllowDBNull = false;
                 this.columnTipo_Recepcion.MaxLength = 2147483647;
+                this.columnDes_Variedad.ReadOnly = true;
                 this.columnDes_Variedad.MaxLength = 40;
-                this.columnCod_Productor.AllowDBNull = false;
+                this.columnCod_Productor.ReadOnly = true;
                 this.columnCod_Productor.MaxLength = 10;
-                this.columnNom_Productor.AllowDBNull = false;
+                this.columnNom_Productor.ReadOnly = true;
                 this.columnNom_Productor.MaxLength = 50;
                 this.columnPatio_Recepcion.AllowDBNull = false;
                 this.columnPatio_Recepcion.MaxLength = 2147483647;
@@ -23597,6 +23628,8 @@ namespace Anakena_2017 {
                 this.columnverde_ambar.ReadOnly = true;
                 this.columnAmarillo_Extra_Light.ReadOnly = true;
                 this.columnverde_Extra_Light.ReadOnly = true;
+                this.columnAmarillo_Light.ReadOnly = true;
+                this.columnverde_Light.ReadOnly = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -23664,7 +23697,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -23961,7 +23994,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -24226,7 +24259,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -24490,7 +24523,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet1 ds = new Prueba_2017DataSet1();
+                Prueba_2017DataSet ds = new Prueba_2017DataSet();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -35423,7 +35456,12 @@ namespace Anakena_2017 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Cod_Productor {
                 get {
-                    return ((string)(this[this.tablespTraerReporte.Cod_ProductorColumn]));
+                    try {
+                        return ((string)(this[this.tablespTraerReporte.Cod_ProductorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Cod_Productor\' de la tabla \'spTraerReporte\' es DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tablespTraerReporte.Cod_ProductorColumn] = value;
@@ -35434,7 +35472,12 @@ namespace Anakena_2017 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string Nom_Productor {
                 get {
-                    return ((string)(this[this.tablespTraerReporte.Nom_ProductorColumn]));
+                    try {
+                        return ((string)(this[this.tablespTraerReporte.Nom_ProductorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Nom_Productor\' de la tabla \'spTraerReporte\' es DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tablespTraerReporte.Nom_ProductorColumn] = value;
@@ -36160,6 +36203,38 @@ namespace Anakena_2017 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Amarillo_Light {
+                get {
+                    try {
+                        return ((int)(this[this.tablespTraerReporte.Amarillo_LightColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Amarillo_Light\' de la tabla \'spTraerReporte\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraerReporte.Amarillo_LightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int verde_Light {
+                get {
+                    try {
+                        return ((int)(this[this.tablespTraerReporte.verde_LightColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'verde_Light\' de la tabla \'spTraerReporte\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraerReporte.verde_LightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsTipo_RecepcionNull() {
                 return this.IsNull(this.tablespTraerReporte.Tipo_RecepcionColumn);
             }
@@ -36180,6 +36255,30 @@ namespace Anakena_2017 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetDes_VariedadNull() {
                 this[this.tablespTraerReporte.Des_VariedadColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCod_ProductorNull() {
+                return this.IsNull(this.tablespTraerReporte.Cod_ProductorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCod_ProductorNull() {
+                this[this.tablespTraerReporte.Cod_ProductorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsNom_ProductorNull() {
+                return this.IsNull(this.tablespTraerReporte.Nom_ProductorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetNom_ProductorNull() {
+                this[this.tablespTraerReporte.Nom_ProductorColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -36528,6 +36627,30 @@ namespace Anakena_2017 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void Setverde_Extra_LightNull() {
                 this[this.tablespTraerReporte.verde_Extra_LightColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAmarillo_LightNull() {
+                return this.IsNull(this.tablespTraerReporte.Amarillo_LightColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAmarillo_LightNull() {
+                this[this.tablespTraerReporte.Amarillo_LightColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool Isverde_LightNull() {
+                return this.IsNull(this.tablespTraerReporte.verde_LightColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Setverde_LightNull() {
+                this[this.tablespTraerReporte.verde_LightColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -38858,7 +38981,7 @@ namespace Anakena_2017 {
         }
     }
 }
-namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
+namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
     
     
     /// <summary>
@@ -39009,7 +39132,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spBusqueda_Variedad_DecisionDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017DataSet.spBusqueda_Variedad_DecisionDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39028,7 +39151,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spBusqueda_Variedad_DecisionDataTable GetData(string variedad) {
+        public virtual Prueba_2017DataSet.spBusqueda_Variedad_DecisionDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39036,7 +39159,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet1.spBusqueda_Variedad_DecisionDataTable dataTable = new Prueba_2017DataSet1.spBusqueda_Variedad_DecisionDataTable();
+            Prueba_2017DataSet.spBusqueda_Variedad_DecisionDataTable dataTable = new Prueba_2017DataSet.spBusqueda_Variedad_DecisionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -39190,7 +39313,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spDistintosProductoresDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spDistintosProductoresDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -39203,9 +39326,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spDistintosProductoresDataTable GetData() {
+        public virtual Prueba_2017DataSet.spDistintosProductoresDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spDistintosProductoresDataTable dataTable = new Prueba_2017DataSet1.spDistintosProductoresDataTable();
+            Prueba_2017DataSet.spDistintosProductoresDataTable dataTable = new Prueba_2017DataSet.spDistintosProductoresDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -39360,7 +39483,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spDistintosProductores_codDataTable dataTable, string productor) {
+        public virtual int Fill(Prueba_2017DataSet.spDistintosProductores_codDataTable dataTable, string productor) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((productor == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39379,7 +39502,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spDistintosProductores_codDataTable GetData(string productor) {
+        public virtual Prueba_2017DataSet.spDistintosProductores_codDataTable GetData(string productor) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((productor == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39387,7 +39510,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(productor));
             }
-            Prueba_2017DataSet1.spDistintosProductores_codDataTable dataTable = new Prueba_2017DataSet1.spDistintosProductores_codDataTable();
+            Prueba_2017DataSet.spDistintosProductores_codDataTable dataTable = new Prueba_2017DataSet.spDistintosProductores_codDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -39542,7 +39665,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spFiltroProductoresDataTable dataTable, string filtro) {
+        public virtual int Fill(Prueba_2017DataSet.spFiltroProductoresDataTable dataTable, string filtro) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((filtro == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39561,7 +39684,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spFiltroProductoresDataTable GetData(string filtro) {
+        public virtual Prueba_2017DataSet.spFiltroProductoresDataTable GetData(string filtro) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((filtro == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39569,7 +39692,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(filtro));
             }
-            Prueba_2017DataSet1.spFiltroProductoresDataTable dataTable = new Prueba_2017DataSet1.spFiltroProductoresDataTable();
+            Prueba_2017DataSet.spFiltroProductoresDataTable dataTable = new Prueba_2017DataSet.spFiltroProductoresDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -39727,7 +39850,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spProceso_RepetidosDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017DataSet.spProceso_RepetidosDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39746,7 +39869,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spProceso_RepetidosDataTable GetData(string variedad) {
+        public virtual Prueba_2017DataSet.spProceso_RepetidosDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39754,7 +39877,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet1.spProceso_RepetidosDataTable dataTable = new Prueba_2017DataSet1.spProceso_RepetidosDataTable();
+            Prueba_2017DataSet.spProceso_RepetidosDataTable dataTable = new Prueba_2017DataSet.spProceso_RepetidosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -39913,7 +40036,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spProductor_FactorDataTable dataTable, string Productor) {
+        public virtual int Fill(Prueba_2017DataSet.spProductor_FactorDataTable dataTable, string Productor) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Productor == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39932,7 +40055,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spProductor_FactorDataTable GetData(string Productor) {
+        public virtual Prueba_2017DataSet.spProductor_FactorDataTable GetData(string Productor) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Productor == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39940,7 +40063,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Productor));
             }
-            Prueba_2017DataSet1.spProductor_FactorDataTable dataTable = new Prueba_2017DataSet1.spProductor_FactorDataTable();
+            Prueba_2017DataSet.spProductor_FactorDataTable dataTable = new Prueba_2017DataSet.spProductor_FactorDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -40101,7 +40224,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spRendimiento_NCCDataTable dataTable, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
+        public virtual int Fill(Prueba_2017DataSet.spRendimiento_NCCDataTable dataTable, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Cod_Variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Cod_Variedad.Value));
@@ -40126,7 +40249,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spRendimiento_NCCDataTable GetData(global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
+        public virtual Prueba_2017DataSet.spRendimiento_NCCDataTable GetData(global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Cod_Variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Cod_Variedad.Value));
@@ -40140,7 +40263,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet1.spRendimiento_NCCDataTable dataTable = new Prueba_2017DataSet1.spRendimiento_NCCDataTable();
+            Prueba_2017DataSet.spRendimiento_NCCDataTable dataTable = new Prueba_2017DataSet.spRendimiento_NCCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -40297,7 +40420,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spRendimiento_PepaDataTable dataTable, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
+        public virtual int Fill(Prueba_2017DataSet.spRendimiento_PepaDataTable dataTable, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Cod_Variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Cod_Variedad.Value));
@@ -40322,7 +40445,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spRendimiento_PepaDataTable GetData(global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
+        public virtual Prueba_2017DataSet.spRendimiento_PepaDataTable GetData(global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Cod_Variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Cod_Variedad.Value));
@@ -40336,7 +40459,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet1.spRendimiento_PepaDataTable dataTable = new Prueba_2017DataSet1.spRendimiento_PepaDataTable();
+            Prueba_2017DataSet.spRendimiento_PepaDataTable dataTable = new Prueba_2017DataSet.spRendimiento_PepaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -40493,7 +40616,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spRetorno_NSCDataTable dataTable, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
+        public virtual int Fill(Prueba_2017DataSet.spRetorno_NSCDataTable dataTable, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Cod_Variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Cod_Variedad.Value));
@@ -40518,7 +40641,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spRetorno_NSCDataTable GetData(global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
+        public virtual Prueba_2017DataSet.spRetorno_NSCDataTable GetData(global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Cod_Variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Cod_Variedad.Value));
@@ -40532,7 +40655,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet1.spRetorno_NSCDataTable dataTable = new Prueba_2017DataSet1.spRetorno_NSCDataTable();
+            Prueba_2017DataSet.spRetorno_NSCDataTable dataTable = new Prueba_2017DataSet.spRetorno_NSCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -40694,7 +40817,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spRetorno_PMCDataTable dataTable, string variedad, string categoria) {
+        public virtual int Fill(Prueba_2017DataSet.spRetorno_PMCDataTable dataTable, string variedad, string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -40719,7 +40842,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spRetorno_PMCDataTable GetData(string variedad, string categoria) {
+        public virtual Prueba_2017DataSet.spRetorno_PMCDataTable GetData(string variedad, string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -40733,7 +40856,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(categoria));
             }
-            Prueba_2017DataSet1.spRetorno_PMCDataTable dataTable = new Prueba_2017DataSet1.spRetorno_PMCDataTable();
+            Prueba_2017DataSet.spRetorno_PMCDataTable dataTable = new Prueba_2017DataSet.spRetorno_PMCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -40895,7 +41018,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spRetorno_PMC_IngresosDataTable dataTable, string variedad, string categoria) {
+        public virtual int Fill(Prueba_2017DataSet.spRetorno_PMC_IngresosDataTable dataTable, string variedad, string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -40920,7 +41043,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spRetorno_PMC_IngresosDataTable GetData(string variedad, string categoria) {
+        public virtual Prueba_2017DataSet.spRetorno_PMC_IngresosDataTable GetData(string variedad, string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -40934,7 +41057,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(categoria));
             }
-            Prueba_2017DataSet1.spRetorno_PMC_IngresosDataTable dataTable = new Prueba_2017DataSet1.spRetorno_PMC_IngresosDataTable();
+            Prueba_2017DataSet.spRetorno_PMC_IngresosDataTable dataTable = new Prueba_2017DataSet.spRetorno_PMC_IngresosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -41096,7 +41219,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spRetorno_PMC_porDataTable dataTable, string variedad, string categoria) {
+        public virtual int Fill(Prueba_2017DataSet.spRetorno_PMC_porDataTable dataTable, string variedad, string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -41121,7 +41244,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spRetorno_PMC_porDataTable GetData(string variedad, string categoria) {
+        public virtual Prueba_2017DataSet.spRetorno_PMC_porDataTable GetData(string variedad, string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -41135,7 +41258,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(categoria));
             }
-            Prueba_2017DataSet1.spRetorno_PMC_porDataTable dataTable = new Prueba_2017DataSet1.spRetorno_PMC_porDataTable();
+            Prueba_2017DataSet.spRetorno_PMC_porDataTable dataTable = new Prueba_2017DataSet.spRetorno_PMC_porDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -41313,7 +41436,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_Analisis_Calidad_PPMDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_Analisis_Calidad_PPMDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -41326,9 +41449,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_Analisis_Calidad_PPMDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraer_Analisis_Calidad_PPMDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraer_Analisis_Calidad_PPMDataTable dataTable = new Prueba_2017DataSet1.spTraer_Analisis_Calidad_PPMDataTable();
+            Prueba_2017DataSet.spTraer_Analisis_Calidad_PPMDataTable dataTable = new Prueba_2017DataSet.spTraer_Analisis_Calidad_PPMDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -41484,7 +41607,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_Busqueda_TarjaDataTable dataTable, string proceso) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_Busqueda_TarjaDataTable dataTable, string proceso) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((proceso == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -41503,7 +41626,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_Busqueda_TarjaDataTable GetData(string proceso) {
+        public virtual Prueba_2017DataSet.spTraer_Busqueda_TarjaDataTable GetData(string proceso) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((proceso == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -41511,7 +41634,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(proceso));
             }
-            Prueba_2017DataSet1.spTraer_Busqueda_TarjaDataTable dataTable = new Prueba_2017DataSet1.spTraer_Busqueda_TarjaDataTable();
+            Prueba_2017DataSet.spTraer_Busqueda_TarjaDataTable dataTable = new Prueba_2017DataSet.spTraer_Busqueda_TarjaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -41665,7 +41788,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_Control_pmmDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_Control_pmmDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -41678,9 +41801,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_Control_pmmDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraer_Control_pmmDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraer_Control_pmmDataTable dataTable = new Prueba_2017DataSet1.spTraer_Control_pmmDataTable();
+            Prueba_2017DataSet.spTraer_Control_pmmDataTable dataTable = new Prueba_2017DataSet.spTraer_Control_pmmDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -41835,7 +41958,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_Control_pmm_codDataTable dataTable, string producto) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_Control_pmm_codDataTable dataTable, string producto) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((producto == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -41854,7 +41977,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_Control_pmm_codDataTable GetData(string producto) {
+        public virtual Prueba_2017DataSet.spTraer_Control_pmm_codDataTable GetData(string producto) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((producto == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -41862,7 +41985,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(producto));
             }
-            Prueba_2017DataSet1.spTraer_Control_pmm_codDataTable dataTable = new Prueba_2017DataSet1.spTraer_Control_pmm_codDataTable();
+            Prueba_2017DataSet.spTraer_Control_pmm_codDataTable dataTable = new Prueba_2017DataSet.spTraer_Control_pmm_codDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -42016,7 +42139,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_descarteNCCDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_descarteNCCDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -42035,7 +42158,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_descarteNCCDataTable GetData(string variedad) {
+        public virtual Prueba_2017DataSet.spTraer_descarteNCCDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -42043,7 +42166,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet1.spTraer_descarteNCCDataTable dataTable = new Prueba_2017DataSet1.spTraer_descarteNCCDataTable();
+            Prueba_2017DataSet.spTraer_descarteNCCDataTable dataTable = new Prueba_2017DataSet.spTraer_descarteNCCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -42202,7 +42325,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_FactorDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_FactorDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -42221,7 +42344,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_FactorDataTable GetData(string variedad) {
+        public virtual Prueba_2017DataSet.spTraer_FactorDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -42229,7 +42352,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet1.spTraer_FactorDataTable dataTable = new Prueba_2017DataSet1.spTraer_FactorDataTable();
+            Prueba_2017DataSet.spTraer_FactorDataTable dataTable = new Prueba_2017DataSet.spTraer_FactorDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -42382,7 +42505,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_Fecha_realDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_Fecha_realDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -42395,9 +42518,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_Fecha_realDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraer_Fecha_realDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraer_Fecha_realDataTable dataTable = new Prueba_2017DataSet1.spTraer_Fecha_realDataTable();
+            Prueba_2017DataSet.spTraer_Fecha_realDataTable dataTable = new Prueba_2017DataSet.spTraer_Fecha_realDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -42560,7 +42683,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_FINAL_NCCDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_FINAL_NCCDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -42573,9 +42696,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_FINAL_NCCDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraer_FINAL_NCCDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraer_FINAL_NCCDataTable dataTable = new Prueba_2017DataSet1.spTraer_FINAL_NCCDataTable();
+            Prueba_2017DataSet.spTraer_FINAL_NCCDataTable dataTable = new Prueba_2017DataSet.spTraer_FINAL_NCCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -42729,7 +42852,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_FINAL_NCC_calibreDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_FINAL_NCC_calibreDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -42742,9 +42865,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_FINAL_NCC_calibreDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraer_FINAL_NCC_calibreDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraer_FINAL_NCC_calibreDataTable dataTable = new Prueba_2017DataSet1.spTraer_FINAL_NCC_calibreDataTable();
+            Prueba_2017DataSet.spTraer_FINAL_NCC_calibreDataTable dataTable = new Prueba_2017DataSet.spTraer_FINAL_NCC_calibreDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -42899,7 +43022,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_FINAL_NCC_VariedadDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_FINAL_NCC_VariedadDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -42912,9 +43035,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_FINAL_NCC_VariedadDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraer_FINAL_NCC_VariedadDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraer_FINAL_NCC_VariedadDataTable dataTable = new Prueba_2017DataSet1.spTraer_FINAL_NCC_VariedadDataTable();
+            Prueba_2017DataSet.spTraer_FINAL_NCC_VariedadDataTable dataTable = new Prueba_2017DataSet.spTraer_FINAL_NCC_VariedadDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -43083,7 +43206,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_FINAL_NSCDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_FINAL_NSCDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -43096,9 +43219,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_FINAL_NSCDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraer_FINAL_NSCDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraer_FINAL_NSCDataTable dataTable = new Prueba_2017DataSet1.spTraer_FINAL_NSCDataTable();
+            Prueba_2017DataSet.spTraer_FINAL_NSCDataTable dataTable = new Prueba_2017DataSet.spTraer_FINAL_NSCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -43259,7 +43382,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_FINAL_NSC_TOTALDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_FINAL_NSC_TOTALDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -43272,9 +43395,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_FINAL_NSC_TOTALDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraer_FINAL_NSC_TOTALDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraer_FINAL_NSC_TOTALDataTable dataTable = new Prueba_2017DataSet1.spTraer_FINAL_NSC_TOTALDataTable();
+            Prueba_2017DataSet.spTraer_FINAL_NSC_TOTALDataTable dataTable = new Prueba_2017DataSet.spTraer_FINAL_NSC_TOTALDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -43435,7 +43558,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_FINAL_NSC_TOTAL_2DataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_FINAL_NSC_TOTAL_2DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -43448,9 +43571,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_FINAL_NSC_TOTAL_2DataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraer_FINAL_NSC_TOTAL_2DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraer_FINAL_NSC_TOTAL_2DataTable dataTable = new Prueba_2017DataSet1.spTraer_FINAL_NSC_TOTAL_2DataTable();
+            Prueba_2017DataSet.spTraer_FINAL_NSC_TOTAL_2DataTable dataTable = new Prueba_2017DataSet.spTraer_FINAL_NSC_TOTAL_2DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -43612,7 +43735,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_MatrizDataTable dataTable, global::System.Nullable<int> variedad) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_MatrizDataTable dataTable, global::System.Nullable<int> variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(variedad.Value));
@@ -43631,7 +43754,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_MatrizDataTable GetData(global::System.Nullable<int> variedad) {
+        public virtual Prueba_2017DataSet.spTraer_MatrizDataTable GetData(global::System.Nullable<int> variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(variedad.Value));
@@ -43639,7 +43762,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet1.spTraer_MatrizDataTable dataTable = new Prueba_2017DataSet1.spTraer_MatrizDataTable();
+            Prueba_2017DataSet.spTraer_MatrizDataTable dataTable = new Prueba_2017DataSet.spTraer_MatrizDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -43793,7 +43916,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_mermaDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_mermaDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -43812,7 +43935,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_mermaDataTable GetData(string variedad) {
+        public virtual Prueba_2017DataSet.spTraer_mermaDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -43820,7 +43943,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet1.spTraer_mermaDataTable dataTable = new Prueba_2017DataSet1.spTraer_mermaDataTable();
+            Prueba_2017DataSet.spTraer_mermaDataTable dataTable = new Prueba_2017DataSet.spTraer_mermaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -43973,7 +44096,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_Num_VARIEDADDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_Num_VARIEDADDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -43986,9 +44109,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_Num_VARIEDADDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraer_Num_VARIEDADDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraer_Num_VARIEDADDataTable dataTable = new Prueba_2017DataSet1.spTraer_Num_VARIEDADDataTable();
+            Prueba_2017DataSet.spTraer_Num_VARIEDADDataTable dataTable = new Prueba_2017DataSet.spTraer_Num_VARIEDADDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -44141,7 +44264,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_NumAnalisisDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_NumAnalisisDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -44154,9 +44277,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_NumAnalisisDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraer_NumAnalisisDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraer_NumAnalisisDataTable dataTable = new Prueba_2017DataSet1.spTraer_NumAnalisisDataTable();
+            Prueba_2017DataSet.spTraer_NumAnalisisDataTable dataTable = new Prueba_2017DataSet.spTraer_NumAnalisisDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -44309,7 +44432,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_NumAnalisis_Calidad_PPMDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_NumAnalisis_Calidad_PPMDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -44322,9 +44445,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_NumAnalisis_Calidad_PPMDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraer_NumAnalisis_Calidad_PPMDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraer_NumAnalisis_Calidad_PPMDataTable dataTable = new Prueba_2017DataSet1.spTraer_NumAnalisis_Calidad_PPMDataTable();
+            Prueba_2017DataSet.spTraer_NumAnalisis_Calidad_PPMDataTable dataTable = new Prueba_2017DataSet.spTraer_NumAnalisis_Calidad_PPMDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -44477,7 +44600,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_NumProductoresDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_NumProductoresDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -44490,9 +44613,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_NumProductoresDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraer_NumProductoresDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraer_NumProductoresDataTable dataTable = new Prueba_2017DataSet1.spTraer_NumProductoresDataTable();
+            Prueba_2017DataSet.spTraer_NumProductoresDataTable dataTable = new Prueba_2017DataSet.spTraer_NumProductoresDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -44649,7 +44772,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_PrecioNCCDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_PrecioNCCDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -44668,7 +44791,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_PrecioNCCDataTable GetData(string variedad) {
+        public virtual Prueba_2017DataSet.spTraer_PrecioNCCDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -44676,7 +44799,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet1.spTraer_PrecioNCCDataTable dataTable = new Prueba_2017DataSet1.spTraer_PrecioNCCDataTable();
+            Prueba_2017DataSet.spTraer_PrecioNCCDataTable dataTable = new Prueba_2017DataSet.spTraer_PrecioNCCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -44832,7 +44955,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_PrecioNSCDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_PrecioNSCDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -44845,9 +44968,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_PrecioNSCDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraer_PrecioNSCDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraer_PrecioNSCDataTable dataTable = new Prueba_2017DataSet1.spTraer_PrecioNSCDataTable();
+            Prueba_2017DataSet.spTraer_PrecioNSCDataTable dataTable = new Prueba_2017DataSet.spTraer_PrecioNSCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -45007,7 +45130,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_Rendimiento_descarteNCCDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_Rendimiento_descarteNCCDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -45026,7 +45149,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_Rendimiento_descarteNCCDataTable GetData(string variedad) {
+        public virtual Prueba_2017DataSet.spTraer_Rendimiento_descarteNCCDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -45034,7 +45157,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet1.spTraer_Rendimiento_descarteNCCDataTable dataTable = new Prueba_2017DataSet1.spTraer_Rendimiento_descarteNCCDataTable();
+            Prueba_2017DataSet.spTraer_Rendimiento_descarteNCCDataTable dataTable = new Prueba_2017DataSet.spTraer_Rendimiento_descarteNCCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -45188,7 +45311,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_Retorno_final_kilosDataTable dataTable, global::System.Nullable<int> variedad) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_Retorno_final_kilosDataTable dataTable, global::System.Nullable<int> variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(variedad.Value));
@@ -45207,7 +45330,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_Retorno_final_kilosDataTable GetData(global::System.Nullable<int> variedad) {
+        public virtual Prueba_2017DataSet.spTraer_Retorno_final_kilosDataTable GetData(global::System.Nullable<int> variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(variedad.Value));
@@ -45215,7 +45338,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet1.spTraer_Retorno_final_kilosDataTable dataTable = new Prueba_2017DataSet1.spTraer_Retorno_final_kilosDataTable();
+            Prueba_2017DataSet.spTraer_Retorno_final_kilosDataTable dataTable = new Prueba_2017DataSet.spTraer_Retorno_final_kilosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -45372,7 +45495,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_TarjaDataTable dataTable, string tarja) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_TarjaDataTable dataTable, string tarja) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((tarja == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -45391,7 +45514,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_TarjaDataTable GetData(string tarja) {
+        public virtual Prueba_2017DataSet.spTraer_TarjaDataTable GetData(string tarja) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((tarja == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -45399,7 +45522,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(tarja));
             }
-            Prueba_2017DataSet1.spTraer_TarjaDataTable dataTable = new Prueba_2017DataSet1.spTraer_TarjaDataTable();
+            Prueba_2017DataSet.spTraer_TarjaDataTable dataTable = new Prueba_2017DataSet.spTraer_TarjaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -45553,7 +45676,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraer_VANASDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017DataSet.spTraer_VANASDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -45572,7 +45695,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraer_VANASDataTable GetData(string variedad) {
+        public virtual Prueba_2017DataSet.spTraer_VANASDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -45580,7 +45703,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet1.spTraer_VANASDataTable dataTable = new Prueba_2017DataSet1.spTraer_VANASDataTable();
+            Prueba_2017DataSet.spTraer_VANASDataTable dataTable = new Prueba_2017DataSet.spTraer_VANASDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -45739,7 +45862,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerAnalisisExternoDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerAnalisisExternoDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -45758,7 +45881,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerAnalisisExternoDataTable GetData(global::System.Nullable<int> Num_Analisis) {
+        public virtual Prueba_2017DataSet.spTraerAnalisisExternoDataTable GetData(global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -45766,7 +45889,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet1.spTraerAnalisisExternoDataTable dataTable = new Prueba_2017DataSet1.spTraerAnalisisExternoDataTable();
+            Prueba_2017DataSet.spTraerAnalisisExternoDataTable dataTable = new Prueba_2017DataSet.spTraerAnalisisExternoDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -45928,7 +46051,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerAnalisisInternoDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerAnalisisInternoDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -45947,7 +46070,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerAnalisisInternoDataTable GetData(global::System.Nullable<int> Num_Analisis) {
+        public virtual Prueba_2017DataSet.spTraerAnalisisInternoDataTable GetData(global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -45955,7 +46078,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet1.spTraerAnalisisInternoDataTable dataTable = new Prueba_2017DataSet1.spTraerAnalisisInternoDataTable();
+            Prueba_2017DataSet.spTraerAnalisisInternoDataTable dataTable = new Prueba_2017DataSet.spTraerAnalisisInternoDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -46111,7 +46234,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerDecisionDataTable dataTable, string calibre, string categoria, string variedad) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerDecisionDataTable dataTable, string calibre, string categoria, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((calibre == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -46142,7 +46265,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerDecisionDataTable GetData(string calibre, string categoria, string variedad) {
+        public virtual Prueba_2017DataSet.spTraerDecisionDataTable GetData(string calibre, string categoria, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((calibre == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -46162,7 +46285,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[3].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet1.spTraerDecisionDataTable dataTable = new Prueba_2017DataSet1.spTraerDecisionDataTable();
+            Prueba_2017DataSet.spTraerDecisionDataTable dataTable = new Prueba_2017DataSet.spTraerDecisionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -46315,7 +46438,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerDistintosProductoresDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerDistintosProductoresDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -46328,9 +46451,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerDistintosProductoresDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraerDistintosProductoresDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraerDistintosProductoresDataTable dataTable = new Prueba_2017DataSet1.spTraerDistintosProductoresDataTable();
+            Prueba_2017DataSet.spTraerDistintosProductoresDataTable dataTable = new Prueba_2017DataSet.spTraerDistintosProductoresDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -46490,7 +46613,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerEncabezadoDataTable dataTable, global::System.Nullable<int> Lote) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerEncabezadoDataTable dataTable, global::System.Nullable<int> Lote) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Lote.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Lote.Value));
@@ -46509,7 +46632,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerEncabezadoDataTable GetData(global::System.Nullable<int> Lote) {
+        public virtual Prueba_2017DataSet.spTraerEncabezadoDataTable GetData(global::System.Nullable<int> Lote) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Lote.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Lote.Value));
@@ -46517,7 +46640,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet1.spTraerEncabezadoDataTable dataTable = new Prueba_2017DataSet1.spTraerEncabezadoDataTable();
+            Prueba_2017DataSet.spTraerEncabezadoDataTable dataTable = new Prueba_2017DataSet.spTraerEncabezadoDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -46678,7 +46801,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerEncabezadosDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerEncabezadosDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -46691,9 +46814,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerEncabezadosDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraerEncabezadosDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraerEncabezadosDataTable dataTable = new Prueba_2017DataSet1.spTraerEncabezadosDataTable();
+            Prueba_2017DataSet.spTraerEncabezadosDataTable dataTable = new Prueba_2017DataSet.spTraerEncabezadosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -46851,7 +46974,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerEnvasesDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerEnvasesDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -46870,7 +46993,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerEnvasesDataTable GetData(global::System.Nullable<int> Num_Analisis) {
+        public virtual Prueba_2017DataSet.spTraerEnvasesDataTable GetData(global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -46878,7 +47001,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet1.spTraerEnvasesDataTable dataTable = new Prueba_2017DataSet1.spTraerEnvasesDataTable();
+            Prueba_2017DataSet.spTraerEnvasesDataTable dataTable = new Prueba_2017DataSet.spTraerEnvasesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -47034,7 +47157,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerEvaluacionDataTable dataTable, string Parametro, string Variedad) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerEvaluacionDataTable dataTable, string Parametro, string Variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Parametro == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -47059,7 +47182,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerEvaluacionDataTable GetData(string Parametro, string Variedad) {
+        public virtual Prueba_2017DataSet.spTraerEvaluacionDataTable GetData(string Parametro, string Variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Parametro == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -47073,7 +47196,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(Variedad));
             }
-            Prueba_2017DataSet1.spTraerEvaluacionDataTable dataTable = new Prueba_2017DataSet1.spTraerEvaluacionDataTable();
+            Prueba_2017DataSet.spTraerEvaluacionDataTable dataTable = new Prueba_2017DataSet.spTraerEvaluacionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -47228,7 +47351,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerEvaluacionesDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerEvaluacionesDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -47241,9 +47364,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerEvaluacionesDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraerEvaluacionesDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraerEvaluacionesDataTable dataTable = new Prueba_2017DataSet1.spTraerEvaluacionesDataTable();
+            Prueba_2017DataSet.spTraerEvaluacionesDataTable dataTable = new Prueba_2017DataSet.spTraerEvaluacionesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -47426,7 +47549,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerExtraccionDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerExtraccionDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -47439,9 +47562,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerExtraccionDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraerExtraccionDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraerExtraccionDataTable dataTable = new Prueba_2017DataSet1.spTraerExtraccionDataTable();
+            Prueba_2017DataSet.spTraerExtraccionDataTable dataTable = new Prueba_2017DataSet.spTraerExtraccionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -47594,7 +47717,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerFechaEstimacionDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerFechaEstimacionDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -47607,9 +47730,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerFechaEstimacionDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraerFechaEstimacionDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraerFechaEstimacionDataTable dataTable = new Prueba_2017DataSet1.spTraerFechaEstimacionDataTable();
+            Prueba_2017DataSet.spTraerFechaEstimacionDataTable dataTable = new Prueba_2017DataSet.spTraerFechaEstimacionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -47762,7 +47885,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerFechaEstimacionCalibreDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerFechaEstimacionCalibreDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -47775,9 +47898,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerFechaEstimacionCalibreDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraerFechaEstimacionCalibreDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraerFechaEstimacionCalibreDataTable dataTable = new Prueba_2017DataSet1.spTraerFechaEstimacionCalibreDataTable();
+            Prueba_2017DataSet.spTraerFechaEstimacionCalibreDataTable dataTable = new Prueba_2017DataSet.spTraerFechaEstimacionCalibreDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -47930,7 +48053,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerFechaEstimacionCategoriasDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerFechaEstimacionCategoriasDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -47943,9 +48066,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerFechaEstimacionCategoriasDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraerFechaEstimacionCategoriasDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraerFechaEstimacionCategoriasDataTable dataTable = new Prueba_2017DataSet1.spTraerFechaEstimacionCategoriasDataTable();
+            Prueba_2017DataSet.spTraerFechaEstimacionCategoriasDataTable dataTable = new Prueba_2017DataSet.spTraerFechaEstimacionCategoriasDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -48099,7 +48222,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerIdCalibreDataTable dataTable, string calibre) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerIdCalibreDataTable dataTable, string calibre) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((calibre == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -48118,7 +48241,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerIdCalibreDataTable GetData(string calibre) {
+        public virtual Prueba_2017DataSet.spTraerIdCalibreDataTable GetData(string calibre) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((calibre == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -48126,7 +48249,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(calibre));
             }
-            Prueba_2017DataSet1.spTraerIdCalibreDataTable dataTable = new Prueba_2017DataSet1.spTraerIdCalibreDataTable();
+            Prueba_2017DataSet.spTraerIdCalibreDataTable dataTable = new Prueba_2017DataSet.spTraerIdCalibreDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -48280,7 +48403,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerIdCategoriaDataTable dataTable, string categoria) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerIdCategoriaDataTable dataTable, string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((categoria == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -48299,7 +48422,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerIdCategoriaDataTable GetData(string categoria) {
+        public virtual Prueba_2017DataSet.spTraerIdCategoriaDataTable GetData(string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((categoria == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -48307,7 +48430,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(categoria));
             }
-            Prueba_2017DataSet1.spTraerIdCategoriaDataTable dataTable = new Prueba_2017DataSet1.spTraerIdCategoriaDataTable();
+            Prueba_2017DataSet.spTraerIdCategoriaDataTable dataTable = new Prueba_2017DataSet.spTraerIdCategoriaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -48463,7 +48586,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerImpurezasDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerImpurezasDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -48482,7 +48605,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerImpurezasDataTable GetData(global::System.Nullable<int> Num_Analisis) {
+        public virtual Prueba_2017DataSet.spTraerImpurezasDataTable GetData(global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -48490,7 +48613,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet1.spTraerImpurezasDataTable dataTable = new Prueba_2017DataSet1.spTraerImpurezasDataTable();
+            Prueba_2017DataSet.spTraerImpurezasDataTable dataTable = new Prueba_2017DataSet.spTraerImpurezasDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -48646,7 +48769,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerLoginDataTable dataTable, string Rut, string Password) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerLoginDataTable dataTable, string Rut, string Password) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Rut == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -48671,7 +48794,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerLoginDataTable GetData(string Rut, string Password) {
+        public virtual Prueba_2017DataSet.spTraerLoginDataTable GetData(string Rut, string Password) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Rut == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -48685,7 +48808,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(Password));
             }
-            Prueba_2017DataSet1.spTraerLoginDataTable dataTable = new Prueba_2017DataSet1.spTraerLoginDataTable();
+            Prueba_2017DataSet.spTraerLoginDataTable dataTable = new Prueba_2017DataSet.spTraerLoginDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -48918,7 +49041,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerPor_NSCDataTable dataTable, global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerPor_NSCDataTable dataTable, global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Producto.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Producto.Value));
@@ -48967,7 +49090,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerPor_NSCDataTable GetData(global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
+        public virtual Prueba_2017DataSet.spTraerPor_NSCDataTable GetData(global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Producto.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Producto.Value));
@@ -49005,7 +49128,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet1.spTraerPor_NSCDataTable dataTable = new Prueba_2017DataSet1.spTraerPor_NSCDataTable();
+            Prueba_2017DataSet.spTraerPor_NSCDataTable dataTable = new Prueba_2017DataSet.spTraerPor_NSCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -49238,7 +49361,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerPor_NSC_descalibreDataTable dataTable, global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerPor_NSC_descalibreDataTable dataTable, global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Producto.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Producto.Value));
@@ -49287,7 +49410,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerPor_NSC_descalibreDataTable GetData(global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
+        public virtual Prueba_2017DataSet.spTraerPor_NSC_descalibreDataTable GetData(global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Producto.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Producto.Value));
@@ -49325,7 +49448,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet1.spTraerPor_NSC_descalibreDataTable dataTable = new Prueba_2017DataSet1.spTraerPor_NSC_descalibreDataTable();
+            Prueba_2017DataSet.spTraerPor_NSC_descalibreDataTable dataTable = new Prueba_2017DataSet.spTraerPor_NSC_descalibreDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -49480,7 +49603,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerPorvar_PorcentajeDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerPorvar_PorcentajeDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -49493,9 +49616,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerPorvar_PorcentajeDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraerPorvar_PorcentajeDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraerPorvar_PorcentajeDataTable dataTable = new Prueba_2017DataSet1.spTraerPorvar_PorcentajeDataTable();
+            Prueba_2017DataSet.spTraerPorvar_PorcentajeDataTable dataTable = new Prueba_2017DataSet.spTraerPorvar_PorcentajeDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -49679,6 +49802,8 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             tableMapping.ColumnMappings.Add("verde_ambar", "verde_ambar");
             tableMapping.ColumnMappings.Add("Amarillo_Extra_Light", "Amarillo_Extra_Light");
             tableMapping.ColumnMappings.Add("verde_Extra_Light", "verde_Extra_Light");
+            tableMapping.ColumnMappings.Add("Amarillo_Light", "Amarillo_Light");
+            tableMapping.ColumnMappings.Add("verde_Light", "verde_Light");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -49706,7 +49831,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerReporteDataTable dataTable, global::System.Nullable<int> Analisis, string calificacion) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerReporteDataTable dataTable, global::System.Nullable<int> Analisis, string calificacion) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Analisis.Value));
@@ -49731,7 +49856,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerReporteDataTable GetData(global::System.Nullable<int> Analisis, string calificacion) {
+        public virtual Prueba_2017DataSet.spTraerReporteDataTable GetData(global::System.Nullable<int> Analisis, string calificacion) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Analisis.Value));
@@ -49745,7 +49870,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(calificacion));
             }
-            Prueba_2017DataSet1.spTraerReporteDataTable dataTable = new Prueba_2017DataSet1.spTraerReporteDataTable();
+            Prueba_2017DataSet.spTraerReporteDataTable dataTable = new Prueba_2017DataSet.spTraerReporteDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -49901,7 +50026,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerUsuarioDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerUsuarioDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -49914,9 +50039,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerUsuarioDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraerUsuarioDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraerUsuarioDataTable dataTable = new Prueba_2017DataSet1.spTraerUsuarioDataTable();
+            Prueba_2017DataSet.spTraerUsuarioDataTable dataTable = new Prueba_2017DataSet.spTraerUsuarioDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -50070,7 +50195,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.spTraerVariedadDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.spTraerVariedadDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -50083,9 +50208,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.spTraerVariedadDataTable GetData() {
+        public virtual Prueba_2017DataSet.spTraerVariedadDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.spTraerVariedadDataTable dataTable = new Prueba_2017DataSet1.spTraerVariedadDataTable();
+            Prueba_2017DataSet.spTraerVariedadDataTable dataTable = new Prueba_2017DataSet.spTraerVariedadDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -50239,7 +50364,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet1.traer_tarifazDataTable dataTable) {
+        public virtual int Fill(Prueba_2017DataSet.traer_tarifazDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -50252,9 +50377,9 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet1.traer_tarifazDataTable GetData() {
+        public virtual Prueba_2017DataSet.traer_tarifazDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet1.traer_tarifazDataTable dataTable = new Prueba_2017DataSet1.traer_tarifazDataTable();
+            Prueba_2017DataSet.traer_tarifazDataTable dataTable = new Prueba_2017DataSet.traer_tarifazDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -51014,6 +51139,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Num_Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Piedra", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Palo", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pelon", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[88] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[88])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
@@ -51050,6 +51176,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Verde_max", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Amarillo_max", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Parametro", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[92] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[92])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
@@ -55018,7 +55145,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spUpdateInpurezas(global::System.Nullable<int> Num_Analisis, global::System.Nullable<double> Piedra, global::System.Nullable<double> Palo, ref string msg) {
+        public virtual int spUpdateInpurezas(global::System.Nullable<int> Num_Analisis, global::System.Nullable<double> Piedra, global::System.Nullable<double> Palo, global::System.Nullable<double> Pelon, ref string msg) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[87]));
             if ((Num_Analisis.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -55038,11 +55165,17 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 command.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((msg == null)) {
-                command.Parameters[4].Value = global::System.DBNull.Value;
+            if ((Pelon.HasValue == true)) {
+                command.Parameters[4].Value = ((double)(Pelon.Value));
             }
             else {
-                command.Parameters[4].Value = ((string)(msg));
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((msg == null)) {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[5].Value = ((string)(msg));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -55058,12 +55191,12 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
                     command.Connection.Close();
                 }
             }
-            if (((command.Parameters[4].Value == null) 
-                        || (command.Parameters[4].Value.GetType() == typeof(global::System.DBNull)))) {
+            if (((command.Parameters[5].Value == null) 
+                        || (command.Parameters[5].Value.GetType() == typeof(global::System.DBNull)))) {
                 msg = null;
             }
             else {
-                msg = ((string)(command.Parameters[4].Value));
+                msg = ((string)(command.Parameters[5].Value));
             }
             return returnValue;
         }
@@ -55230,7 +55363,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int UpdateEvaluacion(global::System.Nullable<int> Verde_max, global::System.Nullable<int> Amarillo_max, string Parametro, ref string msg) {
+        public virtual int UpdateEvaluacion(global::System.Nullable<int> Verde_max, global::System.Nullable<int> Amarillo_max, string Parametro, string Variedad, ref string msg) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[91]));
             if ((Verde_max.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(Verde_max.Value));
@@ -55250,11 +55383,17 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
             else {
                 command.Parameters[3].Value = ((string)(Parametro));
             }
-            if ((msg == null)) {
+            if ((Variedad == null)) {
                 command.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
-                command.Parameters[4].Value = ((string)(msg));
+                command.Parameters[4].Value = ((string)(Variedad));
+            }
+            if ((msg == null)) {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[5].Value = ((string)(msg));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -55270,12 +55409,12 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
                     command.Connection.Close();
                 }
             }
-            if (((command.Parameters[4].Value == null) 
-                        || (command.Parameters[4].Value.GetType() == typeof(global::System.DBNull)))) {
+            if (((command.Parameters[5].Value == null) 
+                        || (command.Parameters[5].Value.GetType() == typeof(global::System.DBNull)))) {
                 msg = null;
             }
             else {
-                msg = ((string)(command.Parameters[4].Value));
+                msg = ((string)(command.Parameters[5].Value));
             }
             return returnValue;
         }
@@ -55620,7 +55759,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(Prueba_2017DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(Prueba_2017DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -55630,7 +55769,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(Prueba_2017DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(Prueba_2017DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -55640,7 +55779,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(Prueba_2017DataSet1 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(Prueba_2017DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -55674,7 +55813,7 @@ namespace Anakena_2017.Prueba_2017DataSet1TableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(Prueba_2017DataSet1 dataSet) {
+        public virtual int UpdateAll(Prueba_2017DataSet dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

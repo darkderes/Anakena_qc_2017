@@ -230,6 +230,15 @@ namespace Anakena_2017
         private Label label49;
         private Label label50;
         private Label label51;
+        private Label label46;
+        private Label lblLight_max;
+        private TextBox txtLight_max;
+        private Label label52;
+        private Label lblLight_min;
+        private TextBox txtLight_min;
+        private Label label54;
+        private Label label55;
+        private Label label67;
         public Button btn_modificar;
 
 		public FormEvaluacion(String Variedad)
@@ -256,7 +265,8 @@ namespace Anakena_2017
 					this.update_parametro(Convert.ToInt32(this.txtHongo_min.Text), Convert.ToInt32(this.txtHongo_max.Text), "Hongo");
 					this.update_parametro(Convert.ToInt32(this.txtAmbar_min.Text), Convert.ToInt32(this.txtAmbar_max.Text), "Ambar_Amarillo");
 					this.update_parametro(Convert.ToInt32(this.txtExtra_min.Text), Convert.ToInt32(this.txtExtra_max.Text), "Extra_Light");
-					MessageBox.Show("informacion actualizada correctamente", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    this.update_parametro(Convert.ToInt32(this.txtLight_min.Text), Convert.ToInt32(this.txtLight_max.Text), "Light");
+                    MessageBox.Show("informacion actualizada correctamente", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
 				}
 				catch
 				{
@@ -458,6 +468,15 @@ namespace Anakena_2017
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.lblLight_max = new System.Windows.Forms.Label();
+            this.txtLight_max = new System.Windows.Forms.TextBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.lblLight_min = new System.Windows.Forms.Label();
+            this.txtLight_min = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -519,7 +538,8 @@ namespace Anakena_2017
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(81, 18);
             this.label22.TabIndex = 13;
-            this.label22.Text = "Extra Ligth:";
+            this.label22.Text = "Extra Light:";
+            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // label23
             // 
@@ -565,7 +585,7 @@ namespace Anakena_2017
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(21, 590);
+            this.label11.Location = new System.Drawing.Point(21, 619);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(125, 18);
             this.label11.TabIndex = 14;
@@ -655,7 +675,7 @@ namespace Anakena_2017
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(278, 590);
+            this.label13.Location = new System.Drawing.Point(278, 619);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(16, 18);
             this.label13.TabIndex = 23;
@@ -765,7 +785,7 @@ namespace Anakena_2017
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(294, 590);
+            this.label31.Location = new System.Drawing.Point(294, 619);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(13, 18);
             this.label31.TabIndex = 34;
@@ -839,7 +859,7 @@ namespace Anakena_2017
             // txtAmbar_min
             // 
             this.txtAmbar_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAmbar_min.Location = new System.Drawing.Point(309, 587);
+            this.txtAmbar_min.Location = new System.Drawing.Point(309, 616);
             this.txtAmbar_min.MaxLength = 2;
             this.txtAmbar_min.Name = "txtAmbar_min";
             this.txtAmbar_min.Size = new System.Drawing.Size(30, 24);
@@ -938,7 +958,7 @@ namespace Anakena_2017
             // txtAmbar_max
             // 
             this.txtAmbar_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAmbar_max.Location = new System.Drawing.Point(429, 587);
+            this.txtAmbar_max.Location = new System.Drawing.Point(429, 616);
             this.txtAmbar_max.MaxLength = 2;
             this.txtAmbar_max.Name = "txtAmbar_max";
             this.txtAmbar_max.Size = new System.Drawing.Size(30, 24);
@@ -1013,7 +1033,7 @@ namespace Anakena_2017
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(414, 590);
+            this.label36.Location = new System.Drawing.Point(414, 619);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(13, 18);
             this.label36.TabIndex = 68;
@@ -1113,17 +1133,17 @@ namespace Anakena_2017
             // 
             this.lblExtra_min.AutoSize = true;
             this.lblExtra_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExtra_min.Location = new System.Drawing.Point(376, 553);
+            this.lblExtra_min.Location = new System.Drawing.Point(392, 552);
             this.lblExtra_min.Name = "lblExtra_min";
-            this.lblExtra_min.Size = new System.Drawing.Size(32, 18);
+            this.lblExtra_min.Size = new System.Drawing.Size(16, 18);
             this.lblExtra_min.TabIndex = 58;
-            this.lblExtra_min.Text = "100";
+            this.lblExtra_min.Text = "0";
             // 
             // lblAmbar_min
             // 
             this.lblAmbar_min.AutoSize = true;
             this.lblAmbar_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmbar_min.Location = new System.Drawing.Point(392, 590);
+            this.lblAmbar_min.Location = new System.Drawing.Point(392, 619);
             this.lblAmbar_min.Name = "lblAmbar_min";
             this.lblAmbar_min.Size = new System.Drawing.Size(16, 18);
             this.lblAmbar_min.TabIndex = 57;
@@ -1233,7 +1253,7 @@ namespace Anakena_2017
             // 
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(510, 590);
+            this.label58.Location = new System.Drawing.Point(510, 619);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(17, 18);
             this.label58.TabIndex = 101;
@@ -1343,7 +1363,7 @@ namespace Anakena_2017
             // 
             this.lblAmbar_max.AutoSize = true;
             this.lblAmbar_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmbar_max.Location = new System.Drawing.Point(533, 590);
+            this.lblAmbar_max.Location = new System.Drawing.Point(533, 619);
             this.lblAmbar_max.Name = "lblAmbar_max";
             this.lblAmbar_max.Size = new System.Drawing.Size(16, 18);
             this.lblAmbar_max.TabIndex = 90;
@@ -1478,7 +1498,7 @@ namespace Anakena_2017
             this.btn_modificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_modificar.BackgroundImage")));
             this.btn_modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_modificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_modificar.Location = new System.Drawing.Point(261, 654);
+            this.btn_modificar.Location = new System.Drawing.Point(261, 663);
             this.btn_modificar.Name = "btn_modificar";
             this.btn_modificar.Size = new System.Drawing.Size(162, 34);
             this.btn_modificar.TabIndex = 107;
@@ -1573,12 +1593,109 @@ namespace Anakena_2017
             this.label51.TabIndex = 110;
             this.label51.Text = "Impurezas: Pelón Suelto :";
             // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(510, 585);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(17, 18);
+            this.label46.TabIndex = 127;
+            this.label46.Text = ">";
+            // 
+            // lblLight_max
+            // 
+            this.lblLight_max.AutoSize = true;
+            this.lblLight_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLight_max.Location = new System.Drawing.Point(533, 585);
+            this.lblLight_max.Name = "lblLight_max";
+            this.lblLight_max.Size = new System.Drawing.Size(16, 18);
+            this.lblLight_max.TabIndex = 126;
+            this.lblLight_max.Text = "0";
+            // 
+            // txtLight_max
+            // 
+            this.txtLight_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLight_max.Location = new System.Drawing.Point(429, 582);
+            this.txtLight_max.MaxLength = 2;
+            this.txtLight_max.Name = "txtLight_max";
+            this.txtLight_max.Size = new System.Drawing.Size(30, 24);
+            this.txtLight_max.TabIndex = 125;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(414, 585);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(13, 18);
+            this.label52.TabIndex = 124;
+            this.label52.Text = "-";
+            // 
+            // lblLight_min
+            // 
+            this.lblLight_min.AutoSize = true;
+            this.lblLight_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLight_min.Location = new System.Drawing.Point(392, 585);
+            this.lblLight_min.Name = "lblLight_min";
+            this.lblLight_min.Size = new System.Drawing.Size(16, 18);
+            this.lblLight_min.TabIndex = 123;
+            this.lblLight_min.Text = "0";
+            // 
+            // txtLight_min
+            // 
+            this.txtLight_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLight_min.Location = new System.Drawing.Point(309, 582);
+            this.txtLight_min.MaxLength = 2;
+            this.txtLight_min.Name = "txtLight_min";
+            this.txtLight_min.Size = new System.Drawing.Size(30, 24);
+            this.txtLight_min.TabIndex = 122;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(294, 585);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(13, 18);
+            this.label54.TabIndex = 121;
+            this.label54.Text = "-";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(262, 585);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(32, 18);
+            this.label55.TabIndex = 120;
+            this.label55.Text = "100";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(21, 585);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(43, 18);
+            this.label67.TabIndex = 119;
+            this.label67.Text = "Light:";
+            // 
             // FormEvaluacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(665, 690);
+            this.ClientSize = new System.Drawing.Size(665, 699);
+            this.Controls.Add(this.label46);
+            this.Controls.Add(this.lblLight_max);
+            this.Controls.Add(this.txtLight_max);
+            this.Controls.Add(this.label52);
+            this.Controls.Add(this.lblLight_min);
+            this.Controls.Add(this.txtLight_min);
+            this.Controls.Add(this.label54);
+            this.Controls.Add(this.label55);
+            this.Controls.Add(this.label67);
             this.Controls.Add(this.label45);
             this.Controls.Add(this.LblPelonSuelto_max);
             this.Controls.Add(this.txtPelonSuelto_max);
@@ -1788,11 +1905,28 @@ namespace Anakena_2017
 			this.extraerMedicion("Extra_Light", Variedad_2);
 			this.txtExtra_min.Text = this.min;
 			this.txtExtra_max.Text = this.max;
+            if((min == "0")&&(max == "0"))
+            {
+                min = "1";
+                max = "1";
+            }
 			num = Convert.ToInt32(this.min) - 1;
 			this.lblExtra_min.Text = num.ToString();
 			num = Convert.ToInt32(this.max) - 1;
 			this.lblExtra_max.Text = num.ToString();
-		}
+            this.extraerMedicion("Light", Variedad_2);
+            this.txtLight_min.Text = this.min;
+            this.txtLight_max.Text = this.max;
+            if ((min == "0") && (max == "0"))
+            {
+                min = "1";
+                max = "1";
+            }
+            num = Convert.ToInt32(this.min) - 1;
+            this.lblLight_min.Text = num.ToString();
+            num = Convert.ToInt32(this.max) - 1;
+            this.lblLight_max.Text = num.ToString();
+        }
 
 		public void update_parametro(int verde_max, int amarillo_max, string parametro)
 		{
@@ -1807,11 +1941,13 @@ namespace Anakena_2017
 					sqlCommand.Parameters.Add("@Verde_max", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Amarillo_max", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Parametro", SqlDbType.Text);
-					sqlCommand.Parameters.Add("@msg", SqlDbType.VarChar, 100);
+                    sqlCommand.Parameters.Add("@Variedad", SqlDbType.Text);
+                    sqlCommand.Parameters.Add("@msg", SqlDbType.VarChar, 100);
 					sqlCommand.Parameters["@Verde_max"].Value = verde_max;
 					sqlCommand.Parameters["@Amarillo_max"].Value = amarillo_max;
 					sqlCommand.Parameters["@Parametro"].Value = parametro;
-					sqlCommand.Parameters["@msg"].Value = 1;
+                    sqlCommand.Parameters["@Variedad"].Value = CmbVariedad.SelectedValue.ToString();
+                    sqlCommand.Parameters["@msg"].Value = 1;
 					this.cn.Abrir();
 					sqlCommand.ExecuteNonQuery();
 					sqlCommand.Parameters["@msg"].Value.ToString();
@@ -1843,6 +1979,11 @@ namespace Anakena_2017
                Variedad_2 = CmbVariedad.Text;
                traer_datos();
             }
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,4 +1,4 @@
-//using Microsoft.Office.Interop.Excel;
+using Excel = Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections;
 using System.ComponentModel;
@@ -151,31 +151,35 @@ namespace Anakena_2017
 
 		public void exporta_a_excel()
 		{
-			//ApplicationClass applicationClass = new ApplicationClass();
-   //         applicationClass.Workbooks.Add(true);          //.get_Application().get_Workbooks().Add(true);
-			//int num = 0;
-			//foreach (DataGridViewColumn column in this.dataGridView1.Columns)
-			//{
-			//	num++;
-   //             applicationClass.Cells[1, num] = column.Name;
-   //             applicationClass.get_Range("A1", "GC1").Interior.ColorIndex = 9;
-   //             applicationClass.get_Range("A1", "GC1").Font.ColorIndex = 2;
-			//}
-			//int num1 = 0;
-			//foreach (DataGridViewRow row in (IEnumerable)this.dataGridView1.Rows)
-			//{
-			//	num1++;
-			//	num = 0;
-			//	foreach (DataGridViewColumn dataGridViewColumn in this.dataGridView1.Columns)
-			//	{
-   //                 num++;
-   //                 applicationClass.Cells[num1 + 1, num] = row.Cells[dataGridViewColumn.Name].Value;
-			//	}
-			//}
-   //         applicationClass.Visible = true;
-   //         ((Worksheet)applicationClass.ActiveSheet).Name = "Reporte";
-			//((Worksheet)applicationClass.ActiveSheet).Activate();
-		}
+            try
+            {
+                var applicationClass = new Excel.Application();
+                applicationClass.Workbooks.Add(true);
+                int num = 0;
+                foreach (DataGridViewColumn column in this.dataGridView1.Columns)
+                {
+                    num++;
+                    applicationClass.Cells[1, num] = column.Name;
+                    applicationClass.get_Range("A1", "AE1").Interior.ColorIndex = 9;
+                    applicationClass.get_Range("A1", "AE1").Font.ColorIndex = 2;
+                }
+                int num1 = 0;
+                foreach (DataGridViewRow row in (IEnumerable)this.dataGridView1.Rows)
+                {
+                    num1++;
+                    num = 0;
+                    foreach (DataGridViewColumn dataGridViewColumn in this.dataGridView1.Columns)
+                    {
+                        num++;
+                        applicationClass.Cells[num1 + 1, num] = row.Cells[dataGridViewColumn.Name].Value;
+                    }
+                }
+                applicationClass.Visible = true;
+                ((Excel.Worksheet)applicationClass.ActiveSheet).Name = "Reporte";
+                ((Excel.Worksheet)applicationClass.ActiveSheet).Activate();
+            }
+            catch { }
+        }
 
 		private void FormExtraccionBDD_Load(object sender, EventArgs e)
 		{
@@ -186,13 +190,11 @@ namespace Anakena_2017
 
 		private void InitializeComponent()
 		{
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormExtraccionBDD));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.Cmb_Variedad = new System.Windows.Forms.ComboBox();
-            this.BtnBuscar = new System.Windows.Forms.Button();
             this.Txt_Busqueda = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -202,9 +204,11 @@ namespace Anakena_2017
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.Btn_Limpiar = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.Btn_Limpiar = new System.Windows.Forms.Button();
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -213,23 +217,23 @@ namespace Anakena_2017
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.Location = new System.Drawing.Point(74, 186);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(1157, 442);
@@ -238,18 +242,6 @@ namespace Anakena_2017
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
             this.dataGridView1.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dataGridView1_CellValidating);
             this.dataGridView1.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellValueChanged);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(615, 649);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(74, 73);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Cmb_Variedad
             // 
@@ -263,16 +255,6 @@ namespace Anakena_2017
             this.Cmb_Variedad.Name = "Cmb_Variedad";
             this.Cmb_Variedad.Size = new System.Drawing.Size(185, 24);
             this.Cmb_Variedad.TabIndex = 13;
-            // 
-            // BtnBuscar
-            // 
-            this.BtnBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBuscar.BackgroundImage")));
-            this.BtnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnBuscar.Location = new System.Drawing.Point(328, 16);
-            this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(88, 28);
-            this.BtnBuscar.TabIndex = 28;
-            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click_1);
             // 
             // Txt_Busqueda
             // 
@@ -373,6 +355,27 @@ namespace Anakena_2017
             this.linkLabel1.Text = "Busqueda Productor";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(74, 31);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(232, 103);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button7
+            // 
+            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
+            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button7.Location = new System.Drawing.Point(1116, 684);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(115, 38);
+            this.button7.TabIndex = 27;
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
             // Btn_Limpiar
             // 
             this.Btn_Limpiar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Limpiar.BackgroundImage")));
@@ -384,26 +387,27 @@ namespace Anakena_2017
             this.Btn_Limpiar.UseVisualStyleBackColor = true;
             this.Btn_Limpiar.Click += new System.EventHandler(this.Btn_Limpiar_Click);
             // 
-            // button7
+            // BtnBuscar
             // 
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button7.Location = new System.Drawing.Point(1127, 694);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(104, 28);
-            this.button7.TabIndex = 27;
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.BtnBuscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnBuscar.BackgroundImage")));
+            this.BtnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnBuscar.Location = new System.Drawing.Point(328, 16);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(88, 28);
+            this.BtnBuscar.TabIndex = 28;
+            this.BtnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click_1);
             // 
-            // pictureBox1
+            // button1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(74, 31);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(232, 103);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 28;
-            this.pictureBox1.TabStop = false;
+            this.button1.BackColor = System.Drawing.SystemColors.HighlightText;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(615, 649);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(74, 73);
+            this.button1.TabIndex = 1;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // FormExtraccionBDD
             // 

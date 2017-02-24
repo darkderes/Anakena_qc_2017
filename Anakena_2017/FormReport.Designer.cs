@@ -30,35 +30,35 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.Prueba_2017DataSet1 = new Anakena_2017.Prueba_2017DataSet1();
+            this.reportViewer2 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.Prueba_2017DataSet = new Anakena_2017.Prueba_2017DataSet();
             this.spTraerReporteBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.spTraerReporteTableAdapter = new Anakena_2017.Prueba_2017DataSet1TableAdapters.spTraerReporteTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.Prueba_2017DataSet1)).BeginInit();
+            this.spTraerReporteTableAdapter = new Anakena_2017.Prueba_2017DataSetTableAdapters.spTraerReporteTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.Prueba_2017DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraerReporteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
-            // reportViewer1
+            // reportViewer2
             // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reportViewer2.Dock = System.Windows.Forms.DockStyle.Fill;
             reportDataSource1.Name = "DataSet1";
             reportDataSource1.Value = this.spTraerReporteBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Anakena_2017.Reporte_Analisis.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(731, 414);
-            this.reportViewer1.TabIndex = 0;
+            this.reportViewer2.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer2.LocalReport.ReportEmbeddedResource = "Anakena_2017.Reporte_Analisis.rdlc";
+            this.reportViewer2.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer2.Name = "reportViewer2";
+            this.reportViewer2.Size = new System.Drawing.Size(902, 741);
+            this.reportViewer2.TabIndex = 0;
             // 
-            // Prueba_2017DataSet1
+            // Prueba_2017DataSet
             // 
-            this.Prueba_2017DataSet1.DataSetName = "Prueba_2017DataSet1";
-            this.Prueba_2017DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.Prueba_2017DataSet.DataSetName = "Prueba_2017DataSet";
+            this.Prueba_2017DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // spTraerReporteBindingSource
             // 
             this.spTraerReporteBindingSource.DataMember = "spTraerReporte";
-            this.spTraerReporteBindingSource.DataSource = this.Prueba_2017DataSet1;
+            this.spTraerReporteBindingSource.DataSource = this.Prueba_2017DataSet;
             // 
             // spTraerReporteTableAdapter
             // 
@@ -68,12 +68,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(731, 414);
-            this.Controls.Add(this.reportViewer1);
+            this.ClientSize = new System.Drawing.Size(902, 741);
+            this.Controls.Add(this.reportViewer2);
             this.Name = "FormReport";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormReport";
             this.Load += new System.EventHandler(this.FormReport_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Prueba_2017DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Prueba_2017DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraerReporteBindingSource)).EndInit();
             this.ResumeLayout(false);
 
@@ -82,8 +83,9 @@
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
+        private Microsoft.Reporting.WinForms.ReportViewer reportViewer2;
         private System.Windows.Forms.BindingSource spTraerReporteBindingSource;
-        private Prueba_2017DataSet1 Prueba_2017DataSet1;
-        private Prueba_2017DataSet1TableAdapters.spTraerReporteTableAdapter spTraerReporteTableAdapter;
+        private Prueba_2017DataSet Prueba_2017DataSet;
+        private Prueba_2017DataSetTableAdapters.spTraerReporteTableAdapter spTraerReporteTableAdapter;
     }
 }

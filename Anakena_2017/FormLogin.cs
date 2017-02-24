@@ -64,7 +64,7 @@ namespace Anakena_2017
             // Txt_Rut
             // 
             this.Txt_Rut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Rut.Location = new System.Drawing.Point(33, 198);
+            this.Txt_Rut.Location = new System.Drawing.Point(12, 210);
             this.Txt_Rut.Name = "Txt_Rut";
             this.Txt_Rut.Size = new System.Drawing.Size(168, 26);
             this.Txt_Rut.TabIndex = 2;
@@ -74,7 +74,7 @@ namespace Anakena_2017
             // TxtPass
             // 
             this.TxtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPass.Location = new System.Drawing.Point(33, 240);
+            this.TxtPass.Location = new System.Drawing.Point(12, 254);
             this.TxtPass.Name = "TxtPass";
             this.TxtPass.Size = new System.Drawing.Size(168, 26);
             this.TxtPass.TabIndex = 3;
@@ -86,7 +86,7 @@ namespace Anakena_2017
             // 
             this.button1.BackColor = System.Drawing.Color.SaddleBrown;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(59, 292);
+            this.button1.Location = new System.Drawing.Point(35, 304);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(98, 34);
             this.button1.TabIndex = 4;
@@ -97,9 +97,9 @@ namespace Anakena_2017
             // Pc_New
             // 
             this.Pc_New.Image = global::Anakena_2017.Properties.Resources.compartir_anakena;
-            this.Pc_New.Location = new System.Drawing.Point(12, 12);
+            this.Pc_New.Location = new System.Drawing.Point(-5, -3);
             this.Pc_New.Name = "Pc_New";
-            this.Pc_New.Size = new System.Drawing.Size(202, 163);
+            this.Pc_New.Size = new System.Drawing.Size(200, 195);
             this.Pc_New.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pc_New.TabIndex = 5;
             this.Pc_New.TabStop = false;
@@ -109,13 +109,14 @@ namespace Anakena_2017
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(226, 338);
+            this.ClientSize = new System.Drawing.Size(195, 366);
             this.Controls.Add(this.Pc_New);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TxtPass);
             this.Controls.Add(this.Txt_Rut);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FormLogin";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

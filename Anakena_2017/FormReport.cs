@@ -12,17 +12,25 @@ namespace Anakena_2017
 {
     public partial class FormReport : Form
     {
-        public FormReport()
+        int report_analisis;
+        string condicion_analisis;
+        public FormReport(int Analisis,string condicion)
         {
             InitializeComponent();
+            report_analisis = Analisis;
+            condicion_analisis = condicion;
+
         }
 
         private void FormReport_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'Prueba_2017DataSet.spTraerReporte' Puede moverla o quitarla según sea necesario.
+            this.spTraerReporteTableAdapter.Fill(this.Prueba_2017DataSet.spTraerReporte,report_analisis,condicion_analisis);
             // TODO: esta línea de código carga datos en la tabla 'Prueba_2017DataSet1.spTraerReporte' Puede moverla o quitarla según sea necesario.
-            this.spTraerReporteTableAdapter.Fill(this.Prueba_2017DataSet1.spTraerReporte,1148,"Rojo");
 
-            this.reportViewer1.RefreshReport();
+
+          
+            this.reportViewer2.RefreshReport();
         }
     }
 }
