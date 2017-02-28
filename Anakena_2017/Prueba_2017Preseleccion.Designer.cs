@@ -20,9 +20,9 @@ namespace Anakena_2017 {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("Prueba_2017DataSet")]
+    [global::System.Xml.Serialization.XmlRootAttribute("Prueba_2017Preseleccion")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class Prueba_2017DataSet : global::System.Data.DataSet {
+    public partial class Prueba_2017Preseleccion : global::System.Data.DataSet {
         
         private spBusqueda_Variedad_DecisionDataTable tablespBusqueda_Variedad_Decision;
         
@@ -50,11 +50,17 @@ namespace Anakena_2017 {
         
         private spTraer_Analisis_Calidad_PPMDataTable tablespTraer_Analisis_Calidad_PPM;
         
+        private spTraer_Analisis_Calidad_PreseleccionDataTable tablespTraer_Analisis_Calidad_Preseleccion;
+        
         private spTraer_Busqueda_TarjaDataTable tablespTraer_Busqueda_Tarja;
         
         private spTraer_Control_pmmDataTable tablespTraer_Control_pmm;
         
         private spTraer_Control_pmm_codDataTable tablespTraer_Control_pmm_cod;
+        
+        private spTraer_Control_preseleccionDataTable tablespTraer_Control_preseleccion;
+        
+        private spTraer_Control_preseleccion_codDataTable tablespTraer_Control_preseleccion_cod;
         
         private spTraer_descarteNCCDataTable tablespTraer_descarteNCC;
         
@@ -83,6 +89,8 @@ namespace Anakena_2017 {
         private spTraer_NumAnalisisDataTable tablespTraer_NumAnalisis;
         
         private spTraer_NumAnalisis_Calidad_PPMDataTable tablespTraer_NumAnalisis_Calidad_PPM;
+        
+        private spTraer_NumAnalisis_Calidad_PreseleccionDataTable tablespTraer_NumAnalisis_Calidad_Preseleccion;
         
         private spTraer_NumProductoresDataTable tablespTraer_NumProductores;
         
@@ -140,6 +148,10 @@ namespace Anakena_2017 {
         
         private spTraerReporteDataTable tablespTraerReporte;
         
+        private spTraerReporte_Analisis_Calidad_PMMDataTable tablespTraerReporte_Analisis_Calidad_PMM;
+        
+        private spTraerReporte_Analisis_Calidad_PreseleccionDataTable tablespTraerReporte_Analisis_Calidad_Preseleccion;
+        
         private spTraerUsuarioDataTable tablespTraerUsuario;
         
         private spTraerVariedadDataTable tablespTraerVariedad;
@@ -150,7 +162,7 @@ namespace Anakena_2017 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public Prueba_2017DataSet() {
+        public Prueba_2017Preseleccion() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -161,7 +173,7 @@ namespace Anakena_2017 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        protected Prueba_2017DataSet(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected Prueba_2017Preseleccion(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -213,6 +225,9 @@ namespace Anakena_2017 {
                 if ((ds.Tables["spTraer_Analisis_Calidad_PPM"] != null)) {
                     base.Tables.Add(new spTraer_Analisis_Calidad_PPMDataTable(ds.Tables["spTraer_Analisis_Calidad_PPM"]));
                 }
+                if ((ds.Tables["spTraer_Analisis_Calidad_Preseleccion"] != null)) {
+                    base.Tables.Add(new spTraer_Analisis_Calidad_PreseleccionDataTable(ds.Tables["spTraer_Analisis_Calidad_Preseleccion"]));
+                }
                 if ((ds.Tables["spTraer_Busqueda_Tarja"] != null)) {
                     base.Tables.Add(new spTraer_Busqueda_TarjaDataTable(ds.Tables["spTraer_Busqueda_Tarja"]));
                 }
@@ -221,6 +236,12 @@ namespace Anakena_2017 {
                 }
                 if ((ds.Tables["spTraer_Control_pmm_cod"] != null)) {
                     base.Tables.Add(new spTraer_Control_pmm_codDataTable(ds.Tables["spTraer_Control_pmm_cod"]));
+                }
+                if ((ds.Tables["spTraer_Control_preseleccion"] != null)) {
+                    base.Tables.Add(new spTraer_Control_preseleccionDataTable(ds.Tables["spTraer_Control_preseleccion"]));
+                }
+                if ((ds.Tables["spTraer_Control_preseleccion_cod"] != null)) {
+                    base.Tables.Add(new spTraer_Control_preseleccion_codDataTable(ds.Tables["spTraer_Control_preseleccion_cod"]));
                 }
                 if ((ds.Tables["spTraer_descarteNCC"] != null)) {
                     base.Tables.Add(new spTraer_descarteNCCDataTable(ds.Tables["spTraer_descarteNCC"]));
@@ -263,6 +284,9 @@ namespace Anakena_2017 {
                 }
                 if ((ds.Tables["spTraer_NumAnalisis_Calidad_PPM"] != null)) {
                     base.Tables.Add(new spTraer_NumAnalisis_Calidad_PPMDataTable(ds.Tables["spTraer_NumAnalisis_Calidad_PPM"]));
+                }
+                if ((ds.Tables["spTraer_NumAnalisis_Calidad_Preseleccion"] != null)) {
+                    base.Tables.Add(new spTraer_NumAnalisis_Calidad_PreseleccionDataTable(ds.Tables["spTraer_NumAnalisis_Calidad_Preseleccion"]));
                 }
                 if ((ds.Tables["spTraer_NumProductores"] != null)) {
                     base.Tables.Add(new spTraer_NumProductoresDataTable(ds.Tables["spTraer_NumProductores"]));
@@ -347,6 +371,12 @@ namespace Anakena_2017 {
                 }
                 if ((ds.Tables["spTraerReporte"] != null)) {
                     base.Tables.Add(new spTraerReporteDataTable(ds.Tables["spTraerReporte"]));
+                }
+                if ((ds.Tables["spTraerReporte_Analisis_Calidad_PMM"] != null)) {
+                    base.Tables.Add(new spTraerReporte_Analisis_Calidad_PMMDataTable(ds.Tables["spTraerReporte_Analisis_Calidad_PMM"]));
+                }
+                if ((ds.Tables["spTraerReporte_Analisis_Calidad_Preseleccion"] != null)) {
+                    base.Tables.Add(new spTraerReporte_Analisis_Calidad_PreseleccionDataTable(ds.Tables["spTraerReporte_Analisis_Calidad_Preseleccion"]));
                 }
                 if ((ds.Tables["spTraerUsuario"] != null)) {
                     base.Tables.Add(new spTraerUsuarioDataTable(ds.Tables["spTraerUsuario"]));
@@ -509,6 +539,16 @@ namespace Anakena_2017 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public spTraer_Analisis_Calidad_PreseleccionDataTable spTraer_Analisis_Calidad_Preseleccion {
+            get {
+                return this.tablespTraer_Analisis_Calidad_Preseleccion;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public spTraer_Busqueda_TarjaDataTable spTraer_Busqueda_Tarja {
             get {
                 return this.tablespTraer_Busqueda_Tarja;
@@ -532,6 +572,26 @@ namespace Anakena_2017 {
         public spTraer_Control_pmm_codDataTable spTraer_Control_pmm_cod {
             get {
                 return this.tablespTraer_Control_pmm_cod;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public spTraer_Control_preseleccionDataTable spTraer_Control_preseleccion {
+            get {
+                return this.tablespTraer_Control_preseleccion;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public spTraer_Control_preseleccion_codDataTable spTraer_Control_preseleccion_cod {
+            get {
+                return this.tablespTraer_Control_preseleccion_cod;
             }
         }
         
@@ -672,6 +732,16 @@ namespace Anakena_2017 {
         public spTraer_NumAnalisis_Calidad_PPMDataTable spTraer_NumAnalisis_Calidad_PPM {
             get {
                 return this.tablespTraer_NumAnalisis_Calidad_PPM;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public spTraer_NumAnalisis_Calidad_PreseleccionDataTable spTraer_NumAnalisis_Calidad_Preseleccion {
+            get {
+                return this.tablespTraer_NumAnalisis_Calidad_Preseleccion;
             }
         }
         
@@ -959,6 +1029,26 @@ namespace Anakena_2017 {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public spTraerReporte_Analisis_Calidad_PMMDataTable spTraerReporte_Analisis_Calidad_PMM {
+            get {
+                return this.tablespTraerReporte_Analisis_Calidad_PMM;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public spTraerReporte_Analisis_Calidad_PreseleccionDataTable spTraerReporte_Analisis_Calidad_Preseleccion {
+            get {
+                return this.tablespTraerReporte_Analisis_Calidad_Preseleccion;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
         public spTraerUsuarioDataTable spTraerUsuario {
             get {
                 return this.tablespTraerUsuario;
@@ -1027,7 +1117,7 @@ namespace Anakena_2017 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            Prueba_2017DataSet cln = ((Prueba_2017DataSet)(base.Clone()));
+            Prueba_2017Preseleccion cln = ((Prueba_2017Preseleccion)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -1091,6 +1181,9 @@ namespace Anakena_2017 {
                 if ((ds.Tables["spTraer_Analisis_Calidad_PPM"] != null)) {
                     base.Tables.Add(new spTraer_Analisis_Calidad_PPMDataTable(ds.Tables["spTraer_Analisis_Calidad_PPM"]));
                 }
+                if ((ds.Tables["spTraer_Analisis_Calidad_Preseleccion"] != null)) {
+                    base.Tables.Add(new spTraer_Analisis_Calidad_PreseleccionDataTable(ds.Tables["spTraer_Analisis_Calidad_Preseleccion"]));
+                }
                 if ((ds.Tables["spTraer_Busqueda_Tarja"] != null)) {
                     base.Tables.Add(new spTraer_Busqueda_TarjaDataTable(ds.Tables["spTraer_Busqueda_Tarja"]));
                 }
@@ -1099,6 +1192,12 @@ namespace Anakena_2017 {
                 }
                 if ((ds.Tables["spTraer_Control_pmm_cod"] != null)) {
                     base.Tables.Add(new spTraer_Control_pmm_codDataTable(ds.Tables["spTraer_Control_pmm_cod"]));
+                }
+                if ((ds.Tables["spTraer_Control_preseleccion"] != null)) {
+                    base.Tables.Add(new spTraer_Control_preseleccionDataTable(ds.Tables["spTraer_Control_preseleccion"]));
+                }
+                if ((ds.Tables["spTraer_Control_preseleccion_cod"] != null)) {
+                    base.Tables.Add(new spTraer_Control_preseleccion_codDataTable(ds.Tables["spTraer_Control_preseleccion_cod"]));
                 }
                 if ((ds.Tables["spTraer_descarteNCC"] != null)) {
                     base.Tables.Add(new spTraer_descarteNCCDataTable(ds.Tables["spTraer_descarteNCC"]));
@@ -1141,6 +1240,9 @@ namespace Anakena_2017 {
                 }
                 if ((ds.Tables["spTraer_NumAnalisis_Calidad_PPM"] != null)) {
                     base.Tables.Add(new spTraer_NumAnalisis_Calidad_PPMDataTable(ds.Tables["spTraer_NumAnalisis_Calidad_PPM"]));
+                }
+                if ((ds.Tables["spTraer_NumAnalisis_Calidad_Preseleccion"] != null)) {
+                    base.Tables.Add(new spTraer_NumAnalisis_Calidad_PreseleccionDataTable(ds.Tables["spTraer_NumAnalisis_Calidad_Preseleccion"]));
                 }
                 if ((ds.Tables["spTraer_NumProductores"] != null)) {
                     base.Tables.Add(new spTraer_NumProductoresDataTable(ds.Tables["spTraer_NumProductores"]));
@@ -1225,6 +1327,12 @@ namespace Anakena_2017 {
                 }
                 if ((ds.Tables["spTraerReporte"] != null)) {
                     base.Tables.Add(new spTraerReporteDataTable(ds.Tables["spTraerReporte"]));
+                }
+                if ((ds.Tables["spTraerReporte_Analisis_Calidad_PMM"] != null)) {
+                    base.Tables.Add(new spTraerReporte_Analisis_Calidad_PMMDataTable(ds.Tables["spTraerReporte_Analisis_Calidad_PMM"]));
+                }
+                if ((ds.Tables["spTraerReporte_Analisis_Calidad_Preseleccion"] != null)) {
+                    base.Tables.Add(new spTraerReporte_Analisis_Calidad_PreseleccionDataTable(ds.Tables["spTraerReporte_Analisis_Calidad_Preseleccion"]));
                 }
                 if ((ds.Tables["spTraerUsuario"] != null)) {
                     base.Tables.Add(new spTraerUsuarioDataTable(ds.Tables["spTraerUsuario"]));
@@ -1346,6 +1454,12 @@ namespace Anakena_2017 {
                     this.tablespTraer_Analisis_Calidad_PPM.InitVars();
                 }
             }
+            this.tablespTraer_Analisis_Calidad_Preseleccion = ((spTraer_Analisis_Calidad_PreseleccionDataTable)(base.Tables["spTraer_Analisis_Calidad_Preseleccion"]));
+            if ((initTable == true)) {
+                if ((this.tablespTraer_Analisis_Calidad_Preseleccion != null)) {
+                    this.tablespTraer_Analisis_Calidad_Preseleccion.InitVars();
+                }
+            }
             this.tablespTraer_Busqueda_Tarja = ((spTraer_Busqueda_TarjaDataTable)(base.Tables["spTraer_Busqueda_Tarja"]));
             if ((initTable == true)) {
                 if ((this.tablespTraer_Busqueda_Tarja != null)) {
@@ -1362,6 +1476,18 @@ namespace Anakena_2017 {
             if ((initTable == true)) {
                 if ((this.tablespTraer_Control_pmm_cod != null)) {
                     this.tablespTraer_Control_pmm_cod.InitVars();
+                }
+            }
+            this.tablespTraer_Control_preseleccion = ((spTraer_Control_preseleccionDataTable)(base.Tables["spTraer_Control_preseleccion"]));
+            if ((initTable == true)) {
+                if ((this.tablespTraer_Control_preseleccion != null)) {
+                    this.tablespTraer_Control_preseleccion.InitVars();
+                }
+            }
+            this.tablespTraer_Control_preseleccion_cod = ((spTraer_Control_preseleccion_codDataTable)(base.Tables["spTraer_Control_preseleccion_cod"]));
+            if ((initTable == true)) {
+                if ((this.tablespTraer_Control_preseleccion_cod != null)) {
+                    this.tablespTraer_Control_preseleccion_cod.InitVars();
                 }
             }
             this.tablespTraer_descarteNCC = ((spTraer_descarteNCCDataTable)(base.Tables["spTraer_descarteNCC"]));
@@ -1446,6 +1572,12 @@ namespace Anakena_2017 {
             if ((initTable == true)) {
                 if ((this.tablespTraer_NumAnalisis_Calidad_PPM != null)) {
                     this.tablespTraer_NumAnalisis_Calidad_PPM.InitVars();
+                }
+            }
+            this.tablespTraer_NumAnalisis_Calidad_Preseleccion = ((spTraer_NumAnalisis_Calidad_PreseleccionDataTable)(base.Tables["spTraer_NumAnalisis_Calidad_Preseleccion"]));
+            if ((initTable == true)) {
+                if ((this.tablespTraer_NumAnalisis_Calidad_Preseleccion != null)) {
+                    this.tablespTraer_NumAnalisis_Calidad_Preseleccion.InitVars();
                 }
             }
             this.tablespTraer_NumProductores = ((spTraer_NumProductoresDataTable)(base.Tables["spTraer_NumProductores"]));
@@ -1616,6 +1748,18 @@ namespace Anakena_2017 {
                     this.tablespTraerReporte.InitVars();
                 }
             }
+            this.tablespTraerReporte_Analisis_Calidad_PMM = ((spTraerReporte_Analisis_Calidad_PMMDataTable)(base.Tables["spTraerReporte_Analisis_Calidad_PMM"]));
+            if ((initTable == true)) {
+                if ((this.tablespTraerReporte_Analisis_Calidad_PMM != null)) {
+                    this.tablespTraerReporte_Analisis_Calidad_PMM.InitVars();
+                }
+            }
+            this.tablespTraerReporte_Analisis_Calidad_Preseleccion = ((spTraerReporte_Analisis_Calidad_PreseleccionDataTable)(base.Tables["spTraerReporte_Analisis_Calidad_Preseleccion"]));
+            if ((initTable == true)) {
+                if ((this.tablespTraerReporte_Analisis_Calidad_Preseleccion != null)) {
+                    this.tablespTraerReporte_Analisis_Calidad_Preseleccion.InitVars();
+                }
+            }
             this.tablespTraerUsuario = ((spTraerUsuarioDataTable)(base.Tables["spTraerUsuario"]));
             if ((initTable == true)) {
                 if ((this.tablespTraerUsuario != null)) {
@@ -1639,9 +1783,9 @@ namespace Anakena_2017 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "Prueba_2017DataSet";
+            this.DataSetName = "Prueba_2017Preseleccion";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/Prueba_2017DataSet.xsd";
+            this.Namespace = "http://tempuri.org/Prueba_2017Preseleccion.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tablespBusqueda_Variedad_Decision = new spBusqueda_Variedad_DecisionDataTable();
@@ -1670,12 +1814,18 @@ namespace Anakena_2017 {
             base.Tables.Add(this.tablespRetorno_PMC_por);
             this.tablespTraer_Analisis_Calidad_PPM = new spTraer_Analisis_Calidad_PPMDataTable();
             base.Tables.Add(this.tablespTraer_Analisis_Calidad_PPM);
+            this.tablespTraer_Analisis_Calidad_Preseleccion = new spTraer_Analisis_Calidad_PreseleccionDataTable();
+            base.Tables.Add(this.tablespTraer_Analisis_Calidad_Preseleccion);
             this.tablespTraer_Busqueda_Tarja = new spTraer_Busqueda_TarjaDataTable();
             base.Tables.Add(this.tablespTraer_Busqueda_Tarja);
             this.tablespTraer_Control_pmm = new spTraer_Control_pmmDataTable();
             base.Tables.Add(this.tablespTraer_Control_pmm);
             this.tablespTraer_Control_pmm_cod = new spTraer_Control_pmm_codDataTable();
             base.Tables.Add(this.tablespTraer_Control_pmm_cod);
+            this.tablespTraer_Control_preseleccion = new spTraer_Control_preseleccionDataTable();
+            base.Tables.Add(this.tablespTraer_Control_preseleccion);
+            this.tablespTraer_Control_preseleccion_cod = new spTraer_Control_preseleccion_codDataTable();
+            base.Tables.Add(this.tablespTraer_Control_preseleccion_cod);
             this.tablespTraer_descarteNCC = new spTraer_descarteNCCDataTable();
             base.Tables.Add(this.tablespTraer_descarteNCC);
             this.tablespTraer_Factor = new spTraer_FactorDataTable();
@@ -1704,6 +1854,8 @@ namespace Anakena_2017 {
             base.Tables.Add(this.tablespTraer_NumAnalisis);
             this.tablespTraer_NumAnalisis_Calidad_PPM = new spTraer_NumAnalisis_Calidad_PPMDataTable();
             base.Tables.Add(this.tablespTraer_NumAnalisis_Calidad_PPM);
+            this.tablespTraer_NumAnalisis_Calidad_Preseleccion = new spTraer_NumAnalisis_Calidad_PreseleccionDataTable();
+            base.Tables.Add(this.tablespTraer_NumAnalisis_Calidad_Preseleccion);
             this.tablespTraer_NumProductores = new spTraer_NumProductoresDataTable();
             base.Tables.Add(this.tablespTraer_NumProductores);
             this.tablespTraer_PrecioNCC = new spTraer_PrecioNCCDataTable();
@@ -1760,6 +1912,10 @@ namespace Anakena_2017 {
             base.Tables.Add(this.tablespTraerPorvar_Porcentaje);
             this.tablespTraerReporte = new spTraerReporteDataTable();
             base.Tables.Add(this.tablespTraerReporte);
+            this.tablespTraerReporte_Analisis_Calidad_PMM = new spTraerReporte_Analisis_Calidad_PMMDataTable();
+            base.Tables.Add(this.tablespTraerReporte_Analisis_Calidad_PMM);
+            this.tablespTraerReporte_Analisis_Calidad_Preseleccion = new spTraerReporte_Analisis_Calidad_PreseleccionDataTable();
+            base.Tables.Add(this.tablespTraerReporte_Analisis_Calidad_Preseleccion);
             this.tablespTraerUsuario = new spTraerUsuarioDataTable();
             base.Tables.Add(this.tablespTraerUsuario);
             this.tablespTraerVariedad = new spTraerVariedadDataTable();
@@ -1848,6 +2004,12 @@ namespace Anakena_2017 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializespTraer_Analisis_Calidad_Preseleccion() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializespTraer_Busqueda_Tarja() {
             return false;
         }
@@ -1861,6 +2023,18 @@ namespace Anakena_2017 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializespTraer_Control_pmm_cod() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializespTraer_Control_preseleccion() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializespTraer_Control_preseleccion_cod() {
             return false;
         }
         
@@ -1945,6 +2119,12 @@ namespace Anakena_2017 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializespTraer_NumAnalisis_Calidad_PPM() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializespTraer_NumAnalisis_Calidad_Preseleccion() {
             return false;
         }
         
@@ -2118,6 +2298,18 @@ namespace Anakena_2017 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializespTraerReporte_Analisis_Calidad_PMM() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializespTraerReporte_Analisis_Calidad_Preseleccion() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializespTraerUsuario() {
             return false;
         }
@@ -2145,7 +2337,7 @@ namespace Anakena_2017 {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            Prueba_2017DataSet ds = new Prueba_2017DataSet();
+            Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -2229,6 +2421,9 @@ namespace Anakena_2017 {
         public delegate void spTraer_Analisis_Calidad_PPMRowChangeEventHandler(object sender, spTraer_Analisis_Calidad_PPMRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void spTraer_Analisis_Calidad_PreseleccionRowChangeEventHandler(object sender, spTraer_Analisis_Calidad_PreseleccionRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void spTraer_Busqueda_TarjaRowChangeEventHandler(object sender, spTraer_Busqueda_TarjaRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -2236,6 +2431,12 @@ namespace Anakena_2017 {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void spTraer_Control_pmm_codRowChangeEventHandler(object sender, spTraer_Control_pmm_codRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void spTraer_Control_preseleccionRowChangeEventHandler(object sender, spTraer_Control_preseleccionRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void spTraer_Control_preseleccion_codRowChangeEventHandler(object sender, spTraer_Control_preseleccion_codRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void spTraer_descarteNCCRowChangeEventHandler(object sender, spTraer_descarteNCCRowChangeEvent e);
@@ -2278,6 +2479,9 @@ namespace Anakena_2017 {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void spTraer_NumAnalisis_Calidad_PPMRowChangeEventHandler(object sender, spTraer_NumAnalisis_Calidad_PPMRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void spTraer_NumAnalisis_Calidad_PreseleccionRowChangeEventHandler(object sender, spTraer_NumAnalisis_Calidad_PreseleccionRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void spTraer_NumProductoresRowChangeEventHandler(object sender, spTraer_NumProductoresRowChangeEvent e);
@@ -2362,6 +2566,12 @@ namespace Anakena_2017 {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void spTraerReporteRowChangeEventHandler(object sender, spTraerReporteRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void spTraerReporte_Analisis_Calidad_PMMRowChangeEventHandler(object sender, spTraerReporte_Analisis_Calidad_PMMRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void spTraerReporte_Analisis_Calidad_PreseleccionRowChangeEventHandler(object sender, spTraerReporte_Analisis_Calidad_PreseleccionRowChangeEvent e);
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void spTraerUsuarioRowChangeEventHandler(object sender, spTraerUsuarioRowChangeEvent e);
@@ -2562,7 +2772,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -2837,7 +3047,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3112,7 +3322,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3387,7 +3597,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -3707,7 +3917,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4048,7 +4258,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4381,7 +4591,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4658,7 +4868,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -4935,7 +5145,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5300,7 +5510,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -5665,7 +5875,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -6030,7 +6240,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -6696,7 +6906,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -6715,6 +6925,816 @@ namespace Anakena_2017 {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "spTraer_Analisis_Calidad_PPMDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class spTraer_Analisis_Calidad_PreseleccionDataTable : global::System.Data.TypedTableBase<spTraer_Analisis_Calidad_PreseleccionRow> {
+            
+            private global::System.Data.DataColumn columnAnalisis;
+            
+            private global::System.Data.DataColumn columnFecha;
+            
+            private global::System.Data.DataColumn columnTarja;
+            
+            private global::System.Data.DataColumn columnBins;
+            
+            private global::System.Data.DataColumn columnTurno;
+            
+            private global::System.Data.DataColumn columnProceso;
+            
+            private global::System.Data.DataColumn columnProducto_Analisis;
+            
+            private global::System.Data.DataColumn columnProducto_Tarja;
+            
+            private global::System.Data.DataColumn columnEstado;
+            
+            private global::System.Data.DataColumn columnCod_Producto_User;
+            
+            private global::System.Data.DataColumn columnCod_Producto_Tarja;
+            
+            private global::System.Data.DataColumn columnPeso_Muestra;
+            
+            private global::System.Data.DataColumn columnCascara;
+            
+            private global::System.Data.DataColumn columnSeptum;
+            
+            private global::System.Data.DataColumn columnMat_Extraña;
+            
+            private global::System.Data.DataColumn columnHalves;
+            
+            private global::System.Data.DataColumn columnLarge_Pieces;
+            
+            private global::System.Data.DataColumn columnMedium_Pieces;
+            
+            private global::System.Data.DataColumn columnSmall_Pieces;
+            
+            private global::System.Data.DataColumn columnExtra_Light;
+            
+            private global::System.Data.DataColumn columnLight;
+            
+            private global::System.Data.DataColumn columnLight_Ambar;
+            
+            private global::System.Data.DataColumn columnAmbar;
+            
+            private global::System.Data.DataColumn columnAmarillo;
+            
+            private global::System.Data.DataColumn columnDefectos;
+            
+            private global::System.Data.DataColumn columnReseca_Leve;
+            
+            private global::System.Data.DataColumn columnReseca_Grave;
+            
+            private global::System.Data.DataColumn columnDaño_Insecto;
+            
+            private global::System.Data.DataColumn columnMancha_Agua;
+            
+            private global::System.Data.DataColumn columnHongo_Inactivo;
+            
+            private global::System.Data.DataColumn columnHongo_Activo;
+            
+            private global::System.Data.DataColumn columnObservacion;
+            
+            private global::System.Data.DataColumn columnObservacion_Mat_Extraña;
+            
+            private global::System.Data.DataColumn columnObservacion_Cascara;
+            
+            private global::System.Data.DataColumn columnObservacion_Septum;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Analisis_Calidad_PreseleccionDataTable() {
+                this.TableName = "spTraer_Analisis_Calidad_Preseleccion";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spTraer_Analisis_Calidad_PreseleccionDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected spTraer_Analisis_Calidad_PreseleccionDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AnalisisColumn {
+                get {
+                    return this.columnAnalisis;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FechaColumn {
+                get {
+                    return this.columnFecha;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TarjaColumn {
+                get {
+                    return this.columnTarja;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn BinsColumn {
+                get {
+                    return this.columnBins;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TurnoColumn {
+                get {
+                    return this.columnTurno;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ProcesoColumn {
+                get {
+                    return this.columnProceso;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Producto_AnalisisColumn {
+                get {
+                    return this.columnProducto_Analisis;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Producto_TarjaColumn {
+                get {
+                    return this.columnProducto_Tarja;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn EstadoColumn {
+                get {
+                    return this.columnEstado;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Cod_Producto_UserColumn {
+                get {
+                    return this.columnCod_Producto_User;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Cod_Producto_TarjaColumn {
+                get {
+                    return this.columnCod_Producto_Tarja;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Peso_MuestraColumn {
+                get {
+                    return this.columnPeso_Muestra;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CascaraColumn {
+                get {
+                    return this.columnCascara;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SeptumColumn {
+                get {
+                    return this.columnSeptum;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Mat_ExtrañaColumn {
+                get {
+                    return this.columnMat_Extraña;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn HalvesColumn {
+                get {
+                    return this.columnHalves;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Large_PiecesColumn {
+                get {
+                    return this.columnLarge_Pieces;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Medium_PiecesColumn {
+                get {
+                    return this.columnMedium_Pieces;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Small_PiecesColumn {
+                get {
+                    return this.columnSmall_Pieces;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Extra_LightColumn {
+                get {
+                    return this.columnExtra_Light;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LightColumn {
+                get {
+                    return this.columnLight;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Light_AmbarColumn {
+                get {
+                    return this.columnLight_Ambar;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AmbarColumn {
+                get {
+                    return this.columnAmbar;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AmarilloColumn {
+                get {
+                    return this.columnAmarillo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DefectosColumn {
+                get {
+                    return this.columnDefectos;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Reseca_LeveColumn {
+                get {
+                    return this.columnReseca_Leve;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Reseca_GraveColumn {
+                get {
+                    return this.columnReseca_Grave;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Daño_InsectoColumn {
+                get {
+                    return this.columnDaño_Insecto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Mancha_AguaColumn {
+                get {
+                    return this.columnMancha_Agua;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Hongo_InactivoColumn {
+                get {
+                    return this.columnHongo_Inactivo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Hongo_ActivoColumn {
+                get {
+                    return this.columnHongo_Activo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ObservacionColumn {
+                get {
+                    return this.columnObservacion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Observacion_Mat_ExtrañaColumn {
+                get {
+                    return this.columnObservacion_Mat_Extraña;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Observacion_CascaraColumn {
+                get {
+                    return this.columnObservacion_Cascara;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Observacion_SeptumColumn {
+                get {
+                    return this.columnObservacion_Septum;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Analisis_Calidad_PreseleccionRow this[int index] {
+                get {
+                    return ((spTraer_Analisis_Calidad_PreseleccionRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Analisis_Calidad_PreseleccionRowChangeEventHandler spTraer_Analisis_Calidad_PreseleccionRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Analisis_Calidad_PreseleccionRowChangeEventHandler spTraer_Analisis_Calidad_PreseleccionRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Analisis_Calidad_PreseleccionRowChangeEventHandler spTraer_Analisis_Calidad_PreseleccionRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Analisis_Calidad_PreseleccionRowChangeEventHandler spTraer_Analisis_Calidad_PreseleccionRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddspTraer_Analisis_Calidad_PreseleccionRow(spTraer_Analisis_Calidad_PreseleccionRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Analisis_Calidad_PreseleccionRow AddspTraer_Analisis_Calidad_PreseleccionRow(
+                        System.DateTime Fecha, 
+                        string Tarja, 
+                        int Bins, 
+                        string Turno, 
+                        decimal Proceso, 
+                        string Producto_Analisis, 
+                        string Producto_Tarja, 
+                        string Estado, 
+                        string Cod_Producto_User, 
+                        string Cod_Producto_Tarja, 
+                        double Peso_Muestra, 
+                        double Cascara, 
+                        double Septum, 
+                        double Mat_Extraña, 
+                        double Halves, 
+                        double Large_Pieces, 
+                        double Medium_Pieces, 
+                        double Small_Pieces, 
+                        double Extra_Light, 
+                        double Light, 
+                        double Light_Ambar, 
+                        double Ambar, 
+                        double Amarillo, 
+                        double Defectos, 
+                        double Reseca_Leve, 
+                        double Reseca_Grave, 
+                        double Daño_Insecto, 
+                        double Mancha_Agua, 
+                        double Hongo_Inactivo, 
+                        double Hongo_Activo, 
+                        string Observacion, 
+                        string Observacion_Mat_Extraña, 
+                        string Observacion_Cascara, 
+                        string Observacion_Septum) {
+                spTraer_Analisis_Calidad_PreseleccionRow rowspTraer_Analisis_Calidad_PreseleccionRow = ((spTraer_Analisis_Calidad_PreseleccionRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Fecha,
+                        Tarja,
+                        Bins,
+                        Turno,
+                        Proceso,
+                        Producto_Analisis,
+                        Producto_Tarja,
+                        Estado,
+                        Cod_Producto_User,
+                        Cod_Producto_Tarja,
+                        Peso_Muestra,
+                        Cascara,
+                        Septum,
+                        Mat_Extraña,
+                        Halves,
+                        Large_Pieces,
+                        Medium_Pieces,
+                        Small_Pieces,
+                        Extra_Light,
+                        Light,
+                        Light_Ambar,
+                        Ambar,
+                        Amarillo,
+                        Defectos,
+                        Reseca_Leve,
+                        Reseca_Grave,
+                        Daño_Insecto,
+                        Mancha_Agua,
+                        Hongo_Inactivo,
+                        Hongo_Activo,
+                        Observacion,
+                        Observacion_Mat_Extraña,
+                        Observacion_Cascara,
+                        Observacion_Septum};
+                rowspTraer_Analisis_Calidad_PreseleccionRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowspTraer_Analisis_Calidad_PreseleccionRow);
+                return rowspTraer_Analisis_Calidad_PreseleccionRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Analisis_Calidad_PreseleccionRow FindByAnalisis(short Analisis) {
+                return ((spTraer_Analisis_Calidad_PreseleccionRow)(this.Rows.Find(new object[] {
+                            Analisis})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                spTraer_Analisis_Calidad_PreseleccionDataTable cln = ((spTraer_Analisis_Calidad_PreseleccionDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new spTraer_Analisis_Calidad_PreseleccionDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnAnalisis = base.Columns["Analisis"];
+                this.columnFecha = base.Columns["Fecha"];
+                this.columnTarja = base.Columns["Tarja"];
+                this.columnBins = base.Columns["Bins"];
+                this.columnTurno = base.Columns["Turno"];
+                this.columnProceso = base.Columns["Proceso"];
+                this.columnProducto_Analisis = base.Columns["Producto_Analisis"];
+                this.columnProducto_Tarja = base.Columns["Producto_Tarja"];
+                this.columnEstado = base.Columns["Estado"];
+                this.columnCod_Producto_User = base.Columns["Cod_Producto_User"];
+                this.columnCod_Producto_Tarja = base.Columns["Cod_Producto_Tarja"];
+                this.columnPeso_Muestra = base.Columns["Peso_Muestra"];
+                this.columnCascara = base.Columns["Cascara"];
+                this.columnSeptum = base.Columns["Septum"];
+                this.columnMat_Extraña = base.Columns["Mat_Extraña"];
+                this.columnHalves = base.Columns["Halves"];
+                this.columnLarge_Pieces = base.Columns["Large_Pieces"];
+                this.columnMedium_Pieces = base.Columns["Medium_Pieces"];
+                this.columnSmall_Pieces = base.Columns["Small_Pieces"];
+                this.columnExtra_Light = base.Columns["Extra_Light"];
+                this.columnLight = base.Columns["Light"];
+                this.columnLight_Ambar = base.Columns["Light_Ambar"];
+                this.columnAmbar = base.Columns["Ambar"];
+                this.columnAmarillo = base.Columns["Amarillo"];
+                this.columnDefectos = base.Columns["Defectos"];
+                this.columnReseca_Leve = base.Columns["Reseca_Leve"];
+                this.columnReseca_Grave = base.Columns["Reseca_Grave"];
+                this.columnDaño_Insecto = base.Columns["Daño_Insecto"];
+                this.columnMancha_Agua = base.Columns["Mancha_Agua"];
+                this.columnHongo_Inactivo = base.Columns["Hongo_Inactivo"];
+                this.columnHongo_Activo = base.Columns["Hongo_Activo"];
+                this.columnObservacion = base.Columns["Observacion"];
+                this.columnObservacion_Mat_Extraña = base.Columns["Observacion_Mat_Extraña"];
+                this.columnObservacion_Cascara = base.Columns["Observacion_Cascara"];
+                this.columnObservacion_Septum = base.Columns["Observacion_Septum"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnAnalisis = new global::System.Data.DataColumn("Analisis", typeof(short), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAnalisis);
+                this.columnFecha = new global::System.Data.DataColumn("Fecha", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFecha);
+                this.columnTarja = new global::System.Data.DataColumn("Tarja", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTarja);
+                this.columnBins = new global::System.Data.DataColumn("Bins", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBins);
+                this.columnTurno = new global::System.Data.DataColumn("Turno", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTurno);
+                this.columnProceso = new global::System.Data.DataColumn("Proceso", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProceso);
+                this.columnProducto_Analisis = new global::System.Data.DataColumn("Producto_Analisis", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProducto_Analisis);
+                this.columnProducto_Tarja = new global::System.Data.DataColumn("Producto_Tarja", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProducto_Tarja);
+                this.columnEstado = new global::System.Data.DataColumn("Estado", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEstado);
+                this.columnCod_Producto_User = new global::System.Data.DataColumn("Cod_Producto_User", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCod_Producto_User);
+                this.columnCod_Producto_Tarja = new global::System.Data.DataColumn("Cod_Producto_Tarja", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCod_Producto_Tarja);
+                this.columnPeso_Muestra = new global::System.Data.DataColumn("Peso_Muestra", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPeso_Muestra);
+                this.columnCascara = new global::System.Data.DataColumn("Cascara", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCascara);
+                this.columnSeptum = new global::System.Data.DataColumn("Septum", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSeptum);
+                this.columnMat_Extraña = new global::System.Data.DataColumn("Mat_Extraña", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMat_Extraña);
+                this.columnHalves = new global::System.Data.DataColumn("Halves", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHalves);
+                this.columnLarge_Pieces = new global::System.Data.DataColumn("Large_Pieces", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLarge_Pieces);
+                this.columnMedium_Pieces = new global::System.Data.DataColumn("Medium_Pieces", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMedium_Pieces);
+                this.columnSmall_Pieces = new global::System.Data.DataColumn("Small_Pieces", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSmall_Pieces);
+                this.columnExtra_Light = new global::System.Data.DataColumn("Extra_Light", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnExtra_Light);
+                this.columnLight = new global::System.Data.DataColumn("Light", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLight);
+                this.columnLight_Ambar = new global::System.Data.DataColumn("Light_Ambar", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLight_Ambar);
+                this.columnAmbar = new global::System.Data.DataColumn("Ambar", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAmbar);
+                this.columnAmarillo = new global::System.Data.DataColumn("Amarillo", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAmarillo);
+                this.columnDefectos = new global::System.Data.DataColumn("Defectos", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDefectos);
+                this.columnReseca_Leve = new global::System.Data.DataColumn("Reseca_Leve", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnReseca_Leve);
+                this.columnReseca_Grave = new global::System.Data.DataColumn("Reseca_Grave", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnReseca_Grave);
+                this.columnDaño_Insecto = new global::System.Data.DataColumn("Daño_Insecto", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDaño_Insecto);
+                this.columnMancha_Agua = new global::System.Data.DataColumn("Mancha_Agua", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMancha_Agua);
+                this.columnHongo_Inactivo = new global::System.Data.DataColumn("Hongo_Inactivo", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHongo_Inactivo);
+                this.columnHongo_Activo = new global::System.Data.DataColumn("Hongo_Activo", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHongo_Activo);
+                this.columnObservacion = new global::System.Data.DataColumn("Observacion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnObservacion);
+                this.columnObservacion_Mat_Extraña = new global::System.Data.DataColumn("Observacion_Mat_Extraña", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnObservacion_Mat_Extraña);
+                this.columnObservacion_Cascara = new global::System.Data.DataColumn("Observacion_Cascara", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnObservacion_Cascara);
+                this.columnObservacion_Septum = new global::System.Data.DataColumn("Observacion_Septum", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnObservacion_Septum);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnAnalisis}, true));
+                this.columnAnalisis.AutoIncrement = true;
+                this.columnAnalisis.AllowDBNull = false;
+                this.columnAnalisis.ReadOnly = true;
+                this.columnAnalisis.Unique = true;
+                this.columnFecha.AllowDBNull = false;
+                this.columnTarja.MaxLength = 10;
+                this.columnBins.AllowDBNull = false;
+                this.columnTurno.ReadOnly = true;
+                this.columnTurno.MaxLength = 5;
+                this.columnProducto_Analisis.ReadOnly = true;
+                this.columnProducto_Analisis.MaxLength = 50;
+                this.columnProducto_Tarja.ReadOnly = true;
+                this.columnProducto_Tarja.MaxLength = 50;
+                this.columnEstado.ReadOnly = true;
+                this.columnEstado.MaxLength = 10;
+                this.columnCod_Producto_User.AllowDBNull = false;
+                this.columnCod_Producto_User.MaxLength = 10;
+                this.columnCod_Producto_Tarja.AllowDBNull = false;
+                this.columnCod_Producto_Tarja.MaxLength = 10;
+                this.columnPeso_Muestra.AllowDBNull = false;
+                this.columnCascara.AllowDBNull = false;
+                this.columnSeptum.AllowDBNull = false;
+                this.columnMat_Extraña.AllowDBNull = false;
+                this.columnHalves.AllowDBNull = false;
+                this.columnLarge_Pieces.AllowDBNull = false;
+                this.columnMedium_Pieces.AllowDBNull = false;
+                this.columnSmall_Pieces.AllowDBNull = false;
+                this.columnExtra_Light.AllowDBNull = false;
+                this.columnLight.AllowDBNull = false;
+                this.columnLight_Ambar.AllowDBNull = false;
+                this.columnAmbar.AllowDBNull = false;
+                this.columnAmarillo.AllowDBNull = false;
+                this.columnDefectos.AllowDBNull = false;
+                this.columnReseca_Leve.AllowDBNull = false;
+                this.columnReseca_Grave.AllowDBNull = false;
+                this.columnDaño_Insecto.AllowDBNull = false;
+                this.columnMancha_Agua.AllowDBNull = false;
+                this.columnHongo_Inactivo.AllowDBNull = false;
+                this.columnHongo_Activo.AllowDBNull = false;
+                this.columnObservacion.AllowDBNull = false;
+                this.columnObservacion.MaxLength = 2147483647;
+                this.columnObservacion_Mat_Extraña.MaxLength = 2147483647;
+                this.columnObservacion_Cascara.MaxLength = 2147483647;
+                this.columnObservacion_Septum.MaxLength = 2147483647;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Analisis_Calidad_PreseleccionRow NewspTraer_Analisis_Calidad_PreseleccionRow() {
+                return ((spTraer_Analisis_Calidad_PreseleccionRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new spTraer_Analisis_Calidad_PreseleccionRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(spTraer_Analisis_Calidad_PreseleccionRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.spTraer_Analisis_Calidad_PreseleccionRowChanged != null)) {
+                    this.spTraer_Analisis_Calidad_PreseleccionRowChanged(this, new spTraer_Analisis_Calidad_PreseleccionRowChangeEvent(((spTraer_Analisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.spTraer_Analisis_Calidad_PreseleccionRowChanging != null)) {
+                    this.spTraer_Analisis_Calidad_PreseleccionRowChanging(this, new spTraer_Analisis_Calidad_PreseleccionRowChangeEvent(((spTraer_Analisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.spTraer_Analisis_Calidad_PreseleccionRowDeleted != null)) {
+                    this.spTraer_Analisis_Calidad_PreseleccionRowDeleted(this, new spTraer_Analisis_Calidad_PreseleccionRowChangeEvent(((spTraer_Analisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.spTraer_Analisis_Calidad_PreseleccionRowDeleting != null)) {
+                    this.spTraer_Analisis_Calidad_PreseleccionRowDeleting(this, new spTraer_Analisis_Calidad_PreseleccionRowChangeEvent(((spTraer_Analisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemovespTraer_Analisis_Calidad_PreseleccionRow(spTraer_Analisis_Calidad_PreseleccionRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "spTraer_Analisis_Calidad_PreseleccionDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -6976,7 +7996,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -7241,7 +8261,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -7516,7 +8536,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -7535,6 +8555,546 @@ namespace Anakena_2017 {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "spTraer_Control_pmm_codDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class spTraer_Control_preseleccionDataTable : global::System.Data.TypedTableBase<spTraer_Control_preseleccionRow> {
+            
+            private global::System.Data.DataColumn columnCod_Producto;
+            
+            private global::System.Data.DataColumn columnDes_Producto;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Control_preseleccionDataTable() {
+                this.TableName = "spTraer_Control_preseleccion";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spTraer_Control_preseleccionDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected spTraer_Control_preseleccionDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Cod_ProductoColumn {
+                get {
+                    return this.columnCod_Producto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Des_ProductoColumn {
+                get {
+                    return this.columnDes_Producto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Control_preseleccionRow this[int index] {
+                get {
+                    return ((spTraer_Control_preseleccionRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Control_preseleccionRowChangeEventHandler spTraer_Control_preseleccionRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Control_preseleccionRowChangeEventHandler spTraer_Control_preseleccionRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Control_preseleccionRowChangeEventHandler spTraer_Control_preseleccionRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Control_preseleccionRowChangeEventHandler spTraer_Control_preseleccionRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddspTraer_Control_preseleccionRow(spTraer_Control_preseleccionRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Control_preseleccionRow AddspTraer_Control_preseleccionRow(string Cod_Producto, string Des_Producto) {
+                spTraer_Control_preseleccionRow rowspTraer_Control_preseleccionRow = ((spTraer_Control_preseleccionRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Cod_Producto,
+                        Des_Producto};
+                rowspTraer_Control_preseleccionRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowspTraer_Control_preseleccionRow);
+                return rowspTraer_Control_preseleccionRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                spTraer_Control_preseleccionDataTable cln = ((spTraer_Control_preseleccionDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new spTraer_Control_preseleccionDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnCod_Producto = base.Columns["Cod_Producto"];
+                this.columnDes_Producto = base.Columns["Des_Producto"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnCod_Producto = new global::System.Data.DataColumn("Cod_Producto", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCod_Producto);
+                this.columnDes_Producto = new global::System.Data.DataColumn("Des_Producto", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDes_Producto);
+                this.columnCod_Producto.ReadOnly = true;
+                this.columnCod_Producto.MaxLength = 10;
+                this.columnDes_Producto.ReadOnly = true;
+                this.columnDes_Producto.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Control_preseleccionRow NewspTraer_Control_preseleccionRow() {
+                return ((spTraer_Control_preseleccionRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new spTraer_Control_preseleccionRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(spTraer_Control_preseleccionRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.spTraer_Control_preseleccionRowChanged != null)) {
+                    this.spTraer_Control_preseleccionRowChanged(this, new spTraer_Control_preseleccionRowChangeEvent(((spTraer_Control_preseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.spTraer_Control_preseleccionRowChanging != null)) {
+                    this.spTraer_Control_preseleccionRowChanging(this, new spTraer_Control_preseleccionRowChangeEvent(((spTraer_Control_preseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.spTraer_Control_preseleccionRowDeleted != null)) {
+                    this.spTraer_Control_preseleccionRowDeleted(this, new spTraer_Control_preseleccionRowChangeEvent(((spTraer_Control_preseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.spTraer_Control_preseleccionRowDeleting != null)) {
+                    this.spTraer_Control_preseleccionRowDeleting(this, new spTraer_Control_preseleccionRowChangeEvent(((spTraer_Control_preseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemovespTraer_Control_preseleccionRow(spTraer_Control_preseleccionRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "spTraer_Control_preseleccionDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class spTraer_Control_preseleccion_codDataTable : global::System.Data.TypedTableBase<spTraer_Control_preseleccion_codRow> {
+            
+            private global::System.Data.DataColumn columnCod_Producto;
+            
+            private global::System.Data.DataColumn columnDes_Producto;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Control_preseleccion_codDataTable() {
+                this.TableName = "spTraer_Control_preseleccion_cod";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spTraer_Control_preseleccion_codDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected spTraer_Control_preseleccion_codDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Cod_ProductoColumn {
+                get {
+                    return this.columnCod_Producto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Des_ProductoColumn {
+                get {
+                    return this.columnDes_Producto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Control_preseleccion_codRow this[int index] {
+                get {
+                    return ((spTraer_Control_preseleccion_codRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Control_preseleccion_codRowChangeEventHandler spTraer_Control_preseleccion_codRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Control_preseleccion_codRowChangeEventHandler spTraer_Control_preseleccion_codRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Control_preseleccion_codRowChangeEventHandler spTraer_Control_preseleccion_codRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Control_preseleccion_codRowChangeEventHandler spTraer_Control_preseleccion_codRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddspTraer_Control_preseleccion_codRow(spTraer_Control_preseleccion_codRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Control_preseleccion_codRow AddspTraer_Control_preseleccion_codRow(string Cod_Producto, string Des_Producto) {
+                spTraer_Control_preseleccion_codRow rowspTraer_Control_preseleccion_codRow = ((spTraer_Control_preseleccion_codRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Cod_Producto,
+                        Des_Producto};
+                rowspTraer_Control_preseleccion_codRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowspTraer_Control_preseleccion_codRow);
+                return rowspTraer_Control_preseleccion_codRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Control_preseleccion_codRow FindByCod_Producto(string Cod_Producto) {
+                return ((spTraer_Control_preseleccion_codRow)(this.Rows.Find(new object[] {
+                            Cod_Producto})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                spTraer_Control_preseleccion_codDataTable cln = ((spTraer_Control_preseleccion_codDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new spTraer_Control_preseleccion_codDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnCod_Producto = base.Columns["Cod_Producto"];
+                this.columnDes_Producto = base.Columns["Des_Producto"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnCod_Producto = new global::System.Data.DataColumn("Cod_Producto", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCod_Producto);
+                this.columnDes_Producto = new global::System.Data.DataColumn("Des_Producto", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDes_Producto);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnCod_Producto}, true));
+                this.columnCod_Producto.AllowDBNull = false;
+                this.columnCod_Producto.Unique = true;
+                this.columnCod_Producto.MaxLength = 10;
+                this.columnDes_Producto.AllowDBNull = false;
+                this.columnDes_Producto.MaxLength = 50;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Control_preseleccion_codRow NewspTraer_Control_preseleccion_codRow() {
+                return ((spTraer_Control_preseleccion_codRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new spTraer_Control_preseleccion_codRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(spTraer_Control_preseleccion_codRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.spTraer_Control_preseleccion_codRowChanged != null)) {
+                    this.spTraer_Control_preseleccion_codRowChanged(this, new spTraer_Control_preseleccion_codRowChangeEvent(((spTraer_Control_preseleccion_codRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.spTraer_Control_preseleccion_codRowChanging != null)) {
+                    this.spTraer_Control_preseleccion_codRowChanging(this, new spTraer_Control_preseleccion_codRowChangeEvent(((spTraer_Control_preseleccion_codRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.spTraer_Control_preseleccion_codRowDeleted != null)) {
+                    this.spTraer_Control_preseleccion_codRowDeleted(this, new spTraer_Control_preseleccion_codRowChangeEvent(((spTraer_Control_preseleccion_codRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.spTraer_Control_preseleccion_codRowDeleting != null)) {
+                    this.spTraer_Control_preseleccion_codRowDeleting(this, new spTraer_Control_preseleccion_codRowChangeEvent(((spTraer_Control_preseleccion_codRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemovespTraer_Control_preseleccion_codRow(spTraer_Control_preseleccion_codRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "spTraer_Control_preseleccion_codDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -7763,7 +9323,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -8105,7 +9665,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -8354,7 +9914,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -8760,7 +10320,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -9024,7 +10584,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -9303,7 +10863,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -9820,7 +11380,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -10189,7 +11749,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -10558,7 +12118,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -10937,7 +12497,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -11185,7 +12745,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -11433,7 +12993,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -11681,7 +13241,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -11929,7 +13489,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -11948,6 +13508,254 @@ namespace Anakena_2017 {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "spTraer_NumAnalisis_Calidad_PPMDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class spTraer_NumAnalisis_Calidad_PreseleccionDataTable : global::System.Data.TypedTableBase<spTraer_NumAnalisis_Calidad_PreseleccionRow> {
+            
+            private global::System.Data.DataColumn columnColumn1;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_NumAnalisis_Calidad_PreseleccionDataTable() {
+                this.TableName = "spTraer_NumAnalisis_Calidad_Preseleccion";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spTraer_NumAnalisis_Calidad_PreseleccionDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected spTraer_NumAnalisis_Calidad_PreseleccionDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Column1Column {
+                get {
+                    return this.columnColumn1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_NumAnalisis_Calidad_PreseleccionRow this[int index] {
+                get {
+                    return ((spTraer_NumAnalisis_Calidad_PreseleccionRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_NumAnalisis_Calidad_PreseleccionRowChangeEventHandler spTraer_NumAnalisis_Calidad_PreseleccionRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_NumAnalisis_Calidad_PreseleccionRowChangeEventHandler spTraer_NumAnalisis_Calidad_PreseleccionRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_NumAnalisis_Calidad_PreseleccionRowChangeEventHandler spTraer_NumAnalisis_Calidad_PreseleccionRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_NumAnalisis_Calidad_PreseleccionRowChangeEventHandler spTraer_NumAnalisis_Calidad_PreseleccionRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddspTraer_NumAnalisis_Calidad_PreseleccionRow(spTraer_NumAnalisis_Calidad_PreseleccionRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_NumAnalisis_Calidad_PreseleccionRow AddspTraer_NumAnalisis_Calidad_PreseleccionRow(short Column1) {
+                spTraer_NumAnalisis_Calidad_PreseleccionRow rowspTraer_NumAnalisis_Calidad_PreseleccionRow = ((spTraer_NumAnalisis_Calidad_PreseleccionRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Column1};
+                rowspTraer_NumAnalisis_Calidad_PreseleccionRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowspTraer_NumAnalisis_Calidad_PreseleccionRow);
+                return rowspTraer_NumAnalisis_Calidad_PreseleccionRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                spTraer_NumAnalisis_Calidad_PreseleccionDataTable cln = ((spTraer_NumAnalisis_Calidad_PreseleccionDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new spTraer_NumAnalisis_Calidad_PreseleccionDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnColumn1 = base.Columns["Column1"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnColumn1 = new global::System.Data.DataColumn("Column1", typeof(short), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnColumn1);
+                this.columnColumn1.ReadOnly = true;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_NumAnalisis_Calidad_PreseleccionRow NewspTraer_NumAnalisis_Calidad_PreseleccionRow() {
+                return ((spTraer_NumAnalisis_Calidad_PreseleccionRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new spTraer_NumAnalisis_Calidad_PreseleccionRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(spTraer_NumAnalisis_Calidad_PreseleccionRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.spTraer_NumAnalisis_Calidad_PreseleccionRowChanged != null)) {
+                    this.spTraer_NumAnalisis_Calidad_PreseleccionRowChanged(this, new spTraer_NumAnalisis_Calidad_PreseleccionRowChangeEvent(((spTraer_NumAnalisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.spTraer_NumAnalisis_Calidad_PreseleccionRowChanging != null)) {
+                    this.spTraer_NumAnalisis_Calidad_PreseleccionRowChanging(this, new spTraer_NumAnalisis_Calidad_PreseleccionRowChangeEvent(((spTraer_NumAnalisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.spTraer_NumAnalisis_Calidad_PreseleccionRowDeleted != null)) {
+                    this.spTraer_NumAnalisis_Calidad_PreseleccionRowDeleted(this, new spTraer_NumAnalisis_Calidad_PreseleccionRowChangeEvent(((spTraer_NumAnalisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.spTraer_NumAnalisis_Calidad_PreseleccionRowDeleting != null)) {
+                    this.spTraer_NumAnalisis_Calidad_PreseleccionRowDeleting(this, new spTraer_NumAnalisis_Calidad_PreseleccionRowChangeEvent(((spTraer_NumAnalisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemovespTraer_NumAnalisis_Calidad_PreseleccionRow(spTraer_NumAnalisis_Calidad_PreseleccionRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "spTraer_NumAnalisis_Calidad_PreseleccionDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -12177,7 +13985,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -12470,7 +14278,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -12764,7 +14572,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -13107,7 +14915,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -13355,7 +15163,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -13650,7 +15458,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -13898,7 +15706,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -14221,7 +16029,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -14604,7 +16412,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -14851,7 +16659,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -15110,7 +16918,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -15463,7 +17271,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -15836,7 +17644,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -16142,7 +17950,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -16405,7 +18213,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -16684,7 +18492,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -17457,7 +19265,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -17704,7 +19512,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -17951,7 +19759,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -18198,7 +20006,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -18446,7 +20254,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -18694,7 +20502,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -18971,7 +20779,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -19235,7 +21043,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -20754,7 +22562,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -22273,7 +24081,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -22550,7 +24358,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -23788,7 +25596,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -23807,6 +25615,1380 @@ namespace Anakena_2017 {
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
                 attribute2.FixedValue = "spTraerReporteDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class spTraerReporte_Analisis_Calidad_PMMDataTable : global::System.Data.TypedTableBase<spTraerReporte_Analisis_Calidad_PMMRow> {
+            
+            private global::System.Data.DataColumn columnAnalisis;
+            
+            private global::System.Data.DataColumn columnFecha;
+            
+            private global::System.Data.DataColumn columnId_Tarja;
+            
+            private global::System.Data.DataColumn columnBins;
+            
+            private global::System.Data.DataColumn columnTurno;
+            
+            private global::System.Data.DataColumn columnProceso;
+            
+            private global::System.Data.DataColumn columnCod_Producto_Tarja;
+            
+            private global::System.Data.DataColumn columnDes_Producto;
+            
+            private global::System.Data.DataColumn columnPeso_Muestra;
+            
+            private global::System.Data.DataColumn columnCascara;
+            
+            private global::System.Data.DataColumn columnMat_Extraña;
+            
+            private global::System.Data.DataColumn columnHalves;
+            
+            private global::System.Data.DataColumn columnLarge_Pieces;
+            
+            private global::System.Data.DataColumn columnMedium_Pieces;
+            
+            private global::System.Data.DataColumn columnSmall_Pieces;
+            
+            private global::System.Data.DataColumn columnExtra_Light;
+            
+            private global::System.Data.DataColumn columnLight;
+            
+            private global::System.Data.DataColumn columnLight_Ambar;
+            
+            private global::System.Data.DataColumn columnAmbar;
+            
+            private global::System.Data.DataColumn columnAmarillo;
+            
+            private global::System.Data.DataColumn columnDefectos;
+            
+            private global::System.Data.DataColumn columnObservacion;
+            
+            private global::System.Data.DataColumn columnObservacion_Mat_Extraña;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraerReporte_Analisis_Calidad_PMMDataTable() {
+                this.TableName = "spTraerReporte_Analisis_Calidad_PMM";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spTraerReporte_Analisis_Calidad_PMMDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected spTraerReporte_Analisis_Calidad_PMMDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AnalisisColumn {
+                get {
+                    return this.columnAnalisis;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FechaColumn {
+                get {
+                    return this.columnFecha;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Id_TarjaColumn {
+                get {
+                    return this.columnId_Tarja;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn BinsColumn {
+                get {
+                    return this.columnBins;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TurnoColumn {
+                get {
+                    return this.columnTurno;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ProcesoColumn {
+                get {
+                    return this.columnProceso;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Cod_Producto_TarjaColumn {
+                get {
+                    return this.columnCod_Producto_Tarja;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Des_ProductoColumn {
+                get {
+                    return this.columnDes_Producto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Peso_MuestraColumn {
+                get {
+                    return this.columnPeso_Muestra;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CascaraColumn {
+                get {
+                    return this.columnCascara;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Mat_ExtrañaColumn {
+                get {
+                    return this.columnMat_Extraña;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn HalvesColumn {
+                get {
+                    return this.columnHalves;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Large_PiecesColumn {
+                get {
+                    return this.columnLarge_Pieces;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Medium_PiecesColumn {
+                get {
+                    return this.columnMedium_Pieces;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Small_PiecesColumn {
+                get {
+                    return this.columnSmall_Pieces;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Extra_LightColumn {
+                get {
+                    return this.columnExtra_Light;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LightColumn {
+                get {
+                    return this.columnLight;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Light_AmbarColumn {
+                get {
+                    return this.columnLight_Ambar;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AmbarColumn {
+                get {
+                    return this.columnAmbar;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AmarilloColumn {
+                get {
+                    return this.columnAmarillo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DefectosColumn {
+                get {
+                    return this.columnDefectos;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ObservacionColumn {
+                get {
+                    return this.columnObservacion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Observacion_Mat_ExtrañaColumn {
+                get {
+                    return this.columnObservacion_Mat_Extraña;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraerReporte_Analisis_Calidad_PMMRow this[int index] {
+                get {
+                    return ((spTraerReporte_Analisis_Calidad_PMMRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraerReporte_Analisis_Calidad_PMMRowChangeEventHandler spTraerReporte_Analisis_Calidad_PMMRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraerReporte_Analisis_Calidad_PMMRowChangeEventHandler spTraerReporte_Analisis_Calidad_PMMRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraerReporte_Analisis_Calidad_PMMRowChangeEventHandler spTraerReporte_Analisis_Calidad_PMMRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraerReporte_Analisis_Calidad_PMMRowChangeEventHandler spTraerReporte_Analisis_Calidad_PMMRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddspTraerReporte_Analisis_Calidad_PMMRow(spTraerReporte_Analisis_Calidad_PMMRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraerReporte_Analisis_Calidad_PMMRow AddspTraerReporte_Analisis_Calidad_PMMRow(
+                        System.DateTime Fecha, 
+                        string Id_Tarja, 
+                        int Bins, 
+                        string Turno, 
+                        decimal Proceso, 
+                        string Cod_Producto_Tarja, 
+                        string Des_Producto, 
+                        double Peso_Muestra, 
+                        double Cascara, 
+                        double Mat_Extraña, 
+                        double Halves, 
+                        double Large_Pieces, 
+                        double Medium_Pieces, 
+                        double Small_Pieces, 
+                        double Extra_Light, 
+                        double Light, 
+                        double Light_Ambar, 
+                        double Ambar, 
+                        double Amarillo, 
+                        double Defectos, 
+                        string Observacion, 
+                        string Observacion_Mat_Extraña) {
+                spTraerReporte_Analisis_Calidad_PMMRow rowspTraerReporte_Analisis_Calidad_PMMRow = ((spTraerReporte_Analisis_Calidad_PMMRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Fecha,
+                        Id_Tarja,
+                        Bins,
+                        Turno,
+                        Proceso,
+                        Cod_Producto_Tarja,
+                        Des_Producto,
+                        Peso_Muestra,
+                        Cascara,
+                        Mat_Extraña,
+                        Halves,
+                        Large_Pieces,
+                        Medium_Pieces,
+                        Small_Pieces,
+                        Extra_Light,
+                        Light,
+                        Light_Ambar,
+                        Ambar,
+                        Amarillo,
+                        Defectos,
+                        Observacion,
+                        Observacion_Mat_Extraña};
+                rowspTraerReporte_Analisis_Calidad_PMMRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowspTraerReporte_Analisis_Calidad_PMMRow);
+                return rowspTraerReporte_Analisis_Calidad_PMMRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraerReporte_Analisis_Calidad_PMMRow FindByAnalisis(short Analisis) {
+                return ((spTraerReporte_Analisis_Calidad_PMMRow)(this.Rows.Find(new object[] {
+                            Analisis})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                spTraerReporte_Analisis_Calidad_PMMDataTable cln = ((spTraerReporte_Analisis_Calidad_PMMDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new spTraerReporte_Analisis_Calidad_PMMDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnAnalisis = base.Columns["Analisis"];
+                this.columnFecha = base.Columns["Fecha"];
+                this.columnId_Tarja = base.Columns["Id_Tarja"];
+                this.columnBins = base.Columns["Bins"];
+                this.columnTurno = base.Columns["Turno"];
+                this.columnProceso = base.Columns["Proceso"];
+                this.columnCod_Producto_Tarja = base.Columns["Cod_Producto_Tarja"];
+                this.columnDes_Producto = base.Columns["Des_Producto"];
+                this.columnPeso_Muestra = base.Columns["Peso_Muestra"];
+                this.columnCascara = base.Columns["Cascara"];
+                this.columnMat_Extraña = base.Columns["Mat_Extraña"];
+                this.columnHalves = base.Columns["Halves"];
+                this.columnLarge_Pieces = base.Columns["Large_Pieces"];
+                this.columnMedium_Pieces = base.Columns["Medium_Pieces"];
+                this.columnSmall_Pieces = base.Columns["Small_Pieces"];
+                this.columnExtra_Light = base.Columns["Extra_Light"];
+                this.columnLight = base.Columns["Light"];
+                this.columnLight_Ambar = base.Columns["Light_Ambar"];
+                this.columnAmbar = base.Columns["Ambar"];
+                this.columnAmarillo = base.Columns["Amarillo"];
+                this.columnDefectos = base.Columns["Defectos"];
+                this.columnObservacion = base.Columns["Observacion"];
+                this.columnObservacion_Mat_Extraña = base.Columns["Observacion_Mat_Extraña"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnAnalisis = new global::System.Data.DataColumn("Analisis", typeof(short), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAnalisis);
+                this.columnFecha = new global::System.Data.DataColumn("Fecha", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFecha);
+                this.columnId_Tarja = new global::System.Data.DataColumn("Id_Tarja", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnId_Tarja);
+                this.columnBins = new global::System.Data.DataColumn("Bins", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBins);
+                this.columnTurno = new global::System.Data.DataColumn("Turno", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTurno);
+                this.columnProceso = new global::System.Data.DataColumn("Proceso", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProceso);
+                this.columnCod_Producto_Tarja = new global::System.Data.DataColumn("Cod_Producto_Tarja", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCod_Producto_Tarja);
+                this.columnDes_Producto = new global::System.Data.DataColumn("Des_Producto", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDes_Producto);
+                this.columnPeso_Muestra = new global::System.Data.DataColumn("Peso_Muestra", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPeso_Muestra);
+                this.columnCascara = new global::System.Data.DataColumn("Cascara", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCascara);
+                this.columnMat_Extraña = new global::System.Data.DataColumn("Mat_Extraña", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMat_Extraña);
+                this.columnHalves = new global::System.Data.DataColumn("Halves", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHalves);
+                this.columnLarge_Pieces = new global::System.Data.DataColumn("Large_Pieces", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLarge_Pieces);
+                this.columnMedium_Pieces = new global::System.Data.DataColumn("Medium_Pieces", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMedium_Pieces);
+                this.columnSmall_Pieces = new global::System.Data.DataColumn("Small_Pieces", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSmall_Pieces);
+                this.columnExtra_Light = new global::System.Data.DataColumn("Extra_Light", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnExtra_Light);
+                this.columnLight = new global::System.Data.DataColumn("Light", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLight);
+                this.columnLight_Ambar = new global::System.Data.DataColumn("Light_Ambar", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLight_Ambar);
+                this.columnAmbar = new global::System.Data.DataColumn("Ambar", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAmbar);
+                this.columnAmarillo = new global::System.Data.DataColumn("Amarillo", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAmarillo);
+                this.columnDefectos = new global::System.Data.DataColumn("Defectos", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDefectos);
+                this.columnObservacion = new global::System.Data.DataColumn("Observacion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnObservacion);
+                this.columnObservacion_Mat_Extraña = new global::System.Data.DataColumn("Observacion_Mat_Extraña", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnObservacion_Mat_Extraña);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnAnalisis}, true));
+                this.columnAnalisis.AutoIncrement = true;
+                this.columnAnalisis.AllowDBNull = false;
+                this.columnAnalisis.ReadOnly = true;
+                this.columnAnalisis.Unique = true;
+                this.columnFecha.AllowDBNull = false;
+                this.columnId_Tarja.MaxLength = 10;
+                this.columnBins.AllowDBNull = false;
+                this.columnTurno.AllowDBNull = false;
+                this.columnTurno.MaxLength = 1;
+                this.columnCod_Producto_Tarja.AllowDBNull = false;
+                this.columnCod_Producto_Tarja.MaxLength = 10;
+                this.columnDes_Producto.AllowDBNull = false;
+                this.columnDes_Producto.MaxLength = 50;
+                this.columnPeso_Muestra.AllowDBNull = false;
+                this.columnCascara.AllowDBNull = false;
+                this.columnMat_Extraña.AllowDBNull = false;
+                this.columnHalves.AllowDBNull = false;
+                this.columnLarge_Pieces.AllowDBNull = false;
+                this.columnMedium_Pieces.AllowDBNull = false;
+                this.columnSmall_Pieces.AllowDBNull = false;
+                this.columnExtra_Light.AllowDBNull = false;
+                this.columnLight.AllowDBNull = false;
+                this.columnLight_Ambar.AllowDBNull = false;
+                this.columnAmbar.AllowDBNull = false;
+                this.columnAmarillo.AllowDBNull = false;
+                this.columnDefectos.AllowDBNull = false;
+                this.columnObservacion.AllowDBNull = false;
+                this.columnObservacion.MaxLength = 2147483647;
+                this.columnObservacion_Mat_Extraña.MaxLength = 2147483647;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraerReporte_Analisis_Calidad_PMMRow NewspTraerReporte_Analisis_Calidad_PMMRow() {
+                return ((spTraerReporte_Analisis_Calidad_PMMRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new spTraerReporte_Analisis_Calidad_PMMRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(spTraerReporte_Analisis_Calidad_PMMRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.spTraerReporte_Analisis_Calidad_PMMRowChanged != null)) {
+                    this.spTraerReporte_Analisis_Calidad_PMMRowChanged(this, new spTraerReporte_Analisis_Calidad_PMMRowChangeEvent(((spTraerReporte_Analisis_Calidad_PMMRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.spTraerReporte_Analisis_Calidad_PMMRowChanging != null)) {
+                    this.spTraerReporte_Analisis_Calidad_PMMRowChanging(this, new spTraerReporte_Analisis_Calidad_PMMRowChangeEvent(((spTraerReporte_Analisis_Calidad_PMMRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.spTraerReporte_Analisis_Calidad_PMMRowDeleted != null)) {
+                    this.spTraerReporte_Analisis_Calidad_PMMRowDeleted(this, new spTraerReporte_Analisis_Calidad_PMMRowChangeEvent(((spTraerReporte_Analisis_Calidad_PMMRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.spTraerReporte_Analisis_Calidad_PMMRowDeleting != null)) {
+                    this.spTraerReporte_Analisis_Calidad_PMMRowDeleting(this, new spTraerReporte_Analisis_Calidad_PMMRowChangeEvent(((spTraerReporte_Analisis_Calidad_PMMRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemovespTraerReporte_Analisis_Calidad_PMMRow(spTraerReporte_Analisis_Calidad_PMMRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "spTraerReporte_Analisis_Calidad_PMMDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class spTraerReporte_Analisis_Calidad_PreseleccionDataTable : global::System.Data.TypedTableBase<spTraerReporte_Analisis_Calidad_PreseleccionRow> {
+            
+            private global::System.Data.DataColumn columnAnalisis;
+            
+            private global::System.Data.DataColumn columnFecha;
+            
+            private global::System.Data.DataColumn columnId_Tarja;
+            
+            private global::System.Data.DataColumn columnBins;
+            
+            private global::System.Data.DataColumn columnTurno;
+            
+            private global::System.Data.DataColumn columnProceso;
+            
+            private global::System.Data.DataColumn columnCod_Producto_Tarja;
+            
+            private global::System.Data.DataColumn columnDes_Producto;
+            
+            private global::System.Data.DataColumn columnPeso_Muestra;
+            
+            private global::System.Data.DataColumn columnCascara;
+            
+            private global::System.Data.DataColumn columnSeptum;
+            
+            private global::System.Data.DataColumn columnMat_Extraña;
+            
+            private global::System.Data.DataColumn columnHalves;
+            
+            private global::System.Data.DataColumn columnLarge_Pieces;
+            
+            private global::System.Data.DataColumn columnMedium_Pieces;
+            
+            private global::System.Data.DataColumn columnSmall_Pieces;
+            
+            private global::System.Data.DataColumn columnExtra_Light;
+            
+            private global::System.Data.DataColumn columnLight;
+            
+            private global::System.Data.DataColumn columnLight_Ambar;
+            
+            private global::System.Data.DataColumn columnAmbar;
+            
+            private global::System.Data.DataColumn columnAmarillo;
+            
+            private global::System.Data.DataColumn columnDefectos;
+            
+            private global::System.Data.DataColumn columnReseca_Leve;
+            
+            private global::System.Data.DataColumn columnReseca_Grave;
+            
+            private global::System.Data.DataColumn columnDaño_Insecto;
+            
+            private global::System.Data.DataColumn columnMancha_Agua;
+            
+            private global::System.Data.DataColumn columnHongo_Inactivo;
+            
+            private global::System.Data.DataColumn columnHongo_Activo;
+            
+            private global::System.Data.DataColumn columnObservacion;
+            
+            private global::System.Data.DataColumn columnObservacion_Mat_Extraña;
+            
+            private global::System.Data.DataColumn columnObservacion_Cascara;
+            
+            private global::System.Data.DataColumn columnObservacion_Septum;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraerReporte_Analisis_Calidad_PreseleccionDataTable() {
+                this.TableName = "spTraerReporte_Analisis_Calidad_Preseleccion";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spTraerReporte_Analisis_Calidad_PreseleccionDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected spTraerReporte_Analisis_Calidad_PreseleccionDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AnalisisColumn {
+                get {
+                    return this.columnAnalisis;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FechaColumn {
+                get {
+                    return this.columnFecha;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Id_TarjaColumn {
+                get {
+                    return this.columnId_Tarja;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn BinsColumn {
+                get {
+                    return this.columnBins;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TurnoColumn {
+                get {
+                    return this.columnTurno;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ProcesoColumn {
+                get {
+                    return this.columnProceso;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Cod_Producto_TarjaColumn {
+                get {
+                    return this.columnCod_Producto_Tarja;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Des_ProductoColumn {
+                get {
+                    return this.columnDes_Producto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Peso_MuestraColumn {
+                get {
+                    return this.columnPeso_Muestra;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CascaraColumn {
+                get {
+                    return this.columnCascara;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SeptumColumn {
+                get {
+                    return this.columnSeptum;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Mat_ExtrañaColumn {
+                get {
+                    return this.columnMat_Extraña;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn HalvesColumn {
+                get {
+                    return this.columnHalves;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Large_PiecesColumn {
+                get {
+                    return this.columnLarge_Pieces;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Medium_PiecesColumn {
+                get {
+                    return this.columnMedium_Pieces;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Small_PiecesColumn {
+                get {
+                    return this.columnSmall_Pieces;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Extra_LightColumn {
+                get {
+                    return this.columnExtra_Light;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LightColumn {
+                get {
+                    return this.columnLight;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Light_AmbarColumn {
+                get {
+                    return this.columnLight_Ambar;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AmbarColumn {
+                get {
+                    return this.columnAmbar;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AmarilloColumn {
+                get {
+                    return this.columnAmarillo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DefectosColumn {
+                get {
+                    return this.columnDefectos;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Reseca_LeveColumn {
+                get {
+                    return this.columnReseca_Leve;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Reseca_GraveColumn {
+                get {
+                    return this.columnReseca_Grave;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Daño_InsectoColumn {
+                get {
+                    return this.columnDaño_Insecto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Mancha_AguaColumn {
+                get {
+                    return this.columnMancha_Agua;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Hongo_InactivoColumn {
+                get {
+                    return this.columnHongo_Inactivo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Hongo_ActivoColumn {
+                get {
+                    return this.columnHongo_Activo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ObservacionColumn {
+                get {
+                    return this.columnObservacion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Observacion_Mat_ExtrañaColumn {
+                get {
+                    return this.columnObservacion_Mat_Extraña;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Observacion_CascaraColumn {
+                get {
+                    return this.columnObservacion_Cascara;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Observacion_SeptumColumn {
+                get {
+                    return this.columnObservacion_Septum;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraerReporte_Analisis_Calidad_PreseleccionRow this[int index] {
+                get {
+                    return ((spTraerReporte_Analisis_Calidad_PreseleccionRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraerReporte_Analisis_Calidad_PreseleccionRowChangeEventHandler spTraerReporte_Analisis_Calidad_PreseleccionRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraerReporte_Analisis_Calidad_PreseleccionRowChangeEventHandler spTraerReporte_Analisis_Calidad_PreseleccionRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraerReporte_Analisis_Calidad_PreseleccionRowChangeEventHandler spTraerReporte_Analisis_Calidad_PreseleccionRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraerReporte_Analisis_Calidad_PreseleccionRowChangeEventHandler spTraerReporte_Analisis_Calidad_PreseleccionRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddspTraerReporte_Analisis_Calidad_PreseleccionRow(spTraerReporte_Analisis_Calidad_PreseleccionRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraerReporte_Analisis_Calidad_PreseleccionRow AddspTraerReporte_Analisis_Calidad_PreseleccionRow(
+                        System.DateTime Fecha, 
+                        string Id_Tarja, 
+                        int Bins, 
+                        string Turno, 
+                        decimal Proceso, 
+                        string Cod_Producto_Tarja, 
+                        string Des_Producto, 
+                        double Peso_Muestra, 
+                        double Cascara, 
+                        double Septum, 
+                        double Mat_Extraña, 
+                        double Halves, 
+                        double Large_Pieces, 
+                        double Medium_Pieces, 
+                        double Small_Pieces, 
+                        double Extra_Light, 
+                        double Light, 
+                        double Light_Ambar, 
+                        double Ambar, 
+                        double Amarillo, 
+                        double Defectos, 
+                        double Reseca_Leve, 
+                        double Reseca_Grave, 
+                        double Daño_Insecto, 
+                        double Mancha_Agua, 
+                        double Hongo_Inactivo, 
+                        double Hongo_Activo, 
+                        string Observacion, 
+                        string Observacion_Mat_Extraña, 
+                        string Observacion_Cascara, 
+                        string Observacion_Septum) {
+                spTraerReporte_Analisis_Calidad_PreseleccionRow rowspTraerReporte_Analisis_Calidad_PreseleccionRow = ((spTraerReporte_Analisis_Calidad_PreseleccionRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Fecha,
+                        Id_Tarja,
+                        Bins,
+                        Turno,
+                        Proceso,
+                        Cod_Producto_Tarja,
+                        Des_Producto,
+                        Peso_Muestra,
+                        Cascara,
+                        Septum,
+                        Mat_Extraña,
+                        Halves,
+                        Large_Pieces,
+                        Medium_Pieces,
+                        Small_Pieces,
+                        Extra_Light,
+                        Light,
+                        Light_Ambar,
+                        Ambar,
+                        Amarillo,
+                        Defectos,
+                        Reseca_Leve,
+                        Reseca_Grave,
+                        Daño_Insecto,
+                        Mancha_Agua,
+                        Hongo_Inactivo,
+                        Hongo_Activo,
+                        Observacion,
+                        Observacion_Mat_Extraña,
+                        Observacion_Cascara,
+                        Observacion_Septum};
+                rowspTraerReporte_Analisis_Calidad_PreseleccionRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowspTraerReporte_Analisis_Calidad_PreseleccionRow);
+                return rowspTraerReporte_Analisis_Calidad_PreseleccionRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraerReporte_Analisis_Calidad_PreseleccionRow FindByAnalisis(short Analisis) {
+                return ((spTraerReporte_Analisis_Calidad_PreseleccionRow)(this.Rows.Find(new object[] {
+                            Analisis})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                spTraerReporte_Analisis_Calidad_PreseleccionDataTable cln = ((spTraerReporte_Analisis_Calidad_PreseleccionDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new spTraerReporte_Analisis_Calidad_PreseleccionDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnAnalisis = base.Columns["Analisis"];
+                this.columnFecha = base.Columns["Fecha"];
+                this.columnId_Tarja = base.Columns["Id_Tarja"];
+                this.columnBins = base.Columns["Bins"];
+                this.columnTurno = base.Columns["Turno"];
+                this.columnProceso = base.Columns["Proceso"];
+                this.columnCod_Producto_Tarja = base.Columns["Cod_Producto_Tarja"];
+                this.columnDes_Producto = base.Columns["Des_Producto"];
+                this.columnPeso_Muestra = base.Columns["Peso_Muestra"];
+                this.columnCascara = base.Columns["Cascara"];
+                this.columnSeptum = base.Columns["Septum"];
+                this.columnMat_Extraña = base.Columns["Mat_Extraña"];
+                this.columnHalves = base.Columns["Halves"];
+                this.columnLarge_Pieces = base.Columns["Large_Pieces"];
+                this.columnMedium_Pieces = base.Columns["Medium_Pieces"];
+                this.columnSmall_Pieces = base.Columns["Small_Pieces"];
+                this.columnExtra_Light = base.Columns["Extra_Light"];
+                this.columnLight = base.Columns["Light"];
+                this.columnLight_Ambar = base.Columns["Light_Ambar"];
+                this.columnAmbar = base.Columns["Ambar"];
+                this.columnAmarillo = base.Columns["Amarillo"];
+                this.columnDefectos = base.Columns["Defectos"];
+                this.columnReseca_Leve = base.Columns["Reseca_Leve"];
+                this.columnReseca_Grave = base.Columns["Reseca_Grave"];
+                this.columnDaño_Insecto = base.Columns["Daño_Insecto"];
+                this.columnMancha_Agua = base.Columns["Mancha_Agua"];
+                this.columnHongo_Inactivo = base.Columns["Hongo_Inactivo"];
+                this.columnHongo_Activo = base.Columns["Hongo_Activo"];
+                this.columnObservacion = base.Columns["Observacion"];
+                this.columnObservacion_Mat_Extraña = base.Columns["Observacion_Mat_Extraña"];
+                this.columnObservacion_Cascara = base.Columns["Observacion_Cascara"];
+                this.columnObservacion_Septum = base.Columns["Observacion_Septum"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnAnalisis = new global::System.Data.DataColumn("Analisis", typeof(short), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAnalisis);
+                this.columnFecha = new global::System.Data.DataColumn("Fecha", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFecha);
+                this.columnId_Tarja = new global::System.Data.DataColumn("Id_Tarja", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnId_Tarja);
+                this.columnBins = new global::System.Data.DataColumn("Bins", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBins);
+                this.columnTurno = new global::System.Data.DataColumn("Turno", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTurno);
+                this.columnProceso = new global::System.Data.DataColumn("Proceso", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProceso);
+                this.columnCod_Producto_Tarja = new global::System.Data.DataColumn("Cod_Producto_Tarja", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCod_Producto_Tarja);
+                this.columnDes_Producto = new global::System.Data.DataColumn("Des_Producto", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDes_Producto);
+                this.columnPeso_Muestra = new global::System.Data.DataColumn("Peso_Muestra", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPeso_Muestra);
+                this.columnCascara = new global::System.Data.DataColumn("Cascara", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCascara);
+                this.columnSeptum = new global::System.Data.DataColumn("Septum", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSeptum);
+                this.columnMat_Extraña = new global::System.Data.DataColumn("Mat_Extraña", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMat_Extraña);
+                this.columnHalves = new global::System.Data.DataColumn("Halves", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHalves);
+                this.columnLarge_Pieces = new global::System.Data.DataColumn("Large_Pieces", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLarge_Pieces);
+                this.columnMedium_Pieces = new global::System.Data.DataColumn("Medium_Pieces", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMedium_Pieces);
+                this.columnSmall_Pieces = new global::System.Data.DataColumn("Small_Pieces", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSmall_Pieces);
+                this.columnExtra_Light = new global::System.Data.DataColumn("Extra_Light", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnExtra_Light);
+                this.columnLight = new global::System.Data.DataColumn("Light", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLight);
+                this.columnLight_Ambar = new global::System.Data.DataColumn("Light_Ambar", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLight_Ambar);
+                this.columnAmbar = new global::System.Data.DataColumn("Ambar", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAmbar);
+                this.columnAmarillo = new global::System.Data.DataColumn("Amarillo", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAmarillo);
+                this.columnDefectos = new global::System.Data.DataColumn("Defectos", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDefectos);
+                this.columnReseca_Leve = new global::System.Data.DataColumn("Reseca_Leve", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnReseca_Leve);
+                this.columnReseca_Grave = new global::System.Data.DataColumn("Reseca_Grave", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnReseca_Grave);
+                this.columnDaño_Insecto = new global::System.Data.DataColumn("Daño_Insecto", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDaño_Insecto);
+                this.columnMancha_Agua = new global::System.Data.DataColumn("Mancha_Agua", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMancha_Agua);
+                this.columnHongo_Inactivo = new global::System.Data.DataColumn("Hongo_Inactivo", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHongo_Inactivo);
+                this.columnHongo_Activo = new global::System.Data.DataColumn("Hongo_Activo", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHongo_Activo);
+                this.columnObservacion = new global::System.Data.DataColumn("Observacion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnObservacion);
+                this.columnObservacion_Mat_Extraña = new global::System.Data.DataColumn("Observacion_Mat_Extraña", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnObservacion_Mat_Extraña);
+                this.columnObservacion_Cascara = new global::System.Data.DataColumn("Observacion_Cascara", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnObservacion_Cascara);
+                this.columnObservacion_Septum = new global::System.Data.DataColumn("Observacion_Septum", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnObservacion_Septum);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnAnalisis}, true));
+                this.columnAnalisis.AutoIncrement = true;
+                this.columnAnalisis.AllowDBNull = false;
+                this.columnAnalisis.ReadOnly = true;
+                this.columnAnalisis.Unique = true;
+                this.columnFecha.AllowDBNull = false;
+                this.columnId_Tarja.MaxLength = 10;
+                this.columnBins.AllowDBNull = false;
+                this.columnTurno.AllowDBNull = false;
+                this.columnTurno.MaxLength = 1;
+                this.columnCod_Producto_Tarja.AllowDBNull = false;
+                this.columnCod_Producto_Tarja.MaxLength = 10;
+                this.columnDes_Producto.AllowDBNull = false;
+                this.columnDes_Producto.MaxLength = 50;
+                this.columnPeso_Muestra.AllowDBNull = false;
+                this.columnCascara.AllowDBNull = false;
+                this.columnSeptum.AllowDBNull = false;
+                this.columnMat_Extraña.AllowDBNull = false;
+                this.columnHalves.AllowDBNull = false;
+                this.columnLarge_Pieces.AllowDBNull = false;
+                this.columnMedium_Pieces.AllowDBNull = false;
+                this.columnSmall_Pieces.AllowDBNull = false;
+                this.columnExtra_Light.AllowDBNull = false;
+                this.columnLight.AllowDBNull = false;
+                this.columnLight_Ambar.AllowDBNull = false;
+                this.columnAmbar.AllowDBNull = false;
+                this.columnAmarillo.AllowDBNull = false;
+                this.columnDefectos.AllowDBNull = false;
+                this.columnReseca_Leve.AllowDBNull = false;
+                this.columnReseca_Grave.AllowDBNull = false;
+                this.columnDaño_Insecto.AllowDBNull = false;
+                this.columnMancha_Agua.AllowDBNull = false;
+                this.columnHongo_Inactivo.AllowDBNull = false;
+                this.columnHongo_Activo.AllowDBNull = false;
+                this.columnObservacion.AllowDBNull = false;
+                this.columnObservacion.MaxLength = 2147483647;
+                this.columnObservacion_Mat_Extraña.MaxLength = 2147483647;
+                this.columnObservacion_Cascara.MaxLength = 2147483647;
+                this.columnObservacion_Septum.MaxLength = 2147483647;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraerReporte_Analisis_Calidad_PreseleccionRow NewspTraerReporte_Analisis_Calidad_PreseleccionRow() {
+                return ((spTraerReporte_Analisis_Calidad_PreseleccionRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new spTraerReporte_Analisis_Calidad_PreseleccionRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(spTraerReporte_Analisis_Calidad_PreseleccionRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.spTraerReporte_Analisis_Calidad_PreseleccionRowChanged != null)) {
+                    this.spTraerReporte_Analisis_Calidad_PreseleccionRowChanged(this, new spTraerReporte_Analisis_Calidad_PreseleccionRowChangeEvent(((spTraerReporte_Analisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.spTraerReporte_Analisis_Calidad_PreseleccionRowChanging != null)) {
+                    this.spTraerReporte_Analisis_Calidad_PreseleccionRowChanging(this, new spTraerReporte_Analisis_Calidad_PreseleccionRowChangeEvent(((spTraerReporte_Analisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.spTraerReporte_Analisis_Calidad_PreseleccionRowDeleted != null)) {
+                    this.spTraerReporte_Analisis_Calidad_PreseleccionRowDeleted(this, new spTraerReporte_Analisis_Calidad_PreseleccionRowChangeEvent(((spTraerReporte_Analisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.spTraerReporte_Analisis_Calidad_PreseleccionRowDeleting != null)) {
+                    this.spTraerReporte_Analisis_Calidad_PreseleccionRowDeleting(this, new spTraerReporte_Analisis_Calidad_PreseleccionRowChangeEvent(((spTraerReporte_Analisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemovespTraerReporte_Analisis_Calidad_PreseleccionRow(spTraerReporte_Analisis_Calidad_PreseleccionRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "spTraerReporte_Analisis_Calidad_PreseleccionDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -24085,7 +27267,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -24350,7 +27532,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -24614,7 +27796,7 @@ namespace Anakena_2017 {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                Prueba_2017DataSet ds = new Prueba_2017DataSet();
+                Prueba_2017Preseleccion ds = new Prueba_2017Preseleccion();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -26504,6 +29686,568 @@ namespace Anakena_2017 {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
+        public partial class spTraer_Analisis_Calidad_PreseleccionRow : global::System.Data.DataRow {
+            
+            private spTraer_Analisis_Calidad_PreseleccionDataTable tablespTraer_Analisis_Calidad_Preseleccion;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spTraer_Analisis_Calidad_PreseleccionRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablespTraer_Analisis_Calidad_Preseleccion = ((spTraer_Analisis_Calidad_PreseleccionDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public short Analisis {
+                get {
+                    return ((short)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.AnalisisColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.AnalisisColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime Fecha {
+                get {
+                    return ((global::System.DateTime)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.FechaColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.FechaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Tarja {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.TarjaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Tarja\' de la tabla \'spTraer_Analisis_Calidad_Preseleccion" +
+                                "\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.TarjaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Bins {
+                get {
+                    return ((int)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.BinsColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.BinsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Turno {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.TurnoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Turno\' de la tabla \'spTraer_Analisis_Calidad_Preseleccion" +
+                                "\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.TurnoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal Proceso {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.ProcesoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Proceso\' de la tabla \'spTraer_Analisis_Calidad_Preselecci" +
+                                "on\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.ProcesoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Producto_Analisis {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_AnalisisColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Producto_Analisis\' de la tabla \'spTraer_Analisis_Calidad_" +
+                                "Preseleccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_AnalisisColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Producto_Tarja {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_TarjaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Producto_Tarja\' de la tabla \'spTraer_Analisis_Calidad_Pre" +
+                                "seleccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_TarjaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Estado {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.EstadoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Estado\' de la tabla \'spTraer_Analisis_Calidad_Preseleccio" +
+                                "n\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.EstadoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Cod_Producto_User {
+                get {
+                    return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Cod_Producto_UserColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Cod_Producto_UserColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Cod_Producto_Tarja {
+                get {
+                    return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Cod_Producto_TarjaColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Cod_Producto_TarjaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Peso_Muestra {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Peso_MuestraColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Peso_MuestraColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Cascara {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.CascaraColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.CascaraColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Septum {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.SeptumColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.SeptumColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Mat_Extraña {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Mat_ExtrañaColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Mat_ExtrañaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Halves {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.HalvesColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.HalvesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Large_Pieces {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Large_PiecesColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Large_PiecesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Medium_Pieces {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Medium_PiecesColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Medium_PiecesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Small_Pieces {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Small_PiecesColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Small_PiecesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Extra_Light {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Extra_LightColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Extra_LightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Light {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.LightColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.LightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Light_Ambar {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Light_AmbarColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Light_AmbarColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Ambar {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.AmbarColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.AmbarColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Amarillo {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.AmarilloColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.AmarilloColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Defectos {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.DefectosColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.DefectosColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Reseca_Leve {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Reseca_LeveColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Reseca_LeveColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Reseca_Grave {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Reseca_GraveColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Reseca_GraveColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Daño_Insecto {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Daño_InsectoColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Daño_InsectoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Mancha_Agua {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Mancha_AguaColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Mancha_AguaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Hongo_Inactivo {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Hongo_InactivoColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Hongo_InactivoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Hongo_Activo {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Hongo_ActivoColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Hongo_ActivoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Observacion {
+                get {
+                    return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.ObservacionColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.ObservacionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Observacion_Mat_Extraña {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_Mat_ExtrañaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Observacion_Mat_Extraña\' de la tabla \'spTraer_Analisis_Ca" +
+                                "lidad_Preseleccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_Mat_ExtrañaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Observacion_Cascara {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_CascaraColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Observacion_Cascara\' de la tabla \'spTraer_Analisis_Calida" +
+                                "d_Preseleccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_CascaraColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Observacion_Septum {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_SeptumColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Observacion_Septum\' de la tabla \'spTraer_Analisis_Calidad" +
+                                "_Preseleccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_SeptumColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTarjaNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.TarjaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTarjaNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.TarjaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTurnoNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.TurnoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTurnoNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.TurnoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsProcesoNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.ProcesoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetProcesoNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.ProcesoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsProducto_AnalisisNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_AnalisisColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetProducto_AnalisisNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_AnalisisColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsProducto_TarjaNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_TarjaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetProducto_TarjaNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_TarjaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEstadoNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.EstadoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEstadoNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.EstadoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsObservacion_Mat_ExtrañaNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_Mat_ExtrañaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetObservacion_Mat_ExtrañaNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_Mat_ExtrañaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsObservacion_CascaraNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_CascaraColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetObservacion_CascaraNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_CascaraColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsObservacion_SeptumNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_SeptumColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetObservacion_SeptumNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_SeptumColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
         public partial class spTraer_Busqueda_TarjaRow : global::System.Data.DataRow {
             
             private spTraer_Busqueda_TarjaDataTable tablespTraer_Busqueda_Tarja;
@@ -26655,6 +30399,116 @@ namespace Anakena_2017 {
                 }
                 set {
                     this[this.tablespTraer_Control_pmm_cod.Des_ProductoColumn] = value;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class spTraer_Control_preseleccionRow : global::System.Data.DataRow {
+            
+            private spTraer_Control_preseleccionDataTable tablespTraer_Control_preseleccion;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spTraer_Control_preseleccionRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablespTraer_Control_preseleccion = ((spTraer_Control_preseleccionDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Cod_Producto {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Control_preseleccion.Cod_ProductoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Cod_Producto\' de la tabla \'spTraer_Control_preseleccion\' " +
+                                "es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Control_preseleccion.Cod_ProductoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Des_Producto {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Control_preseleccion.Des_ProductoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Des_Producto\' de la tabla \'spTraer_Control_preseleccion\' " +
+                                "es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Control_preseleccion.Des_ProductoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCod_ProductoNull() {
+                return this.IsNull(this.tablespTraer_Control_preseleccion.Cod_ProductoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCod_ProductoNull() {
+                this[this.tablespTraer_Control_preseleccion.Cod_ProductoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDes_ProductoNull() {
+                return this.IsNull(this.tablespTraer_Control_preseleccion.Des_ProductoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDes_ProductoNull() {
+                this[this.tablespTraer_Control_preseleccion.Des_ProductoColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class spTraer_Control_preseleccion_codRow : global::System.Data.DataRow {
+            
+            private spTraer_Control_preseleccion_codDataTable tablespTraer_Control_preseleccion_cod;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spTraer_Control_preseleccion_codRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablespTraer_Control_preseleccion_cod = ((spTraer_Control_preseleccion_codDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Cod_Producto {
+                get {
+                    return ((string)(this[this.tablespTraer_Control_preseleccion_cod.Cod_ProductoColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Control_preseleccion_cod.Cod_ProductoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Des_Producto {
+                get {
+                    return ((string)(this[this.tablespTraer_Control_preseleccion_cod.Des_ProductoColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Control_preseleccion_cod.Des_ProductoColumn] = value;
                 }
             }
         }
@@ -28816,6 +32670,50 @@ namespace Anakena_2017 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetColumn1Null() {
                 this[this.tablespTraer_NumAnalisis_Calidad_PPM.Column1Column] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class spTraer_NumAnalisis_Calidad_PreseleccionRow : global::System.Data.DataRow {
+            
+            private spTraer_NumAnalisis_Calidad_PreseleccionDataTable tablespTraer_NumAnalisis_Calidad_Preseleccion;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spTraer_NumAnalisis_Calidad_PreseleccionRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablespTraer_NumAnalisis_Calidad_Preseleccion = ((spTraer_NumAnalisis_Calidad_PreseleccionDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public short Column1 {
+                get {
+                    try {
+                        return ((short)(this[this.tablespTraer_NumAnalisis_Calidad_Preseleccion.Column1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Column1\' de la tabla \'spTraer_NumAnalisis_Calidad_Presele" +
+                                "ccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_NumAnalisis_Calidad_Preseleccion.Column1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsColumn1Null() {
+                return this.IsNull(this.tablespTraer_NumAnalisis_Calidad_Preseleccion.Column1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetColumn1Null() {
+                this[this.tablespTraer_NumAnalisis_Calidad_Preseleccion.Column1Column] = global::System.Convert.DBNull;
             }
         }
         
@@ -36923,6 +40821,785 @@ namespace Anakena_2017 {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
+        public partial class spTraerReporte_Analisis_Calidad_PMMRow : global::System.Data.DataRow {
+            
+            private spTraerReporte_Analisis_Calidad_PMMDataTable tablespTraerReporte_Analisis_Calidad_PMM;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spTraerReporte_Analisis_Calidad_PMMRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablespTraerReporte_Analisis_Calidad_PMM = ((spTraerReporte_Analisis_Calidad_PMMDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public short Analisis {
+                get {
+                    return ((short)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.AnalisisColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.AnalisisColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime Fecha {
+                get {
+                    return ((global::System.DateTime)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.FechaColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.FechaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Id_Tarja {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.Id_TarjaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Id_Tarja\' de la tabla \'spTraerReporte_Analisis_Calidad_PM" +
+                                "M\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.Id_TarjaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Bins {
+                get {
+                    return ((int)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.BinsColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.BinsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Turno {
+                get {
+                    return ((string)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.TurnoColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.TurnoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal Proceso {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.ProcesoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Proceso\' de la tabla \'spTraerReporte_Analisis_Calidad_PMM" +
+                                "\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.ProcesoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Cod_Producto_Tarja {
+                get {
+                    return ((string)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.Cod_Producto_TarjaColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.Cod_Producto_TarjaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Des_Producto {
+                get {
+                    return ((string)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.Des_ProductoColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.Des_ProductoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Peso_Muestra {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.Peso_MuestraColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.Peso_MuestraColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Cascara {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.CascaraColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.CascaraColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Mat_Extraña {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.Mat_ExtrañaColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.Mat_ExtrañaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Halves {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.HalvesColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.HalvesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Large_Pieces {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.Large_PiecesColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.Large_PiecesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Medium_Pieces {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.Medium_PiecesColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.Medium_PiecesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Small_Pieces {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.Small_PiecesColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.Small_PiecesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Extra_Light {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.Extra_LightColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.Extra_LightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Light {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.LightColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.LightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Light_Ambar {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.Light_AmbarColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.Light_AmbarColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Ambar {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.AmbarColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.AmbarColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Amarillo {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.AmarilloColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.AmarilloColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Defectos {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.DefectosColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.DefectosColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Observacion {
+                get {
+                    return ((string)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.ObservacionColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.ObservacionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Observacion_Mat_Extraña {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraerReporte_Analisis_Calidad_PMM.Observacion_Mat_ExtrañaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Observacion_Mat_Extraña\' de la tabla \'spTraerReporte_Anal" +
+                                "isis_Calidad_PMM\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_PMM.Observacion_Mat_ExtrañaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsId_TarjaNull() {
+                return this.IsNull(this.tablespTraerReporte_Analisis_Calidad_PMM.Id_TarjaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetId_TarjaNull() {
+                this[this.tablespTraerReporte_Analisis_Calidad_PMM.Id_TarjaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsProcesoNull() {
+                return this.IsNull(this.tablespTraerReporte_Analisis_Calidad_PMM.ProcesoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetProcesoNull() {
+                this[this.tablespTraerReporte_Analisis_Calidad_PMM.ProcesoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsObservacion_Mat_ExtrañaNull() {
+                return this.IsNull(this.tablespTraerReporte_Analisis_Calidad_PMM.Observacion_Mat_ExtrañaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetObservacion_Mat_ExtrañaNull() {
+                this[this.tablespTraerReporte_Analisis_Calidad_PMM.Observacion_Mat_ExtrañaColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class spTraerReporte_Analisis_Calidad_PreseleccionRow : global::System.Data.DataRow {
+            
+            private spTraerReporte_Analisis_Calidad_PreseleccionDataTable tablespTraerReporte_Analisis_Calidad_Preseleccion;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spTraerReporte_Analisis_Calidad_PreseleccionRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablespTraerReporte_Analisis_Calidad_Preseleccion = ((spTraerReporte_Analisis_Calidad_PreseleccionDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public short Analisis {
+                get {
+                    return ((short)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.AnalisisColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.AnalisisColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime Fecha {
+                get {
+                    return ((global::System.DateTime)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.FechaColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.FechaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Id_Tarja {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Id_TarjaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Id_Tarja\' de la tabla \'spTraerReporte_Analisis_Calidad_Pr" +
+                                "eseleccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Id_TarjaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Bins {
+                get {
+                    return ((int)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.BinsColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.BinsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Turno {
+                get {
+                    return ((string)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.TurnoColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.TurnoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal Proceso {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.ProcesoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Proceso\' de la tabla \'spTraerReporte_Analisis_Calidad_Pre" +
+                                "seleccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.ProcesoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Cod_Producto_Tarja {
+                get {
+                    return ((string)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Cod_Producto_TarjaColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Cod_Producto_TarjaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Des_Producto {
+                get {
+                    return ((string)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Des_ProductoColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Des_ProductoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Peso_Muestra {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Peso_MuestraColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Peso_MuestraColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Cascara {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.CascaraColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.CascaraColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Septum {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.SeptumColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.SeptumColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Mat_Extraña {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Mat_ExtrañaColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Mat_ExtrañaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Halves {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.HalvesColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.HalvesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Large_Pieces {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Large_PiecesColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Large_PiecesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Medium_Pieces {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Medium_PiecesColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Medium_PiecesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Small_Pieces {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Small_PiecesColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Small_PiecesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Extra_Light {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Extra_LightColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Extra_LightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Light {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.LightColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.LightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Light_Ambar {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Light_AmbarColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Light_AmbarColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Ambar {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.AmbarColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.AmbarColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Amarillo {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.AmarilloColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.AmarilloColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Defectos {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.DefectosColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.DefectosColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Reseca_Leve {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Reseca_LeveColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Reseca_LeveColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Reseca_Grave {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Reseca_GraveColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Reseca_GraveColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Daño_Insecto {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Daño_InsectoColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Daño_InsectoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Mancha_Agua {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Mancha_AguaColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Mancha_AguaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Hongo_Inactivo {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Hongo_InactivoColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Hongo_InactivoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Hongo_Activo {
+                get {
+                    return ((double)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Hongo_ActivoColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Hongo_ActivoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Observacion {
+                get {
+                    return ((string)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.ObservacionColumn]));
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.ObservacionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Observacion_Mat_Extraña {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Observacion_Mat_ExtrañaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Observacion_Mat_Extraña\' de la tabla \'spTraerReporte_Anal" +
+                                "isis_Calidad_Preseleccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Observacion_Mat_ExtrañaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Observacion_Cascara {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Observacion_CascaraColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Observacion_Cascara\' de la tabla \'spTraerReporte_Analisis" +
+                                "_Calidad_Preseleccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Observacion_CascaraColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Observacion_Septum {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Observacion_SeptumColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Observacion_Septum\' de la tabla \'spTraerReporte_Analisis_" +
+                                "Calidad_Preseleccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Observacion_SeptumColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsId_TarjaNull() {
+                return this.IsNull(this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Id_TarjaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetId_TarjaNull() {
+                this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Id_TarjaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsProcesoNull() {
+                return this.IsNull(this.tablespTraerReporte_Analisis_Calidad_Preseleccion.ProcesoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetProcesoNull() {
+                this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.ProcesoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsObservacion_Mat_ExtrañaNull() {
+                return this.IsNull(this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Observacion_Mat_ExtrañaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetObservacion_Mat_ExtrañaNull() {
+                this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Observacion_Mat_ExtrañaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsObservacion_CascaraNull() {
+                return this.IsNull(this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Observacion_CascaraColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetObservacion_CascaraNull() {
+                this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Observacion_CascaraColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsObservacion_SeptumNull() {
+                return this.IsNull(this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Observacion_SeptumColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetObservacion_SeptumNull() {
+                this[this.tablespTraerReporte_Analisis_Calidad_Preseleccion.Observacion_SeptumColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
         public partial class spTraerUsuarioRow : global::System.Data.DataRow {
             
             private spTraerUsuarioDataTable tablespTraerUsuario;
@@ -37618,6 +42295,40 @@ namespace Anakena_2017 {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class spTraer_Analisis_Calidad_PreseleccionRowChangeEvent : global::System.EventArgs {
+            
+            private spTraer_Analisis_Calidad_PreseleccionRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Analisis_Calidad_PreseleccionRowChangeEvent(spTraer_Analisis_Calidad_PreseleccionRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Analisis_Calidad_PreseleccionRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public class spTraer_Busqueda_TarjaRowChangeEvent : global::System.EventArgs {
             
             private spTraer_Busqueda_TarjaRow eventRow;
@@ -37702,6 +42413,74 @@ namespace Anakena_2017 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public spTraer_Control_pmm_codRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class spTraer_Control_preseleccionRowChangeEvent : global::System.EventArgs {
+            
+            private spTraer_Control_preseleccionRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Control_preseleccionRowChangeEvent(spTraer_Control_preseleccionRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Control_preseleccionRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class spTraer_Control_preseleccion_codRowChangeEvent : global::System.EventArgs {
+            
+            private spTraer_Control_preseleccion_codRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Control_preseleccion_codRowChangeEvent(spTraer_Control_preseleccion_codRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Control_preseleccion_codRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -38178,6 +42957,40 @@ namespace Anakena_2017 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public spTraer_NumAnalisis_Calidad_PPMRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class spTraer_NumAnalisis_Calidad_PreseleccionRowChangeEvent : global::System.EventArgs {
+            
+            private spTraer_NumAnalisis_Calidad_PreseleccionRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_NumAnalisis_Calidad_PreseleccionRowChangeEvent(spTraer_NumAnalisis_Calidad_PreseleccionRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_NumAnalisis_Calidad_PreseleccionRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -39148,6 +43961,74 @@ namespace Anakena_2017 {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class spTraerReporte_Analisis_Calidad_PMMRowChangeEvent : global::System.EventArgs {
+            
+            private spTraerReporte_Analisis_Calidad_PMMRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraerReporte_Analisis_Calidad_PMMRowChangeEvent(spTraerReporte_Analisis_Calidad_PMMRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraerReporte_Analisis_Calidad_PMMRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class spTraerReporte_Analisis_Calidad_PreseleccionRowChangeEvent : global::System.EventArgs {
+            
+            private spTraerReporte_Analisis_Calidad_PreseleccionRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraerReporte_Analisis_Calidad_PreseleccionRowChangeEvent(spTraerReporte_Analisis_Calidad_PreseleccionRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraerReporte_Analisis_Calidad_PreseleccionRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public class spTraerUsuarioRowChangeEvent : global::System.EventArgs {
             
             private spTraerUsuarioRow eventRow;
@@ -39247,7 +44128,7 @@ namespace Anakena_2017 {
         }
     }
 }
-namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
+namespace Anakena_2017.Prueba_2017PreseleccionTableAdapters {
     
     
     /// <summary>
@@ -39398,7 +44279,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spBusqueda_Variedad_DecisionDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017Preseleccion.spBusqueda_Variedad_DecisionDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39417,7 +44298,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spBusqueda_Variedad_DecisionDataTable GetData(string variedad) {
+        public virtual Prueba_2017Preseleccion.spBusqueda_Variedad_DecisionDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39425,7 +44306,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet.spBusqueda_Variedad_DecisionDataTable dataTable = new Prueba_2017DataSet.spBusqueda_Variedad_DecisionDataTable();
+            Prueba_2017Preseleccion.spBusqueda_Variedad_DecisionDataTable dataTable = new Prueba_2017Preseleccion.spBusqueda_Variedad_DecisionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -39579,7 +44460,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spDistintosProductoresDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spDistintosProductoresDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -39592,9 +44473,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spDistintosProductoresDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spDistintosProductoresDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spDistintosProductoresDataTable dataTable = new Prueba_2017DataSet.spDistintosProductoresDataTable();
+            Prueba_2017Preseleccion.spDistintosProductoresDataTable dataTable = new Prueba_2017Preseleccion.spDistintosProductoresDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -39749,7 +44630,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spDistintosProductores_codDataTable dataTable, string productor) {
+        public virtual int Fill(Prueba_2017Preseleccion.spDistintosProductores_codDataTable dataTable, string productor) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((productor == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39768,7 +44649,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spDistintosProductores_codDataTable GetData(string productor) {
+        public virtual Prueba_2017Preseleccion.spDistintosProductores_codDataTable GetData(string productor) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((productor == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39776,7 +44657,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(productor));
             }
-            Prueba_2017DataSet.spDistintosProductores_codDataTable dataTable = new Prueba_2017DataSet.spDistintosProductores_codDataTable();
+            Prueba_2017Preseleccion.spDistintosProductores_codDataTable dataTable = new Prueba_2017Preseleccion.spDistintosProductores_codDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -39931,7 +44812,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spFiltroProductoresDataTable dataTable, string filtro) {
+        public virtual int Fill(Prueba_2017Preseleccion.spFiltroProductoresDataTable dataTable, string filtro) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((filtro == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39950,7 +44831,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spFiltroProductoresDataTable GetData(string filtro) {
+        public virtual Prueba_2017Preseleccion.spFiltroProductoresDataTable GetData(string filtro) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((filtro == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -39958,7 +44839,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(filtro));
             }
-            Prueba_2017DataSet.spFiltroProductoresDataTable dataTable = new Prueba_2017DataSet.spFiltroProductoresDataTable();
+            Prueba_2017Preseleccion.spFiltroProductoresDataTable dataTable = new Prueba_2017Preseleccion.spFiltroProductoresDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -40116,7 +44997,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spProceso_RepetidosDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017Preseleccion.spProceso_RepetidosDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -40135,7 +45016,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spProceso_RepetidosDataTable GetData(string variedad) {
+        public virtual Prueba_2017Preseleccion.spProceso_RepetidosDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -40143,7 +45024,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet.spProceso_RepetidosDataTable dataTable = new Prueba_2017DataSet.spProceso_RepetidosDataTable();
+            Prueba_2017Preseleccion.spProceso_RepetidosDataTable dataTable = new Prueba_2017Preseleccion.spProceso_RepetidosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -40302,7 +45183,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spProductor_FactorDataTable dataTable, string Productor) {
+        public virtual int Fill(Prueba_2017Preseleccion.spProductor_FactorDataTable dataTable, string Productor) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Productor == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -40321,7 +45202,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spProductor_FactorDataTable GetData(string Productor) {
+        public virtual Prueba_2017Preseleccion.spProductor_FactorDataTable GetData(string Productor) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Productor == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -40329,7 +45210,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(Productor));
             }
-            Prueba_2017DataSet.spProductor_FactorDataTable dataTable = new Prueba_2017DataSet.spProductor_FactorDataTable();
+            Prueba_2017Preseleccion.spProductor_FactorDataTable dataTable = new Prueba_2017Preseleccion.spProductor_FactorDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -40490,7 +45371,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spRendimiento_NCCDataTable dataTable, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
+        public virtual int Fill(Prueba_2017Preseleccion.spRendimiento_NCCDataTable dataTable, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Cod_Variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Cod_Variedad.Value));
@@ -40515,7 +45396,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spRendimiento_NCCDataTable GetData(global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
+        public virtual Prueba_2017Preseleccion.spRendimiento_NCCDataTable GetData(global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Cod_Variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Cod_Variedad.Value));
@@ -40529,7 +45410,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet.spRendimiento_NCCDataTable dataTable = new Prueba_2017DataSet.spRendimiento_NCCDataTable();
+            Prueba_2017Preseleccion.spRendimiento_NCCDataTable dataTable = new Prueba_2017Preseleccion.spRendimiento_NCCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -40686,7 +45567,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spRendimiento_PepaDataTable dataTable, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
+        public virtual int Fill(Prueba_2017Preseleccion.spRendimiento_PepaDataTable dataTable, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Cod_Variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Cod_Variedad.Value));
@@ -40711,7 +45592,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spRendimiento_PepaDataTable GetData(global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
+        public virtual Prueba_2017Preseleccion.spRendimiento_PepaDataTable GetData(global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Cod_Variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Cod_Variedad.Value));
@@ -40725,7 +45606,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet.spRendimiento_PepaDataTable dataTable = new Prueba_2017DataSet.spRendimiento_PepaDataTable();
+            Prueba_2017Preseleccion.spRendimiento_PepaDataTable dataTable = new Prueba_2017Preseleccion.spRendimiento_PepaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -40882,7 +45763,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spRetorno_NSCDataTable dataTable, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
+        public virtual int Fill(Prueba_2017Preseleccion.spRetorno_NSCDataTable dataTable, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Cod_Variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Cod_Variedad.Value));
@@ -40907,7 +45788,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spRetorno_NSCDataTable GetData(global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
+        public virtual Prueba_2017Preseleccion.spRetorno_NSCDataTable GetData(global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Cod_Variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Cod_Variedad.Value));
@@ -40921,7 +45802,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet.spRetorno_NSCDataTable dataTable = new Prueba_2017DataSet.spRetorno_NSCDataTable();
+            Prueba_2017Preseleccion.spRetorno_NSCDataTable dataTable = new Prueba_2017Preseleccion.spRetorno_NSCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -41083,7 +45964,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spRetorno_PMCDataTable dataTable, string variedad, string categoria) {
+        public virtual int Fill(Prueba_2017Preseleccion.spRetorno_PMCDataTable dataTable, string variedad, string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -41108,7 +45989,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spRetorno_PMCDataTable GetData(string variedad, string categoria) {
+        public virtual Prueba_2017Preseleccion.spRetorno_PMCDataTable GetData(string variedad, string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -41122,7 +46003,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(categoria));
             }
-            Prueba_2017DataSet.spRetorno_PMCDataTable dataTable = new Prueba_2017DataSet.spRetorno_PMCDataTable();
+            Prueba_2017Preseleccion.spRetorno_PMCDataTable dataTable = new Prueba_2017Preseleccion.spRetorno_PMCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -41284,7 +46165,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spRetorno_PMC_IngresosDataTable dataTable, string variedad, string categoria) {
+        public virtual int Fill(Prueba_2017Preseleccion.spRetorno_PMC_IngresosDataTable dataTable, string variedad, string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -41309,7 +46190,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spRetorno_PMC_IngresosDataTable GetData(string variedad, string categoria) {
+        public virtual Prueba_2017Preseleccion.spRetorno_PMC_IngresosDataTable GetData(string variedad, string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -41323,7 +46204,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(categoria));
             }
-            Prueba_2017DataSet.spRetorno_PMC_IngresosDataTable dataTable = new Prueba_2017DataSet.spRetorno_PMC_IngresosDataTable();
+            Prueba_2017Preseleccion.spRetorno_PMC_IngresosDataTable dataTable = new Prueba_2017Preseleccion.spRetorno_PMC_IngresosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -41485,7 +46366,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spRetorno_PMC_porDataTable dataTable, string variedad, string categoria) {
+        public virtual int Fill(Prueba_2017Preseleccion.spRetorno_PMC_porDataTable dataTable, string variedad, string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -41510,7 +46391,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spRetorno_PMC_porDataTable GetData(string variedad, string categoria) {
+        public virtual Prueba_2017Preseleccion.spRetorno_PMC_porDataTable GetData(string variedad, string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -41524,7 +46405,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(categoria));
             }
-            Prueba_2017DataSet.spRetorno_PMC_porDataTable dataTable = new Prueba_2017DataSet.spRetorno_PMC_porDataTable();
+            Prueba_2017Preseleccion.spRetorno_PMC_porDataTable dataTable = new Prueba_2017Preseleccion.spRetorno_PMC_porDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -41702,7 +46583,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_Analisis_Calidad_PPMDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_Analisis_Calidad_PPMDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -41715,9 +46596,211 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_Analisis_Calidad_PPMDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraer_Analisis_Calidad_PPMDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraer_Analisis_Calidad_PPMDataTable dataTable = new Prueba_2017DataSet.spTraer_Analisis_Calidad_PPMDataTable();
+            Prueba_2017Preseleccion.spTraer_Analisis_Calidad_PPMDataTable dataTable = new Prueba_2017Preseleccion.spTraer_Analisis_Calidad_PPMDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class spTraer_Analisis_Calidad_PreseleccionTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public spTraer_Analisis_Calidad_PreseleccionTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "spTraer_Analisis_Calidad_Preseleccion";
+            tableMapping.ColumnMappings.Add("Analisis", "Analisis");
+            tableMapping.ColumnMappings.Add("Fecha", "Fecha");
+            tableMapping.ColumnMappings.Add("Tarja", "Tarja");
+            tableMapping.ColumnMappings.Add("Bins", "Bins");
+            tableMapping.ColumnMappings.Add("Turno", "Turno");
+            tableMapping.ColumnMappings.Add("Proceso", "Proceso");
+            tableMapping.ColumnMappings.Add("Producto_Analisis", "Producto_Analisis");
+            tableMapping.ColumnMappings.Add("Producto_Tarja", "Producto_Tarja");
+            tableMapping.ColumnMappings.Add("Estado", "Estado");
+            tableMapping.ColumnMappings.Add("Cod_Producto_User", "Cod_Producto_User");
+            tableMapping.ColumnMappings.Add("Cod_Producto_Tarja", "Cod_Producto_Tarja");
+            tableMapping.ColumnMappings.Add("Peso_Muestra", "Peso_Muestra");
+            tableMapping.ColumnMappings.Add("Cascara", "Cascara");
+            tableMapping.ColumnMappings.Add("Septum", "Septum");
+            tableMapping.ColumnMappings.Add("Mat_Extraña", "Mat_Extraña");
+            tableMapping.ColumnMappings.Add("Halves", "Halves");
+            tableMapping.ColumnMappings.Add("Large_Pieces", "Large_Pieces");
+            tableMapping.ColumnMappings.Add("Medium_Pieces", "Medium_Pieces");
+            tableMapping.ColumnMappings.Add("Small_Pieces", "Small_Pieces");
+            tableMapping.ColumnMappings.Add("Extra_Light", "Extra_Light");
+            tableMapping.ColumnMappings.Add("Light", "Light");
+            tableMapping.ColumnMappings.Add("Light_Ambar", "Light_Ambar");
+            tableMapping.ColumnMappings.Add("Ambar", "Ambar");
+            tableMapping.ColumnMappings.Add("Amarillo", "Amarillo");
+            tableMapping.ColumnMappings.Add("Defectos", "Defectos");
+            tableMapping.ColumnMappings.Add("Reseca_Leve", "Reseca_Leve");
+            tableMapping.ColumnMappings.Add("Reseca_Grave", "Reseca_Grave");
+            tableMapping.ColumnMappings.Add("Daño_Insecto", "Daño_Insecto");
+            tableMapping.ColumnMappings.Add("Mancha_Agua", "Mancha_Agua");
+            tableMapping.ColumnMappings.Add("Hongo_Inactivo", "Hongo_Inactivo");
+            tableMapping.ColumnMappings.Add("Hongo_Activo", "Hongo_Activo");
+            tableMapping.ColumnMappings.Add("Observacion", "Observacion");
+            tableMapping.ColumnMappings.Add("Observacion_Mat_Extraña", "Observacion_Mat_Extraña");
+            tableMapping.ColumnMappings.Add("Observacion_Cascara", "Observacion_Cascara");
+            tableMapping.ColumnMappings.Add("Observacion_Septum", "Observacion_Septum");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.spTraer_Analisis_Calidad_Preseleccion";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_Analisis_Calidad_PreseleccionDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual Prueba_2017Preseleccion.spTraer_Analisis_Calidad_PreseleccionDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            Prueba_2017Preseleccion.spTraer_Analisis_Calidad_PreseleccionDataTable dataTable = new Prueba_2017Preseleccion.spTraer_Analisis_Calidad_PreseleccionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -41873,7 +46956,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_Busqueda_TarjaDataTable dataTable, string proceso) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_Busqueda_TarjaDataTable dataTable, string proceso) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((proceso == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -41892,7 +46975,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_Busqueda_TarjaDataTable GetData(string proceso) {
+        public virtual Prueba_2017Preseleccion.spTraer_Busqueda_TarjaDataTable GetData(string proceso) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((proceso == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -41900,7 +46983,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(proceso));
             }
-            Prueba_2017DataSet.spTraer_Busqueda_TarjaDataTable dataTable = new Prueba_2017DataSet.spTraer_Busqueda_TarjaDataTable();
+            Prueba_2017Preseleccion.spTraer_Busqueda_TarjaDataTable dataTable = new Prueba_2017Preseleccion.spTraer_Busqueda_TarjaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -42054,7 +47137,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_Control_pmmDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_Control_pmmDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -42067,9 +47150,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_Control_pmmDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraer_Control_pmmDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraer_Control_pmmDataTable dataTable = new Prueba_2017DataSet.spTraer_Control_pmmDataTable();
+            Prueba_2017Preseleccion.spTraer_Control_pmmDataTable dataTable = new Prueba_2017Preseleccion.spTraer_Control_pmmDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -42224,7 +47307,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_Control_pmm_codDataTable dataTable, string producto) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_Control_pmm_codDataTable dataTable, string producto) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((producto == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -42243,7 +47326,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_Control_pmm_codDataTable GetData(string producto) {
+        public virtual Prueba_2017Preseleccion.spTraer_Control_pmm_codDataTable GetData(string producto) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((producto == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -42251,7 +47334,358 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(producto));
             }
-            Prueba_2017DataSet.spTraer_Control_pmm_codDataTable dataTable = new Prueba_2017DataSet.spTraer_Control_pmm_codDataTable();
+            Prueba_2017Preseleccion.spTraer_Control_pmm_codDataTable dataTable = new Prueba_2017Preseleccion.spTraer_Control_pmm_codDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class spTraer_Control_preseleccionTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public spTraer_Control_preseleccionTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "spTraer_Control_preseleccion";
+            tableMapping.ColumnMappings.Add("Cod_Producto", "Cod_Producto");
+            tableMapping.ColumnMappings.Add("Des_Producto", "Des_Producto");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.spTraer_Control_preseleccion";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_Control_preseleccionDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual Prueba_2017Preseleccion.spTraer_Control_preseleccionDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            Prueba_2017Preseleccion.spTraer_Control_preseleccionDataTable dataTable = new Prueba_2017Preseleccion.spTraer_Control_preseleccionDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class spTraer_Control_preseleccion_codTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public spTraer_Control_preseleccion_codTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "spTraer_Control_preseleccion_cod";
+            tableMapping.ColumnMappings.Add("Cod_Producto", "Cod_Producto");
+            tableMapping.ColumnMappings.Add("Des_Producto", "Des_Producto");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.spTraer_Control_preseleccion_cod";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@producto", global::System.Data.SqlDbType.Char, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_Control_preseleccion_codDataTable dataTable, string producto) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((producto == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(producto));
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual Prueba_2017Preseleccion.spTraer_Control_preseleccion_codDataTable GetData(string producto) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((producto == null)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((string)(producto));
+            }
+            Prueba_2017Preseleccion.spTraer_Control_preseleccion_codDataTable dataTable = new Prueba_2017Preseleccion.spTraer_Control_preseleccion_codDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -42405,7 +47839,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_descarteNCCDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_descarteNCCDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -42424,7 +47858,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_descarteNCCDataTable GetData(string variedad) {
+        public virtual Prueba_2017Preseleccion.spTraer_descarteNCCDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -42432,7 +47866,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet.spTraer_descarteNCCDataTable dataTable = new Prueba_2017DataSet.spTraer_descarteNCCDataTable();
+            Prueba_2017Preseleccion.spTraer_descarteNCCDataTable dataTable = new Prueba_2017Preseleccion.spTraer_descarteNCCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -42591,7 +48025,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_FactorDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_FactorDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -42610,7 +48044,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_FactorDataTable GetData(string variedad) {
+        public virtual Prueba_2017Preseleccion.spTraer_FactorDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -42618,7 +48052,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet.spTraer_FactorDataTable dataTable = new Prueba_2017DataSet.spTraer_FactorDataTable();
+            Prueba_2017Preseleccion.spTraer_FactorDataTable dataTable = new Prueba_2017Preseleccion.spTraer_FactorDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -42771,7 +48205,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_Fecha_realDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_Fecha_realDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -42784,9 +48218,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_Fecha_realDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraer_Fecha_realDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraer_Fecha_realDataTable dataTable = new Prueba_2017DataSet.spTraer_Fecha_realDataTable();
+            Prueba_2017Preseleccion.spTraer_Fecha_realDataTable dataTable = new Prueba_2017Preseleccion.spTraer_Fecha_realDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -42949,7 +48383,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_FINAL_NCCDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_FINAL_NCCDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -42962,9 +48396,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_FINAL_NCCDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraer_FINAL_NCCDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraer_FINAL_NCCDataTable dataTable = new Prueba_2017DataSet.spTraer_FINAL_NCCDataTable();
+            Prueba_2017Preseleccion.spTraer_FINAL_NCCDataTable dataTable = new Prueba_2017Preseleccion.spTraer_FINAL_NCCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -43118,7 +48552,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_FINAL_NCC_calibreDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_FINAL_NCC_calibreDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -43131,9 +48565,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_FINAL_NCC_calibreDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraer_FINAL_NCC_calibreDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraer_FINAL_NCC_calibreDataTable dataTable = new Prueba_2017DataSet.spTraer_FINAL_NCC_calibreDataTable();
+            Prueba_2017Preseleccion.spTraer_FINAL_NCC_calibreDataTable dataTable = new Prueba_2017Preseleccion.spTraer_FINAL_NCC_calibreDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -43288,7 +48722,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_FINAL_NCC_VariedadDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_FINAL_NCC_VariedadDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -43301,9 +48735,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_FINAL_NCC_VariedadDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraer_FINAL_NCC_VariedadDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraer_FINAL_NCC_VariedadDataTable dataTable = new Prueba_2017DataSet.spTraer_FINAL_NCC_VariedadDataTable();
+            Prueba_2017Preseleccion.spTraer_FINAL_NCC_VariedadDataTable dataTable = new Prueba_2017Preseleccion.spTraer_FINAL_NCC_VariedadDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -43472,7 +48906,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_FINAL_NSCDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_FINAL_NSCDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -43485,9 +48919,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_FINAL_NSCDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraer_FINAL_NSCDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraer_FINAL_NSCDataTable dataTable = new Prueba_2017DataSet.spTraer_FINAL_NSCDataTable();
+            Prueba_2017Preseleccion.spTraer_FINAL_NSCDataTable dataTable = new Prueba_2017Preseleccion.spTraer_FINAL_NSCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -43648,7 +49082,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_FINAL_NSC_TOTALDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_FINAL_NSC_TOTALDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -43661,9 +49095,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_FINAL_NSC_TOTALDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraer_FINAL_NSC_TOTALDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraer_FINAL_NSC_TOTALDataTable dataTable = new Prueba_2017DataSet.spTraer_FINAL_NSC_TOTALDataTable();
+            Prueba_2017Preseleccion.spTraer_FINAL_NSC_TOTALDataTable dataTable = new Prueba_2017Preseleccion.spTraer_FINAL_NSC_TOTALDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -43824,7 +49258,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_FINAL_NSC_TOTAL_2DataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_FINAL_NSC_TOTAL_2DataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -43837,9 +49271,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_FINAL_NSC_TOTAL_2DataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraer_FINAL_NSC_TOTAL_2DataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraer_FINAL_NSC_TOTAL_2DataTable dataTable = new Prueba_2017DataSet.spTraer_FINAL_NSC_TOTAL_2DataTable();
+            Prueba_2017Preseleccion.spTraer_FINAL_NSC_TOTAL_2DataTable dataTable = new Prueba_2017Preseleccion.spTraer_FINAL_NSC_TOTAL_2DataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -44001,7 +49435,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_MatrizDataTable dataTable, global::System.Nullable<int> variedad) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_MatrizDataTable dataTable, global::System.Nullable<int> variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(variedad.Value));
@@ -44020,7 +49454,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_MatrizDataTable GetData(global::System.Nullable<int> variedad) {
+        public virtual Prueba_2017Preseleccion.spTraer_MatrizDataTable GetData(global::System.Nullable<int> variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(variedad.Value));
@@ -44028,7 +49462,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet.spTraer_MatrizDataTable dataTable = new Prueba_2017DataSet.spTraer_MatrizDataTable();
+            Prueba_2017Preseleccion.spTraer_MatrizDataTable dataTable = new Prueba_2017Preseleccion.spTraer_MatrizDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -44182,7 +49616,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_mermaDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_mermaDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -44201,7 +49635,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_mermaDataTable GetData(string variedad) {
+        public virtual Prueba_2017Preseleccion.spTraer_mermaDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -44209,7 +49643,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet.spTraer_mermaDataTable dataTable = new Prueba_2017DataSet.spTraer_mermaDataTable();
+            Prueba_2017Preseleccion.spTraer_mermaDataTable dataTable = new Prueba_2017Preseleccion.spTraer_mermaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -44362,7 +49796,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_Num_VARIEDADDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_Num_VARIEDADDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -44375,9 +49809,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_Num_VARIEDADDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraer_Num_VARIEDADDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraer_Num_VARIEDADDataTable dataTable = new Prueba_2017DataSet.spTraer_Num_VARIEDADDataTable();
+            Prueba_2017Preseleccion.spTraer_Num_VARIEDADDataTable dataTable = new Prueba_2017Preseleccion.spTraer_Num_VARIEDADDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -44530,7 +49964,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_NumAnalisisDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_NumAnalisisDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -44543,9 +49977,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_NumAnalisisDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraer_NumAnalisisDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraer_NumAnalisisDataTable dataTable = new Prueba_2017DataSet.spTraer_NumAnalisisDataTable();
+            Prueba_2017Preseleccion.spTraer_NumAnalisisDataTable dataTable = new Prueba_2017Preseleccion.spTraer_NumAnalisisDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -44698,7 +50132,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_NumAnalisis_Calidad_PPMDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_NumAnalisis_Calidad_PPMDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -44711,9 +50145,177 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_NumAnalisis_Calidad_PPMDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraer_NumAnalisis_Calidad_PPMDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraer_NumAnalisis_Calidad_PPMDataTable dataTable = new Prueba_2017DataSet.spTraer_NumAnalisis_Calidad_PPMDataTable();
+            Prueba_2017Preseleccion.spTraer_NumAnalisis_Calidad_PPMDataTable dataTable = new Prueba_2017Preseleccion.spTraer_NumAnalisis_Calidad_PPMDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class spTraer_NumAnalisis_Calidad_PreseleccionTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public spTraer_NumAnalisis_Calidad_PreseleccionTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "spTraer_NumAnalisis_Calidad_Preseleccion";
+            tableMapping.ColumnMappings.Add("Column1", "Column1");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.spTraer_NumAnalisis_Calidad_Preseleccion";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_NumAnalisis_Calidad_PreseleccionDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual Prueba_2017Preseleccion.spTraer_NumAnalisis_Calidad_PreseleccionDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            Prueba_2017Preseleccion.spTraer_NumAnalisis_Calidad_PreseleccionDataTable dataTable = new Prueba_2017Preseleccion.spTraer_NumAnalisis_Calidad_PreseleccionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -44866,7 +50468,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_NumProductoresDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_NumProductoresDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -44879,9 +50481,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_NumProductoresDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraer_NumProductoresDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraer_NumProductoresDataTable dataTable = new Prueba_2017DataSet.spTraer_NumProductoresDataTable();
+            Prueba_2017Preseleccion.spTraer_NumProductoresDataTable dataTable = new Prueba_2017Preseleccion.spTraer_NumProductoresDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -45038,7 +50640,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_PrecioNCCDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_PrecioNCCDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -45057,7 +50659,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_PrecioNCCDataTable GetData(string variedad) {
+        public virtual Prueba_2017Preseleccion.spTraer_PrecioNCCDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -45065,7 +50667,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet.spTraer_PrecioNCCDataTable dataTable = new Prueba_2017DataSet.spTraer_PrecioNCCDataTable();
+            Prueba_2017Preseleccion.spTraer_PrecioNCCDataTable dataTable = new Prueba_2017Preseleccion.spTraer_PrecioNCCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -45221,7 +50823,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_PrecioNSCDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_PrecioNSCDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -45234,9 +50836,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_PrecioNSCDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraer_PrecioNSCDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraer_PrecioNSCDataTable dataTable = new Prueba_2017DataSet.spTraer_PrecioNSCDataTable();
+            Prueba_2017Preseleccion.spTraer_PrecioNSCDataTable dataTable = new Prueba_2017Preseleccion.spTraer_PrecioNSCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -45396,7 +50998,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_Rendimiento_descarteNCCDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_Rendimiento_descarteNCCDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -45415,7 +51017,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_Rendimiento_descarteNCCDataTable GetData(string variedad) {
+        public virtual Prueba_2017Preseleccion.spTraer_Rendimiento_descarteNCCDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -45423,7 +51025,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet.spTraer_Rendimiento_descarteNCCDataTable dataTable = new Prueba_2017DataSet.spTraer_Rendimiento_descarteNCCDataTable();
+            Prueba_2017Preseleccion.spTraer_Rendimiento_descarteNCCDataTable dataTable = new Prueba_2017Preseleccion.spTraer_Rendimiento_descarteNCCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -45577,7 +51179,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_Retorno_final_kilosDataTable dataTable, global::System.Nullable<int> variedad) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_Retorno_final_kilosDataTable dataTable, global::System.Nullable<int> variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(variedad.Value));
@@ -45596,7 +51198,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_Retorno_final_kilosDataTable GetData(global::System.Nullable<int> variedad) {
+        public virtual Prueba_2017Preseleccion.spTraer_Retorno_final_kilosDataTable GetData(global::System.Nullable<int> variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(variedad.Value));
@@ -45604,7 +51206,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet.spTraer_Retorno_final_kilosDataTable dataTable = new Prueba_2017DataSet.spTraer_Retorno_final_kilosDataTable();
+            Prueba_2017Preseleccion.spTraer_Retorno_final_kilosDataTable dataTable = new Prueba_2017Preseleccion.spTraer_Retorno_final_kilosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -45761,7 +51363,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_TarjaDataTable dataTable, string tarja) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_TarjaDataTable dataTable, string tarja) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((tarja == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -45780,7 +51382,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_TarjaDataTable GetData(string tarja) {
+        public virtual Prueba_2017Preseleccion.spTraer_TarjaDataTable GetData(string tarja) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((tarja == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -45788,7 +51390,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(tarja));
             }
-            Prueba_2017DataSet.spTraer_TarjaDataTable dataTable = new Prueba_2017DataSet.spTraer_TarjaDataTable();
+            Prueba_2017Preseleccion.spTraer_TarjaDataTable dataTable = new Prueba_2017Preseleccion.spTraer_TarjaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -45942,7 +51544,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraer_VANASDataTable dataTable, string variedad) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraer_VANASDataTable dataTable, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -45961,7 +51563,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraer_VANASDataTable GetData(string variedad) {
+        public virtual Prueba_2017Preseleccion.spTraer_VANASDataTable GetData(string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((variedad == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -45969,7 +51571,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet.spTraer_VANASDataTable dataTable = new Prueba_2017DataSet.spTraer_VANASDataTable();
+            Prueba_2017Preseleccion.spTraer_VANASDataTable dataTable = new Prueba_2017Preseleccion.spTraer_VANASDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -46128,7 +51730,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerAnalisisExternoDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerAnalisisExternoDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -46147,7 +51749,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerAnalisisExternoDataTable GetData(global::System.Nullable<int> Num_Analisis) {
+        public virtual Prueba_2017Preseleccion.spTraerAnalisisExternoDataTable GetData(global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -46155,7 +51757,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet.spTraerAnalisisExternoDataTable dataTable = new Prueba_2017DataSet.spTraerAnalisisExternoDataTable();
+            Prueba_2017Preseleccion.spTraerAnalisisExternoDataTable dataTable = new Prueba_2017Preseleccion.spTraerAnalisisExternoDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -46318,7 +51920,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerAnalisisInternoDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerAnalisisInternoDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -46337,7 +51939,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerAnalisisInternoDataTable GetData(global::System.Nullable<int> Num_Analisis) {
+        public virtual Prueba_2017Preseleccion.spTraerAnalisisInternoDataTable GetData(global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -46345,7 +51947,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet.spTraerAnalisisInternoDataTable dataTable = new Prueba_2017DataSet.spTraerAnalisisInternoDataTable();
+            Prueba_2017Preseleccion.spTraerAnalisisInternoDataTable dataTable = new Prueba_2017Preseleccion.spTraerAnalisisInternoDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -46501,7 +52103,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerDecisionDataTable dataTable, string calibre, string categoria, string variedad) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerDecisionDataTable dataTable, string calibre, string categoria, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((calibre == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -46532,7 +52134,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerDecisionDataTable GetData(string calibre, string categoria, string variedad) {
+        public virtual Prueba_2017Preseleccion.spTraerDecisionDataTable GetData(string calibre, string categoria, string variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((calibre == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -46552,7 +52154,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[3].Value = ((string)(variedad));
             }
-            Prueba_2017DataSet.spTraerDecisionDataTable dataTable = new Prueba_2017DataSet.spTraerDecisionDataTable();
+            Prueba_2017Preseleccion.spTraerDecisionDataTable dataTable = new Prueba_2017Preseleccion.spTraerDecisionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -46705,7 +52307,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerDistintosProductoresDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerDistintosProductoresDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -46718,9 +52320,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerDistintosProductoresDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraerDistintosProductoresDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraerDistintosProductoresDataTable dataTable = new Prueba_2017DataSet.spTraerDistintosProductoresDataTable();
+            Prueba_2017Preseleccion.spTraerDistintosProductoresDataTable dataTable = new Prueba_2017Preseleccion.spTraerDistintosProductoresDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -46880,7 +52482,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerEncabezadoDataTable dataTable, global::System.Nullable<int> Lote) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerEncabezadoDataTable dataTable, global::System.Nullable<int> Lote) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Lote.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Lote.Value));
@@ -46899,7 +52501,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerEncabezadoDataTable GetData(global::System.Nullable<int> Lote) {
+        public virtual Prueba_2017Preseleccion.spTraerEncabezadoDataTable GetData(global::System.Nullable<int> Lote) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Lote.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Lote.Value));
@@ -46907,7 +52509,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet.spTraerEncabezadoDataTable dataTable = new Prueba_2017DataSet.spTraerEncabezadoDataTable();
+            Prueba_2017Preseleccion.spTraerEncabezadoDataTable dataTable = new Prueba_2017Preseleccion.spTraerEncabezadoDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -47068,7 +52670,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerEncabezadosDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerEncabezadosDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -47081,9 +52683,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerEncabezadosDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraerEncabezadosDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraerEncabezadosDataTable dataTable = new Prueba_2017DataSet.spTraerEncabezadosDataTable();
+            Prueba_2017Preseleccion.spTraerEncabezadosDataTable dataTable = new Prueba_2017Preseleccion.spTraerEncabezadosDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -47241,7 +52843,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerEnvasesDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerEnvasesDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -47260,7 +52862,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerEnvasesDataTable GetData(global::System.Nullable<int> Num_Analisis) {
+        public virtual Prueba_2017Preseleccion.spTraerEnvasesDataTable GetData(global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -47268,7 +52870,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet.spTraerEnvasesDataTable dataTable = new Prueba_2017DataSet.spTraerEnvasesDataTable();
+            Prueba_2017Preseleccion.spTraerEnvasesDataTable dataTable = new Prueba_2017Preseleccion.spTraerEnvasesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -47424,7 +53026,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerEvaluacionDataTable dataTable, string Parametro, string Variedad) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerEvaluacionDataTable dataTable, string Parametro, string Variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Parametro == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -47449,7 +53051,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerEvaluacionDataTable GetData(string Parametro, string Variedad) {
+        public virtual Prueba_2017Preseleccion.spTraerEvaluacionDataTable GetData(string Parametro, string Variedad) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Parametro == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -47463,7 +53065,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(Variedad));
             }
-            Prueba_2017DataSet.spTraerEvaluacionDataTable dataTable = new Prueba_2017DataSet.spTraerEvaluacionDataTable();
+            Prueba_2017Preseleccion.spTraerEvaluacionDataTable dataTable = new Prueba_2017Preseleccion.spTraerEvaluacionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -47618,7 +53220,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerEvaluacionesDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerEvaluacionesDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -47631,9 +53233,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerEvaluacionesDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraerEvaluacionesDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraerEvaluacionesDataTable dataTable = new Prueba_2017DataSet.spTraerEvaluacionesDataTable();
+            Prueba_2017Preseleccion.spTraerEvaluacionesDataTable dataTable = new Prueba_2017Preseleccion.spTraerEvaluacionesDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -47818,7 +53420,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerExtraccionDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerExtraccionDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -47831,9 +53433,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerExtraccionDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraerExtraccionDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraerExtraccionDataTable dataTable = new Prueba_2017DataSet.spTraerExtraccionDataTable();
+            Prueba_2017Preseleccion.spTraerExtraccionDataTable dataTable = new Prueba_2017Preseleccion.spTraerExtraccionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -47986,7 +53588,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerFechaEstimacionDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerFechaEstimacionDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -47999,9 +53601,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerFechaEstimacionDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraerFechaEstimacionDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraerFechaEstimacionDataTable dataTable = new Prueba_2017DataSet.spTraerFechaEstimacionDataTable();
+            Prueba_2017Preseleccion.spTraerFechaEstimacionDataTable dataTable = new Prueba_2017Preseleccion.spTraerFechaEstimacionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -48154,7 +53756,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerFechaEstimacionCalibreDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerFechaEstimacionCalibreDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -48167,9 +53769,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerFechaEstimacionCalibreDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraerFechaEstimacionCalibreDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraerFechaEstimacionCalibreDataTable dataTable = new Prueba_2017DataSet.spTraerFechaEstimacionCalibreDataTable();
+            Prueba_2017Preseleccion.spTraerFechaEstimacionCalibreDataTable dataTable = new Prueba_2017Preseleccion.spTraerFechaEstimacionCalibreDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -48322,7 +53924,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerFechaEstimacionCategoriasDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerFechaEstimacionCategoriasDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -48335,9 +53937,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerFechaEstimacionCategoriasDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraerFechaEstimacionCategoriasDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraerFechaEstimacionCategoriasDataTable dataTable = new Prueba_2017DataSet.spTraerFechaEstimacionCategoriasDataTable();
+            Prueba_2017Preseleccion.spTraerFechaEstimacionCategoriasDataTable dataTable = new Prueba_2017Preseleccion.spTraerFechaEstimacionCategoriasDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -48491,7 +54093,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerIdCalibreDataTable dataTable, string calibre) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerIdCalibreDataTable dataTable, string calibre) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((calibre == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -48510,7 +54112,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerIdCalibreDataTable GetData(string calibre) {
+        public virtual Prueba_2017Preseleccion.spTraerIdCalibreDataTable GetData(string calibre) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((calibre == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -48518,7 +54120,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(calibre));
             }
-            Prueba_2017DataSet.spTraerIdCalibreDataTable dataTable = new Prueba_2017DataSet.spTraerIdCalibreDataTable();
+            Prueba_2017Preseleccion.spTraerIdCalibreDataTable dataTable = new Prueba_2017Preseleccion.spTraerIdCalibreDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -48672,7 +54274,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerIdCategoriaDataTable dataTable, string categoria) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerIdCategoriaDataTable dataTable, string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((categoria == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -48691,7 +54293,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerIdCategoriaDataTable GetData(string categoria) {
+        public virtual Prueba_2017Preseleccion.spTraerIdCategoriaDataTable GetData(string categoria) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((categoria == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -48699,7 +54301,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((string)(categoria));
             }
-            Prueba_2017DataSet.spTraerIdCategoriaDataTable dataTable = new Prueba_2017DataSet.spTraerIdCategoriaDataTable();
+            Prueba_2017Preseleccion.spTraerIdCategoriaDataTable dataTable = new Prueba_2017Preseleccion.spTraerIdCategoriaDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -48855,7 +54457,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerImpurezasDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerImpurezasDataTable dataTable, global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -48874,7 +54476,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerImpurezasDataTable GetData(global::System.Nullable<int> Num_Analisis) {
+        public virtual Prueba_2017Preseleccion.spTraerImpurezasDataTable GetData(global::System.Nullable<int> Num_Analisis) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Num_Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Num_Analisis.Value));
@@ -48882,7 +54484,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet.spTraerImpurezasDataTable dataTable = new Prueba_2017DataSet.spTraerImpurezasDataTable();
+            Prueba_2017Preseleccion.spTraerImpurezasDataTable dataTable = new Prueba_2017Preseleccion.spTraerImpurezasDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -49038,7 +54640,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerLoginDataTable dataTable, string Rut, string Password) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerLoginDataTable dataTable, string Rut, string Password) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Rut == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -49063,7 +54665,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerLoginDataTable GetData(string Rut, string Password) {
+        public virtual Prueba_2017Preseleccion.spTraerLoginDataTable GetData(string Rut, string Password) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Rut == null)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -49077,7 +54679,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(Password));
             }
-            Prueba_2017DataSet.spTraerLoginDataTable dataTable = new Prueba_2017DataSet.spTraerLoginDataTable();
+            Prueba_2017Preseleccion.spTraerLoginDataTable dataTable = new Prueba_2017Preseleccion.spTraerLoginDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -49310,7 +54912,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerPor_NSCDataTable dataTable, global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerPor_NSCDataTable dataTable, global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Producto.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Producto.Value));
@@ -49359,7 +54961,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerPor_NSCDataTable GetData(global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
+        public virtual Prueba_2017Preseleccion.spTraerPor_NSCDataTable GetData(global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Producto.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Producto.Value));
@@ -49397,7 +54999,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet.spTraerPor_NSCDataTable dataTable = new Prueba_2017DataSet.spTraerPor_NSCDataTable();
+            Prueba_2017Preseleccion.spTraerPor_NSCDataTable dataTable = new Prueba_2017Preseleccion.spTraerPor_NSCDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -49630,7 +55232,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerPor_NSC_descalibreDataTable dataTable, global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerPor_NSC_descalibreDataTable dataTable, global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Producto.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Producto.Value));
@@ -49679,7 +55281,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerPor_NSC_descalibreDataTable GetData(global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
+        public virtual Prueba_2017Preseleccion.spTraerPor_NSC_descalibreDataTable GetData(global::System.Nullable<int> Producto, global::System.Nullable<int> Cod_Variedad, global::System.Nullable<int> Cod_Halves, global::System.Nullable<int> Cod_LargePieces, global::System.Nullable<int> Cod_MediumPieces, global::System.Nullable<int> Cod_SmallPieces) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Producto.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Producto.Value));
@@ -49717,7 +55319,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            Prueba_2017DataSet.spTraerPor_NSC_descalibreDataTable dataTable = new Prueba_2017DataSet.spTraerPor_NSC_descalibreDataTable();
+            Prueba_2017Preseleccion.spTraerPor_NSC_descalibreDataTable dataTable = new Prueba_2017Preseleccion.spTraerPor_NSC_descalibreDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -49872,7 +55474,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerPorvar_PorcentajeDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerPorvar_PorcentajeDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -49885,9 +55487,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerPorvar_PorcentajeDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraerPorvar_PorcentajeDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraerPorvar_PorcentajeDataTable dataTable = new Prueba_2017DataSet.spTraerPorvar_PorcentajeDataTable();
+            Prueba_2017Preseleccion.spTraerPorvar_PorcentajeDataTable dataTable = new Prueba_2017Preseleccion.spTraerPorvar_PorcentajeDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -50103,7 +55705,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerReporteDataTable dataTable, global::System.Nullable<int> Analisis, string calificacion) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerReporteDataTable dataTable, global::System.Nullable<int> Analisis, string calificacion) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Analisis.Value));
@@ -50128,7 +55730,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerReporteDataTable GetData(global::System.Nullable<int> Analisis, string calificacion) {
+        public virtual Prueba_2017Preseleccion.spTraerReporteDataTable GetData(global::System.Nullable<int> Analisis, string calificacion) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((Analisis.HasValue == true)) {
                 this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Analisis.Value));
@@ -50142,7 +55744,422 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 this.Adapter.SelectCommand.Parameters[2].Value = ((string)(calificacion));
             }
-            Prueba_2017DataSet.spTraerReporteDataTable dataTable = new Prueba_2017DataSet.spTraerReporteDataTable();
+            Prueba_2017Preseleccion.spTraerReporteDataTable dataTable = new Prueba_2017Preseleccion.spTraerReporteDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class spTraerReporte_Analisis_Calidad_PMMTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public spTraerReporte_Analisis_Calidad_PMMTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "spTraerReporte_Analisis_Calidad_PMM";
+            tableMapping.ColumnMappings.Add("Analisis", "Analisis");
+            tableMapping.ColumnMappings.Add("Fecha", "Fecha");
+            tableMapping.ColumnMappings.Add("Id_Tarja", "Id_Tarja");
+            tableMapping.ColumnMappings.Add("Bins", "Bins");
+            tableMapping.ColumnMappings.Add("Turno", "Turno");
+            tableMapping.ColumnMappings.Add("Proceso", "Proceso");
+            tableMapping.ColumnMappings.Add("Cod_Producto_Tarja", "Cod_Producto_Tarja");
+            tableMapping.ColumnMappings.Add("Des_Producto", "Des_Producto");
+            tableMapping.ColumnMappings.Add("Peso_Muestra", "Peso_Muestra");
+            tableMapping.ColumnMappings.Add("Cascara", "Cascara");
+            tableMapping.ColumnMappings.Add("Mat_Extraña", "Mat_Extraña");
+            tableMapping.ColumnMappings.Add("Halves", "Halves");
+            tableMapping.ColumnMappings.Add("Large_Pieces", "Large_Pieces");
+            tableMapping.ColumnMappings.Add("Medium_Pieces", "Medium_Pieces");
+            tableMapping.ColumnMappings.Add("Small_Pieces", "Small_Pieces");
+            tableMapping.ColumnMappings.Add("Extra_Light", "Extra_Light");
+            tableMapping.ColumnMappings.Add("Light", "Light");
+            tableMapping.ColumnMappings.Add("Light_Ambar", "Light_Ambar");
+            tableMapping.ColumnMappings.Add("Ambar", "Ambar");
+            tableMapping.ColumnMappings.Add("Amarillo", "Amarillo");
+            tableMapping.ColumnMappings.Add("Defectos", "Defectos");
+            tableMapping.ColumnMappings.Add("Observacion", "Observacion");
+            tableMapping.ColumnMappings.Add("Observacion_Mat_Extraña", "Observacion_Mat_Extraña");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.spTraerReporte_Analisis_Calidad_PMM";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerReporte_Analisis_Calidad_PMMDataTable dataTable, global::System.Nullable<int> Analisis) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((Analisis.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Analisis.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual Prueba_2017Preseleccion.spTraerReporte_Analisis_Calidad_PMMDataTable GetData(global::System.Nullable<int> Analisis) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((Analisis.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Analisis.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            Prueba_2017Preseleccion.spTraerReporte_Analisis_Calidad_PMMDataTable dataTable = new Prueba_2017Preseleccion.spTraerReporte_Analisis_Calidad_PMMDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class spTraerReporte_Analisis_Calidad_PreseleccionTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public spTraerReporte_Analisis_Calidad_PreseleccionTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "spTraerReporte_Analisis_Calidad_Preseleccion";
+            tableMapping.ColumnMappings.Add("Analisis", "Analisis");
+            tableMapping.ColumnMappings.Add("Fecha", "Fecha");
+            tableMapping.ColumnMappings.Add("Id_Tarja", "Id_Tarja");
+            tableMapping.ColumnMappings.Add("Bins", "Bins");
+            tableMapping.ColumnMappings.Add("Turno", "Turno");
+            tableMapping.ColumnMappings.Add("Proceso", "Proceso");
+            tableMapping.ColumnMappings.Add("Cod_Producto_Tarja", "Cod_Producto_Tarja");
+            tableMapping.ColumnMappings.Add("Des_Producto", "Des_Producto");
+            tableMapping.ColumnMappings.Add("Peso_Muestra", "Peso_Muestra");
+            tableMapping.ColumnMappings.Add("Cascara", "Cascara");
+            tableMapping.ColumnMappings.Add("Septum", "Septum");
+            tableMapping.ColumnMappings.Add("Mat_Extraña", "Mat_Extraña");
+            tableMapping.ColumnMappings.Add("Halves", "Halves");
+            tableMapping.ColumnMappings.Add("Large_Pieces", "Large_Pieces");
+            tableMapping.ColumnMappings.Add("Medium_Pieces", "Medium_Pieces");
+            tableMapping.ColumnMappings.Add("Small_Pieces", "Small_Pieces");
+            tableMapping.ColumnMappings.Add("Extra_Light", "Extra_Light");
+            tableMapping.ColumnMappings.Add("Light", "Light");
+            tableMapping.ColumnMappings.Add("Light_Ambar", "Light_Ambar");
+            tableMapping.ColumnMappings.Add("Ambar", "Ambar");
+            tableMapping.ColumnMappings.Add("Amarillo", "Amarillo");
+            tableMapping.ColumnMappings.Add("Defectos", "Defectos");
+            tableMapping.ColumnMappings.Add("Reseca_Leve", "Reseca_Leve");
+            tableMapping.ColumnMappings.Add("Reseca_Grave", "Reseca_Grave");
+            tableMapping.ColumnMappings.Add("Daño_Insecto", "Daño_Insecto");
+            tableMapping.ColumnMappings.Add("Mancha_Agua", "Mancha_Agua");
+            tableMapping.ColumnMappings.Add("Hongo_Inactivo", "Hongo_Inactivo");
+            tableMapping.ColumnMappings.Add("Hongo_Activo", "Hongo_Activo");
+            tableMapping.ColumnMappings.Add("Observacion", "Observacion");
+            tableMapping.ColumnMappings.Add("Observacion_Mat_Extraña", "Observacion_Mat_Extraña");
+            tableMapping.ColumnMappings.Add("Observacion_Cascara", "Observacion_Cascara");
+            tableMapping.ColumnMappings.Add("Observacion_Septum", "Observacion_Septum");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.spTraerReporte_Analisis_Calidad_Preseleccion";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerReporte_Analisis_Calidad_PreseleccionDataTable dataTable, global::System.Nullable<int> Analisis) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((Analisis.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Analisis.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual Prueba_2017Preseleccion.spTraerReporte_Analisis_Calidad_PreseleccionDataTable GetData(global::System.Nullable<int> Analisis) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((Analisis.HasValue == true)) {
+                this.Adapter.SelectCommand.Parameters[1].Value = ((int)(Analisis.Value));
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            Prueba_2017Preseleccion.spTraerReporte_Analisis_Calidad_PreseleccionDataTable dataTable = new Prueba_2017Preseleccion.spTraerReporte_Analisis_Calidad_PreseleccionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -50298,7 +56315,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerUsuarioDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerUsuarioDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -50311,9 +56328,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerUsuarioDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraerUsuarioDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraerUsuarioDataTable dataTable = new Prueba_2017DataSet.spTraerUsuarioDataTable();
+            Prueba_2017Preseleccion.spTraerUsuarioDataTable dataTable = new Prueba_2017Preseleccion.spTraerUsuarioDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -50467,7 +56484,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.spTraerVariedadDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.spTraerVariedadDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -50480,9 +56497,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.spTraerVariedadDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.spTraerVariedadDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.spTraerVariedadDataTable dataTable = new Prueba_2017DataSet.spTraerVariedadDataTable();
+            Prueba_2017Preseleccion.spTraerVariedadDataTable dataTable = new Prueba_2017Preseleccion.spTraerVariedadDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -50636,7 +56653,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(Prueba_2017DataSet.traer_tarifazDataTable dataTable) {
+        public virtual int Fill(Prueba_2017Preseleccion.traer_tarifazDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -50649,9 +56666,9 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual Prueba_2017DataSet.traer_tarifazDataTable GetData() {
+        public virtual Prueba_2017Preseleccion.traer_tarifazDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            Prueba_2017DataSet.traer_tarifazDataTable dataTable = new Prueba_2017DataSet.traer_tarifazDataTable();
+            Prueba_2017Preseleccion.traer_tarifazDataTable dataTable = new Prueba_2017Preseleccion.traer_tarifazDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -50684,7 +56701,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.IDbCommand[97];
+            this._commandCollection = new global::System.Data.IDbCommand[98];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[0])).CommandText = "dbo.sp_MSdel_dboCalibre";
@@ -51003,493 +57020,522 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[29])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[30] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).CommandText = "dbo.spAgregarEncabezado";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).CommandText = "dbo.spAgregarCalidad_Preseleccion";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Lote", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Productor", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Patio", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fecha_Recepcion", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fecha_Analisis", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tipo_Recepcion", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rut", global::System.Data.SqlDbType.VarChar, 40, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fecha", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tarja", global::System.Data.SqlDbType.Char, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@bins", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@turno", global::System.Data.SqlDbType.Char, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@proceso", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@producto_user", global::System.Data.SqlDbType.Char, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@producto_tarja", global::System.Data.SqlDbType.Char, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@peso_muestra", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@cascara", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@septum", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@mat_extraña", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@halves", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@large_pieces", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@medium_pieces", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@small_pieces", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@extra_light", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@light", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@light_ambar", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ambar", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@amarillo", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@defectos", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Reseca_Leve", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Reseca_Grave", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Daño_Insecto", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Mancha_Agua", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Hongo_Inactivo", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Hongo_Activo", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@observacion", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@observacion_mat_extraña", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@observacion_Cascara", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@observacion_Septum", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[30])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[31] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).CommandText = "dbo.spAgregarEnvases";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).CommandText = "dbo.spAgregarEncabezado";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Num_Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Quebrados", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Dañados", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Productor", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Lote", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Productor", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Patio", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fecha_Recepcion", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fecha_Analisis", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tipo_Recepcion", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rut", global::System.Data.SqlDbType.VarChar, 40, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Condicion", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Anakena", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[31])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[32] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).CommandText = "dbo.spAgregarInpurezas";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).CommandText = "dbo.spAgregarEnvases";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Num_Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Piedra", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Palo", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pelon", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Quebrados", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Dañados", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Productor", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rut", global::System.Data.SqlDbType.VarChar, 40, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Condicion", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Anakena", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[32])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[33] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[33])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[33])).CommandText = "dbo.spAgregarTemporal_Blanquear";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[33])).CommandText = "dbo.spAgregarInpurezas";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[33])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[33])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[33])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cod_Variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[33])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Num_Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[33])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Piedra", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[33])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Palo", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[33])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pelon", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[33])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[34] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[34])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[34])).CommandText = "dbo.spAgregarTemporal_Descarte";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[34])).CommandText = "dbo.spAgregarTemporal_Blanquear";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[34])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[34])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[34])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cod_Variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[34])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[35] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[35])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[35])).CommandText = "dbo.spAgregarTemporal_ENVASADO";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[35])).CommandText = "dbo.spAgregarTemporal_Descarte";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[35])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[35])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[35])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cod_Variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[35])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[36] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[36])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[36])).CommandText = "dbo.spAgregarTemporal_Exportacion";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[36])).CommandText = "dbo.spAgregarTemporal_ENVASADO";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[36])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[36])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[36])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cod_Variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[36])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[37] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[37])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[37])).CommandText = "dbo.spAgregarTemporal_Lavado";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[37])).CommandText = "dbo.spAgregarTemporal_Exportacion";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[37])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[37])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[37])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cod_Variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[37])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[38] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[38])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[38])).CommandText = "dbo.spAgregaUsuario";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[38])).CommandText = "dbo.spAgregarTemporal_Lavado";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[38])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[38])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[38])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rut", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[38])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nombre", global::System.Data.SqlDbType.VarChar, 40, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[38])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.VarChar, 300, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[38])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tipo", global::System.Data.SqlDbType.Char, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[38])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Cod_Variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[38])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[39] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[39])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[39])).CommandText = "dbo.spBorrar_Decision";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[39])).CommandText = "dbo.spAgregaUsuario";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[39])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[39])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[39])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[39])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rut", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[39])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nombre", global::System.Data.SqlDbType.VarChar, 40, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[39])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.VarChar, 300, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[39])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tipo", global::System.Data.SqlDbType.Char, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[39])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[40] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[40])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[40])).CommandText = "dbo.spBorrar_Factor";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[40])).CommandText = "dbo.spBorrar_Decision";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[40])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[40])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[40])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[41] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[41])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[41])).CommandText = "dbo.spBorrar_Matriz";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[41])).CommandText = "dbo.spBorrar_Factor";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[41])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[41])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[41])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[42] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[42])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[42])).CommandText = "dbo.spBorrar_Retorno_Calibre";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[42])).CommandText = "dbo.spBorrar_Matriz";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[42])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[42])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[42])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[43] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[43])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[43])).CommandText = "dbo.spBorrar_Retorno_Categoria";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[43])).CommandText = "dbo.spBorrar_Retorno_Calibre";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[43])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[43])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[43])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[44] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[44])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[44])).CommandText = "dbo.spCalibrado_CalibreCategoria";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[44])).CommandText = "dbo.spBorrar_Retorno_Categoria";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[44])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[44])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[44])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[44])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[45] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[45])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[45])).CommandText = "dbo.spDelete_Rendimiento_Descarte";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[45])).CommandText = "dbo.spCalibrado_CalibreCategoria";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[45])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[45])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[45])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[45])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[46] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[46])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[46])).CommandText = "dbo.spDelete_RendimientoRealEstimado";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[46])).CommandText = "dbo.spDelete_Rendimiento_Descarte";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[46])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[46])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[46])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[47] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[47])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[47])).CommandText = "dbo.spDeleteEstimacion";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[47])).CommandText = "dbo.spDelete_RendimientoRealEstimado";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[47])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[47])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[47])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[48] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[48])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[48])).CommandText = "dbo.spDeleteEstimacion_Calibre";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[48])).CommandText = "dbo.spDeleteEstimacion";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[48])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[48])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[48])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[49] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[49])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[49])).CommandText = "dbo.spDeleteEstimacion_Categoria";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[49])).CommandText = "dbo.spDeleteEstimacion_Calibre";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[49])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[49])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[49])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[50] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[50])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[50])).CommandText = "dbo.spDeleteKG_Cat_Cal";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[50])).CommandText = "dbo.spDeleteEstimacion_Categoria";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[50])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[50])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[50])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[51] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[51])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[51])).CommandText = "dbo.spDeletePor_Var";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[51])).CommandText = "dbo.spDeleteKG_Cat_Cal";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[51])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[51])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[51])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[52] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[52])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[52])).CommandText = "dbo.spDeleteRecepcion";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[52])).CommandText = "dbo.spDeletePor_Var";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[52])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[52])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[52])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[52])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[53] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[53])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[53])).CommandText = "dbo.spDeleteUsuarios";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[53])).CommandText = "dbo.spDeleteRecepcion";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[53])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[53])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[53])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rut", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[53])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[53])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[54] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[54])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[54])).CommandText = "dbo.spEliminar_Rendimiento_PM";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[54])).CommandText = "dbo.spDeleteUsuarios";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[54])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[54])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[54])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rut", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[54])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[55] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[55])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[55])).CommandText = "dbo.spEstimacion_CalibreCategoria";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[55])).CommandText = "dbo.spEliminar_Rendimiento_PM";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[55])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[55])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[55])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[55])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[56] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[56])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[56])).CommandText = "dbo.[spEstimacionCalibre%]";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[56])).CommandText = "dbo.spEstimacion_CalibreCategoria";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[56])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[56])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[56])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[56])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[57] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[57])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[57])).CommandText = "dbo.spEstimacionCalibreCategoria";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[57])).CommandText = "dbo.[spEstimacionCalibre%]";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[57])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[57])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[57])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[57])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[58] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[58])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[58])).CommandText = "dbo.spEstimacionCalibreKilos";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[58])).CommandText = "dbo.spEstimacionCalibreCategoria";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[58])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[58])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[58])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[58])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[59] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[59])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[59])).CommandText = "dbo.spEstimacionCalibreporfecha";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[59])).CommandText = "dbo.spEstimacionCalibreKilos";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[59])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[59])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[59])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[59])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fecha", global::System.Data.SqlDbType.Char, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[59])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[60] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[60])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[60])).CommandText = "dbo.spEstimacionCategoriaporfecha";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[60])).CommandText = "dbo.spEstimacionCalibreporfecha";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[60])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[60])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[60])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[60])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fecha", global::System.Data.SqlDbType.Char, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[61] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[61])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[61])).CommandText = "dbo.[spEstimacionCategorias%]";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[61])).CommandText = "dbo.spEstimacionCategoriaporfecha";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[61])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[61])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[61])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[61])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[61])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fecha", global::System.Data.SqlDbType.Char, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[62] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[62])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[62])).CommandText = "dbo.spEstimacionCategoriasKilos";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[62])).CommandText = "dbo.[spEstimacionCategorias%]";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[62])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[62])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[62])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[63] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[63])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[63])).CommandText = "dbo.spEstimacionporfecha";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[63])).CommandText = "dbo.spEstimacionCategoriasKilos";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[63])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[63])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[63])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fecha", global::System.Data.SqlDbType.Char, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[63])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[64] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[64])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[64])).CommandText = "dbo.spExtraer_Pall";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[64])).CommandText = "dbo.spEstimacionporfecha";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[64])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[64])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[64])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 1000, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[64])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fecha", global::System.Data.SqlDbType.Char, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[65] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[65])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[65])).CommandText = "dbo.[spRealCalibre%]";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[65])).CommandText = "dbo.spExtraer_Pall";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[65])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[65])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[65])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[65])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 1000, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[66] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[66])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[66])).CommandText = "dbo.spRealCalibreKilos";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[66])).CommandText = "dbo.[spRealCalibre%]";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[66])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[66])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[66])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[67] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[67])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[67])).CommandText = "dbo.[spRealCategorias%]";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[67])).CommandText = "dbo.spRealCalibreKilos";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[67])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[67])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[67])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[68] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[68])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[68])).CommandText = "dbo.spRealCategoriasKilos";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[68])).CommandText = "dbo.[spRealCategorias%]";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[68])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[68])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[68])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[69] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[69])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[69])).CommandText = "dbo.spRealmasEstimado_CalibreCategoria";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[69])).CommandText = "dbo.spRealCategoriasKilos";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[69])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[69])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[69])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[69])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[70] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[70])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[70])).CommandText = "dbo.spTarifas_PCC";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[70])).CommandText = "dbo.spRealmasEstimado_CalibreCategoria";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[70])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[70])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[70])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[70])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[71] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[71])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[71])).CommandText = "dbo.spTarifas_PSC";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[71])).CommandText = "dbo.spTarifas_PCC";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[71])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[71])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[71])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[72] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[72])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[72])).CommandText = "dbo.spTarifaz_Calibre";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[72])).CommandText = "dbo.spTarifas_PSC";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[72])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[72])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[72])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[73] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[73])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[73])).CommandText = "dbo.spTraer_Estimacion";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[73])).CommandText = "dbo.spTarifaz_Calibre";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[73])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[73])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[73])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[74] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[74])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[74])).CommandText = "dbo.[spTraer_Estimacion%]";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[74])).CommandText = "dbo.spTraer_Estimacion";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[74])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[74])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[74])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[75] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[75])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[75])).CommandText = "dbo.spTraer_Estimacion2";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[75])).CommandText = "dbo.[spTraer_Estimacion%]";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[75])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[75])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[75])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[76] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[76])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[76])).CommandText = "dbo.[spTraer_Estimacion2%]";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[76])).CommandText = "dbo.spTraer_Estimacion2";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[76])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[76])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[76])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[77] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[77])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[77])).CommandText = "dbo.spTraer_RealMasEstimado";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[77])).CommandText = "dbo.[spTraer_Estimacion2%]";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[77])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[77])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[77])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[78] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[78])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[78])).CommandText = "dbo.spTraer_RealMasEstimadoCalibre";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[78])).CommandText = "dbo.spTraer_RealMasEstimado";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[78])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[78])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[78])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[79] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[79])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[79])).CommandText = "dbo.[spTraer_RealMasEstimadoCalibre%]";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[79])).CommandText = "dbo.spTraer_RealMasEstimadoCalibre";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[79])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[79])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[79])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[80] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[80])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[80])).CommandText = "dbo.spTraer_RealMasEstimadoCategoria";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[80])).CommandText = "dbo.[spTraer_RealMasEstimadoCalibre%]";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[80])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[80])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[80])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[81] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[81])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[81])).CommandText = "dbo.[spTraer_RealMasEstimadoCategoria%]";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[81])).CommandText = "dbo.spTraer_RealMasEstimadoCategoria";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[81])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[81])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[81])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[82] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[82])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[82])).CommandText = "dbo.spTraer_RealVsEstimacion";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[82])).CommandText = "dbo.[spTraer_RealMasEstimadoCategoria%]";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[82])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[82])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[82])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[83] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[83])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[83])).CommandText = "dbo.spUpdateAnalisisExterno";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[83])).CommandText = "dbo.spTraer_RealVsEstimacion";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[83])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[83])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[83])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Num_Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[83])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Partidas_Quebradas", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[83])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sin_Pelon", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[83])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pelon_Resquebrajado", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[83])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Partidas_Cerrado", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[83])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Negras_Momificadas", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[83])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pelon_Adherido", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[83])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[83])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.VarChar, 25, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[84] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).CommandText = "dbo.spUpdateAnalisisInterno";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).CommandText = "dbo.spUpdateAnalisisExterno";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Num_Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Daño_Insectos", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Vanas", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Reseca", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Hongo", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Extra_Light", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Light", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Light_Ambar", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ambar_Amarillo", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Observaciones", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Partidas_Quebradas", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Sin_Pelon", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pelon_Resquebrajado", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Partidas_Cerrado", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Negras_Momificadas", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pelon_Adherido", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[84])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[85] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).CommandText = "dbo.spUpdateEncabezado";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).CommandText = "dbo.spUpdateAnalisisInterno";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Lote", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Variedad", global::System.Data.SqlDbType.Char, 40, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Productor", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Patio", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fecha_Recepcion", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fecha_Analisis", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tipo_Recepcion", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Num_Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Daño_Insectos", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Vanas", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Reseca", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Hongo_Activo", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Hongo_Inactivo", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Extra_Light", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Light", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Light_Ambar", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Ambar_Amarillo", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Observaciones", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[85])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[86] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).CommandText = "dbo.spUpdateEnvases";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).CommandText = "dbo.spUpdateEncabezado";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Num_Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Quebrados", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Dañados", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Productor", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Condicion", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Anakena", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Lote", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Variedad", global::System.Data.SqlDbType.Char, 40, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Productor", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Patio", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fecha_Recepcion", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Fecha_Analisis", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tipo_Recepcion", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[86])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[87] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).CommandText = "dbo.spUpdateInpurezas";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).CommandText = "dbo.spUpdateEnvases";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Num_Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Piedra", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Palo", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pelon", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Quebrados", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Dañados", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Productor", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Condicion", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Anakena", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[87])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[88] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[88])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[88])).CommandText = "dbo.spUpdateUsuarios";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[88])).CommandText = "dbo.spUpdateInpurezas";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[88])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[88])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[88])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rut", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[88])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nombre", global::System.Data.SqlDbType.VarChar, 40, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[88])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.VarChar, 300, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[88])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tipo", global::System.Data.SqlDbType.Char, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[88])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Num_Analisis", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[88])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Piedra", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[88])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Palo", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[88])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Pelon", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[88])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[89] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[89])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[89])).CommandText = "dbo.Update_Factor";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[89])).CommandText = "dbo.spUpdateUsuarios";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[89])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[89])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[89])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@estimacion", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[89])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@real", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[89])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[89])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Rut", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[89])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nombre", global::System.Data.SqlDbType.VarChar, 40, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[89])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@password", global::System.Data.SqlDbType.VarChar, 300, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[89])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@tipo", global::System.Data.SqlDbType.Char, 1, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[89])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[90] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[90])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[90])).CommandText = "dbo.Update_Temporal_Envasado";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[90])).CommandText = "dbo.Update_Factor";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[90])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[90])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[90])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@monto", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[90])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@temporal", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[90])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@estimacion", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[90])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@real", global::System.Data.SqlDbType.Decimal, 9, global::System.Data.ParameterDirection.Input, 18, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[90])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[90])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[91] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).CommandText = "dbo.UpdateEvaluacion";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).CommandText = "dbo.Update_Temporal_Envasado";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Verde_max", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Amarillo_max", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Parametro", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@monto", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@temporal", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[91])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[92] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[92])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[92])).CommandText = "dbo.UpdatePrecio_NCC";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[92])).CommandText = "dbo.UpdateEvaluacion";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[92])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[92])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[92])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@monto", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[92])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[92])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Calibre", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[92])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Verde_max", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[92])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Amarillo_max", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[92])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Parametro", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[92])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[92])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[93] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[93])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[93])).CommandText = "dbo.UpdatePrecio_NSC";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[93])).CommandText = "dbo.UpdatePrecio_NCC";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[93])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[93])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[93])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@monto", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[93])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@producto", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[93])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[93])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Calibre", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[93])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[94] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[94])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[94])).CommandText = "dbo.UpdateTarifa_Calibre";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[94])).CommandText = "dbo.UpdatePrecio_NSC";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[94])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[94])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[94])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@monto", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[94])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarifa", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[94])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Calibre", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[94])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@producto", global::System.Data.SqlDbType.VarChar, 50, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[94])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[95] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[95])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[95])).CommandText = "dbo.UpdateTarifa_PCC";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[95])).CommandText = "dbo.UpdateTarifa_Calibre";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[95])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[95])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[95])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@monto", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[95])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Categoria", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[95])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[95])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Tarifa", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[95])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Calibre", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[95])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[96] = new global::System.Data.SqlClient.SqlCommand();
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[96])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
-            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[96])).CommandText = "dbo.UpdateTarifa_PSC";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[96])).CommandText = "dbo.UpdateTarifa_PCC";
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[96])).CommandType = global::System.Data.CommandType.StoredProcedure;
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[96])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[96])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@monto", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -51497,6 +57543,16 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[96])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[96])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Calibre", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[96])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[97] = new global::System.Data.SqlClient.SqlCommand();
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[97])).Connection = new global::System.Data.SqlClient.SqlConnection(global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString);
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[97])).CommandText = "dbo.UpdateTarifa_PSC";
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[97])).CommandType = global::System.Data.CommandType.StoredProcedure;
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[97])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[97])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@monto", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 53, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[97])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Categoria", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[97])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@variedad", global::System.Data.SqlDbType.Char, 2, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[97])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Calibre", global::System.Data.SqlDbType.VarChar, 10, global::System.Data.ParameterDirection.Input, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            ((global::System.Data.SqlClient.SqlCommand)(this._commandCollection[97])).Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@msg", global::System.Data.SqlDbType.VarChar, 100, global::System.Data.ParameterDirection.InputOutput, 0, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -53294,8 +59350,268 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spAgregarEncabezado(global::System.Nullable<int> Lote, string Variedad, string Productor, string Patio, global::System.Nullable<global::System.DateTime> Fecha_Recepcion, global::System.Nullable<global::System.DateTime> Fecha_Analisis, string Tipo_Recepcion, string Rut, ref string msg) {
+        public virtual int spAgregarCalidad_Preseleccion(
+                    global::System.Nullable<int> id, 
+                    global::System.Nullable<global::System.DateTime> fecha, 
+                    string tarja, 
+                    global::System.Nullable<int> bins, 
+                    string turno, 
+                    global::System.Nullable<int> proceso, 
+                    string producto_user, 
+                    string producto_tarja, 
+                    global::System.Nullable<double> peso_muestra, 
+                    global::System.Nullable<double> cascara, 
+                    global::System.Nullable<double> septum, 
+                    global::System.Nullable<double> mat_extraña, 
+                    global::System.Nullable<double> halves, 
+                    global::System.Nullable<double> large_pieces, 
+                    global::System.Nullable<double> medium_pieces, 
+                    global::System.Nullable<double> small_pieces, 
+                    global::System.Nullable<double> extra_light, 
+                    global::System.Nullable<double> light, 
+                    global::System.Nullable<double> light_ambar, 
+                    global::System.Nullable<double> ambar, 
+                    global::System.Nullable<double> amarillo, 
+                    global::System.Nullable<double> defectos, 
+                    global::System.Nullable<double> Reseca_Leve, 
+                    global::System.Nullable<double> Reseca_Grave, 
+                    global::System.Nullable<double> Daño_Insecto, 
+                    global::System.Nullable<double> Mancha_Agua, 
+                    global::System.Nullable<double> Hongo_Inactivo, 
+                    global::System.Nullable<double> Hongo_Activo, 
+                    string observacion, 
+                    string observacion_mat_extraña, 
+                    string observacion_Cascara, 
+                    string observacion_Septum, 
+                    ref string msg) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[30]));
+            if ((id.HasValue == true)) {
+                command.Parameters[1].Value = ((int)(id.Value));
+            }
+            else {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            if ((fecha.HasValue == true)) {
+                command.Parameters[2].Value = ((System.DateTime)(fecha.Value));
+            }
+            else {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((tarja == null)) {
+                command.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[3].Value = ((string)(tarja));
+            }
+            if ((bins.HasValue == true)) {
+                command.Parameters[4].Value = ((int)(bins.Value));
+            }
+            else {
+                command.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((turno == null)) {
+                command.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[5].Value = ((string)(turno));
+            }
+            if ((proceso.HasValue == true)) {
+                command.Parameters[6].Value = ((int)(proceso.Value));
+            }
+            else {
+                command.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((producto_user == null)) {
+                command.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[7].Value = ((string)(producto_user));
+            }
+            if ((producto_tarja == null)) {
+                command.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[8].Value = ((string)(producto_tarja));
+            }
+            if ((peso_muestra.HasValue == true)) {
+                command.Parameters[9].Value = ((double)(peso_muestra.Value));
+            }
+            else {
+                command.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((cascara.HasValue == true)) {
+                command.Parameters[10].Value = ((double)(cascara.Value));
+            }
+            else {
+                command.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((septum.HasValue == true)) {
+                command.Parameters[11].Value = ((double)(septum.Value));
+            }
+            else {
+                command.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            if ((mat_extraña.HasValue == true)) {
+                command.Parameters[12].Value = ((double)(mat_extraña.Value));
+            }
+            else {
+                command.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((halves.HasValue == true)) {
+                command.Parameters[13].Value = ((double)(halves.Value));
+            }
+            else {
+                command.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            if ((large_pieces.HasValue == true)) {
+                command.Parameters[14].Value = ((double)(large_pieces.Value));
+            }
+            else {
+                command.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((medium_pieces.HasValue == true)) {
+                command.Parameters[15].Value = ((double)(medium_pieces.Value));
+            }
+            else {
+                command.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            if ((small_pieces.HasValue == true)) {
+                command.Parameters[16].Value = ((double)(small_pieces.Value));
+            }
+            else {
+                command.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            if ((extra_light.HasValue == true)) {
+                command.Parameters[17].Value = ((double)(extra_light.Value));
+            }
+            else {
+                command.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            if ((light.HasValue == true)) {
+                command.Parameters[18].Value = ((double)(light.Value));
+            }
+            else {
+                command.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            if ((light_ambar.HasValue == true)) {
+                command.Parameters[19].Value = ((double)(light_ambar.Value));
+            }
+            else {
+                command.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            if ((ambar.HasValue == true)) {
+                command.Parameters[20].Value = ((double)(ambar.Value));
+            }
+            else {
+                command.Parameters[20].Value = global::System.DBNull.Value;
+            }
+            if ((amarillo.HasValue == true)) {
+                command.Parameters[21].Value = ((double)(amarillo.Value));
+            }
+            else {
+                command.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            if ((defectos.HasValue == true)) {
+                command.Parameters[22].Value = ((double)(defectos.Value));
+            }
+            else {
+                command.Parameters[22].Value = global::System.DBNull.Value;
+            }
+            if ((Reseca_Leve.HasValue == true)) {
+                command.Parameters[23].Value = ((double)(Reseca_Leve.Value));
+            }
+            else {
+                command.Parameters[23].Value = global::System.DBNull.Value;
+            }
+            if ((Reseca_Grave.HasValue == true)) {
+                command.Parameters[24].Value = ((double)(Reseca_Grave.Value));
+            }
+            else {
+                command.Parameters[24].Value = global::System.DBNull.Value;
+            }
+            if ((Daño_Insecto.HasValue == true)) {
+                command.Parameters[25].Value = ((double)(Daño_Insecto.Value));
+            }
+            else {
+                command.Parameters[25].Value = global::System.DBNull.Value;
+            }
+            if ((Mancha_Agua.HasValue == true)) {
+                command.Parameters[26].Value = ((double)(Mancha_Agua.Value));
+            }
+            else {
+                command.Parameters[26].Value = global::System.DBNull.Value;
+            }
+            if ((Hongo_Inactivo.HasValue == true)) {
+                command.Parameters[27].Value = ((double)(Hongo_Inactivo.Value));
+            }
+            else {
+                command.Parameters[27].Value = global::System.DBNull.Value;
+            }
+            if ((Hongo_Activo.HasValue == true)) {
+                command.Parameters[28].Value = ((double)(Hongo_Activo.Value));
+            }
+            else {
+                command.Parameters[28].Value = global::System.DBNull.Value;
+            }
+            if ((observacion == null)) {
+                command.Parameters[29].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[29].Value = ((string)(observacion));
+            }
+            if ((observacion_mat_extraña == null)) {
+                command.Parameters[30].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[30].Value = ((string)(observacion_mat_extraña));
+            }
+            if ((observacion_Cascara == null)) {
+                command.Parameters[31].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[31].Value = ((string)(observacion_Cascara));
+            }
+            if ((observacion_Septum == null)) {
+                command.Parameters[32].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[32].Value = ((string)(observacion_Septum));
+            }
+            if ((msg == null)) {
+                command.Parameters[33].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[33].Value = ((string)(msg));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            if (((command.Parameters[33].Value == null) 
+                        || (command.Parameters[33].Value.GetType() == typeof(global::System.DBNull)))) {
+                msg = null;
+            }
+            else {
+                msg = ((string)(command.Parameters[33].Value));
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int spAgregarEncabezado(global::System.Nullable<int> Lote, string Variedad, string Productor, string Patio, global::System.Nullable<global::System.DateTime> Fecha_Recepcion, global::System.Nullable<global::System.DateTime> Fecha_Analisis, string Tipo_Recepcion, string Rut, ref string msg) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[31]));
             if ((Lote.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(Lote.Value));
             }
@@ -53378,7 +59694,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int spAgregarEnvases(global::System.Nullable<int> Num_Analisis, global::System.Nullable<int> Quebrados, global::System.Nullable<int> Dañados, global::System.Nullable<int> Productor, string Rut, string Condicion, global::System.Nullable<int> Anakena, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[31]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[32]));
             if ((Num_Analisis.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(Num_Analisis.Value));
             }
@@ -53455,7 +59771,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int spAgregarInpurezas(global::System.Nullable<int> Num_Analisis, global::System.Nullable<double> Piedra, global::System.Nullable<double> Palo, global::System.Nullable<double> Pelon, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[32]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[33]));
             if ((Num_Analisis.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(Num_Analisis.Value));
             }
@@ -53514,47 +59830,6 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int spAgregarTemporal_Blanquear(string Cod_Variedad, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[33]));
-            if ((Cod_Variedad == null)) {
-                command.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[1].Value = ((string)(Cod_Variedad));
-            }
-            if ((msg == null)) {
-                command.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[2].Value = ((string)(msg));
-            }
-            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                command.Connection.Open();
-            }
-            int returnValue;
-            try {
-                returnValue = command.ExecuteNonQuery();
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    command.Connection.Close();
-                }
-            }
-            if (((command.Parameters[2].Value == null) 
-                        || (command.Parameters[2].Value.GetType() == typeof(global::System.DBNull)))) {
-                msg = null;
-            }
-            else {
-                msg = ((string)(command.Parameters[2].Value));
-            }
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spAgregarTemporal_Descarte(string Cod_Variedad, ref string msg) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[34]));
             if ((Cod_Variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -53595,7 +59870,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spAgregarTemporal_ENVASADO(string Cod_Variedad, ref string msg) {
+        public virtual int spAgregarTemporal_Descarte(string Cod_Variedad, ref string msg) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[35]));
             if ((Cod_Variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -53636,7 +59911,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spAgregarTemporal_Exportacion(string Cod_Variedad, ref string msg) {
+        public virtual int spAgregarTemporal_ENVASADO(string Cod_Variedad, ref string msg) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[36]));
             if ((Cod_Variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -53677,7 +59952,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spAgregarTemporal_Lavado(string Cod_Variedad, ref string msg) {
+        public virtual int spAgregarTemporal_Exportacion(string Cod_Variedad, ref string msg) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[37]));
             if ((Cod_Variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -53718,8 +59993,49 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spAgregaUsuario(string Rut, string nombre, string password, string tipo, ref string msg) {
+        public virtual int spAgregarTemporal_Lavado(string Cod_Variedad, ref string msg) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[38]));
+            if ((Cod_Variedad == null)) {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[1].Value = ((string)(Cod_Variedad));
+            }
+            if ((msg == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(msg));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            if (((command.Parameters[2].Value == null) 
+                        || (command.Parameters[2].Value.GetType() == typeof(global::System.DBNull)))) {
+                msg = null;
+            }
+            else {
+                msg = ((string)(command.Parameters[2].Value));
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int spAgregaUsuario(string Rut, string nombre, string password, string tipo, ref string msg) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[39]));
             if ((Rut == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
@@ -53778,7 +60094,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int spBorrar_Decision(string variedad) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[39]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[40]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
@@ -53806,7 +60122,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int spBorrar_Factor() {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[40]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[41]));
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -53828,34 +60144,6 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int spBorrar_Matriz(string variedad) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[41]));
-            if ((variedad == null)) {
-                command.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[1].Value = ((string)(variedad));
-            }
-            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                command.Connection.Open();
-            }
-            int returnValue;
-            try {
-                returnValue = command.ExecuteNonQuery();
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    command.Connection.Close();
-                }
-            }
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spBorrar_Retorno_Calibre(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[42]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -53883,7 +60171,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spBorrar_Retorno_Categoria(string variedad) {
+        public virtual int spBorrar_Retorno_Calibre(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[43]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -53911,7 +60199,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spCalibrado_CalibreCategoria(string variedad) {
+        public virtual int spBorrar_Retorno_Categoria(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[44]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -53939,13 +60227,13 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spDelete_Rendimiento_Descarte(ref string msg) {
+        public virtual int spCalibrado_CalibreCategoria(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[45]));
-            if ((msg == null)) {
+            if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                command.Parameters[1].Value = ((string)(msg));
+                command.Parameters[1].Value = ((string)(variedad));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -53961,20 +60249,13 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
                     command.Connection.Close();
                 }
             }
-            if (((command.Parameters[1].Value == null) 
-                        || (command.Parameters[1].Value.GetType() == typeof(global::System.DBNull)))) {
-                msg = null;
-            }
-            else {
-                msg = ((string)(command.Parameters[1].Value));
-            }
             return returnValue;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spDelete_RendimientoRealEstimado(ref string msg) {
+        public virtual int spDelete_Rendimiento_Descarte(ref string msg) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[46]));
             if ((msg == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54009,7 +60290,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spDeleteEstimacion(ref string msg) {
+        public virtual int spDelete_RendimientoRealEstimado(ref string msg) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[47]));
             if ((msg == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54044,7 +60325,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spDeleteEstimacion_Calibre(ref string msg) {
+        public virtual int spDeleteEstimacion(ref string msg) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[48]));
             if ((msg == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54079,7 +60360,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spDeleteEstimacion_Categoria(ref string msg) {
+        public virtual int spDeleteEstimacion_Calibre(ref string msg) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[49]));
             if ((msg == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54114,7 +60395,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spDeleteKG_Cat_Cal(ref string msg) {
+        public virtual int spDeleteEstimacion_Categoria(ref string msg) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[50]));
             if ((msg == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54149,7 +60430,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spDeletePor_Var(ref string msg) {
+        public virtual int spDeleteKG_Cat_Cal(ref string msg) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[51]));
             if ((msg == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54184,8 +60465,43 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spDeleteRecepcion(global::System.Nullable<int> Analisis, ref string msg) {
+        public virtual int spDeletePor_Var(ref string msg) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[52]));
+            if ((msg == null)) {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[1].Value = ((string)(msg));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            if (((command.Parameters[1].Value == null) 
+                        || (command.Parameters[1].Value.GetType() == typeof(global::System.DBNull)))) {
+                msg = null;
+            }
+            else {
+                msg = ((string)(command.Parameters[1].Value));
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int spDeleteRecepcion(global::System.Nullable<int> Analisis, ref string msg) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[53]));
             if ((Analisis.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(Analisis.Value));
             }
@@ -54226,7 +60542,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int spDeleteUsuarios(string Rut, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[53]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[54]));
             if ((Rut == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
@@ -54267,7 +60583,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int spEliminar_Rendimiento_PM(ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[54]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[55]));
             if ((msg == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
@@ -54302,34 +60618,6 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int spEstimacion_CalibreCategoria(string variedad) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[55]));
-            if ((variedad == null)) {
-                command.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[1].Value = ((string)(variedad));
-            }
-            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                command.Connection.Open();
-            }
-            int returnValue;
-            try {
-                returnValue = command.ExecuteNonQuery();
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    command.Connection.Close();
-                }
-            }
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spEstimacionCalibre_(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[56]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54357,7 +60645,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spEstimacionCalibreCategoria(string variedad) {
+        public virtual int spEstimacionCalibre_(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[57]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54385,7 +60673,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spEstimacionCalibreKilos(string variedad) {
+        public virtual int spEstimacionCalibreCategoria(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[58]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54413,19 +60701,13 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spEstimacionCalibreporfecha(string variedad, string fecha) {
+        public virtual int spEstimacionCalibreKilos(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[59]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 command.Parameters[1].Value = ((string)(variedad));
-            }
-            if ((fecha == null)) {
-                command.Parameters[2].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[2].Value = ((string)(fecha));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -54447,7 +60729,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spEstimacionCategoriaporfecha(string variedad, string fecha) {
+        public virtual int spEstimacionCalibreporfecha(string variedad, string fecha) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[60]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54481,13 +60763,19 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spEstimacionCategorias_(string variedad) {
+        public virtual int spEstimacionCategoriaporfecha(string variedad, string fecha) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[61]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
                 command.Parameters[1].Value = ((string)(variedad));
+            }
+            if ((fecha == null)) {
+                command.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[2].Value = ((string)(fecha));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -54509,7 +60797,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spEstimacionCategoriasKilos(string variedad) {
+        public virtual int spEstimacionCategorias_(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[62]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54537,8 +60825,36 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spEstimacionporfecha(string fecha) {
+        public virtual int spEstimacionCategoriasKilos(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[63]));
+            if ((variedad == null)) {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[1].Value = ((string)(variedad));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int spEstimacionporfecha(string fecha) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[64]));
             if ((fecha == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
@@ -54566,7 +60882,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int spExtraer_Pall(ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[64]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[65]));
             if ((msg == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
@@ -54601,34 +60917,6 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int spRealCalibre_(string variedad) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[65]));
-            if ((variedad == null)) {
-                command.Parameters[1].Value = global::System.DBNull.Value;
-            }
-            else {
-                command.Parameters[1].Value = ((string)(variedad));
-            }
-            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                command.Connection.Open();
-            }
-            int returnValue;
-            try {
-                returnValue = command.ExecuteNonQuery();
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    command.Connection.Close();
-                }
-            }
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spRealCalibreKilos(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[66]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54656,7 +60944,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spRealCategorias_(string variedad) {
+        public virtual int spRealCalibreKilos(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[67]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54684,7 +60972,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spRealCategoriasKilos(string variedad) {
+        public virtual int spRealCategorias_(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[68]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54712,7 +61000,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spRealmasEstimado_CalibreCategoria(string variedad) {
+        public virtual int spRealCategoriasKilos(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[69]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54740,7 +61028,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spTarifas_PCC(string variedad) {
+        public virtual int spRealmasEstimado_CalibreCategoria(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[70]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54768,7 +61056,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spTarifas_PSC(string variedad) {
+        public virtual int spTarifas_PCC(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[71]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54796,30 +61084,8 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spTarifaz_Calibre() {
+        public virtual int spTarifas_PSC(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[72]));
-            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
-            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
-                        != global::System.Data.ConnectionState.Open)) {
-                command.Connection.Open();
-            }
-            int returnValue;
-            try {
-                returnValue = command.ExecuteNonQuery();
-            }
-            finally {
-                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
-                    command.Connection.Close();
-                }
-            }
-            return returnValue;
-        }
-        
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spTraer_Estimacion(string variedad) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[73]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
@@ -54846,7 +61112,29 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spTraer_Estimacion_(string variedad) {
+        public virtual int spTarifaz_Calibre() {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[73]));
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int spTraer_Estimacion(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[74]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54874,7 +61162,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spTraer_Estimacion2(string variedad) {
+        public virtual int spTraer_Estimacion_(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[75]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54902,7 +61190,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spTraer_Estimacion2_(string variedad) {
+        public virtual int spTraer_Estimacion2(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[76]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54930,7 +61218,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spTraer_RealMasEstimado(string variedad) {
+        public virtual int spTraer_Estimacion2_(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[77]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54958,7 +61246,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spTraer_RealMasEstimadoCalibre(string variedad) {
+        public virtual int spTraer_RealMasEstimado(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[78]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -54986,7 +61274,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spTraer_RealMasEstimadoCalibre_(string variedad) {
+        public virtual int spTraer_RealMasEstimadoCalibre(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[79]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -55014,7 +61302,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spTraer_RealMasEstimadoCategoria(string variedad) {
+        public virtual int spTraer_RealMasEstimadoCalibre_(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[80]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -55042,7 +61330,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spTraer_RealMasEstimadoCategoria_(string variedad) {
+        public virtual int spTraer_RealMasEstimadoCategoria(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[81]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -55070,7 +61358,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spTraer_RealVsEstimacion(string variedad) {
+        public virtual int spTraer_RealMasEstimadoCategoria_(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[82]));
             if ((variedad == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
@@ -55098,8 +61386,36 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spUpdateAnalisisExterno(global::System.Nullable<int> Num_Analisis, global::System.Nullable<int> Partidas_Quebradas, global::System.Nullable<int> Sin_Pelon, global::System.Nullable<int> Pelon_Resquebrajado, global::System.Nullable<int> Partidas_Cerrado, global::System.Nullable<int> Negras_Momificadas, global::System.Nullable<int> Pelon_Adherido, ref string msg) {
+        public virtual int spTraer_RealVsEstimacion(string variedad) {
             global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[83]));
+            if ((variedad == null)) {
+                command.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[1].Value = ((string)(variedad));
+            }
+            global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
+            if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                command.Connection.Open();
+            }
+            int returnValue;
+            try {
+                returnValue = command.ExecuteNonQuery();
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    command.Connection.Close();
+                }
+            }
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int spUpdateAnalisisExterno(global::System.Nullable<int> Num_Analisis, global::System.Nullable<int> Partidas_Quebradas, global::System.Nullable<int> Sin_Pelon, global::System.Nullable<int> Pelon_Resquebrajado, global::System.Nullable<int> Partidas_Cerrado, global::System.Nullable<int> Negras_Momificadas, global::System.Nullable<int> Pelon_Adherido, ref string msg) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[84]));
             if ((Num_Analisis.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(Num_Analisis.Value));
             }
@@ -55175,8 +61491,8 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int spUpdateAnalisisInterno(global::System.Nullable<int> Num_Analisis, global::System.Nullable<int> Daño_Insectos, global::System.Nullable<int> Vanas, global::System.Nullable<int> Reseca, global::System.Nullable<int> Hongo, global::System.Nullable<int> Extra_Light, global::System.Nullable<int> Light, global::System.Nullable<int> Light_Ambar, global::System.Nullable<int> Ambar_Amarillo, string Observaciones, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[84]));
+        public virtual int spUpdateAnalisisInterno(global::System.Nullable<int> Num_Analisis, global::System.Nullable<int> Daño_Insectos, global::System.Nullable<int> Vanas, global::System.Nullable<int> Reseca, global::System.Nullable<int> Hongo_Activo, global::System.Nullable<int> Hongo_Inactivo, global::System.Nullable<int> Extra_Light, global::System.Nullable<int> Light, global::System.Nullable<int> Light_Ambar, global::System.Nullable<int> Ambar_Amarillo, string Observaciones, ref string msg) {
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[85]));
             if ((Num_Analisis.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(Num_Analisis.Value));
             }
@@ -55201,47 +61517,53 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
             else {
                 command.Parameters[4].Value = global::System.DBNull.Value;
             }
-            if ((Hongo.HasValue == true)) {
-                command.Parameters[5].Value = ((int)(Hongo.Value));
+            if ((Hongo_Activo.HasValue == true)) {
+                command.Parameters[5].Value = ((int)(Hongo_Activo.Value));
             }
             else {
                 command.Parameters[5].Value = global::System.DBNull.Value;
             }
-            if ((Extra_Light.HasValue == true)) {
-                command.Parameters[6].Value = ((int)(Extra_Light.Value));
+            if ((Hongo_Inactivo.HasValue == true)) {
+                command.Parameters[6].Value = ((int)(Hongo_Inactivo.Value));
             }
             else {
                 command.Parameters[6].Value = global::System.DBNull.Value;
             }
-            if ((Light.HasValue == true)) {
-                command.Parameters[7].Value = ((int)(Light.Value));
+            if ((Extra_Light.HasValue == true)) {
+                command.Parameters[7].Value = ((int)(Extra_Light.Value));
             }
             else {
                 command.Parameters[7].Value = global::System.DBNull.Value;
             }
-            if ((Light_Ambar.HasValue == true)) {
-                command.Parameters[8].Value = ((int)(Light_Ambar.Value));
+            if ((Light.HasValue == true)) {
+                command.Parameters[8].Value = ((int)(Light.Value));
             }
             else {
                 command.Parameters[8].Value = global::System.DBNull.Value;
             }
-            if ((Ambar_Amarillo.HasValue == true)) {
-                command.Parameters[9].Value = ((int)(Ambar_Amarillo.Value));
+            if ((Light_Ambar.HasValue == true)) {
+                command.Parameters[9].Value = ((int)(Light_Ambar.Value));
             }
             else {
                 command.Parameters[9].Value = global::System.DBNull.Value;
             }
-            if ((Observaciones == null)) {
-                command.Parameters[10].Value = global::System.DBNull.Value;
+            if ((Ambar_Amarillo.HasValue == true)) {
+                command.Parameters[10].Value = ((int)(Ambar_Amarillo.Value));
             }
             else {
-                command.Parameters[10].Value = ((string)(Observaciones));
+                command.Parameters[10].Value = global::System.DBNull.Value;
             }
-            if ((msg == null)) {
+            if ((Observaciones == null)) {
                 command.Parameters[11].Value = global::System.DBNull.Value;
             }
             else {
-                command.Parameters[11].Value = ((string)(msg));
+                command.Parameters[11].Value = ((string)(Observaciones));
+            }
+            if ((msg == null)) {
+                command.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            else {
+                command.Parameters[12].Value = ((string)(msg));
             }
             global::System.Data.ConnectionState previousConnectionState = command.Connection.State;
             if (((command.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -55257,12 +61579,12 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
                     command.Connection.Close();
                 }
             }
-            if (((command.Parameters[11].Value == null) 
-                        || (command.Parameters[11].Value.GetType() == typeof(global::System.DBNull)))) {
+            if (((command.Parameters[12].Value == null) 
+                        || (command.Parameters[12].Value.GetType() == typeof(global::System.DBNull)))) {
                 msg = null;
             }
             else {
-                msg = ((string)(command.Parameters[11].Value));
+                msg = ((string)(command.Parameters[12].Value));
             }
             return returnValue;
         }
@@ -55271,7 +61593,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int spUpdateEncabezado(global::System.Nullable<int> Analisis, global::System.Nullable<int> Lote, string Variedad, string Productor, string Patio, global::System.Nullable<global::System.DateTime> Fecha_Recepcion, global::System.Nullable<global::System.DateTime> Fecha_Analisis, string Tipo_Recepcion, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[85]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[86]));
             if ((Analisis.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(Analisis.Value));
             }
@@ -55354,7 +61676,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int spUpdateEnvases(global::System.Nullable<int> Num_Analisis, global::System.Nullable<int> Quebrados, global::System.Nullable<int> Dañados, global::System.Nullable<int> Productor, string Condicion, global::System.Nullable<int> Anakena, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[86]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[87]));
             if ((Num_Analisis.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(Num_Analisis.Value));
             }
@@ -55425,7 +61747,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int spUpdateInpurezas(global::System.Nullable<int> Num_Analisis, global::System.Nullable<double> Piedra, global::System.Nullable<double> Palo, global::System.Nullable<double> Pelon, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[87]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[88]));
             if ((Num_Analisis.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(Num_Analisis.Value));
             }
@@ -55484,7 +61806,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int spUpdateUsuarios(string Rut, string nombre, string password, string tipo, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[88]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[89]));
             if ((Rut == null)) {
                 command.Parameters[1].Value = global::System.DBNull.Value;
             }
@@ -55543,7 +61865,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update_Factor(global::System.Nullable<decimal> estimacion, global::System.Nullable<decimal> real, global::System.Nullable<int> id, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[89]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[90]));
             if ((estimacion.HasValue == true)) {
                 command.Parameters[1].Value = ((decimal)(estimacion.Value));
             }
@@ -55596,7 +61918,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int Update_Temporal_Envasado(global::System.Nullable<double> monto, global::System.Nullable<int> temporal, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[90]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[91]));
             if ((monto.HasValue == true)) {
                 command.Parameters[1].Value = ((double)(monto.Value));
             }
@@ -55643,7 +61965,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int UpdateEvaluacion(global::System.Nullable<int> Verde_max, global::System.Nullable<int> Amarillo_max, string Parametro, string Variedad, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[91]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[92]));
             if ((Verde_max.HasValue == true)) {
                 command.Parameters[1].Value = ((int)(Verde_max.Value));
             }
@@ -55702,7 +62024,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int UpdatePrecio_NCC(global::System.Nullable<double> monto, string variedad, string Calibre, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[92]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[93]));
             if ((monto.HasValue == true)) {
                 command.Parameters[1].Value = ((double)(monto.Value));
             }
@@ -55755,7 +62077,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int UpdatePrecio_NSC(global::System.Nullable<double> monto, string producto, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[93]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[94]));
             if ((monto.HasValue == true)) {
                 command.Parameters[1].Value = ((double)(monto.Value));
             }
@@ -55802,7 +62124,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int UpdateTarifa_Calibre(global::System.Nullable<double> monto, global::System.Nullable<int> Tarifa, string Calibre, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[94]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[95]));
             if ((monto.HasValue == true)) {
                 command.Parameters[1].Value = ((double)(monto.Value));
             }
@@ -55855,7 +62177,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int UpdateTarifa_PCC(global::System.Nullable<double> monto, string Categoria, string variedad, string Calibre, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[95]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[96]));
             if ((monto.HasValue == true)) {
                 command.Parameters[1].Value = ((double)(monto.Value));
             }
@@ -55914,7 +62236,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         public virtual int UpdateTarifa_PSC(global::System.Nullable<double> monto, string Categoria, string variedad, string Calibre, ref string msg) {
-            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[96]));
+            global::System.Data.SqlClient.SqlCommand command = ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[97]));
             if ((monto.HasValue == true)) {
                 command.Parameters[1].Value = ((double)(monto.Value));
             }
@@ -56038,7 +62360,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateUpdatedRows(Prueba_2017DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(Prueba_2017Preseleccion dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -56048,7 +62370,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateInsertedRows(Prueba_2017DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(Prueba_2017Preseleccion dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             return result;
         }
@@ -56058,7 +62380,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        private int UpdateDeletedRows(Prueba_2017DataSet dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(Prueba_2017Preseleccion dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             return result;
         }
@@ -56092,7 +62414,7 @@ namespace Anakena_2017.Prueba_2017DataSetTableAdapters {
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-        public virtual int UpdateAll(Prueba_2017DataSet dataSet) {
+        public virtual int UpdateAll(Prueba_2017Preseleccion dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

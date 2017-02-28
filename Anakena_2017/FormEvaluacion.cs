@@ -85,7 +85,7 @@ namespace Anakena_2017
 
 		private TextBox txtReseca_min;
 
-		private TextBox txtHongo_min;
+		private TextBox txtHongoActivo_min;
 
 		private TextBox txtExtra_min;
 
@@ -115,7 +115,7 @@ namespace Anakena_2017
 
 		private TextBox txtExtra_max;
 
-		private TextBox txtHongo_max;
+		private TextBox txtHongoActivo_max;
 
 		private TextBox txtReseca_max;
 
@@ -145,7 +145,7 @@ namespace Anakena_2017
 
 		private Label label44;
 
-		private Label lblHongo_min;
+		private Label lblHongoActivo_min;
 
 		private Label lblExtra_min;
 
@@ -189,7 +189,7 @@ namespace Anakena_2017
 
 		private Label label66;
 
-		private Label lblHongo_max;
+		private Label lblHongoActivo_max;
 
 		private Label lblExtra_max;
 
@@ -239,6 +239,15 @@ namespace Anakena_2017
         private Label label54;
         private Label label55;
         private Label label67;
+        private Label label48;
+        private Label lblHongoInactivo_max;
+        private TextBox txtHongoInactivo_max;
+        private Label label68;
+        private Label lblHongoInactivo_min;
+        private TextBox txtHongoInactivo_min;
+        private Label label70;
+        private Label label71;
+        private Label label72;
         public Button btn_modificar;
 
 		public FormEvaluacion(String Variedad)
@@ -262,8 +271,9 @@ namespace Anakena_2017
 					this.update_parametro(Convert.ToInt32(this.txtInsectos_min.Text), Convert.ToInt32(this.txtInsectos_max.Text), "Daño_Insectos");
 					this.update_parametro(Convert.ToInt32(this.txtVanas_min.Text), Convert.ToInt32(this.txtVanas_max.Text), "Vanas");
 					this.update_parametro(Convert.ToInt32(this.txtReseca_min.Text), Convert.ToInt32(this.txtReseca_max.Text), "Reseca");
-					this.update_parametro(Convert.ToInt32(this.txtHongo_min.Text), Convert.ToInt32(this.txtHongo_max.Text), "Hongo");
-					this.update_parametro(Convert.ToInt32(this.txtAmbar_min.Text), Convert.ToInt32(this.txtAmbar_max.Text), "Ambar_Amarillo");
+					this.update_parametro(Convert.ToInt32(this.txtHongoActivo_min.Text), Convert.ToInt32(this.txtHongoActivo_max.Text), "Hongo_Activo");
+                    this.update_parametro(Convert.ToInt32(this.txtHongoInactivo_min.Text), Convert.ToInt32(this.txtHongoInactivo_max.Text), "Hongo_Inactivo");
+                    this.update_parametro(Convert.ToInt32(this.txtAmbar_min.Text), Convert.ToInt32(this.txtAmbar_max.Text), "Ambar_Amarillo");
 					this.update_parametro(Convert.ToInt32(this.txtExtra_min.Text), Convert.ToInt32(this.txtExtra_max.Text), "Extra_Light");
                     this.update_parametro(Convert.ToInt32(this.txtLight_min.Text), Convert.ToInt32(this.txtLight_max.Text), "Light");
                     MessageBox.Show("informacion actualizada correctamente", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -390,7 +400,7 @@ namespace Anakena_2017
             this.txtVerde_min = new System.Windows.Forms.TextBox();
             this.txtVanas_min = new System.Windows.Forms.TextBox();
             this.txtReseca_min = new System.Windows.Forms.TextBox();
-            this.txtHongo_min = new System.Windows.Forms.TextBox();
+            this.txtHongoActivo_min = new System.Windows.Forms.TextBox();
             this.txtExtra_min = new System.Windows.Forms.TextBox();
             this.txtAmbar_min = new System.Windows.Forms.TextBox();
             this.txtPelon_min = new System.Windows.Forms.TextBox();
@@ -405,7 +415,7 @@ namespace Anakena_2017
             this.txtPelon_max = new System.Windows.Forms.TextBox();
             this.txtAmbar_max = new System.Windows.Forms.TextBox();
             this.txtExtra_max = new System.Windows.Forms.TextBox();
-            this.txtHongo_max = new System.Windows.Forms.TextBox();
+            this.txtHongoActivo_max = new System.Windows.Forms.TextBox();
             this.txtReseca_max = new System.Windows.Forms.TextBox();
             this.txtVanas_max = new System.Windows.Forms.TextBox();
             this.txtAmarillo_max = new System.Windows.Forms.TextBox();
@@ -420,7 +430,7 @@ namespace Anakena_2017
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.lblHongo_min = new System.Windows.Forms.Label();
+            this.lblHongoActivo_min = new System.Windows.Forms.Label();
             this.lblExtra_min = new System.Windows.Forms.Label();
             this.lblAmbar_min = new System.Windows.Forms.Label();
             this.lblPalo_min = new System.Windows.Forms.Label();
@@ -442,7 +452,7 @@ namespace Anakena_2017
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
-            this.lblHongo_max = new System.Windows.Forms.Label();
+            this.lblHongoActivo_max = new System.Windows.Forms.Label();
             this.lblExtra_max = new System.Windows.Forms.Label();
             this.lblAmbar_max = new System.Windows.Forms.Label();
             this.lblPalo_max = new System.Windows.Forms.Label();
@@ -477,6 +487,15 @@ namespace Anakena_2017
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.lblHongoInactivo_max = new System.Windows.Forms.Label();
+            this.txtHongoInactivo_max = new System.Windows.Forms.TextBox();
+            this.label68 = new System.Windows.Forms.Label();
+            this.lblHongoInactivo_min = new System.Windows.Forms.Label();
+            this.txtHongoInactivo_min = new System.Windows.Forms.TextBox();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -534,7 +553,7 @@ namespace Anakena_2017
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(21, 553);
+            this.label22.Location = new System.Drawing.Point(21, 582);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(81, 18);
             this.label22.TabIndex = 13;
@@ -547,9 +566,9 @@ namespace Anakena_2017
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.Location = new System.Drawing.Point(21, 517);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(182, 18);
+            this.label23.Size = new System.Drawing.Size(101, 18);
             this.label23.TabIndex = 12;
-            this.label23.Text = "Hongo (Activo o Inactivo) :";
+            this.label23.Text = "Hongo Activo:";
             // 
             // label24
             // 
@@ -585,7 +604,7 @@ namespace Anakena_2017
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(21, 619);
+            this.label11.Location = new System.Drawing.Point(21, 648);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(125, 18);
             this.label11.TabIndex = 14;
@@ -675,7 +694,7 @@ namespace Anakena_2017
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(278, 619);
+            this.label13.Location = new System.Drawing.Point(278, 648);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(16, 18);
             this.label13.TabIndex = 23;
@@ -685,7 +704,7 @@ namespace Anakena_2017
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(262, 553);
+            this.label14.Location = new System.Drawing.Point(262, 582);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(32, 18);
             this.label14.TabIndex = 24;
@@ -785,7 +804,7 @@ namespace Anakena_2017
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(294, 619);
+            this.label31.Location = new System.Drawing.Point(294, 648);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(13, 18);
             this.label31.TabIndex = 34;
@@ -795,7 +814,7 @@ namespace Anakena_2017
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(294, 553);
+            this.label32.Location = new System.Drawing.Point(294, 582);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(13, 18);
             this.label32.TabIndex = 35;
@@ -838,19 +857,19 @@ namespace Anakena_2017
             this.txtReseca_min.Size = new System.Drawing.Size(30, 24);
             this.txtReseca_min.TabIndex = 39;
             // 
-            // txtHongo_min
+            // txtHongoActivo_min
             // 
-            this.txtHongo_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHongo_min.Location = new System.Drawing.Point(309, 514);
-            this.txtHongo_min.MaxLength = 2;
-            this.txtHongo_min.Name = "txtHongo_min";
-            this.txtHongo_min.Size = new System.Drawing.Size(30, 24);
-            this.txtHongo_min.TabIndex = 40;
+            this.txtHongoActivo_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHongoActivo_min.Location = new System.Drawing.Point(309, 514);
+            this.txtHongoActivo_min.MaxLength = 2;
+            this.txtHongoActivo_min.Name = "txtHongoActivo_min";
+            this.txtHongoActivo_min.Size = new System.Drawing.Size(30, 24);
+            this.txtHongoActivo_min.TabIndex = 40;
             // 
             // txtExtra_min
             // 
             this.txtExtra_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtExtra_min.Location = new System.Drawing.Point(309, 549);
+            this.txtExtra_min.Location = new System.Drawing.Point(309, 578);
             this.txtExtra_min.MaxLength = 2;
             this.txtExtra_min.Name = "txtExtra_min";
             this.txtExtra_min.Size = new System.Drawing.Size(30, 24);
@@ -859,7 +878,7 @@ namespace Anakena_2017
             // txtAmbar_min
             // 
             this.txtAmbar_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAmbar_min.Location = new System.Drawing.Point(309, 616);
+            this.txtAmbar_min.Location = new System.Drawing.Point(309, 645);
             this.txtAmbar_min.MaxLength = 2;
             this.txtAmbar_min.Name = "txtAmbar_min";
             this.txtAmbar_min.Size = new System.Drawing.Size(30, 24);
@@ -958,7 +977,7 @@ namespace Anakena_2017
             // txtAmbar_max
             // 
             this.txtAmbar_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAmbar_max.Location = new System.Drawing.Point(429, 616);
+            this.txtAmbar_max.Location = new System.Drawing.Point(429, 645);
             this.txtAmbar_max.MaxLength = 2;
             this.txtAmbar_max.Name = "txtAmbar_max";
             this.txtAmbar_max.Size = new System.Drawing.Size(30, 24);
@@ -967,20 +986,20 @@ namespace Anakena_2017
             // txtExtra_max
             // 
             this.txtExtra_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtExtra_max.Location = new System.Drawing.Point(429, 549);
+            this.txtExtra_max.Location = new System.Drawing.Point(429, 578);
             this.txtExtra_max.MaxLength = 2;
             this.txtExtra_max.Name = "txtExtra_max";
             this.txtExtra_max.Size = new System.Drawing.Size(30, 24);
             this.txtExtra_max.TabIndex = 75;
             // 
-            // txtHongo_max
+            // txtHongoActivo_max
             // 
-            this.txtHongo_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHongo_max.Location = new System.Drawing.Point(429, 514);
-            this.txtHongo_max.MaxLength = 2;
-            this.txtHongo_max.Name = "txtHongo_max";
-            this.txtHongo_max.Size = new System.Drawing.Size(30, 24);
-            this.txtHongo_max.TabIndex = 74;
+            this.txtHongoActivo_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHongoActivo_max.Location = new System.Drawing.Point(429, 514);
+            this.txtHongoActivo_max.MaxLength = 2;
+            this.txtHongoActivo_max.Name = "txtHongoActivo_max";
+            this.txtHongoActivo_max.Size = new System.Drawing.Size(30, 24);
+            this.txtHongoActivo_max.TabIndex = 74;
             // 
             // txtReseca_max
             // 
@@ -1023,7 +1042,7 @@ namespace Anakena_2017
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(414, 553);
+            this.label35.Location = new System.Drawing.Point(414, 582);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(13, 18);
             this.label35.TabIndex = 69;
@@ -1033,7 +1052,7 @@ namespace Anakena_2017
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(414, 619);
+            this.label36.Location = new System.Drawing.Point(414, 648);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(13, 18);
             this.label36.TabIndex = 68;
@@ -1119,21 +1138,21 @@ namespace Anakena_2017
             this.label44.TabIndex = 60;
             this.label44.Text = "-";
             // 
-            // lblHongo_min
+            // lblHongoActivo_min
             // 
-            this.lblHongo_min.AutoSize = true;
-            this.lblHongo_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHongo_min.Location = new System.Drawing.Point(392, 517);
-            this.lblHongo_min.Name = "lblHongo_min";
-            this.lblHongo_min.Size = new System.Drawing.Size(16, 18);
-            this.lblHongo_min.TabIndex = 59;
-            this.lblHongo_min.Text = "0";
+            this.lblHongoActivo_min.AutoSize = true;
+            this.lblHongoActivo_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHongoActivo_min.Location = new System.Drawing.Point(392, 517);
+            this.lblHongoActivo_min.Name = "lblHongoActivo_min";
+            this.lblHongoActivo_min.Size = new System.Drawing.Size(16, 18);
+            this.lblHongoActivo_min.TabIndex = 59;
+            this.lblHongoActivo_min.Text = "0";
             // 
             // lblExtra_min
             // 
             this.lblExtra_min.AutoSize = true;
             this.lblExtra_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExtra_min.Location = new System.Drawing.Point(392, 552);
+            this.lblExtra_min.Location = new System.Drawing.Point(392, 581);
             this.lblExtra_min.Name = "lblExtra_min";
             this.lblExtra_min.Size = new System.Drawing.Size(16, 18);
             this.lblExtra_min.TabIndex = 58;
@@ -1143,7 +1162,7 @@ namespace Anakena_2017
             // 
             this.lblAmbar_min.AutoSize = true;
             this.lblAmbar_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmbar_min.Location = new System.Drawing.Point(392, 619);
+            this.lblAmbar_min.Location = new System.Drawing.Point(392, 648);
             this.lblAmbar_min.Name = "lblAmbar_min";
             this.lblAmbar_min.Size = new System.Drawing.Size(16, 18);
             this.lblAmbar_min.TabIndex = 57;
@@ -1243,7 +1262,7 @@ namespace Anakena_2017
             // 
             this.label57.AutoSize = true;
             this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.Location = new System.Drawing.Point(514, 552);
+            this.label57.Location = new System.Drawing.Point(514, 581);
             this.label57.Name = "label57";
             this.label57.Size = new System.Drawing.Size(17, 18);
             this.label57.TabIndex = 102;
@@ -1253,7 +1272,7 @@ namespace Anakena_2017
             // 
             this.label58.AutoSize = true;
             this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.Location = new System.Drawing.Point(510, 619);
+            this.label58.Location = new System.Drawing.Point(510, 648);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(17, 18);
             this.label58.TabIndex = 101;
@@ -1339,21 +1358,21 @@ namespace Anakena_2017
             this.label66.TabIndex = 93;
             this.label66.Text = ">";
             // 
-            // lblHongo_max
+            // lblHongoActivo_max
             // 
-            this.lblHongo_max.AutoSize = true;
-            this.lblHongo_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHongo_max.Location = new System.Drawing.Point(533, 517);
-            this.lblHongo_max.Name = "lblHongo_max";
-            this.lblHongo_max.Size = new System.Drawing.Size(16, 18);
-            this.lblHongo_max.TabIndex = 92;
-            this.lblHongo_max.Text = "0";
+            this.lblHongoActivo_max.AutoSize = true;
+            this.lblHongoActivo_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHongoActivo_max.Location = new System.Drawing.Point(533, 517);
+            this.lblHongoActivo_max.Name = "lblHongoActivo_max";
+            this.lblHongoActivo_max.Size = new System.Drawing.Size(16, 18);
+            this.lblHongoActivo_max.TabIndex = 92;
+            this.lblHongoActivo_max.Text = "0";
             // 
             // lblExtra_max
             // 
             this.lblExtra_max.AutoSize = true;
             this.lblExtra_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblExtra_max.Location = new System.Drawing.Point(533, 552);
+            this.lblExtra_max.Location = new System.Drawing.Point(533, 581);
             this.lblExtra_max.Name = "lblExtra_max";
             this.lblExtra_max.Size = new System.Drawing.Size(32, 18);
             this.lblExtra_max.TabIndex = 91;
@@ -1363,7 +1382,7 @@ namespace Anakena_2017
             // 
             this.lblAmbar_max.AutoSize = true;
             this.lblAmbar_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAmbar_max.Location = new System.Drawing.Point(533, 619);
+            this.lblAmbar_max.Location = new System.Drawing.Point(533, 648);
             this.lblAmbar_max.Name = "lblAmbar_max";
             this.lblAmbar_max.Size = new System.Drawing.Size(16, 18);
             this.lblAmbar_max.TabIndex = 90;
@@ -1498,7 +1517,7 @@ namespace Anakena_2017
             this.btn_modificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_modificar.BackgroundImage")));
             this.btn_modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_modificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_modificar.Location = new System.Drawing.Point(261, 663);
+            this.btn_modificar.Location = new System.Drawing.Point(265, 689);
             this.btn_modificar.Name = "btn_modificar";
             this.btn_modificar.Size = new System.Drawing.Size(162, 34);
             this.btn_modificar.TabIndex = 107;
@@ -1597,7 +1616,7 @@ namespace Anakena_2017
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(510, 585);
+            this.label46.Location = new System.Drawing.Point(510, 614);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(17, 18);
             this.label46.TabIndex = 127;
@@ -1607,7 +1626,7 @@ namespace Anakena_2017
             // 
             this.lblLight_max.AutoSize = true;
             this.lblLight_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLight_max.Location = new System.Drawing.Point(533, 585);
+            this.lblLight_max.Location = new System.Drawing.Point(533, 614);
             this.lblLight_max.Name = "lblLight_max";
             this.lblLight_max.Size = new System.Drawing.Size(16, 18);
             this.lblLight_max.TabIndex = 126;
@@ -1616,7 +1635,7 @@ namespace Anakena_2017
             // txtLight_max
             // 
             this.txtLight_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLight_max.Location = new System.Drawing.Point(429, 582);
+            this.txtLight_max.Location = new System.Drawing.Point(429, 611);
             this.txtLight_max.MaxLength = 2;
             this.txtLight_max.Name = "txtLight_max";
             this.txtLight_max.Size = new System.Drawing.Size(30, 24);
@@ -1626,7 +1645,7 @@ namespace Anakena_2017
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(414, 585);
+            this.label52.Location = new System.Drawing.Point(414, 614);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(13, 18);
             this.label52.TabIndex = 124;
@@ -1636,7 +1655,7 @@ namespace Anakena_2017
             // 
             this.lblLight_min.AutoSize = true;
             this.lblLight_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLight_min.Location = new System.Drawing.Point(392, 585);
+            this.lblLight_min.Location = new System.Drawing.Point(392, 614);
             this.lblLight_min.Name = "lblLight_min";
             this.lblLight_min.Size = new System.Drawing.Size(16, 18);
             this.lblLight_min.TabIndex = 123;
@@ -1645,7 +1664,7 @@ namespace Anakena_2017
             // txtLight_min
             // 
             this.txtLight_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLight_min.Location = new System.Drawing.Point(309, 582);
+            this.txtLight_min.Location = new System.Drawing.Point(309, 611);
             this.txtLight_min.MaxLength = 2;
             this.txtLight_min.Name = "txtLight_min";
             this.txtLight_min.Size = new System.Drawing.Size(30, 24);
@@ -1655,7 +1674,7 @@ namespace Anakena_2017
             // 
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.Location = new System.Drawing.Point(294, 585);
+            this.label54.Location = new System.Drawing.Point(294, 614);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(13, 18);
             this.label54.TabIndex = 121;
@@ -1665,7 +1684,7 @@ namespace Anakena_2017
             // 
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(262, 585);
+            this.label55.Location = new System.Drawing.Point(262, 614);
             this.label55.Name = "label55";
             this.label55.Size = new System.Drawing.Size(32, 18);
             this.label55.TabIndex = 120;
@@ -1675,18 +1694,115 @@ namespace Anakena_2017
             // 
             this.label67.AutoSize = true;
             this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.Location = new System.Drawing.Point(21, 585);
+            this.label67.Location = new System.Drawing.Point(21, 614);
             this.label67.Name = "label67";
             this.label67.Size = new System.Drawing.Size(43, 18);
             this.label67.TabIndex = 119;
             this.label67.Text = "Light:";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(514, 549);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(17, 18);
+            this.label48.TabIndex = 136;
+            this.label48.Text = ">";
+            // 
+            // lblHongoInactivo_max
+            // 
+            this.lblHongoInactivo_max.AutoSize = true;
+            this.lblHongoInactivo_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHongoInactivo_max.Location = new System.Drawing.Point(533, 549);
+            this.lblHongoInactivo_max.Name = "lblHongoInactivo_max";
+            this.lblHongoInactivo_max.Size = new System.Drawing.Size(16, 18);
+            this.lblHongoInactivo_max.TabIndex = 135;
+            this.lblHongoInactivo_max.Text = "0";
+            // 
+            // txtHongoInactivo_max
+            // 
+            this.txtHongoInactivo_max.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHongoInactivo_max.Location = new System.Drawing.Point(429, 546);
+            this.txtHongoInactivo_max.MaxLength = 2;
+            this.txtHongoInactivo_max.Name = "txtHongoInactivo_max";
+            this.txtHongoInactivo_max.Size = new System.Drawing.Size(30, 24);
+            this.txtHongoInactivo_max.TabIndex = 134;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Location = new System.Drawing.Point(414, 549);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(13, 18);
+            this.label68.TabIndex = 133;
+            this.label68.Text = "-";
+            // 
+            // lblHongoInactivo_min
+            // 
+            this.lblHongoInactivo_min.AutoSize = true;
+            this.lblHongoInactivo_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHongoInactivo_min.Location = new System.Drawing.Point(392, 549);
+            this.lblHongoInactivo_min.Name = "lblHongoInactivo_min";
+            this.lblHongoInactivo_min.Size = new System.Drawing.Size(16, 18);
+            this.lblHongoInactivo_min.TabIndex = 132;
+            this.lblHongoInactivo_min.Text = "0";
+            // 
+            // txtHongoInactivo_min
+            // 
+            this.txtHongoInactivo_min.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHongoInactivo_min.Location = new System.Drawing.Point(309, 546);
+            this.txtHongoInactivo_min.MaxLength = 2;
+            this.txtHongoInactivo_min.Name = "txtHongoInactivo_min";
+            this.txtHongoInactivo_min.Size = new System.Drawing.Size(30, 24);
+            this.txtHongoInactivo_min.TabIndex = 131;
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Location = new System.Drawing.Point(294, 549);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(13, 18);
+            this.label70.TabIndex = 130;
+            this.label70.Text = "-";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.Location = new System.Drawing.Point(278, 549);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(16, 18);
+            this.label71.TabIndex = 129;
+            this.label71.Text = "0";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label72.Location = new System.Drawing.Point(21, 549);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(119, 18);
+            this.label72.TabIndex = 128;
+            this.label72.Text = "Hongo  Inactivo :";
             // 
             // FormEvaluacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(665, 699);
+            this.ClientSize = new System.Drawing.Size(665, 735);
+            this.Controls.Add(this.label48);
+            this.Controls.Add(this.lblHongoInactivo_max);
+            this.Controls.Add(this.txtHongoInactivo_max);
+            this.Controls.Add(this.label68);
+            this.Controls.Add(this.lblHongoInactivo_min);
+            this.Controls.Add(this.txtHongoInactivo_min);
+            this.Controls.Add(this.label70);
+            this.Controls.Add(this.label71);
+            this.Controls.Add(this.label72);
             this.Controls.Add(this.label46);
             this.Controls.Add(this.lblLight_max);
             this.Controls.Add(this.txtLight_max);
@@ -1722,7 +1838,7 @@ namespace Anakena_2017
             this.Controls.Add(this.label64);
             this.Controls.Add(this.label65);
             this.Controls.Add(this.label66);
-            this.Controls.Add(this.lblHongo_max);
+            this.Controls.Add(this.lblHongoActivo_max);
             this.Controls.Add(this.lblExtra_max);
             this.Controls.Add(this.lblAmbar_max);
             this.Controls.Add(this.lblPalo_max);
@@ -1740,7 +1856,7 @@ namespace Anakena_2017
             this.Controls.Add(this.txtPelon_max);
             this.Controls.Add(this.txtAmbar_max);
             this.Controls.Add(this.txtExtra_max);
-            this.Controls.Add(this.txtHongo_max);
+            this.Controls.Add(this.txtHongoActivo_max);
             this.Controls.Add(this.txtReseca_max);
             this.Controls.Add(this.txtVanas_max);
             this.Controls.Add(this.txtAmarillo_max);
@@ -1755,7 +1871,7 @@ namespace Anakena_2017
             this.Controls.Add(this.label42);
             this.Controls.Add(this.label43);
             this.Controls.Add(this.label44);
-            this.Controls.Add(this.lblHongo_min);
+            this.Controls.Add(this.lblHongoActivo_min);
             this.Controls.Add(this.lblExtra_min);
             this.Controls.Add(this.lblAmbar_min);
             this.Controls.Add(this.lblPalo_min);
@@ -1773,7 +1889,7 @@ namespace Anakena_2017
             this.Controls.Add(this.txtPelon_min);
             this.Controls.Add(this.txtAmbar_min);
             this.Controls.Add(this.txtExtra_min);
-            this.Controls.Add(this.txtHongo_min);
+            this.Controls.Add(this.txtHongoActivo_min);
             this.Controls.Add(this.txtReseca_min);
             this.Controls.Add(this.txtVanas_min);
             this.Controls.Add(this.txtVerde_min);
@@ -1888,14 +2004,21 @@ namespace Anakena_2017
 			this.lblReseca_min.Text = num.ToString();
 			num = Convert.ToInt32(this.max) + 1;
 			this.lblReseca_max.Text = num.ToString();
-			this.extraerMedicion("Hongo", Variedad_2);
-			this.txtHongo_min.Text = this.min;
-			this.txtHongo_max.Text = this.max;
+			this.extraerMedicion("Hongo_Activo", Variedad_2);
+			this.txtHongoActivo_min.Text = this.min;
+			this.txtHongoActivo_max.Text = this.max;
 			num = Convert.ToInt32(this.min) + 1;
-			this.lblHongo_min.Text = num.ToString();
+			this.lblHongoActivo_min.Text = num.ToString();
 			num = Convert.ToInt32(this.max) + 1;
-			this.lblHongo_max.Text = num.ToString();
-			this.extraerMedicion("Ambar_Amarillo", Variedad_2);
+			this.lblHongoActivo_max.Text = num.ToString();
+            this.extraerMedicion("Hongo_Inactivo", Variedad_2);
+            this.txtHongoInactivo_min.Text = this.min;
+            this.txtHongoInactivo_max.Text = this.max;
+            num = Convert.ToInt32(this.min) + 1;
+            this.lblHongoInactivo_min.Text = num.ToString();
+            num = Convert.ToInt32(this.max) + 1;
+            this.lblHongoInactivo_max.Text = num.ToString();
+            this.extraerMedicion("Ambar_Amarillo", Variedad_2);
 			this.txtAmbar_min.Text = this.min;
 			this.txtAmbar_max.Text = this.max;
 			num = Convert.ToInt32(this.min) + 1;

@@ -183,7 +183,7 @@ namespace Anakena_2017
 
 		public TextBox Txt_Extra;
 
-		public TextBox Txt_Hongo;
+		public TextBox Txt_HongoActivo;
 
 		public TextBox Txt_Daño;
 
@@ -245,8 +245,10 @@ namespace Anakena_2017
         private Label label53;
         public TextBox Txt_Pelon;
         private Label label54;
-
-		public int ACCESSO = 0;
+        private Label label55;
+        public TextBox Txt_HongoInactivo;
+        private Label label56;
+        public int ACCESSO = 0;
 
 		public FormRecepcion()
 		{
@@ -309,24 +311,26 @@ namespace Anakena_2017
 					sqlCommand.Parameters.Add("@Daño_Insectos", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Vanas", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Reseca", SqlDbType.Int);
-					sqlCommand.Parameters.Add("@Hongo", SqlDbType.Int);
+					sqlCommand.Parameters.Add("@Hongo_Activo", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Extra_Light", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Light", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Light_Ambar", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Ambar_Amarillo", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Observaciones", SqlDbType.Text);
-					sqlCommand.Parameters.Add("@msg", SqlDbType.VarChar, 100);
+                    sqlCommand.Parameters.Add("@Hongo_Inactivo", SqlDbType.Int);
+                    sqlCommand.Parameters.Add("@msg", SqlDbType.VarChar, 100);
 					sqlCommand.Parameters["@Num_Analisis"].Value = Convert.ToInt32(this.Lbl_Analisis.Text);
 					sqlCommand.Parameters["@Daño_Insectos"].Value = Convert.ToInt32(this.Txt_Daño.Text);
 					sqlCommand.Parameters["@Vanas"].Value = Convert.ToInt32(this.Txt_Vanas.Text);
 					sqlCommand.Parameters["@Reseca"].Value = Convert.ToInt32(this.Txt_Reseca.Text);
-					sqlCommand.Parameters["@Hongo"].Value = Convert.ToInt32(this.Txt_Hongo.Text);
+					sqlCommand.Parameters["@Hongo_Activo"].Value = Convert.ToInt32(this.Txt_HongoActivo.Text);
 					sqlCommand.Parameters["@Extra_Light"].Value = Convert.ToInt32(this.Txt_Extra.Text);
 					sqlCommand.Parameters["@Light"].Value = Convert.ToInt32(this.Txt_Light.Text);
 					sqlCommand.Parameters["@Light_Ambar"].Value = Convert.ToInt32(this.Txt_LightAmbar.Text);
 					sqlCommand.Parameters["@Ambar_Amarillo"].Value = Convert.ToInt32(this.Txt_Ambar.Text);
 					sqlCommand.Parameters["@Observaciones"].Value = this.Txt_Observaciones.Text;
-					sqlCommand.Parameters["@msg"].Value = 1;
+                    sqlCommand.Parameters["@Hongo_Inactivo"].Value = Convert.ToInt32(this.Txt_HongoInactivo.Text);
+                    sqlCommand.Parameters["@msg"].Value = 1;
 					this.cn.Abrir();
 					sqlCommand.ExecuteNonQuery();
 					sqlCommand.Parameters["@msg"].Value.ToString();
@@ -490,7 +494,7 @@ namespace Anakena_2017
 				}
 			}
 			int num = Convert.ToInt32(this.Txt_Partidas.Text) + Convert.ToInt32(this.Txt_Nuez.Text) + Convert.ToInt32(this.Txt_Resquebrajado.Text) + Convert.ToInt32(this.Txt_Cerrado.Text) + Convert.ToInt32(this.Txt_Negras.Text);
-			int num1 = Convert.ToInt32(this.Txt_Daño.Text) + Convert.ToInt32(this.Txt_Vanas.Text) + Convert.ToInt32(this.Txt_Reseca.Text) + Convert.ToInt32(this.Txt_Hongo.Text) + Convert.ToInt32(this.Txt_Extra.Text) + Convert.ToInt32(this.Txt_Light.Text) + Convert.ToInt32(this.Txt_LightAmbar.Text) + Convert.ToInt32(this.Txt_Ambar.Text);
+			int num1 = Convert.ToInt32(this.Txt_Daño.Text) + Convert.ToInt32(this.Txt_Vanas.Text) + Convert.ToInt32(this.Txt_Reseca.Text) + Convert.ToInt32(this.Txt_HongoActivo.Text) + Convert.ToInt32(this.Txt_HongoInactivo.Text) + Convert.ToInt32(this.Txt_Extra.Text) + Convert.ToInt32(this.Txt_Light.Text) + Convert.ToInt32(this.Txt_LightAmbar.Text) + Convert.ToInt32(this.Txt_Ambar.Text);
 			if ((num != 100 ? true : num1 != 100))
 			{
 				MessageBox.Show("compruebe que los analisis externos o internos sumen 100%", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Hand);
@@ -832,17 +836,17 @@ namespace Anakena_2017
 			{
 				num9 = num10;
 			}
-			this.extraerMedicion("Hongo");
+			this.extraerMedicion("Hongo_Activo");
 			int num11 = 0;
-			if (Convert.ToInt32(this.Txt_Hongo.Text) <= Convert.ToInt32(this.min))
+			if (Convert.ToInt32(this.Txt_HongoActivo.Text) <= Convert.ToInt32(this.min))
 			{
 				num11 = 1;
 			}
-			else if (Convert.ToInt32(this.Txt_Hongo.Text) <= Convert.ToInt32(this.max))
+			else if (Convert.ToInt32(this.Txt_HongoActivo.Text) <= Convert.ToInt32(this.max))
 			{
 				num11 = 2;
 			}
-			else if (Convert.ToInt32(this.Txt_Hongo.Text) > Convert.ToInt32(this.max))
+			else if (Convert.ToInt32(this.Txt_HongoActivo.Text) > Convert.ToInt32(this.max))
 			{
 				num11 = 3;
 			}
@@ -850,7 +854,25 @@ namespace Anakena_2017
 			{
 				num9 = num11;
 			}
-			this.extraerMedicion("Ambar_Amarillo");
+            this.extraerMedicion("Hongo_Inactivo");
+            int num15 = 0;
+            if (Convert.ToInt32(this.Txt_HongoInactivo.Text) <= Convert.ToInt32(this.min))
+            {
+                num15 = 1;
+            }
+            else if (Convert.ToInt32(this.Txt_HongoInactivo.Text) <= Convert.ToInt32(this.max))
+            {
+                num15 = 2;
+            }
+            else if (Convert.ToInt32(this.Txt_HongoInactivo.Text) > Convert.ToInt32(this.max))
+            {
+                num15 = 3;
+            }
+            if (num9 < num15)
+            {
+                num9 = num15;
+            }
+            this.extraerMedicion("Ambar_Amarillo");
 			int num12 = 0;
 			if (Convert.ToInt32(this.Txt_Ambar.Text) <= Convert.ToInt32(this.min))
 			{
@@ -1043,8 +1065,6 @@ namespace Anakena_2017
             this.Lbl_Analisis = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.BtnUpdate = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.DT_Analisis = new System.Windows.Forms.DateTimePicker();
             this.DT_Recepcion = new System.Windows.Forms.DateTimePicker();
             this.Txt_ProductorName = new System.Windows.Forms.TextBox();
@@ -1121,7 +1141,7 @@ namespace Anakena_2017
             this.Txt_Reseca = new System.Windows.Forms.TextBox();
             this.Txt_Vanas = new System.Windows.Forms.TextBox();
             this.Txt_Extra = new System.Windows.Forms.TextBox();
-            this.Txt_Hongo = new System.Windows.Forms.TextBox();
+            this.Txt_HongoActivo = new System.Windows.Forms.TextBox();
             this.Txt_Daño = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -1138,19 +1158,24 @@ namespace Anakena_2017
             this.label29 = new System.Windows.Forms.Label();
             this.Txt_Observaciones = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.Btn_Guardar = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.label51 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.Btn_Print = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.button6 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label55 = new System.Windows.Forms.Label();
+            this.Txt_HongoInactivo = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.Btn_Delete = new System.Windows.Forms.Button();
             this.Btn_Modificar = new System.Windows.Forms.Button();
             this.Btn_Salir = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Btn_Print = new System.Windows.Forms.Button();
+            this.Btn_Guardar = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnUpdate = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -1158,9 +1183,9 @@ namespace Anakena_2017
             this.groupBox5.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Lbl_Analisis
@@ -1212,31 +1237,6 @@ namespace Anakena_2017
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Busqueda";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // BtnUpdate
-            // 
-            this.BtnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnUpdate.BackgroundImage")));
-            this.BtnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnUpdate.Location = new System.Drawing.Point(327, 99);
-            this.BtnUpdate.Name = "BtnUpdate";
-            this.BtnUpdate.Size = new System.Drawing.Size(23, 23);
-            this.BtnUpdate.TabIndex = 25;
-            this.BtnUpdate.UseVisualStyleBackColor = true;
-            this.BtnUpdate.Visible = false;
-            this.BtnUpdate.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(135, 333);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 26);
-            this.button2.TabIndex = 7;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // DT_Analisis
             // 
@@ -1836,6 +1836,9 @@ namespace Anakena_2017
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.label55);
+            this.groupBox5.Controls.Add(this.Txt_HongoInactivo);
+            this.groupBox5.Controls.Add(this.label56);
             this.groupBox5.Controls.Add(this.label33);
             this.groupBox5.Controls.Add(this.Txt_Light);
             this.groupBox5.Controls.Add(this.label31);
@@ -1854,7 +1857,7 @@ namespace Anakena_2017
             this.groupBox5.Controls.Add(this.Txt_Reseca);
             this.groupBox5.Controls.Add(this.Txt_Vanas);
             this.groupBox5.Controls.Add(this.Txt_Extra);
-            this.groupBox5.Controls.Add(this.Txt_Hongo);
+            this.groupBox5.Controls.Add(this.Txt_HongoActivo);
             this.groupBox5.Controls.Add(this.Txt_Daño);
             this.groupBox5.Controls.Add(this.label11);
             this.groupBox5.Controls.Add(this.label21);
@@ -1866,7 +1869,7 @@ namespace Anakena_2017
             this.groupBox5.Enabled = false;
             this.groupBox5.Location = new System.Drawing.Point(605, 316);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(323, 368);
+            this.groupBox5.Size = new System.Drawing.Size(323, 392);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Analisis internos :";
@@ -1875,7 +1878,7 @@ namespace Anakena_2017
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(288, 233);
+            this.label33.Location = new System.Drawing.Point(274, 214);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(31, 18);
             this.label33.TabIndex = 29;
@@ -1884,7 +1887,7 @@ namespace Anakena_2017
             // Txt_Light
             // 
             this.Txt_Light.Enabled = false;
-            this.Txt_Light.Location = new System.Drawing.Point(216, 233);
+            this.Txt_Light.Location = new System.Drawing.Point(207, 212);
             this.Txt_Light.Name = "Txt_Light";
             this.Txt_Light.Size = new System.Drawing.Size(67, 20);
             this.Txt_Light.TabIndex = 5;
@@ -1895,7 +1898,7 @@ namespace Anakena_2017
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(286, 32);
+            this.label31.Location = new System.Drawing.Point(274, 14);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(31, 18);
             this.label31.TabIndex = 21;
@@ -1905,7 +1908,7 @@ namespace Anakena_2017
             // 
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(26, 235);
+            this.label50.Location = new System.Drawing.Point(26, 211);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(43, 18);
             this.label50.TabIndex = 27;
@@ -1915,7 +1918,7 @@ namespace Anakena_2017
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(286, 341);
+            this.label40.Location = new System.Drawing.Point(274, 320);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(31, 18);
             this.label40.TabIndex = 23;
@@ -1925,7 +1928,7 @@ namespace Anakena_2017
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(288, 308);
+            this.label39.Location = new System.Drawing.Point(274, 281);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(31, 18);
             this.label39.TabIndex = 23;
@@ -1935,7 +1938,7 @@ namespace Anakena_2017
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(288, 69);
+            this.label38.Location = new System.Drawing.Point(274, 46);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(31, 18);
             this.label38.TabIndex = 26;
@@ -1945,7 +1948,7 @@ namespace Anakena_2017
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(288, 109);
+            this.label37.Location = new System.Drawing.Point(274, 76);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(31, 18);
             this.label37.TabIndex = 25;
@@ -1955,7 +1958,7 @@ namespace Anakena_2017
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(288, 155);
+            this.label36.Location = new System.Drawing.Point(274, 109);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(31, 18);
             this.label36.TabIndex = 24;
@@ -1965,7 +1968,7 @@ namespace Anakena_2017
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(288, 192);
+            this.label35.Location = new System.Drawing.Point(274, 142);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(31, 18);
             this.label35.TabIndex = 23;
@@ -1975,7 +1978,7 @@ namespace Anakena_2017
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(286, 268);
+            this.label32.Location = new System.Drawing.Point(274, 247);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(31, 18);
             this.label32.TabIndex = 22;
@@ -1984,7 +1987,7 @@ namespace Anakena_2017
             // Txt_TotalInterno
             // 
             this.Txt_TotalInterno.Enabled = false;
-            this.Txt_TotalInterno.Location = new System.Drawing.Point(215, 338);
+            this.Txt_TotalInterno.Location = new System.Drawing.Point(207, 320);
             this.Txt_TotalInterno.Name = "Txt_TotalInterno";
             this.Txt_TotalInterno.Size = new System.Drawing.Size(67, 20);
             this.Txt_TotalInterno.TabIndex = 8;
@@ -1993,7 +1996,7 @@ namespace Anakena_2017
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(17, 343);
+            this.label27.Location = new System.Drawing.Point(25, 322);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(122, 18);
             this.label27.TabIndex = 19;
@@ -2002,7 +2005,7 @@ namespace Anakena_2017
             // Txt_Ambar
             // 
             this.Txt_Ambar.Enabled = false;
-            this.Txt_Ambar.Location = new System.Drawing.Point(215, 308);
+            this.Txt_Ambar.Location = new System.Drawing.Point(207, 281);
             this.Txt_Ambar.Name = "Txt_Ambar";
             this.Txt_Ambar.Size = new System.Drawing.Size(67, 20);
             this.Txt_Ambar.TabIndex = 7;
@@ -2011,7 +2014,7 @@ namespace Anakena_2017
             // Txt_LightAmbar
             // 
             this.Txt_LightAmbar.Enabled = false;
-            this.Txt_LightAmbar.Location = new System.Drawing.Point(216, 268);
+            this.Txt_LightAmbar.Location = new System.Drawing.Point(207, 247);
             this.Txt_LightAmbar.Name = "Txt_LightAmbar";
             this.Txt_LightAmbar.Size = new System.Drawing.Size(67, 20);
             this.Txt_LightAmbar.TabIndex = 6;
@@ -2020,7 +2023,7 @@ namespace Anakena_2017
             // Txt_Reseca
             // 
             this.Txt_Reseca.Enabled = false;
-            this.Txt_Reseca.Location = new System.Drawing.Point(216, 110);
+            this.Txt_Reseca.Location = new System.Drawing.Point(207, 77);
             this.Txt_Reseca.Name = "Txt_Reseca";
             this.Txt_Reseca.Size = new System.Drawing.Size(67, 20);
             this.Txt_Reseca.TabIndex = 2;
@@ -2029,7 +2032,7 @@ namespace Anakena_2017
             // Txt_Vanas
             // 
             this.Txt_Vanas.Enabled = false;
-            this.Txt_Vanas.Location = new System.Drawing.Point(216, 70);
+            this.Txt_Vanas.Location = new System.Drawing.Point(207, 46);
             this.Txt_Vanas.Name = "Txt_Vanas";
             this.Txt_Vanas.Size = new System.Drawing.Size(67, 20);
             this.Txt_Vanas.TabIndex = 1;
@@ -2038,25 +2041,26 @@ namespace Anakena_2017
             // Txt_Extra
             // 
             this.Txt_Extra.Enabled = false;
-            this.Txt_Extra.Location = new System.Drawing.Point(216, 193);
+            this.Txt_Extra.Location = new System.Drawing.Point(207, 177);
             this.Txt_Extra.Name = "Txt_Extra";
             this.Txt_Extra.Size = new System.Drawing.Size(67, 20);
             this.Txt_Extra.TabIndex = 4;
             this.Txt_Extra.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Extra_KeyPress);
             // 
-            // Txt_Hongo
+            // Txt_HongoActivo
             // 
-            this.Txt_Hongo.Enabled = false;
-            this.Txt_Hongo.Location = new System.Drawing.Point(216, 153);
-            this.Txt_Hongo.Name = "Txt_Hongo";
-            this.Txt_Hongo.Size = new System.Drawing.Size(67, 20);
-            this.Txt_Hongo.TabIndex = 3;
-            this.Txt_Hongo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Hongo_KeyPress);
+            this.Txt_HongoActivo.Enabled = false;
+            this.Txt_HongoActivo.Location = new System.Drawing.Point(207, 110);
+            this.Txt_HongoActivo.Name = "Txt_HongoActivo";
+            this.Txt_HongoActivo.Size = new System.Drawing.Size(67, 20);
+            this.Txt_HongoActivo.TabIndex = 3;
+            this.Txt_HongoActivo.TextChanged += new System.EventHandler(this.Txt_HongoActivo_TextChanged);
+            this.Txt_HongoActivo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Hongo_KeyPress);
             // 
             // Txt_Daño
             // 
             this.Txt_Daño.Enabled = false;
-            this.Txt_Daño.Location = new System.Drawing.Point(215, 30);
+            this.Txt_Daño.Location = new System.Drawing.Point(207, 14);
             this.Txt_Daño.Name = "Txt_Daño";
             this.Txt_Daño.Size = new System.Drawing.Size(67, 20);
             this.Txt_Daño.TabIndex = 0;
@@ -2066,7 +2070,7 @@ namespace Anakena_2017
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(26, 310);
+            this.label11.Location = new System.Drawing.Point(26, 280);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(125, 18);
             this.label11.TabIndex = 6;
@@ -2076,7 +2080,7 @@ namespace Anakena_2017
             // 
             this.label21.AutoSize = true;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(26, 270);
+            this.label21.Location = new System.Drawing.Point(26, 246);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(90, 18);
             this.label21.TabIndex = 5;
@@ -2086,7 +2090,7 @@ namespace Anakena_2017
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(26, 195);
+            this.label22.Location = new System.Drawing.Point(26, 176);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(81, 18);
             this.label22.TabIndex = 4;
@@ -2096,17 +2100,17 @@ namespace Anakena_2017
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(26, 155);
+            this.label23.Location = new System.Drawing.Point(26, 110);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(182, 18);
+            this.label23.Size = new System.Drawing.Size(105, 18);
             this.label23.TabIndex = 3;
-            this.label23.Text = "Hongo (Activo o Inactivo) :";
+            this.label23.Text = "Hongo Activo :";
             // 
             // label24
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(26, 112);
+            this.label24.Location = new System.Drawing.Point(26, 79);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(107, 18);
             this.label24.TabIndex = 2;
@@ -2116,7 +2120,7 @@ namespace Anakena_2017
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(26, 69);
+            this.label25.Location = new System.Drawing.Point(26, 45);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(53, 18);
             this.label25.TabIndex = 1;
@@ -2126,7 +2130,7 @@ namespace Anakena_2017
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(26, 29);
+            this.label26.Location = new System.Drawing.Point(26, 16);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(138, 18);
             this.label26.TabIndex = 0;
@@ -2211,39 +2215,6 @@ namespace Anakena_2017
             this.label30.TabIndex = 5;
             this.label30.Text = "Observacion :";
             // 
-            // Btn_Guardar
-            // 
-            this.Btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Guardar.BackgroundImage")));
-            this.Btn_Guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Guardar.Enabled = false;
-            this.Btn_Guardar.Location = new System.Drawing.Point(46, 37);
-            this.Btn_Guardar.Name = "Btn_Guardar";
-            this.Btn_Guardar.Size = new System.Drawing.Size(136, 36);
-            this.Btn_Guardar.TabIndex = 23;
-            this.Btn_Guardar.UseVisualStyleBackColor = true;
-            this.Btn_Guardar.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(30, 18);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(149, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 29;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(46, 160);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 35);
-            this.button3.TabIndex = 25;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // label51
             // 
             this.label51.AutoSize = true;
@@ -2266,29 +2237,62 @@ namespace Anakena_2017
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Opciones";
             // 
-            // Btn_Print
-            // 
-            this.Btn_Print.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Print.BackgroundImage")));
-            this.Btn_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Print.Location = new System.Drawing.Point(45, 98);
-            this.Btn_Print.Name = "Btn_Print";
-            this.Btn_Print.Size = new System.Drawing.Size(137, 36);
-            this.Btn_Print.TabIndex = 26;
-            this.Btn_Print.UseVisualStyleBackColor = true;
-            this.Btn_Print.Click += new System.EventHandler(this.Btn_Print_Click_1);
-            // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.button8);
             this.groupBox10.Controls.Add(this.Btn_Delete);
             this.groupBox10.Controls.Add(this.Btn_Modificar);
             this.groupBox10.Controls.Add(this.Btn_Salir);
-            this.groupBox10.Location = new System.Drawing.Point(1002, 490);
+            this.groupBox10.Location = new System.Drawing.Point(1002, 473);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(224, 251);
             this.groupBox10.TabIndex = 28;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Opciones";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(26, 110);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(153, 26);
+            this.button6.TabIndex = 28;
+            this.button6.Text = "Ver parametros evaluacion";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 25;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(274, 176);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(31, 18);
+            this.label55.TabIndex = 32;
+            this.label55.Text = "(%)";
+            // 
+            // Txt_HongoInactivo
+            // 
+            this.Txt_HongoInactivo.Enabled = false;
+            this.Txt_HongoInactivo.Location = new System.Drawing.Point(207, 142);
+            this.Txt_HongoInactivo.Name = "Txt_HongoInactivo";
+            this.Txt_HongoInactivo.Size = new System.Drawing.Size(67, 20);
+            this.Txt_HongoInactivo.TabIndex = 30;
+            this.Txt_HongoInactivo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_HongoInactivo_KeyPress);
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(26, 144);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(115, 18);
+            this.label56.TabIndex = 31;
+            this.label56.Text = "Hongo Inactivo :";
             // 
             // button8
             // 
@@ -2334,20 +2338,74 @@ namespace Anakena_2017
             this.Btn_Salir.UseVisualStyleBackColor = true;
             this.Btn_Salir.Click += new System.EventHandler(this.button7_Click);
             // 
-            // button6
+            // Btn_Print
             // 
-            this.button6.Location = new System.Drawing.Point(26, 110);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(153, 26);
-            this.button6.TabIndex = 28;
-            this.button6.Text = "Ver parametros evaluacion";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.Btn_Print.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Print.BackgroundImage")));
+            this.Btn_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Print.Location = new System.Drawing.Point(45, 98);
+            this.Btn_Print.Name = "Btn_Print";
+            this.Btn_Print.Size = new System.Drawing.Size(137, 36);
+            this.Btn_Print.TabIndex = 26;
+            this.Btn_Print.UseVisualStyleBackColor = true;
+            this.Btn_Print.Click += new System.EventHandler(this.Btn_Print_Click_1);
             // 
-            // timer1
+            // Btn_Guardar
             // 
-            this.timer1.Interval = 25;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.Btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Guardar.BackgroundImage")));
+            this.Btn_Guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Guardar.Enabled = false;
+            this.Btn_Guardar.Location = new System.Drawing.Point(46, 37);
+            this.Btn_Guardar.Name = "Btn_Guardar";
+            this.Btn_Guardar.Size = new System.Drawing.Size(136, 36);
+            this.Btn_Guardar.TabIndex = 23;
+            this.Btn_Guardar.UseVisualStyleBackColor = true;
+            this.Btn_Guardar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Location = new System.Drawing.Point(46, 160);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(137, 35);
+            this.button3.TabIndex = 25;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(30, 18);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(149, 78);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 29;
+            this.pictureBox1.TabStop = false;
+            // 
+            // BtnUpdate
+            // 
+            this.BtnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnUpdate.BackgroundImage")));
+            this.BtnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnUpdate.Location = new System.Drawing.Point(327, 99);
+            this.BtnUpdate.Name = "BtnUpdate";
+            this.BtnUpdate.Size = new System.Drawing.Size(23, 23);
+            this.BtnUpdate.TabIndex = 25;
+            this.BtnUpdate.UseVisualStyleBackColor = true;
+            this.BtnUpdate.Visible = false;
+            this.BtnUpdate.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Enabled = false;
+            this.button2.Location = new System.Drawing.Point(135, 333);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 26);
+            this.button2.TabIndex = 7;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FormRecepcion
             // 
@@ -2390,9 +2448,9 @@ namespace Anakena_2017
             this.groupBox6.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox9.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2463,12 +2521,13 @@ namespace Anakena_2017
 					this.Txt_Daño.Text = sqlDataReader[0].ToString();
 					this.Txt_Vanas.Text = sqlDataReader[1].ToString();
 					this.Txt_Reseca.Text = sqlDataReader[2].ToString();
-					this.Txt_Hongo.Text = sqlDataReader[3].ToString();
+					this.Txt_HongoActivo.Text = sqlDataReader[3].ToString();
 					this.Txt_Extra.Text = sqlDataReader[4].ToString();
 					this.Txt_Light.Text = sqlDataReader[5].ToString();
 					this.Txt_LightAmbar.Text = sqlDataReader[6].ToString();
 					this.Txt_Ambar.Text = sqlDataReader[7].ToString();
 					this.Txt_Observaciones.Text = sqlDataReader[8].ToString();
+                    Txt_HongoInactivo.Text = sqlDataReader[9].ToString();
 					this.Txt_Observaciones.ReadOnly = true;
 					this.Txt_TotalInterno.Text = "100";
 				}
@@ -2617,7 +2676,7 @@ namespace Anakena_2017
 			}
 			else if ((e.KeyChar != Convert.ToChar(Keys.Return) ? false : this.Txt_Ambar.Text != ""))
 			{
-				int num = Convert.ToInt32(this.Txt_Daño.Text) + Convert.ToInt32(this.Txt_Vanas.Text) + Convert.ToInt32(this.Txt_Reseca.Text) + Convert.ToInt32(this.Txt_Hongo.Text) + Convert.ToInt32(this.Txt_Extra.Text) + Convert.ToInt32(this.Txt_Light.Text) + Convert.ToInt32(this.Txt_LightAmbar.Text) + Convert.ToInt32(this.Txt_Ambar.Text);
+				int num = Convert.ToInt32(this.Txt_Daño.Text) + Convert.ToInt32(this.Txt_Vanas.Text) + Convert.ToInt32(this.Txt_Reseca.Text) + Convert.ToInt32(this.Txt_HongoActivo.Text) + Convert.ToInt32(this.Txt_Extra.Text) + Convert.ToInt32(this.Txt_Light.Text) + Convert.ToInt32(this.Txt_LightAmbar.Text) + Convert.ToInt32(this.Txt_Ambar.Text)+Convert.ToInt32(Txt_HongoInactivo.Text);
 				if (num != 100)
 				{
 					MessageBox.Show(string.Concat("La suma esperada es 100% , la suma actual es ", num, "%"), "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Hand);
@@ -2680,10 +2739,10 @@ namespace Anakena_2017
 				MessageBox.Show("Solo se permiten numeros enteros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 				e.Handled = true;
 			}
-			else if ((e.KeyChar != Convert.ToChar(Keys.Return) ? false : this.Txt_Hongo.Text != ""))
+			else if ((e.KeyChar != Convert.ToChar(Keys.Return) ? false : this.Txt_HongoActivo.Text != ""))
 			{
-				this.Txt_Extra.Enabled = true;
-				this.Txt_Extra.Focus();
+				this.Txt_HongoInactivo.Enabled = true;
+				this.Txt_HongoInactivo.Focus();
 			}
 		}
 
@@ -2721,10 +2780,10 @@ namespace Anakena_2017
 
 		private void Txt_Lote_KeyDown(object sender, KeyEventArgs e)
 		{
-			if (e.KeyCode == Keys.Tab)
-			{
-				MessageBox.Show("si funka");
-			}
+			//if (e.KeyCode == Keys.Tab)
+			//{
+			//	MessageBox.Show("si funka");
+			//}
 		}
 
 		private void Txt_Lote_KeyPress(object sender, KeyPressEventArgs e)
@@ -2796,9 +2855,11 @@ namespace Anakena_2017
 							this.Txt_Vanas.ReadOnly = true;
 							this.Txt_Reseca.Enabled = true;
 							this.Txt_Reseca.ReadOnly = true;
-							this.Txt_Hongo.Enabled = true;
-							this.Txt_Hongo.ReadOnly = true;
-							this.Txt_Extra.Enabled = true;
+							this.Txt_HongoActivo.Enabled = true;
+							this.Txt_HongoActivo.ReadOnly = true;
+                            this.Txt_HongoInactivo.Enabled = true;
+                            this.Txt_HongoInactivo.ReadOnly = true;
+                            this.Txt_Extra.Enabled = true;
 							this.Txt_Extra.ReadOnly = true;
 							this.Txt_Light.Enabled = true;
 							this.Txt_Light.ReadOnly = true;
@@ -2844,9 +2905,11 @@ namespace Anakena_2017
 							this.Txt_Vanas.Text = "";
 							this.Txt_Reseca.ReadOnly = false;
 							this.Txt_Reseca.Text = "";
-							this.Txt_Hongo.ReadOnly = false;
-							this.Txt_Hongo.Text = "";
-							this.Txt_Extra.ReadOnly = false;
+							this.Txt_HongoActivo.ReadOnly = false;
+							this.Txt_HongoActivo.Text = "";
+                            this.Txt_HongoInactivo.ReadOnly = false;
+                            this.Txt_HongoInactivo.Text = "";
+                            this.Txt_Extra.ReadOnly = false;
 							this.Txt_Extra.Text = "";
 							this.Txt_Light.ReadOnly = false;
 							this.Txt_Light.Text = "";
@@ -3011,8 +3074,8 @@ namespace Anakena_2017
 			}
 			else if ((e.KeyChar != Convert.ToChar(Keys.Return) ? false : this.Txt_Reseca.Text != ""))
 			{
-				this.Txt_Hongo.Enabled = true;
-				this.Txt_Hongo.Focus();
+				this.Txt_HongoActivo.Enabled = true;
+				this.Txt_HongoActivo.Focus();
 			}
 		}
 
@@ -3143,24 +3206,26 @@ namespace Anakena_2017
 					sqlCommand.Parameters.Add("@Daño_Insectos", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Vanas", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Reseca", SqlDbType.Int);
-					sqlCommand.Parameters.Add("@Hongo", SqlDbType.Int);
+					sqlCommand.Parameters.Add("@Hongo_Activo", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Extra_Light", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Light", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Light_Ambar", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Ambar_Amarillo", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Observaciones", SqlDbType.Text);
 					sqlCommand.Parameters.Add("@msg", SqlDbType.VarChar, 100);
-					sqlCommand.Parameters["@Num_Analisis"].Value = Convert.ToInt32(this.Lbl_Analisis.Text);
+                    sqlCommand.Parameters.Add("@Hongo_Inactivo", SqlDbType.Int);
+                    sqlCommand.Parameters["@Num_Analisis"].Value = Convert.ToInt32(this.Lbl_Analisis.Text);
 					sqlCommand.Parameters["@Daño_Insectos"].Value = Convert.ToInt32(this.Txt_Daño.Text);
 					sqlCommand.Parameters["@Vanas"].Value = Convert.ToInt32(this.Txt_Vanas.Text);
 					sqlCommand.Parameters["@Reseca"].Value = Convert.ToInt32(this.Txt_Reseca.Text);
-					sqlCommand.Parameters["@Hongo"].Value = Convert.ToInt32(this.Txt_Hongo.Text);
+					sqlCommand.Parameters["@Hongo_Activo"].Value = Convert.ToInt32(this.Txt_HongoActivo.Text);
 					sqlCommand.Parameters["@Extra_Light"].Value = Convert.ToInt32(this.Txt_Extra.Text);
 					sqlCommand.Parameters["@Light"].Value = Convert.ToInt32(this.Txt_Light.Text);
 					sqlCommand.Parameters["@Light_Ambar"].Value = Convert.ToInt32(this.Txt_LightAmbar.Text);
 					sqlCommand.Parameters["@Ambar_Amarillo"].Value = Convert.ToInt32(this.Txt_Ambar.Text);
 					sqlCommand.Parameters["@Observaciones"].Value = this.Txt_Observaciones.Text;
-					sqlCommand.Parameters["@msg"].Value = 1;
+                    sqlCommand.Parameters["@Hongo_Inactivo"].Value = Convert.ToInt32(this.Txt_HongoInactivo.Text);
+                    sqlCommand.Parameters["@msg"].Value = 1;
 					this.cn.Abrir();
 					sqlCommand.ExecuteNonQuery();
 					sqlCommand.Parameters["@msg"].Value.ToString();
@@ -3308,6 +3373,25 @@ namespace Anakena_2017
                 Txt_Partidas.Enabled = true;
                 Txt_Partidas.Focus();
             }
+        }
+
+        private void Txt_HongoInactivo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!(char.IsNumber(e.KeyChar) || e.KeyChar == '\b' ? true : e.KeyChar == '\r'))
+            {
+                MessageBox.Show("Solo se permiten numeros enteros", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                e.Handled = true;
+            }
+            else if ((e.KeyChar != Convert.ToChar(Keys.Return) ? false : this.Txt_HongoInactivo.Text != ""))
+            {
+                this.Txt_Extra.Enabled = true;
+                this.Txt_Extra.Focus();
+            }
+        }
+
+        private void Txt_HongoActivo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

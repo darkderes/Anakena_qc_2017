@@ -160,8 +160,8 @@ namespace Anakena_2017
                 {
                     num++;
                     applicationClass.Cells[1, num] = column.Name;
-                    applicationClass.get_Range("A1", "AE1").Interior.ColorIndex = 9;
-                    applicationClass.get_Range("A1", "AE1").Font.ColorIndex = 2;
+                    applicationClass.get_Range("A1", "AG1").Interior.ColorIndex = 9;
+                    applicationClass.get_Range("A1", "AG1").Font.ColorIndex = 2;
                 }
                 int num1 = 0;
                 foreach (DataGridViewRow row in (IEnumerable)this.dataGridView1.Rows)

@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>\\192.168.0.103\user\Jorge Darderes\Anakena_2017\</UpdateUrl>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>16</ApplicationRevision>
+    <ApplicationRevision>17</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -107,6 +107,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="conexion.cs" />
+    <Compile Include="FormAnalisisCalidadPMM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnalisisCalidadPMM.Designer.cs">
+      <DependentUpon>FormAnalisisCalidadPMM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAnalisisCalidadPreseleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAnalisisCalidadPreseleccion.Designer.cs">
+      <DependentUpon>FormAnalisisCalidadPreseleccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBuscarTarja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBuscarTarja.Designer.cs">
+      <DependentUpon>FormBuscarTarja.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormBusquedaProductor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +136,18 @@
     </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPartidoMecanico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPartidoMecanico.Designer.cs">
+      <DependentUpon>FormPartidoMecanico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPreseleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPreseleccion.Designer.cs">
+      <DependentUpon>FormPreseleccion.cs</DependentUpon>
     </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
@@ -134,11 +164,23 @@
     <Compile Include="FormReport.Designer.cs">
       <DependentUpon>FormReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReport_Preseleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReport_Preseleccion.Designer.cs">
+      <DependentUpon>FormReport_Preseleccion.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormUsuarioMain.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formw.Designer.cs">
+      <DependentUpon>Formw.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -147,9 +189,28 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Prueba_2017DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Prueba_2017Preseleccion.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prueba_2017Preseleccion.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Prueba_2017_PMM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prueba_2017_PMM.xsd</DependentUpon>
+    </Compile>
     <Compile Include="splash.cs">
       <SubType>Form</SubType>
     </Compile>
+    <EmbeddedResource Include="FormAnalisisCalidadPMM.resx">
+      <DependentUpon>FormAnalisisCalidadPMM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAnalisisCalidadPreseleccion.resx">
+      <DependentUpon>FormAnalisisCalidadPreseleccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBuscarTarja.resx">
+      <DependentUpon>FormBuscarTarja.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEvaluacion.resx">
       <DependentUpon>FormEvaluacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +219,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPartidoMecanico.resx">
+      <DependentUpon>FormPartidoMecanico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPreseleccion.resx">
+      <DependentUpon>FormPreseleccion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
@@ -171,11 +238,17 @@
     <EmbeddedResource Include="FormReport.resx">
       <DependentUpon>FormReport.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormReport_Preseleccion.resx">
+      <DependentUpon>FormReport_Preseleccion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormUsuario.resx">
       <DependentUpon>FormUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUsuarioMain.resx">
       <DependentUpon>FormUsuarioMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formw.resx">
+      <DependentUpon>Formw.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -188,6 +261,8 @@
       <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Reporte_Analisis.rdlc" />
+    <EmbeddedResource Include="Reporte_Analisis_Calidad_PMM.rdlc" />
+    <EmbeddedResource Include="Reporte_Analisis_Calidad_Preseleccion.rdlc" />
     <EmbeddedResource Include="splash.resx">
       <DependentUpon>splash.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +304,28 @@
     </None>
     <None Include="Prueba_2017DataSet.xss">
       <DependentUpon>Prueba_2017DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Prueba_2017Preseleccion.xsc">
+      <DependentUpon>Prueba_2017Preseleccion.xsd</DependentUpon>
+    </None>
+    <None Include="Prueba_2017Preseleccion.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Prueba_2017Preseleccion.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Prueba_2017Preseleccion.xss">
+      <DependentUpon>Prueba_2017Preseleccion.xsd</DependentUpon>
+    </None>
+    <None Include="Prueba_2017_PMM.xsc">
+      <DependentUpon>Prueba_2017_PMM.xsd</DependentUpon>
+    </None>
+    <None Include="Prueba_2017_PMM.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Prueba_2017_PMM.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Prueba_2017_PMM.xss">
+      <DependentUpon>Prueba_2017_PMM.xsd</DependentUpon>
     </None>
     <None Include="Resources\banner1.jpg" />
   </ItemGroup>
