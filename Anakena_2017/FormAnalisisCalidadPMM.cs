@@ -68,7 +68,7 @@ namespace Anakena_2017
                 string str2 = string.Concat("Analisis = ", txt_filtro.Text);
                 this.myds.Tables[0].DefaultView.RowFilter = str2;
             }
-            else
+           else
            if (Cmb_Busqueda.Text == "Bins")
             {
                 string str2 = string.Concat("Bins = ", txt_filtro.Text);
@@ -284,6 +284,8 @@ namespace Anakena_2017
             s.ACCESSO = 1;
             s.groupBox9.Visible = true;
             s.groupBox10.Visible = false;
+            s.Btn_Guardar.Enabled = true;
+            s.Btn_Print.Enabled = false;
             s.ShowDialog();
         }
 

@@ -45,6 +45,7 @@ namespace Anakena_2017
         private ToolStripMenuItem extracciónDeDatosToolStripMenuItem;
         private ToolStripMenuItem admistrarPatidoMecanicoToolStripMenuItem;
         private ToolStripMenuItem administrarPreseleccionToolStripMenuItem;
+        private ToolStripMenuItem informeProductorToolStripMenuItem;
         private ToolStripMenuItem extraccionDeDatosToolStripMenuItem;
 
 		public FormPrincipal(string pass)
@@ -126,6 +127,8 @@ namespace Anakena_2017
             this.procesoNSCToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.partidoMecanicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.preselecciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.admistrarPatidoMecanicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.administrarPreseleccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controlCalidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recepcionConPelonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -139,8 +142,7 @@ namespace Anakena_2017
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.admistrarPatidoMecanicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.administrarPreseleccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informeProductorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -165,6 +167,7 @@ namespace Anakena_2017
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newToolStripMenuItem,
             this.openToolStripMenuItem,
+            this.informeProductorToolStripMenuItem,
             this.saveToolStripMenuItem,
             this.saveAsToolStripMenuItem,
             this.extracciónDeDatosToolStripMenuItem,
@@ -251,6 +254,20 @@ namespace Anakena_2017
             this.preselecciónToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
             this.preselecciónToolStripMenuItem.Text = "Preselección";
             this.preselecciónToolStripMenuItem.Click += new System.EventHandler(this.preselecciónToolStripMenuItem_Click);
+            // 
+            // admistrarPatidoMecanicoToolStripMenuItem
+            // 
+            this.admistrarPatidoMecanicoToolStripMenuItem.Name = "admistrarPatidoMecanicoToolStripMenuItem";
+            this.admistrarPatidoMecanicoToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.admistrarPatidoMecanicoToolStripMenuItem.Text = "Admistrar Patido Mecánico";
+            this.admistrarPatidoMecanicoToolStripMenuItem.Click += new System.EventHandler(this.admistrarPatidoMecanicoToolStripMenuItem_Click);
+            // 
+            // administrarPreseleccionToolStripMenuItem
+            // 
+            this.administrarPreseleccionToolStripMenuItem.Name = "administrarPreseleccionToolStripMenuItem";
+            this.administrarPreseleccionToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
+            this.administrarPreseleccionToolStripMenuItem.Text = "Administrar Preselección";
+            this.administrarPreseleccionToolStripMenuItem.Click += new System.EventHandler(this.administrarPreseleccionToolStripMenuItem_Click);
             // 
             // controlCalidadToolStripMenuItem
             // 
@@ -357,19 +374,12 @@ namespace Anakena_2017
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // admistrarPatidoMecanicoToolStripMenuItem
+            // informeProductorToolStripMenuItem
             // 
-            this.admistrarPatidoMecanicoToolStripMenuItem.Name = "admistrarPatidoMecanicoToolStripMenuItem";
-            this.admistrarPatidoMecanicoToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.admistrarPatidoMecanicoToolStripMenuItem.Text = "Admistrar Patido Mecánico";
-            this.admistrarPatidoMecanicoToolStripMenuItem.Click += new System.EventHandler(this.admistrarPatidoMecanicoToolStripMenuItem_Click);
-            // 
-            // administrarPreseleccionToolStripMenuItem
-            // 
-            this.administrarPreseleccionToolStripMenuItem.Name = "administrarPreseleccionToolStripMenuItem";
-            this.administrarPreseleccionToolStripMenuItem.Size = new System.Drawing.Size(218, 22);
-            this.administrarPreseleccionToolStripMenuItem.Text = "Administrar Preselección";
-            this.administrarPreseleccionToolStripMenuItem.Click += new System.EventHandler(this.administrarPreseleccionToolStripMenuItem_Click);
+            this.informeProductorToolStripMenuItem.Name = "informeProductorToolStripMenuItem";
+            this.informeProductorToolStripMenuItem.Size = new System.Drawing.Size(196, 22);
+            this.informeProductorToolStripMenuItem.Text = "Informe Productor";
+            this.informeProductorToolStripMenuItem.Click += new System.EventHandler(this.informeProductorToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
@@ -495,6 +505,14 @@ namespace Anakena_2017
             FormAnalisisCalidadPMM s = new FormAnalisisCalidadPMM();
             s.Btn_Agregar.Visible = false;
             s.ShowDialog();
+        }
+
+        private void informeProductorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormRecepcionMain s = new FormRecepcionMain();
+            s.Btn_Agregar.Visible = false;
+            s.acceso = 1;
+           s.ShowDialog();        
         }
     }
 }

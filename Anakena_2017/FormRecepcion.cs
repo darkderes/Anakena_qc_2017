@@ -406,8 +406,9 @@ namespace Anakena_2017
 					sqlCommand.Parameters.Add("@Dañados", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Productor", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Rut", SqlDbType.VarChar, 40);
-					sqlCommand.Parameters.Add("@Condicion", SqlDbType.Text);
-					sqlCommand.Parameters.Add("@Anakena", SqlDbType.Int);
+					sqlCommand.Parameters.Add("@Condicion", SqlDbType.Text);                  
+                    sqlCommand.Parameters.Add("@Anakena", SqlDbType.Int);
+                    sqlCommand.Parameters.Add("@Condicion_Productor", SqlDbType.Text);
 					sqlCommand.Parameters.Add("@msg", SqlDbType.VarChar, 100);
 					sqlCommand.Parameters["@Num_Analisis"].Value = Convert.ToInt32(this.Lbl_Analisis.Text);
 					sqlCommand.Parameters["@Quebrados"].Value = Convert.ToInt32(this.Txt_Quebrados.Text);
@@ -416,7 +417,8 @@ namespace Anakena_2017
 					sqlCommand.Parameters["@Rut"].Value = this.usuario;
 					sqlCommand.Parameters["@Condicion"].Value = this.lbl_condiciones.Text;
 					sqlCommand.Parameters["@Anakena"].Value = Convert.ToInt32(this.TxtCantidadAnakena.Text);
-					sqlCommand.Parameters["@msg"].Value = 1;
+                    sqlCommand.Parameters["@Condicion_Productor"].Value = evaluacion2();
+                    sqlCommand.Parameters["@msg"].Value = 1;
 					this.cn.Abrir();
 					sqlCommand.ExecuteNonQuery();
 					sqlCommand.Parameters["@msg"].Value.ToString();
@@ -484,32 +486,32 @@ namespace Anakena_2017
 
 		private void Btn_Modificar_Click(object sender, EventArgs e)
 		{
-			switch (MessageBox.Show("Desea actualizar la evaluacion de parametros?", "Anakena", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
-			{
-				case System.Windows.Forms.DialogResult.Yes:
-				{
-					this.evaluacion();
-					base.Close();
-					break;
-				}
-			}
-			int num = Convert.ToInt32(this.Txt_Partidas.Text) + Convert.ToInt32(this.Txt_Nuez.Text) + Convert.ToInt32(this.Txt_Resquebrajado.Text) + Convert.ToInt32(this.Txt_Cerrado.Text) + Convert.ToInt32(this.Txt_Negras.Text);
-			int num1 = Convert.ToInt32(this.Txt_Daño.Text) + Convert.ToInt32(this.Txt_Vanas.Text) + Convert.ToInt32(this.Txt_Reseca.Text) + Convert.ToInt32(this.Txt_HongoActivo.Text) + Convert.ToInt32(this.Txt_HongoInactivo.Text) + Convert.ToInt32(this.Txt_Extra.Text) + Convert.ToInt32(this.Txt_Light.Text) + Convert.ToInt32(this.Txt_LightAmbar.Text) + Convert.ToInt32(this.Txt_Ambar.Text);
-			if ((num != 100 ? true : num1 != 100))
-			{
-				MessageBox.Show("compruebe que los analisis externos o internos sumen 100%", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-			}
-			else
-			{
-				this.update_encabezado();
-				this.update_envases();
-				this.update_inpurezas();
+            switch (MessageBox.Show("Desea actualizar la evaluacion de parametros?", "Anakena", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+            {
+                case System.Windows.Forms.DialogResult.Yes:
+                    {
+                        this.evaluacion();
+                        base.Close();
+                        break;
+                    }
+            }
+            int num = Convert.ToInt32(this.Txt_Partidas.Text) + Convert.ToInt32(this.Txt_Nuez.Text) + Convert.ToInt32(this.Txt_Resquebrajado.Text) + Convert.ToInt32(this.Txt_Cerrado.Text) + Convert.ToInt32(this.Txt_Negras.Text);
+            int num1 = Convert.ToInt32(this.Txt_Daño.Text) + Convert.ToInt32(this.Txt_Vanas.Text) + Convert.ToInt32(this.Txt_Reseca.Text) + Convert.ToInt32(this.Txt_HongoActivo.Text) + Convert.ToInt32(this.Txt_HongoInactivo.Text) + Convert.ToInt32(this.Txt_Extra.Text) + Convert.ToInt32(this.Txt_Light.Text) + Convert.ToInt32(this.Txt_LightAmbar.Text) + Convert.ToInt32(this.Txt_Ambar.Text);
+            if ((num != 100 ? true : num1 != 100))
+            {
+                MessageBox.Show("compruebe que los analisis externos o internos sumen 100%", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+            }
+            else
+            {
+                this.update_encabezado();
+                this.update_envases();
+                this.update_inpurezas();
                 this.update_AnalisisExterno();
                 this.update_AnalisisInterno();
                 MessageBox.Show("Datos modificados correctamente", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-				base.Close();
-			}
-		}
+                base.Close();
+            }
+        }
 
 		private void Btn_Print_Click(object sender, EventArgs e)
 		{
@@ -738,8 +740,30 @@ namespace Anakena_2017
 			{
 				num1 = 3;
 			}
-			int num2 = 0;
+            this.extraerMedicion("Impurezas_Pelon");
+            int num16 = 0;
+            if (Convert.ToDouble(Txt_Pelon.Text) <= (double)Convert.ToInt32(this.min))
+            {
+                num16 = 1;
+            }
+            else if (Convert.ToDouble(Txt_Pelon.Text) <= (double)Convert.ToInt32(this.max))
+            {
+                num16 = 2;
+            }
+            else if (Convert.ToDouble(Txt_Pelon.Text) > (double)Convert.ToInt32(this.max))
+            {
+                num16 = 3;
+            }
+            int num2 = 0;
 			num2 = (num <= num1 ? num1 : num);
+
+            if(num2 < num16)
+            {
+                num2 = num16;
+            }
+
+
+
 			this.extraerMedicion("Partidas_Quebradas");
 			int num3 = 0;
 			if (Convert.ToInt32(this.Txt_Partidas.Text) <= Convert.ToInt32(this.min))
@@ -950,8 +974,109 @@ namespace Anakena_2017
 				this.lbl_condiciones.ForeColor = Color.Green;
 			}
 		}
+        public string evaluacion2()
+        {
+            string evaluacion_productor = "";
+            this.extraerMedicion("Impurezas_Piedras");
+            int num = 0;
+            if (Convert.ToDouble(this.Txt_Piedras.Text) <= (double)Convert.ToInt32(this.min))
+            {
+                num = 1;
+            }
+            else if (Convert.ToDouble(this.Txt_Piedras.Text) <= (double)Convert.ToInt32(this.max))
+            {
+                num = 2;
+            }
+            else if (Convert.ToDouble(this.Txt_Piedras.Text) > (double)Convert.ToInt32(this.max))
+            {
+                num = 3;
+            }
+            this.extraerMedicion("Impurezas_Palo");
+            int num1 = 0;
+            if (Convert.ToDouble(this.Txt_Palos.Text) <= (double)Convert.ToInt32(this.min))
+            {
+                num1 = 1;
+            }
+            else if (Convert.ToDouble(this.Txt_Palos.Text) <= (double)Convert.ToInt32(this.max))
+            {
+                num1 = 2;
+            }
+            else if (Convert.ToDouble(this.Txt_Palos.Text) > (double)Convert.ToInt32(this.max))
+            {
+                num1 = 3;
+            }
+            this.extraerMedicion("Impurezas_Pelon");
+            int num16 = 0;
+            if (Convert.ToDouble(Txt_Pelon.Text) <= (double)Convert.ToInt32(this.min))
+            {
+                num16 = 1;
+            }
+            else if (Convert.ToDouble(Txt_Pelon.Text) <= (double)Convert.ToInt32(this.max))
+            {
+                num16 = 2;
+            }
+            else if (Convert.ToDouble(Txt_Pelon.Text) > (double)Convert.ToInt32(this.max))
+            {
+                num16 = 3;
+            }
+            int num2 = 0;
+            num2 = (num <= num1 ? num1 : num);
 
-		public void extraerMedicion(string parametro)
+            if (num2 < num16)
+            {
+                num2 = num16;
+            }
+            
+            this.extraerMedicion("Negras_Momificadas");
+            int num4 = 0;
+            if (Convert.ToInt32(this.Txt_Negras.Text) <= Convert.ToInt32(this.min))
+            {
+                num4 = 1;
+            }
+            else if (Convert.ToInt32(this.Txt_Negras.Text) <= Convert.ToInt32(this.max))
+            {
+                num4 = 2;
+            }
+            else if (Convert.ToInt32(this.Txt_Negras.Text) > Convert.ToInt32(this.max))
+            {
+                num4 = 3;
+            }
+            this.extraerMedicion("Pelon_Adherido");
+            int num6 = 0;
+            if (Convert.ToInt32(this.Txt_Adherido.Text) <= Convert.ToInt32(this.min))
+            {
+                num6 = 1;
+            }
+            else if (Convert.ToInt32(this.Txt_Adherido.Text) <= Convert.ToInt32(this.max))
+            {
+                num6 = 2;
+            }
+            else if (Convert.ToInt32(this.Txt_Adherido.Text) > Convert.ToInt32(this.max))
+            {
+                num6 = 3;
+            }
+            if (num4 < num6)
+            {
+                num4 = num6;
+            }
+            if (num2 == 3 || num4 == 3 )
+            {
+                evaluacion_productor = "ROJO";
+            
+            }
+            else if (num2 == 2 || num4 == 2 )
+            {
+                evaluacion_productor = "AMARILLO";
+           
+            }
+            if (num2 == 1 && num4 == 1)
+            {
+                evaluacion_productor = "VERDE";
+        
+            }
+            return evaluacion_productor;
+        }
+        public void extraerMedicion(string parametro)
 		{
 			this.cn.Abrir();
 			SqlCommand sqlCommand = new SqlCommand("spTraerEvaluacion", this.cn.getConexion());
@@ -1065,6 +1190,8 @@ namespace Anakena_2017
             this.Lbl_Analisis = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.BtnUpdate = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.DT_Analisis = new System.Windows.Forms.DateTimePicker();
             this.DT_Recepcion = new System.Windows.Forms.DateTimePicker();
             this.Txt_ProductorName = new System.Windows.Forms.TextBox();
@@ -1123,6 +1250,9 @@ namespace Anakena_2017
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.Txt_HongoInactivo = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.Txt_Light = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
@@ -1160,22 +1290,17 @@ namespace Anakena_2017
             this.label30 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.Btn_Print = new System.Windows.Forms.Button();
+            this.Btn_Guardar = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label55 = new System.Windows.Forms.Label();
-            this.Txt_HongoInactivo = new System.Windows.Forms.TextBox();
-            this.label56 = new System.Windows.Forms.Label();
             this.button8 = new System.Windows.Forms.Button();
             this.Btn_Delete = new System.Windows.Forms.Button();
             this.Btn_Modificar = new System.Windows.Forms.Button();
             this.Btn_Salir = new System.Windows.Forms.Button();
-            this.Btn_Print = new System.Windows.Forms.Button();
-            this.Btn_Guardar = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.BtnUpdate = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -1237,6 +1362,31 @@ namespace Anakena_2017
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Busqueda";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // BtnUpdate
+            // 
+            this.BtnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnUpdate.BackgroundImage")));
+            this.BtnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BtnUpdate.Location = new System.Drawing.Point(327, 99);
+            this.BtnUpdate.Name = "BtnUpdate";
+            this.BtnUpdate.Size = new System.Drawing.Size(23, 23);
+            this.BtnUpdate.TabIndex = 25;
+            this.BtnUpdate.UseVisualStyleBackColor = true;
+            this.BtnUpdate.Visible = false;
+            this.BtnUpdate.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Enabled = false;
+            this.button2.Location = new System.Drawing.Point(135, 333);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 26);
+            this.button2.TabIndex = 7;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // DT_Analisis
             // 
@@ -1533,6 +1683,7 @@ namespace Anakena_2017
             this.Txt_Pelon.Name = "Txt_Pelon";
             this.Txt_Pelon.Size = new System.Drawing.Size(40, 20);
             this.Txt_Pelon.TabIndex = 26;
+            this.Txt_Pelon.TextChanged += new System.EventHandler(this.Txt_Pelon_TextChanged);
             this.Txt_Pelon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Pelon_KeyPress);
             // 
             // label54
@@ -1873,6 +2024,35 @@ namespace Anakena_2017
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Analisis internos :";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(274, 176);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(31, 18);
+            this.label55.TabIndex = 32;
+            this.label55.Text = "(%)";
+            // 
+            // Txt_HongoInactivo
+            // 
+            this.Txt_HongoInactivo.Enabled = false;
+            this.Txt_HongoInactivo.Location = new System.Drawing.Point(207, 142);
+            this.Txt_HongoInactivo.Name = "Txt_HongoInactivo";
+            this.Txt_HongoInactivo.Size = new System.Drawing.Size(67, 20);
+            this.Txt_HongoInactivo.TabIndex = 30;
+            this.Txt_HongoInactivo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_HongoInactivo_KeyPress);
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(26, 144);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(115, 18);
+            this.label56.TabIndex = 31;
+            this.label56.Text = "Hongo Inactivo :";
             // 
             // label33
             // 
@@ -2237,62 +2417,52 @@ namespace Anakena_2017
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Opciones";
             // 
+            // Btn_Print
+            // 
+            this.Btn_Print.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Print.BackgroundImage")));
+            this.Btn_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Print.Location = new System.Drawing.Point(45, 98);
+            this.Btn_Print.Name = "Btn_Print";
+            this.Btn_Print.Size = new System.Drawing.Size(137, 36);
+            this.Btn_Print.TabIndex = 26;
+            this.Btn_Print.UseVisualStyleBackColor = true;
+            this.Btn_Print.Click += new System.EventHandler(this.Btn_Print_Click_1);
+            // 
+            // Btn_Guardar
+            // 
+            this.Btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Guardar.BackgroundImage")));
+            this.Btn_Guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Guardar.Enabled = false;
+            this.Btn_Guardar.Location = new System.Drawing.Point(46, 37);
+            this.Btn_Guardar.Name = "Btn_Guardar";
+            this.Btn_Guardar.Size = new System.Drawing.Size(136, 36);
+            this.Btn_Guardar.TabIndex = 23;
+            this.Btn_Guardar.UseVisualStyleBackColor = true;
+            this.Btn_Guardar.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Location = new System.Drawing.Point(46, 160);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(137, 35);
+            this.button3.TabIndex = 25;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.button8);
             this.groupBox10.Controls.Add(this.Btn_Delete);
             this.groupBox10.Controls.Add(this.Btn_Modificar);
             this.groupBox10.Controls.Add(this.Btn_Salir);
-            this.groupBox10.Location = new System.Drawing.Point(1002, 473);
+            this.groupBox10.Location = new System.Drawing.Point(1002, 477);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(224, 251);
             this.groupBox10.TabIndex = 28;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Opciones";
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(26, 110);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(153, 26);
-            this.button6.TabIndex = 28;
-            this.button6.Text = "Ver parametros evaluacion";
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // timer1
-            // 
-            this.timer1.Interval = 25;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.Location = new System.Drawing.Point(274, 176);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(31, 18);
-            this.label55.TabIndex = 32;
-            this.label55.Text = "(%)";
-            // 
-            // Txt_HongoInactivo
-            // 
-            this.Txt_HongoInactivo.Enabled = false;
-            this.Txt_HongoInactivo.Location = new System.Drawing.Point(207, 142);
-            this.Txt_HongoInactivo.Name = "Txt_HongoInactivo";
-            this.Txt_HongoInactivo.Size = new System.Drawing.Size(67, 20);
-            this.Txt_HongoInactivo.TabIndex = 30;
-            this.Txt_HongoInactivo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_HongoInactivo_KeyPress);
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.Location = new System.Drawing.Point(26, 144);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(115, 18);
-            this.label56.TabIndex = 31;
-            this.label56.Text = "Hongo Inactivo :";
             // 
             // button8
             // 
@@ -2338,39 +2508,20 @@ namespace Anakena_2017
             this.Btn_Salir.UseVisualStyleBackColor = true;
             this.Btn_Salir.Click += new System.EventHandler(this.button7_Click);
             // 
-            // Btn_Print
+            // button6
             // 
-            this.Btn_Print.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Print.BackgroundImage")));
-            this.Btn_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Print.Location = new System.Drawing.Point(45, 98);
-            this.Btn_Print.Name = "Btn_Print";
-            this.Btn_Print.Size = new System.Drawing.Size(137, 36);
-            this.Btn_Print.TabIndex = 26;
-            this.Btn_Print.UseVisualStyleBackColor = true;
-            this.Btn_Print.Click += new System.EventHandler(this.Btn_Print_Click_1);
+            this.button6.Location = new System.Drawing.Point(26, 110);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(153, 26);
+            this.button6.TabIndex = 28;
+            this.button6.Text = "Ver parametros evaluacion";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // Btn_Guardar
+            // timer1
             // 
-            this.Btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Guardar.BackgroundImage")));
-            this.Btn_Guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Guardar.Enabled = false;
-            this.Btn_Guardar.Location = new System.Drawing.Point(46, 37);
-            this.Btn_Guardar.Name = "Btn_Guardar";
-            this.Btn_Guardar.Size = new System.Drawing.Size(136, 36);
-            this.Btn_Guardar.TabIndex = 23;
-            this.Btn_Guardar.UseVisualStyleBackColor = true;
-            this.Btn_Guardar.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(46, 160);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 35);
-            this.button3.TabIndex = 25;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.timer1.Interval = 25;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // pictureBox1
             // 
@@ -2381,31 +2532,6 @@ namespace Anakena_2017
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
-            // 
-            // BtnUpdate
-            // 
-            this.BtnUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnUpdate.BackgroundImage")));
-            this.BtnUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnUpdate.Location = new System.Drawing.Point(327, 99);
-            this.BtnUpdate.Name = "BtnUpdate";
-            this.BtnUpdate.Size = new System.Drawing.Size(23, 23);
-            this.BtnUpdate.TabIndex = 25;
-            this.BtnUpdate.UseVisualStyleBackColor = true;
-            this.BtnUpdate.Visible = false;
-            this.BtnUpdate.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Enabled = false;
-            this.button2.Location = new System.Drawing.Point(135, 333);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 26);
-            this.button2.TabIndex = 7;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // FormRecepcion
             // 
@@ -3288,8 +3414,8 @@ namespace Anakena_2017
 
 		public void update_envases()
 		{
-			try
-			{
+           string x = evaluacion2();
+         
 				try
 				{
 					SqlCommand sqlCommand = new SqlCommand("spUpdateEnvases", this.cn.getConexion());
@@ -3301,14 +3427,16 @@ namespace Anakena_2017
 					sqlCommand.Parameters.Add("@Productor", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Condicion", SqlDbType.Text);
 					sqlCommand.Parameters.Add("@Anakena", SqlDbType.Int);
-					sqlCommand.Parameters.Add("@msg", SqlDbType.VarChar, 100);
+                    sqlCommand.Parameters.Add("@Condicion_Productor", SqlDbType.Text);
+                    sqlCommand.Parameters.Add("@msg", SqlDbType.VarChar, 100);
 					sqlCommand.Parameters["@Num_Analisis"].Value = Convert.ToInt32(this.Lbl_Analisis.Text);
 					sqlCommand.Parameters["@Quebrados"].Value = Convert.ToInt32(this.Txt_Quebrados.Text);
 					sqlCommand.Parameters["@Dañados"].Value = Convert.ToInt32(this.TxtDañados.Text);
 					sqlCommand.Parameters["@Productor"].Value = Convert.ToInt32(this.TxtCantidadProductor.Text);
 					sqlCommand.Parameters["@Condicion"].Value = this.lbl_condiciones.Text;
 					sqlCommand.Parameters["@Anakena"].Value = Convert.ToInt32(this.TxtCantidadAnakena.Text);
-					sqlCommand.Parameters["@msg"].Value = 1;
+                    sqlCommand.Parameters["@Condicion_Productor"].Value = x;
+                    sqlCommand.Parameters["@msg"].Value = 1;
 					sqlCommand.ExecuteNonQuery();
 					sqlCommand.Parameters["@msg"].Value.ToString();
 				}
@@ -3316,8 +3444,9 @@ namespace Anakena_2017
 				{
 					Exception exception = exception1;
 					MessageBox.Show(string.Concat("Error SQL ", exception), "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-				}
-			}
+                    this.cn.Cerrar();
+            }
+			
 			finally
 			{
 				this.cn.Cerrar();
@@ -3390,6 +3519,11 @@ namespace Anakena_2017
         }
 
         private void Txt_HongoActivo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txt_Pelon_TextChanged(object sender, EventArgs e)
         {
 
         }

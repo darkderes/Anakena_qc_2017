@@ -156,7 +156,7 @@
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(402, 261);
-            this.tabControl1.TabIndex = 118;
+            this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
@@ -203,19 +203,19 @@
             this.Txt_Peso.Location = new System.Drawing.Point(189, 45);
             this.Txt_Peso.Name = "Txt_Peso";
             this.Txt_Peso.Size = new System.Drawing.Size(41, 20);
-            this.Txt_Peso.TabIndex = 27;
+            this.Txt_Peso.TabIndex = 0;
             this.Txt_Peso.Text = "0";
             this.Txt_Peso.TextChanged += new System.EventHandler(this.Txt_Peso_TextChanged);
             this.Txt_Peso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Peso_KeyPress);
             // 
             // Txt_Observacion_Mat_Extraña
             // 
-            this.Txt_Observacion_Mat_Extraña.Enabled = false;
             this.Txt_Observacion_Mat_Extraña.Location = new System.Drawing.Point(236, 110);
             this.Txt_Observacion_Mat_Extraña.Name = "Txt_Observacion_Mat_Extraña";
             this.Txt_Observacion_Mat_Extraña.Size = new System.Drawing.Size(152, 20);
-            this.Txt_Observacion_Mat_Extraña.TabIndex = 34;
+            this.Txt_Observacion_Mat_Extraña.TabIndex = 3;
             this.Txt_Observacion_Mat_Extraña.Text = "Observaciones";
+            this.Txt_Observacion_Mat_Extraña.TextChanged += new System.EventHandler(this.Txt_Observacion_Mat_Extraña_TextChanged);
             this.Txt_Observacion_Mat_Extraña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Observacion_Mat_Extraña_KeyPress);
             // 
             // label6
@@ -235,16 +235,15 @@
             this.Txt_Pepa.Location = new System.Drawing.Point(189, 142);
             this.Txt_Pepa.Name = "Txt_Pepa";
             this.Txt_Pepa.Size = new System.Drawing.Size(49, 21);
-            this.Txt_Pepa.TabIndex = 33;
+            this.Txt_Pepa.TabIndex = 4;
             this.Txt_Pepa.Text = "0";
             // 
             // Txt_Cascara
             // 
-            this.Txt_Cascara.Enabled = false;
             this.Txt_Cascara.Location = new System.Drawing.Point(189, 79);
             this.Txt_Cascara.Name = "Txt_Cascara";
             this.Txt_Cascara.Size = new System.Drawing.Size(41, 20);
-            this.Txt_Cascara.TabIndex = 29;
+            this.Txt_Cascara.TabIndex = 1;
             this.Txt_Cascara.Text = "0";
             this.Txt_Cascara.TextChanged += new System.EventHandler(this.Txt_Cascara_TextChanged);
             this.Txt_Cascara.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Cascara_KeyPress);
@@ -271,11 +270,10 @@
             // 
             // Txt_extraña
             // 
-            this.Txt_extraña.Enabled = false;
             this.Txt_extraña.Location = new System.Drawing.Point(189, 110);
             this.Txt_extraña.Name = "Txt_extraña";
             this.Txt_extraña.Size = new System.Drawing.Size(41, 20);
-            this.Txt_extraña.TabIndex = 31;
+            this.Txt_extraña.TabIndex = 2;
             this.Txt_extraña.Text = "0";
             this.Txt_extraña.TextChanged += new System.EventHandler(this.Txt_extraña_TextChanged);
             this.Txt_extraña.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_extraña_KeyPress);
@@ -363,7 +361,7 @@
             this.Txt_Halves.Location = new System.Drawing.Point(165, 51);
             this.Txt_Halves.Name = "Txt_Halves";
             this.Txt_Halves.Size = new System.Drawing.Size(42, 21);
-            this.Txt_Halves.TabIndex = 36;
+            this.Txt_Halves.TabIndex = 0;
             this.Txt_Halves.Text = "0";
             this.Txt_Halves.TextChanged += new System.EventHandler(this.Txt_Halves_TextChanged);
             this.Txt_Halves.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Halves_KeyPress);
@@ -400,12 +398,11 @@
             // 
             // Txt_Large_Pieces
             // 
-            this.Txt_Large_Pieces.Enabled = false;
             this.Txt_Large_Pieces.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Large_Pieces.Location = new System.Drawing.Point(165, 78);
             this.Txt_Large_Pieces.Name = "Txt_Large_Pieces";
             this.Txt_Large_Pieces.Size = new System.Drawing.Size(42, 21);
-            this.Txt_Large_Pieces.TabIndex = 38;
+            this.Txt_Large_Pieces.TabIndex = 1;
             this.Txt_Large_Pieces.Text = "0";
             this.Txt_Large_Pieces.TextChanged += new System.EventHandler(this.Txt_Large_Pieces_TextChanged);
             this.Txt_Large_Pieces.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Large_Pieces_KeyPress);
@@ -437,17 +434,16 @@
             this.Txt_Total_Productos.Location = new System.Drawing.Point(165, 165);
             this.Txt_Total_Productos.Name = "Txt_Total_Productos";
             this.Txt_Total_Productos.Size = new System.Drawing.Size(42, 21);
-            this.Txt_Total_Productos.TabIndex = 44;
+            this.Txt_Total_Productos.TabIndex = 4;
             this.Txt_Total_Productos.Text = "0";
             // 
             // Txt_Medium_Pieces
             // 
-            this.Txt_Medium_Pieces.Enabled = false;
             this.Txt_Medium_Pieces.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Medium_Pieces.Location = new System.Drawing.Point(165, 107);
             this.Txt_Medium_Pieces.Name = "Txt_Medium_Pieces";
             this.Txt_Medium_Pieces.Size = new System.Drawing.Size(42, 21);
-            this.Txt_Medium_Pieces.TabIndex = 40;
+            this.Txt_Medium_Pieces.TabIndex = 2;
             this.Txt_Medium_Pieces.Text = "0";
             this.Txt_Medium_Pieces.TextChanged += new System.EventHandler(this.Txt_Medium_Pieces_TextChanged);
             this.Txt_Medium_Pieces.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Medium_Pieces_KeyPress);
@@ -474,12 +470,11 @@
             // 
             // Txt_Small_Pieces
             // 
-            this.Txt_Small_Pieces.Enabled = false;
             this.Txt_Small_Pieces.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Small_Pieces.Location = new System.Drawing.Point(165, 135);
             this.Txt_Small_Pieces.Name = "Txt_Small_Pieces";
             this.Txt_Small_Pieces.Size = new System.Drawing.Size(42, 21);
-            this.Txt_Small_Pieces.TabIndex = 42;
+            this.Txt_Small_Pieces.TabIndex = 3;
             this.Txt_Small_Pieces.Text = "0";
             this.Txt_Small_Pieces.TextChanged += new System.EventHandler(this.Txt_Small_Pieces_TextChanged);
             this.Txt_Small_Pieces.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Small_Pieces_KeyPress);
@@ -541,7 +536,7 @@
             this.Txt_Extra_Light.Location = new System.Drawing.Point(172, 19);
             this.Txt_Extra_Light.Name = "Txt_Extra_Light";
             this.Txt_Extra_Light.Size = new System.Drawing.Size(41, 20);
-            this.Txt_Extra_Light.TabIndex = 51;
+            this.Txt_Extra_Light.TabIndex = 0;
             this.Txt_Extra_Light.Text = "0";
             this.Txt_Extra_Light.TextChanged += new System.EventHandler(this.Txt_Extra_Light_TextChanged);
             this.Txt_Extra_Light.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Extra_Light_KeyPress);
@@ -568,11 +563,10 @@
             // 
             // Txt_Light
             // 
-            this.Txt_Light.Enabled = false;
             this.Txt_Light.Location = new System.Drawing.Point(172, 48);
             this.Txt_Light.Name = "Txt_Light";
             this.Txt_Light.Size = new System.Drawing.Size(41, 20);
-            this.Txt_Light.TabIndex = 53;
+            this.Txt_Light.TabIndex = 1;
             this.Txt_Light.Text = "0";
             this.Txt_Light.TextChanged += new System.EventHandler(this.Txt_Light_TextChanged);
             this.Txt_Light.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Light_KeyPress);
@@ -625,11 +619,10 @@
             // 
             // Txt_Light_Ambar
             // 
-            this.Txt_Light_Ambar.Enabled = false;
             this.Txt_Light_Ambar.Location = new System.Drawing.Point(172, 77);
             this.Txt_Light_Ambar.Name = "Txt_Light_Ambar";
             this.Txt_Light_Ambar.Size = new System.Drawing.Size(41, 20);
-            this.Txt_Light_Ambar.TabIndex = 55;
+            this.Txt_Light_Ambar.TabIndex = 2;
             this.Txt_Light_Ambar.Text = "0";
             this.Txt_Light_Ambar.TextChanged += new System.EventHandler(this.Txt_Light_Ambar_TextChanged);
             this.Txt_Light_Ambar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Light_Ambar_KeyPress);
@@ -684,11 +677,10 @@
             // 
             // Txt_Defectos
             // 
-            this.Txt_Defectos.Enabled = false;
             this.Txt_Defectos.Location = new System.Drawing.Point(172, 155);
             this.Txt_Defectos.Name = "Txt_Defectos";
             this.Txt_Defectos.Size = new System.Drawing.Size(41, 20);
-            this.Txt_Defectos.TabIndex = 68;
+            this.Txt_Defectos.TabIndex = 5;
             this.Txt_Defectos.Text = "0";
             this.Txt_Defectos.TextChanged += new System.EventHandler(this.Txt_Defectos_TextChanged);
             this.Txt_Defectos.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Defectos_KeyPress);
@@ -700,27 +692,25 @@
             this.Txt_Total_Color.Location = new System.Drawing.Point(172, 181);
             this.Txt_Total_Color.Name = "Txt_Total_Color";
             this.Txt_Total_Color.Size = new System.Drawing.Size(41, 21);
-            this.Txt_Total_Color.TabIndex = 59;
+            this.Txt_Total_Color.TabIndex = 6;
             this.Txt_Total_Color.Text = "0";
             // 
             // Txt_Ambar
             // 
-            this.Txt_Ambar.Enabled = false;
             this.Txt_Ambar.Location = new System.Drawing.Point(172, 103);
             this.Txt_Ambar.Name = "Txt_Ambar";
             this.Txt_Ambar.Size = new System.Drawing.Size(41, 20);
-            this.Txt_Ambar.TabIndex = 57;
+            this.Txt_Ambar.TabIndex = 3;
             this.Txt_Ambar.Text = "0";
             this.Txt_Ambar.TextChanged += new System.EventHandler(this.Txt_Ambar_TextChanged);
             this.Txt_Ambar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Ambar_KeyPress);
             // 
             // Txt_Amarillo
             // 
-            this.Txt_Amarillo.Enabled = false;
             this.Txt_Amarillo.Location = new System.Drawing.Point(172, 129);
             this.Txt_Amarillo.Name = "Txt_Amarillo";
             this.Txt_Amarillo.Size = new System.Drawing.Size(41, 20);
-            this.Txt_Amarillo.TabIndex = 66;
+            this.Txt_Amarillo.TabIndex = 4;
             this.Txt_Amarillo.Text = "0";
             this.Txt_Amarillo.TextChanged += new System.EventHandler(this.Txt_Amarillo_TextChanged);
             this.Txt_Amarillo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Amarillo_KeyPress);
@@ -768,7 +758,7 @@
             this.groupBox1.Location = new System.Drawing.Point(18, 118);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(484, 261);
-            this.groupBox1.TabIndex = 114;
+            this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos Generales";
             // 
@@ -810,7 +800,7 @@
             this.DT_Calidad.Location = new System.Drawing.Point(160, 32);
             this.DT_Calidad.Name = "DT_Calidad";
             this.DT_Calidad.Size = new System.Drawing.Size(115, 21);
-            this.DT_Calidad.TabIndex = 14;
+            this.DT_Calidad.TabIndex = 5;
             // 
             // label2
             // 
@@ -844,7 +834,7 @@
             this.CmbTurno.Location = new System.Drawing.Point(160, 158);
             this.CmbTurno.Name = "CmbTurno";
             this.CmbTurno.Size = new System.Drawing.Size(160, 23);
-            this.CmbTurno.TabIndex = 16;
+            this.CmbTurno.TabIndex = 9;
             // 
             // label22
             // 
@@ -885,7 +875,7 @@
             this.Cmb_Producto_User.Location = new System.Drawing.Point(219, 190);
             this.Cmb_Producto_User.Name = "Cmb_Producto_User";
             this.Cmb_Producto_User.Size = new System.Drawing.Size(255, 23);
-            this.Cmb_Producto_User.TabIndex = 18;
+            this.Cmb_Producto_User.TabIndex = 11;
             this.Cmb_Producto_User.SelectedIndexChanged += new System.EventHandler(this.Cmb_Producto_User_SelectedIndexChanged);
             // 
             // Txt_Producto_user
@@ -894,7 +884,7 @@
             this.Txt_Producto_user.Location = new System.Drawing.Point(160, 190);
             this.Txt_Producto_user.Name = "Txt_Producto_user";
             this.Txt_Producto_user.Size = new System.Drawing.Size(53, 21);
-            this.Txt_Producto_user.TabIndex = 72;
+            this.Txt_Producto_user.TabIndex = 10;
             this.Txt_Producto_user.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Producto_user_KeyPress);
             // 
             // label28
@@ -913,7 +903,7 @@
             this.TxtBins.Location = new System.Drawing.Point(160, 94);
             this.TxtBins.Name = "TxtBins";
             this.TxtBins.Size = new System.Drawing.Size(53, 21);
-            this.TxtBins.TabIndex = 21;
+            this.TxtBins.TabIndex = 7;
             this.TxtBins.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBins_KeyPress);
             // 
             // label3
@@ -933,7 +923,7 @@
             this.Txt_Tarja.MaxLength = 10;
             this.Txt_Tarja.Name = "Txt_Tarja";
             this.Txt_Tarja.Size = new System.Drawing.Size(91, 21);
-            this.Txt_Tarja.TabIndex = 23;
+            this.Txt_Tarja.TabIndex = 8;
             this.Txt_Tarja.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Tarja_KeyPress);
             // 
             // label4
@@ -952,7 +942,7 @@
             this.Txt_proceso.Location = new System.Drawing.Point(160, 63);
             this.Txt_proceso.Name = "Txt_proceso";
             this.Txt_proceso.Size = new System.Drawing.Size(53, 21);
-            this.Txt_proceso.TabIndex = 25;
+            this.Txt_proceso.TabIndex = 6;
             this.Txt_proceso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_proceso_KeyPress);
             // 
             // Txt_Observaciones
@@ -960,7 +950,7 @@
             this.Txt_Observaciones.Location = new System.Drawing.Point(193, 385);
             this.Txt_Observaciones.Name = "Txt_Observaciones";
             this.Txt_Observaciones.Size = new System.Drawing.Size(653, 20);
-            this.Txt_Observaciones.TabIndex = 115;
+            this.Txt_Observaciones.TabIndex = 3;
             this.Txt_Observaciones.Text = "Observaciones";
             // 
             // timer1

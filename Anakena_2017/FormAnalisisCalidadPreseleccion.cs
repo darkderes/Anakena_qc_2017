@@ -129,5 +129,16 @@ namespace Anakena_2017
             this.Hide();
             s.ShowDialog();
         }
+
+        private void Btn_Agregar_Click(object sender, EventArgs e)
+        {
+            FormPreseleccion s = new FormPreseleccion();
+            s.ACCESSO = 1;
+            s.groupBox9.Visible = true;
+            s.groupBox10.Visible = false;
+            s.Btn_Guardar.Enabled = true;
+            s.Btn_Print.Enabled = false;
+            s.ShowDialog();
+        }
     }
 }

@@ -42,7 +42,7 @@ namespace Anakena_2017
 		private DataSet myds = new DataSet();
         private PictureBox pictureBox1;
         public string usuario = "";
-
+        public int acceso = 0;
 		public FormRecepcionMain()
 		{
 			this.InitializeComponent();
@@ -223,193 +223,215 @@ namespace Anakena_2017
 
 		private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
 		{
-			FormRecepcion formRecepcion = new FormRecepcion();
-			try
-			{
-				formRecepcion.Txt_Lote.Text = this.dataGridView1.Rows[e.RowIndex].Cells["Lote"].Value.ToString();
-				formRecepcion.TraerEnvases(Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells["Analisis"].Value.ToString()));
-				formRecepcion.TraerImpurezas(Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells["Analisis"].Value.ToString()));
-				formRecepcion.TraerAnalisisExterno(Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells["Analisis"].Value.ToString()));
-				formRecepcion.TraerAnalisisInterno(Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells["Analisis"].Value.ToString()));
-				formRecepcion.Lbl_Analisis.Text = string.Concat("Nº Analisis ", this.dataGridView1.Rows[e.RowIndex].Cells["Analisis"].Value.ToString());
-			}
-			catch
-			{
-			}
-			formRecepcion.ACCESSO = 1;
-			if (!(formRecepcion.Txt_Quebrados.Text == ""))
-			{
-				formRecepcion.groupBox2.Enabled = true;
-				formRecepcion.groupBox3.Enabled = true;
-				formRecepcion.groupBox4.Enabled = true;
-				formRecepcion.groupBox5.Enabled = true;
-				formRecepcion.Txt_Quebrados.Enabled = true;
-				formRecepcion.Txt_Quebrados.ReadOnly = true;
-				formRecepcion.TxtDañados.Enabled = true;
-				formRecepcion.TxtDañados.ReadOnly = true;
-				formRecepcion.Txt_Piedras.Enabled = true;
-				formRecepcion.Txt_Piedras.ReadOnly = true;
-				formRecepcion.Txt_Palos.Enabled = true;
-				formRecepcion.Txt_Palos.ReadOnly = true;
-				formRecepcion.TxtCantidadProductor.Enabled = true;
-				formRecepcion.TxtCantidadProductor.ReadOnly = true;
-				formRecepcion.TxtCantidadAnakena.Enabled = true;
-				formRecepcion.TxtCantidadAnakena.ReadOnly = true;
-				formRecepcion.Txt_Partidas.Enabled = true;
-				formRecepcion.Txt_Partidas.ReadOnly = true;
-				formRecepcion.Txt_Nuez.Enabled = true;
-				formRecepcion.Txt_Nuez.ReadOnly = true;
-				formRecepcion.Txt_Resquebrajado.Enabled = true;
-				formRecepcion.Txt_Resquebrajado.ReadOnly = true;
-				formRecepcion.Txt_Cerrado.Enabled = true;
-				formRecepcion.Txt_Cerrado.ReadOnly = true;
-				formRecepcion.Txt_Negras.Enabled = true;
-				formRecepcion.Txt_Negras.ReadOnly = true;
-				formRecepcion.TxtTotalExterno.Enabled = true;
-				formRecepcion.TxtTotalExterno.ReadOnly = true;
-				formRecepcion.Txt_Adherido.Enabled = true;
-				formRecepcion.Txt_Adherido.ReadOnly = true;
-				formRecepcion.Txt_Daño.Enabled = true;
-				formRecepcion.Txt_Daño.ReadOnly = true;
-				formRecepcion.Txt_Vanas.Enabled = true;
-				formRecepcion.Txt_Vanas.ReadOnly = true;
-				formRecepcion.Txt_Reseca.Enabled = true;
-				formRecepcion.Txt_Reseca.ReadOnly = true;
-				formRecepcion.Txt_HongoActivo.Enabled = true;
-				formRecepcion.Txt_HongoActivo.ReadOnly = true;
-                formRecepcion.Txt_HongoInactivo.Enabled = true;
-                formRecepcion.Txt_HongoInactivo.ReadOnly = true;
-                formRecepcion.Txt_Extra.Enabled = true;
-				formRecepcion.Txt_Extra.ReadOnly = true;
-				formRecepcion.Txt_Light.Enabled = true;
-				formRecepcion.Txt_Light.ReadOnly = true;
-				formRecepcion.Txt_LightAmbar.Enabled = true;
-				formRecepcion.Txt_LightAmbar.ReadOnly = true;
-				formRecepcion.Txt_Ambar.Enabled = true;
-				formRecepcion.Txt_Ambar.ReadOnly = true;
-				formRecepcion.Txt_TotalInterno.Enabled = true;
-				formRecepcion.Txt_TotalInterno.ReadOnly = true;
-			}
-			else
-			{
-				formRecepcion.groupBox2.Enabled = true;
-				formRecepcion.TxtCantidadProductor.Enabled = true;
-				formRecepcion.TxtCantidadProductor.Focus();
-				formRecepcion.usuario = this.usuario;
-			}
-			try
-			{
-				formRecepcion.traerLote(Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells["Lote"].Value.ToString()));
-				formRecepcion.Btn_Guardar.Enabled = false;
-				formRecepcion.Txt_Lote.ReadOnly = true;
-				formRecepcion.CmbRecepcion.Enabled = false;
-				formRecepcion.CmbRecepcion.DropDownStyle = ComboBoxStyle.Simple;
-				formRecepcion.cmbVariedad.DropDownStyle = ComboBoxStyle.Simple;
-				formRecepcion.cmbVariedad.Enabled = false;
-				formRecepcion.Txt_Productor.Enabled = true;
-				formRecepcion.Txt_Productor.ReadOnly = true;
-				formRecepcion.Txt_ProductorName.Enabled = true;
-				formRecepcion.Txt_ProductorName.ReadOnly = true;
-				formRecepcion.CmbPatio.Enabled = false;
-				formRecepcion.CmbPatio.DropDownStyle = ComboBoxStyle.Simple;
-				formRecepcion.DT_Analisis.Enabled = false;
-				formRecepcion.DT_Recepcion.Enabled = false;
-				formRecepcion.button2.Enabled = false;
-			}
-			catch
-			{
-			}
-			if (!this.Btn_Agregar.Visible)
-			{
-				formRecepcion.Btn_Guardar.Enabled = true;
-				formRecepcion.Txt_Lote.ReadOnly = false;
-				formRecepcion.BtnUpdate.Visible = true;
-				formRecepcion.CmbRecepcion.Enabled = true;
-				formRecepcion.CmbRecepcion.DropDownStyle = ComboBoxStyle.DropDownList;
-				formRecepcion.cmbVariedad.DropDownStyle = ComboBoxStyle.DropDown;
-				formRecepcion.Txt_Productor.Enabled = true;
-				formRecepcion.Txt_Productor.ReadOnly = false;
-				formRecepcion.Txt_ProductorName.Enabled = true;
-				formRecepcion.Txt_ProductorName.ReadOnly = false;
-				formRecepcion.CmbPatio.Enabled = true;
-				formRecepcion.CmbPatio.DropDownStyle = ComboBoxStyle.DropDownList;
-				formRecepcion.button2.Visible = false;
-				formRecepcion.groupBox9.Visible = false;
-				formRecepcion.groupBox10.Visible = true;
-				formRecepcion.groupBox2.Enabled = true;
-				formRecepcion.groupBox3.Enabled = true;
-				formRecepcion.groupBox4.Enabled = true;
-				formRecepcion.groupBox5.Enabled = true;
-				formRecepcion.Txt_Quebrados.Enabled = true;
-				formRecepcion.Txt_Quebrados.ReadOnly = false;
-				formRecepcion.TxtDañados.Enabled = true;
-				formRecepcion.TxtDañados.ReadOnly = false;
-				formRecepcion.TxtCantidadProductor.Enabled = true;
-				formRecepcion.TxtCantidadProductor.ReadOnly = false;
-				formRecepcion.TxtCantidadAnakena.Enabled = true;
-				formRecepcion.TxtCantidadAnakena.ReadOnly = false;
-				formRecepcion.Txt_Piedras.Enabled = true;
-				formRecepcion.Txt_Piedras.ReadOnly = false;
-				formRecepcion.Txt_Palos.Enabled = true;
-				formRecepcion.Txt_Palos.ReadOnly = false;
-				formRecepcion.Txt_Observaciones.Enabled = true;
-				formRecepcion.Txt_Observaciones.ReadOnly = false;
-				formRecepcion.Txt_Partidas.Enabled = true;
-				formRecepcion.Txt_Partidas.ReadOnly = false;
-				formRecepcion.Txt_Nuez.Enabled = true;
-				formRecepcion.Txt_Nuez.ReadOnly = false;
-				formRecepcion.Txt_Resquebrajado.Enabled = true;
-				formRecepcion.Txt_Resquebrajado.ReadOnly = false;
-				formRecepcion.Txt_Cerrado.Enabled = true;
-				formRecepcion.Txt_Cerrado.ReadOnly = false;
-				formRecepcion.Txt_Negras.Enabled = true;
-				formRecepcion.Txt_Negras.ReadOnly = false;
-				formRecepcion.TxtTotalExterno.Enabled = true;
-				formRecepcion.TxtTotalExterno.ReadOnly = false;
-				formRecepcion.Txt_Adherido.Enabled = true;
-				formRecepcion.Txt_Adherido.ReadOnly = false;
-				formRecepcion.Txt_Daño.Enabled = true;
-				formRecepcion.Txt_Daño.ReadOnly = false;
-				formRecepcion.Txt_Vanas.Enabled = true;
-				formRecepcion.Txt_Vanas.ReadOnly = false;
-				formRecepcion.Txt_Reseca.Enabled = true;
-				formRecepcion.Txt_Reseca.ReadOnly = false;
-				formRecepcion.Txt_HongoActivo.Enabled = true;
-				formRecepcion.Txt_HongoActivo.ReadOnly = false;
-                formRecepcion.Txt_HongoInactivo.Enabled = true;
-                formRecepcion.Txt_HongoInactivo.ReadOnly = false;
-                formRecepcion.Txt_Extra.Enabled = true;
-				formRecepcion.Txt_Extra.ReadOnly = false;
-				formRecepcion.Txt_Light.Enabled = true;
-				formRecepcion.Txt_Light.ReadOnly = false;
-				formRecepcion.Txt_LightAmbar.Enabled = true;
-				formRecepcion.Txt_LightAmbar.ReadOnly = false;
-				formRecepcion.Txt_Ambar.Enabled = true;
-				formRecepcion.Txt_Ambar.ReadOnly = false;
-				formRecepcion.Txt_TotalInterno.Enabled = true;
-				formRecepcion.Txt_TotalInterno.ReadOnly = false;
-			}
-			else
-			{
-				formRecepcion.groupBox9.Visible = true;
-				formRecepcion.groupBox10.Visible = false;
-			}
-			try
-			{
-				if (!(this.dataGridView1.Rows[e.RowIndex].Cells["status"].Value.ToString() == "Completa"))
-				{
-					formRecepcion.Btn_Print.Enabled = false;
-				}
-				else
-				{
-					formRecepcion.Btn_Print.Enabled = true;
-				}
-				formRecepcion.ShowDialog();
-				this.traerDistintosProductores();
-			}
-			catch
-			{
-			}
+            if (acceso == 0)
+            {
+
+                FormRecepcion formRecepcion = new FormRecepcion();
+                try
+                {
+                    formRecepcion.Txt_Lote.Text = this.dataGridView1.Rows[e.RowIndex].Cells["Lote"].Value.ToString();
+                    formRecepcion.TraerEnvases(Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells["Analisis"].Value.ToString()));
+                    formRecepcion.TraerImpurezas(Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells["Analisis"].Value.ToString()));
+                    formRecepcion.TraerAnalisisExterno(Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells["Analisis"].Value.ToString()));
+                    formRecepcion.TraerAnalisisInterno(Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells["Analisis"].Value.ToString()));
+                    formRecepcion.Lbl_Analisis.Text = string.Concat("Nº Analisis ", this.dataGridView1.Rows[e.RowIndex].Cells["Analisis"].Value.ToString());
+                }
+                catch
+                {
+                }
+                formRecepcion.ACCESSO = 1;
+                if (!(formRecepcion.Txt_Quebrados.Text == ""))
+                {
+                    formRecepcion.groupBox2.Enabled = true;
+                    formRecepcion.groupBox3.Enabled = true;
+                    formRecepcion.groupBox4.Enabled = true;
+                    formRecepcion.groupBox5.Enabled = true;
+                    formRecepcion.Txt_Quebrados.Enabled = true;
+                    formRecepcion.Txt_Quebrados.ReadOnly = true;
+                    formRecepcion.TxtDañados.Enabled = true;
+                    formRecepcion.TxtDañados.ReadOnly = true;
+                    formRecepcion.Txt_Piedras.Enabled = true;
+                    formRecepcion.Txt_Piedras.ReadOnly = true;
+                    formRecepcion.Txt_Palos.Enabled = true;
+                    formRecepcion.Txt_Palos.ReadOnly = true;
+                    formRecepcion.TxtCantidadProductor.Enabled = true;
+                    formRecepcion.TxtCantidadProductor.ReadOnly = true;
+                    formRecepcion.TxtCantidadAnakena.Enabled = true;
+                    formRecepcion.TxtCantidadAnakena.ReadOnly = true;
+                    formRecepcion.Txt_Partidas.Enabled = true;
+                    formRecepcion.Txt_Partidas.ReadOnly = true;
+                    formRecepcion.Txt_Nuez.Enabled = true;
+                    formRecepcion.Txt_Nuez.ReadOnly = true;
+                    formRecepcion.Txt_Resquebrajado.Enabled = true;
+                    formRecepcion.Txt_Resquebrajado.ReadOnly = true;
+                    formRecepcion.Txt_Cerrado.Enabled = true;
+                    formRecepcion.Txt_Cerrado.ReadOnly = true;
+                    formRecepcion.Txt_Negras.Enabled = true;
+                    formRecepcion.Txt_Negras.ReadOnly = true;
+                    formRecepcion.TxtTotalExterno.Enabled = true;
+                    formRecepcion.TxtTotalExterno.ReadOnly = true;
+                    formRecepcion.Txt_Adherido.Enabled = true;
+                    formRecepcion.Txt_Adherido.ReadOnly = true;
+                    formRecepcion.Txt_Daño.Enabled = true;
+                    formRecepcion.Txt_Daño.ReadOnly = true;
+                    formRecepcion.Txt_Vanas.Enabled = true;
+                    formRecepcion.Txt_Vanas.ReadOnly = true;
+                    formRecepcion.Txt_Reseca.Enabled = true;
+                    formRecepcion.Txt_Reseca.ReadOnly = true;
+                    formRecepcion.Txt_HongoActivo.Enabled = true;
+                    formRecepcion.Txt_HongoActivo.ReadOnly = true;
+                    formRecepcion.Txt_HongoInactivo.Enabled = true;
+                    formRecepcion.Txt_HongoInactivo.ReadOnly = true;
+                    formRecepcion.Txt_Extra.Enabled = true;
+                    formRecepcion.Txt_Extra.ReadOnly = true;
+                    formRecepcion.Txt_Light.Enabled = true;
+                    formRecepcion.Txt_Light.ReadOnly = true;
+                    formRecepcion.Txt_LightAmbar.Enabled = true;
+                    formRecepcion.Txt_LightAmbar.ReadOnly = true;
+                    formRecepcion.Txt_Ambar.Enabled = true;
+                    formRecepcion.Txt_Ambar.ReadOnly = true;
+                    formRecepcion.Txt_TotalInterno.Enabled = true;
+                    formRecepcion.Txt_TotalInterno.ReadOnly = true;
+                }
+                else
+                {
+                    formRecepcion.groupBox2.Enabled = true;
+                    formRecepcion.TxtCantidadProductor.Enabled = true;
+                    formRecepcion.TxtCantidadProductor.Focus();
+                    formRecepcion.usuario = this.usuario;
+                }
+                try
+                {
+                    formRecepcion.traerLote(Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells["Lote"].Value.ToString()));
+                    formRecepcion.Btn_Guardar.Enabled = false;
+                    formRecepcion.Txt_Lote.ReadOnly = true;
+                    formRecepcion.CmbRecepcion.Enabled = false;
+                    formRecepcion.CmbRecepcion.DropDownStyle = ComboBoxStyle.Simple;
+                    formRecepcion.cmbVariedad.DropDownStyle = ComboBoxStyle.Simple;
+                    formRecepcion.cmbVariedad.Enabled = false;
+                    formRecepcion.Txt_Productor.Enabled = true;
+                    formRecepcion.Txt_Productor.ReadOnly = true;
+                    formRecepcion.Txt_ProductorName.Enabled = true;
+                    formRecepcion.Txt_ProductorName.ReadOnly = true;
+                    formRecepcion.CmbPatio.Enabled = false;
+                    formRecepcion.CmbPatio.DropDownStyle = ComboBoxStyle.Simple;
+                    formRecepcion.DT_Analisis.Enabled = false;
+                    formRecepcion.DT_Recepcion.Enabled = false;
+                    formRecepcion.button2.Enabled = false;
+                }
+                catch
+                {
+                }
+                if (!this.Btn_Agregar.Visible)
+                {
+                    formRecepcion.Btn_Guardar.Enabled = true;
+                    formRecepcion.Txt_Lote.ReadOnly = false;
+                    formRecepcion.BtnUpdate.Visible = true;
+                    formRecepcion.CmbRecepcion.Enabled = true;
+                    formRecepcion.CmbRecepcion.DropDownStyle = ComboBoxStyle.DropDownList;
+                    formRecepcion.cmbVariedad.DropDownStyle = ComboBoxStyle.DropDown;
+                    formRecepcion.Txt_Productor.Enabled = true;
+                    formRecepcion.Txt_Productor.ReadOnly = false;
+                    formRecepcion.Txt_ProductorName.Enabled = true;
+                    formRecepcion.Txt_ProductorName.ReadOnly = false;
+                    formRecepcion.CmbPatio.Enabled = true;
+                    formRecepcion.CmbPatio.DropDownStyle = ComboBoxStyle.DropDownList;
+                    formRecepcion.button2.Visible = false;
+                    formRecepcion.groupBox9.Visible = false;
+                    formRecepcion.groupBox10.Visible = true;
+                    formRecepcion.groupBox2.Enabled = true;
+                    formRecepcion.groupBox3.Enabled = true;
+                    formRecepcion.groupBox4.Enabled = true;
+                    formRecepcion.groupBox5.Enabled = true;
+                    formRecepcion.Txt_Quebrados.Enabled = true;
+                    formRecepcion.Txt_Quebrados.ReadOnly = false;
+                    formRecepcion.TxtDañados.Enabled = true;
+                    formRecepcion.TxtDañados.ReadOnly = false;
+                    formRecepcion.TxtCantidadProductor.Enabled = true;
+                    formRecepcion.TxtCantidadProductor.ReadOnly = false;
+                    formRecepcion.TxtCantidadAnakena.Enabled = true;
+                    formRecepcion.TxtCantidadAnakena.ReadOnly = false;
+                    formRecepcion.Txt_Piedras.Enabled = true;
+                    formRecepcion.Txt_Piedras.ReadOnly = false;
+                    formRecepcion.Txt_Palos.Enabled = true;
+                    formRecepcion.Txt_Palos.ReadOnly = false;
+                    formRecepcion.Txt_Observaciones.Enabled = true;
+                    formRecepcion.Txt_Observaciones.ReadOnly = false;
+                    formRecepcion.Txt_Partidas.Enabled = true;
+                    formRecepcion.Txt_Partidas.ReadOnly = false;
+                    formRecepcion.Txt_Nuez.Enabled = true;
+                    formRecepcion.Txt_Nuez.ReadOnly = false;
+                    formRecepcion.Txt_Resquebrajado.Enabled = true;
+                    formRecepcion.Txt_Resquebrajado.ReadOnly = false;
+                    formRecepcion.Txt_Cerrado.Enabled = true;
+                    formRecepcion.Txt_Cerrado.ReadOnly = false;
+                    formRecepcion.Txt_Negras.Enabled = true;
+                    formRecepcion.Txt_Negras.ReadOnly = false;
+                    formRecepcion.TxtTotalExterno.Enabled = true;
+                    formRecepcion.TxtTotalExterno.ReadOnly = false;
+                    formRecepcion.Txt_Adherido.Enabled = true;
+                    formRecepcion.Txt_Adherido.ReadOnly = false;
+                    formRecepcion.Txt_Daño.Enabled = true;
+                    formRecepcion.Txt_Daño.ReadOnly = false;
+                    formRecepcion.Txt_Vanas.Enabled = true;
+                    formRecepcion.Txt_Vanas.ReadOnly = false;
+                    formRecepcion.Txt_Reseca.Enabled = true;
+                    formRecepcion.Txt_Reseca.ReadOnly = false;
+                    formRecepcion.Txt_HongoActivo.Enabled = true;
+                    formRecepcion.Txt_HongoActivo.ReadOnly = false;
+                    formRecepcion.Txt_HongoInactivo.Enabled = true;
+                    formRecepcion.Txt_HongoInactivo.ReadOnly = false;
+                    formRecepcion.Txt_Extra.Enabled = true;
+                    formRecepcion.Txt_Extra.ReadOnly = false;
+                    formRecepcion.Txt_Light.Enabled = true;
+                    formRecepcion.Txt_Light.ReadOnly = false;
+                    formRecepcion.Txt_LightAmbar.Enabled = true;
+                    formRecepcion.Txt_LightAmbar.ReadOnly = false;
+                    formRecepcion.Txt_Ambar.Enabled = true;
+                    formRecepcion.Txt_Ambar.ReadOnly = false;
+                    formRecepcion.Txt_TotalInterno.Enabled = true;
+                    formRecepcion.Txt_TotalInterno.ReadOnly = false;
+                }
+                else
+                {
+                    formRecepcion.groupBox9.Visible = true;
+                    formRecepcion.groupBox10.Visible = false;
+                }
+                try
+                {
+                    if (!(this.dataGridView1.Rows[e.RowIndex].Cells["status"].Value.ToString() == "Completa"))
+                    {
+                        formRecepcion.Btn_Print.Enabled = false;
+                    }
+                    else
+                    {
+                        formRecepcion.Btn_Print.Enabled = true;
+                    }
+                    formRecepcion.ShowDialog();
+                    this.traerDistintosProductores();
+                }
+                catch
+                {
+                }
+            }
+            else
+            {
+                FormRecepcionProductor formRecepcion = new FormRecepcionProductor();
+                try
+                {
+                    formRecepcion.Txt_Lote.Text = this.dataGridView1.Rows[e.RowIndex].Cells["Lote"].Value.ToString();
+                  
+                    formRecepcion.TraerImpurezas(Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells["Analisis"].Value.ToString()));
+                    formRecepcion.TraerAnalisisExterno(Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells["Analisis"].Value.ToString()));
+                    formRecepcion.TraerAnalisisInterno(Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells["Analisis"].Value.ToString()));
+                    formRecepcion.TraerEnvases(Convert.ToInt32(this.dataGridView1.Rows[e.RowIndex].Cells["Analisis"].Value.ToString()));
+                    formRecepcion.Lbl_Analisis.Text = string.Concat("Nº Analisis ", this.dataGridView1.Rows[e.RowIndex].Cells["Analisis"].Value.ToString());
+                }
+                catch
+                {
+                }
+                formRecepcion.ShowDialog();
+            }
 		}
 
 		protected override void Dispose(bool disposing)

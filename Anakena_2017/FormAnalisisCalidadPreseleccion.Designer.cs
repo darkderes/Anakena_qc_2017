@@ -123,6 +123,7 @@
             this.Btn_Agregar.Size = new System.Drawing.Size(118, 34);
             this.Btn_Agregar.TabIndex = 135;
             this.Btn_Agregar.UseVisualStyleBackColor = true;
+            this.Btn_Agregar.Click += new System.EventHandler(this.Btn_Agregar_Click);
             // 
             // button2
             // 

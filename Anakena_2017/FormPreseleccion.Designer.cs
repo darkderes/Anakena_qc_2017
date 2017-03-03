@@ -158,6 +158,7 @@
             // 
             // groupBox9
             // 
+            this.groupBox9.Controls.Add(this.groupBox10);
             this.groupBox9.Controls.Add(this.Btn_Print);
             this.groupBox9.Controls.Add(this.Btn_Guardar);
             this.groupBox9.Controls.Add(this.button3);
@@ -184,6 +185,7 @@
             // 
             this.Btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Guardar.BackgroundImage")));
             this.Btn_Guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Guardar.Enabled = false;
             this.Btn_Guardar.Location = new System.Drawing.Point(46, 37);
             this.Btn_Guardar.Name = "Btn_Guardar";
             this.Btn_Guardar.Size = new System.Drawing.Size(136, 36);
@@ -1342,7 +1344,7 @@
             this.groupBox10.Controls.Add(this.Btn_Delete);
             this.groupBox10.Controls.Add(this.Btn_Modificar);
             this.groupBox10.Controls.Add(this.Btn_Salir);
-            this.groupBox10.Location = new System.Drawing.Point(933, 181);
+            this.groupBox10.Location = new System.Drawing.Point(0, 0);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(224, 265);
             this.groupBox10.TabIndex = 130;
@@ -1399,7 +1401,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1190, 507);
-            this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.label51);
             this.Controls.Add(this.Lbl_Analisis);
