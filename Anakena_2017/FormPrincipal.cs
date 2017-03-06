@@ -60,6 +60,7 @@ namespace Anakena_2017
                 saveToolStripMenuItem.Enabled = false;
                 saveAsToolStripMenuItem.Enabled = false;
                 extracciónDeDatosToolStripMenuItem.Enabled = false;
+                informeProductorToolStripMenuItem.Enabled = false;
 
 
             }

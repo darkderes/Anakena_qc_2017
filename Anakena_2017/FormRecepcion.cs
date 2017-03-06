@@ -1133,7 +1133,7 @@ namespace Anakena_2017
 			}
 			else
 			{
-				this.ultimo_Analisis = "1";
+				this.ultimo_Analisis = "1148";
 				this.Lbl_Analisis.Text = this.ultimo_Analisis;
 			}
 			this.cn.Cerrar();

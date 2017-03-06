@@ -230,7 +230,6 @@ namespace Anakena_2017
         private Label label49;
         private Label label50;
         private Label label51;
-        private Label label46;
         private Label lblLight_max;
         private TextBox txtLight_max;
         private Label label52;
@@ -248,6 +247,7 @@ namespace Anakena_2017
         private Label label70;
         private Label label71;
         private Label label72;
+        private Label label46;
         public Button btn_modificar;
 
 		public FormEvaluacion(String Variedad)
@@ -478,7 +478,6 @@ namespace Anakena_2017
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
             this.lblLight_max = new System.Windows.Forms.Label();
             this.txtLight_max = new System.Windows.Forms.TextBox();
             this.label52 = new System.Windows.Forms.Label();
@@ -496,6 +495,7 @@ namespace Anakena_2017
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1612,16 +1612,6 @@ namespace Anakena_2017
             this.label51.TabIndex = 110;
             this.label51.Text = "Impurezas: Pelón Suelto :";
             // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(510, 614);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(17, 18);
-            this.label46.TabIndex = 127;
-            this.label46.Text = ">";
-            // 
             // lblLight_max
             // 
             this.lblLight_max.AutoSize = true;
@@ -1788,12 +1778,23 @@ namespace Anakena_2017
             this.label72.TabIndex = 128;
             this.label72.Text = "Hongo  Inactivo :";
             // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(514, 614);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(17, 18);
+            this.label46.TabIndex = 137;
+            this.label46.Text = "<";
+            // 
             // FormEvaluacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(665, 735);
+            this.Controls.Add(this.label46);
             this.Controls.Add(this.label48);
             this.Controls.Add(this.lblHongoInactivo_max);
             this.Controls.Add(this.txtHongoInactivo_max);
@@ -1803,7 +1804,6 @@ namespace Anakena_2017
             this.Controls.Add(this.label70);
             this.Controls.Add(this.label71);
             this.Controls.Add(this.label72);
-            this.Controls.Add(this.label46);
             this.Controls.Add(this.lblLight_max);
             this.Controls.Add(this.txtLight_max);
             this.Controls.Add(this.label52);
@@ -1946,84 +1946,84 @@ namespace Anakena_2017
 			int num = Convert.ToInt32(this.min) + 1;
 			this.lblAmarillo_max.Text = num.ToString();
 			this.txtAmarillo_max.Text = this.max;
-			num = Convert.ToInt32(this.max) + 1;
+			num = Convert.ToInt32(this.max);
 			this.LblRojo_max.Text = num.ToString();
 			this.extraerMedicion("Impurezas_Palo", Variedad_2);
 			this.txtPalos_min.Text = this.min;
 			this.txtPalos_max.Text = this.max;
 			num = Convert.ToInt32(this.min) + 1;
 			this.lblPalo_min.Text = num.ToString();
-			num = Convert.ToInt32(this.max) + 1;
+			num = Convert.ToInt32(this.max);
 			this.lblPalo_max.Text = num.ToString();
             this.extraerMedicion("Pelon_Adherido", Variedad_2);
             txtPelonSuelto_min.Text = this.min;
             txtPelonSuelto_max.Text = this.max;
             num = Convert.ToInt32(this.min) + 1;
             LblPelonSuelto_min.Text = num.ToString();
-            num = Convert.ToInt32(this.max) + 1;
+            num = Convert.ToInt32(this.max) ;
             LblPelonSuelto_max.Text = num.ToString();
             this.extraerMedicion("Partidas_Quebradas", Variedad_2);
 			this.txtPartidas_min.Text = this.min;
 			this.txtPartidas_max.Text = this.max;
 			num = Convert.ToInt32(this.min) + 1;
 			this.lblPartidas_min.Text = num.ToString();
-			num = Convert.ToInt32(this.max) + 1;
+			num = Convert.ToInt32(this.max) ;
 			this.lblPartidas_max.Text = num.ToString();
 			this.extraerMedicion("Negras_Momificadas", Variedad_2);
 			this.txtNegra_min.Text = this.min;
 			this.txtNegra_max.Text = this.max;
 			num = Convert.ToInt32(this.min) + 1;
 			this.lblNegra_min.Text = num.ToString();
-			num = Convert.ToInt32(this.max) + 1;
+			num = Convert.ToInt32(this.max) ;
 			this.lblNegra_max.Text = num.ToString();
 			this.extraerMedicion("Pelon_Adherido", Variedad_2);
 			this.txtPelon_min.Text = this.min;
 			this.txtPelon_max.Text = this.max;
 			num = Convert.ToInt32(this.min) + 1;
 			this.lblPelon_min.Text = num.ToString();
-			num = Convert.ToInt32(this.max) + 1;
+			num = Convert.ToInt32(this.max);
 			this.lblPelon_max.Text = num.ToString();
 			this.extraerMedicion("Daño_Insectos", Variedad_2);
 			this.txtInsectos_min.Text = this.min;
 			this.txtInsectos_max.Text = this.max;
 			num = Convert.ToInt32(this.min) + 1;
 			this.lblInsectos_min.Text = num.ToString();
-			num = Convert.ToInt32(this.max) + 1;
+			num = Convert.ToInt32(this.max);
 			this.lblInsectos_max.Text = num.ToString();
 			this.extraerMedicion("Vanas", Variedad_2);
 			this.txtVanas_min.Text = this.min;
 			this.txtVanas_max.Text = this.max;
 			num = Convert.ToInt32(this.min) + 1;
 			this.lblVanas_min.Text = num.ToString();
-			num = Convert.ToInt32(this.max) + 1;
+			num = Convert.ToInt32(this.max);
 			this.lblVanas_max.Text = num.ToString();
 			this.extraerMedicion("Reseca", Variedad_2);
 			this.txtReseca_min.Text = this.min;
 			this.txtReseca_max.Text = this.max;
 			num = Convert.ToInt32(this.min) + 1;
 			this.lblReseca_min.Text = num.ToString();
-			num = Convert.ToInt32(this.max) + 1;
+			num = Convert.ToInt32(this.max);
 			this.lblReseca_max.Text = num.ToString();
 			this.extraerMedicion("Hongo_Activo", Variedad_2);
 			this.txtHongoActivo_min.Text = this.min;
 			this.txtHongoActivo_max.Text = this.max;
 			num = Convert.ToInt32(this.min) + 1;
 			this.lblHongoActivo_min.Text = num.ToString();
-			num = Convert.ToInt32(this.max) + 1;
+			num = Convert.ToInt32(this.max);
 			this.lblHongoActivo_max.Text = num.ToString();
             this.extraerMedicion("Hongo_Inactivo", Variedad_2);
             this.txtHongoInactivo_min.Text = this.min;
             this.txtHongoInactivo_max.Text = this.max;
             num = Convert.ToInt32(this.min) + 1;
             this.lblHongoInactivo_min.Text = num.ToString();
-            num = Convert.ToInt32(this.max) + 1;
+            num = Convert.ToInt32(this.max);
             this.lblHongoInactivo_max.Text = num.ToString();
             this.extraerMedicion("Ambar_Amarillo", Variedad_2);
 			this.txtAmbar_min.Text = this.min;
 			this.txtAmbar_max.Text = this.max;
 			num = Convert.ToInt32(this.min) + 1;
 			this.lblAmbar_min.Text = num.ToString();
-			num = Convert.ToInt32(this.max) + 1;
+			num = Convert.ToInt32(this.max) ;
 			this.lblAmbar_max.Text = num.ToString();
 			this.extraerMedicion("Extra_Light", Variedad_2);
 			this.txtExtra_min.Text = this.min;
@@ -2035,7 +2035,7 @@ namespace Anakena_2017
             }
 			num = Convert.ToInt32(this.min) - 1;
 			this.lblExtra_min.Text = num.ToString();
-			num = Convert.ToInt32(this.max) - 1;
+			num = Convert.ToInt32(this.max) ;
 			this.lblExtra_max.Text = num.ToString();
             this.extraerMedicion("Light", Variedad_2);
             this.txtLight_min.Text = this.min;
@@ -2047,7 +2047,7 @@ namespace Anakena_2017
             }
             num = Convert.ToInt32(this.min) - 1;
             this.lblLight_min.Text = num.ToString();
-            num = Convert.ToInt32(this.max) - 1;
+            num = Convert.ToInt32(this.max);
             this.lblLight_max.Text = num.ToString();
         }
 
