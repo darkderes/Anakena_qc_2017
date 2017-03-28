@@ -357,7 +357,8 @@ namespace Anakena_2017
 					{
 						CommandType = CommandType.StoredProcedure
 					};
-					sqlCommand.Parameters.Add("@Lote", SqlDbType.Int);
+                    sqlCommand.Parameters.Add("@Analisis", SqlDbType.Int);
+                    sqlCommand.Parameters.Add("@Lote", SqlDbType.Int);
 					sqlCommand.Parameters.Add("@Variedad", SqlDbType.Char, 2);
 					sqlCommand.Parameters.Add("@Productor", SqlDbType.Char, 10);
 					sqlCommand.Parameters.Add("@Patio", SqlDbType.Text);
@@ -366,7 +367,8 @@ namespace Anakena_2017
 					sqlCommand.Parameters.Add("@Tipo_Recepcion", SqlDbType.Text);
 					sqlCommand.Parameters.Add("@Rut", SqlDbType.VarChar, 40);
 					sqlCommand.Parameters.Add("@msg", SqlDbType.VarChar, 100);
-					sqlCommand.Parameters["@Lote"].Value = this.Txt_Lote.Text;
+                    sqlCommand.Parameters["@Analisis"].Value = Lbl_Analisis.Text;
+                    sqlCommand.Parameters["@Lote"].Value = this.Txt_Lote.Text;
 					sqlCommand.Parameters["@Variedad"].Value = this.cmbVariedad.SelectedValue.ToString();
 					sqlCommand.Parameters["@Productor"].Value = this.Txt_Productor.Text;
 					sqlCommand.Parameters["@Patio"].Value = this.CmbPatio.Text;
@@ -576,6 +578,7 @@ namespace Anakena_2017
 			if (this.groupBox10.Visible)
 			{
 				this.CmbVariedad();
+                cmbVariedad.Enabled = true;
 			}
 		}
 
@@ -1133,7 +1136,7 @@ namespace Anakena_2017
 			}
 			else
 			{
-				this.ultimo_Analisis = "1148";
+				this.ultimo_Analisis = "1";
 				this.Lbl_Analisis.Text = this.ultimo_Analisis;
 			}
 			this.cn.Cerrar();
@@ -1344,7 +1347,7 @@ namespace Anakena_2017
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(202, 15);
+            this.groupBox1.Location = new System.Drawing.Point(202, 3);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(369, 364);
             this.groupBox1.TabIndex = 0;
@@ -1566,9 +1569,9 @@ namespace Anakena_2017
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Enabled = false;
-            this.groupBox2.Location = new System.Drawing.Point(202, 385);
+            this.groupBox2.Location = new System.Drawing.Point(202, 372);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(369, 178);
+            this.groupBox2.Size = new System.Drawing.Size(369, 155);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Condicion Envases (Bins)";
@@ -1576,7 +1579,7 @@ namespace Anakena_2017
             // TxtCantidadAnakena
             // 
             this.TxtCantidadAnakena.Enabled = false;
-            this.TxtCantidadAnakena.Location = new System.Drawing.Point(207, 73);
+            this.TxtCantidadAnakena.Location = new System.Drawing.Point(207, 52);
             this.TxtCantidadAnakena.Name = "TxtCantidadAnakena";
             this.TxtCantidadAnakena.Size = new System.Drawing.Size(74, 20);
             this.TxtCantidadAnakena.TabIndex = 8;
@@ -1584,7 +1587,7 @@ namespace Anakena_2017
             // 
             // TxtCantidadProductor
             // 
-            this.TxtCantidadProductor.Location = new System.Drawing.Point(207, 38);
+            this.TxtCantidadProductor.Location = new System.Drawing.Point(207, 17);
             this.TxtCantidadProductor.Name = "TxtCantidadProductor";
             this.TxtCantidadProductor.Size = new System.Drawing.Size(74, 20);
             this.TxtCantidadProductor.TabIndex = 7;
@@ -1594,7 +1597,7 @@ namespace Anakena_2017
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(54, 72);
+            this.label28.Location = new System.Drawing.Point(54, 51);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(122, 18);
             this.label28.TabIndex = 6;
@@ -1604,7 +1607,7 @@ namespace Anakena_2017
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(54, 40);
+            this.label52.Location = new System.Drawing.Point(54, 19);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(131, 18);
             this.label52.TabIndex = 5;
@@ -1613,7 +1616,7 @@ namespace Anakena_2017
             // TxtDañados
             // 
             this.TxtDañados.Enabled = false;
-            this.TxtDañados.Location = new System.Drawing.Point(207, 140);
+            this.TxtDañados.Location = new System.Drawing.Point(207, 119);
             this.TxtDañados.Name = "TxtDañados";
             this.TxtDañados.Size = new System.Drawing.Size(74, 20);
             this.TxtDañados.TabIndex = 4;
@@ -1622,7 +1625,7 @@ namespace Anakena_2017
             // Txt_Quebrados
             // 
             this.Txt_Quebrados.Enabled = false;
-            this.Txt_Quebrados.Location = new System.Drawing.Point(207, 105);
+            this.Txt_Quebrados.Location = new System.Drawing.Point(207, 84);
             this.Txt_Quebrados.Name = "Txt_Quebrados";
             this.Txt_Quebrados.Size = new System.Drawing.Size(74, 20);
             this.Txt_Quebrados.TabIndex = 3;
@@ -1632,7 +1635,7 @@ namespace Anakena_2017
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(54, 139);
+            this.label13.Location = new System.Drawing.Point(54, 118);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(105, 18);
             this.label13.TabIndex = 3;
@@ -1642,7 +1645,7 @@ namespace Anakena_2017
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(54, 107);
+            this.label16.Location = new System.Drawing.Point(54, 86);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(119, 18);
             this.label16.TabIndex = 0;
@@ -1660,9 +1663,9 @@ namespace Anakena_2017
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Enabled = false;
-            this.groupBox3.Location = new System.Drawing.Point(202, 571);
+            this.groupBox3.Location = new System.Drawing.Point(202, 533);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(369, 139);
+            this.groupBox3.Size = new System.Drawing.Size(369, 132);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Impurezas";
@@ -1776,7 +1779,7 @@ namespace Anakena_2017
             this.groupBox4.Controls.Add(this.label19);
             this.groupBox4.Controls.Add(this.label20);
             this.groupBox4.Enabled = false;
-            this.groupBox4.Location = new System.Drawing.Point(605, 17);
+            this.groupBox4.Location = new System.Drawing.Point(605, 3);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(323, 290);
             this.groupBox4.TabIndex = 3;
@@ -2018,9 +2021,9 @@ namespace Anakena_2017
             this.groupBox5.Controls.Add(this.label25);
             this.groupBox5.Controls.Add(this.label26);
             this.groupBox5.Enabled = false;
-            this.groupBox5.Location = new System.Drawing.Point(605, 316);
+            this.groupBox5.Location = new System.Drawing.Point(605, 298);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(323, 392);
+            this.groupBox5.Size = new System.Drawing.Size(323, 367);
             this.groupBox5.TabIndex = 5;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Analisis internos :";
@@ -2380,7 +2383,7 @@ namespace Anakena_2017
             // 
             // Txt_Observaciones
             // 
-            this.Txt_Observaciones.Location = new System.Drawing.Point(305, 725);
+            this.Txt_Observaciones.Location = new System.Drawing.Point(305, 668);
             this.Txt_Observaciones.Name = "Txt_Observaciones";
             this.Txt_Observaciones.Size = new System.Drawing.Size(623, 20);
             this.Txt_Observaciones.TabIndex = 6;
@@ -2389,7 +2392,7 @@ namespace Anakena_2017
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(199, 725);
+            this.label30.Location = new System.Drawing.Point(199, 668);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(100, 18);
             this.label30.TabIndex = 5;
@@ -2510,7 +2513,7 @@ namespace Anakena_2017
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(26, 110);
+            this.button6.Location = new System.Drawing.Point(24, 95);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(153, 26);
             this.button6.TabIndex = 28;
@@ -2526,7 +2529,7 @@ namespace Anakena_2017
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(30, 18);
+            this.pictureBox1.Location = new System.Drawing.Point(28, 3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(149, 78);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2538,7 +2541,7 @@ namespace Anakena_2017
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1276, 773);
+            this.ClientSize = new System.Drawing.Size(1276, 741);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox9);

@@ -144,7 +144,7 @@ namespace Anakena_2017
 		{
 			if ((!disposing ? false : this.components != null))
 			{
-				this.components.Dispose();
+				components.Dispose();
 			}
 			base.Dispose(disposing);
 		}
@@ -183,9 +183,9 @@ namespace Anakena_2017
 
 		private void FormExtraccionBDD_Load(object sender, EventArgs e)
 		{
-			this.traerDistintosProductores();
-			this.radioButton1.Checked = true;
-			this.CmbVariedad();
+			traerDistintosProductores();
+			radioButton1.Checked = true;
+			CmbVariedad();
 		}
 
 		private void InitializeComponent()
@@ -437,7 +437,7 @@ namespace Anakena_2017
 		{
 			FormBusquedaProductor formBusquedaProductor = new FormBusquedaProductor();
 			formBusquedaProductor.ShowDialog();
-			this.Txt_Busqueda.Text = formBusquedaProductor.codigo;
+			Txt_Busqueda.Text = formBusquedaProductor.codigo;
 		}
 
 		public void traerDistintosProductores()
@@ -446,38 +446,38 @@ namespace Anakena_2017
 			{
 				CommandType = CommandType.StoredProcedure
 			};
-			this.cn.Abrir();
+			cn.Abrir();
 			SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
-			this.myds = new DataSet();
+			myds = new DataSet();
 			sqlDataAdapter.Fill(this.myds);
-			this.dataGridView1.DataSource = this.myds.Tables[0];
-			this.cn.Cerrar();
+			dataGridView1.DataSource = this.myds.Tables[0];
+			cn.Cerrar();
 		}
 
         private void BtnBuscar_Click_1(object sender, EventArgs e)
         {
             string str = "";
             string str1 = "";
-            if (this.radioButton2.Checked)
+            if (radioButton2.Checked)
             {
                 str1 = " AND Recepcion = 'Humeda'";
             }
-            else if (this.radioButton3.Checked)
+            else if (radioButton3.Checked)
             {
                 str1 = " AND Recepcion = 'Pelón'";
             }
-            if (this.Cmb_Variedad.SelectedIndex != 0)
+            if (Cmb_Variedad.SelectedIndex != 0)
             {
                 str = string.Concat(" AND Variedad = '", this.Cmb_Variedad.Text, "'");
             }
-            if (!(this.Txt_Busqueda.Text != ""))
+            if (!(Txt_Busqueda.Text != ""))
             {
                 MessageBox.Show("Se debe ingresar productor para filtro de busqueda", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Hand);
             }
             else
             {
                 string str2 = string.Concat("Productor = ", this.Txt_Busqueda.Text, str, str1);
-                this.myds.Tables[0].DefaultView.RowFilter = str2;
+                myds.Tables[0].DefaultView.RowFilter = str2;
             }
         }
 	}

@@ -31,6 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPreseleccion));
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.Btn_Delete = new System.Windows.Forms.Button();
+            this.Btn_Modificar = new System.Windows.Forms.Button();
+            this.Btn_Salir = new System.Windows.Forms.Button();
             this.Btn_Print = new System.Windows.Forms.Button();
             this.Btn_Guardar = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -140,12 +145,8 @@
             this.Txt_Observaciones = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.button8 = new System.Windows.Forms.Button();
-            this.Btn_Delete = new System.Windows.Forms.Button();
-            this.Btn_Modificar = new System.Windows.Forms.Button();
-            this.Btn_Salir = new System.Windows.Forms.Button();
             this.groupBox9.SuspendLayout();
+            this.groupBox10.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -153,7 +154,6 @@
             this.tabPage4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox9
@@ -169,6 +169,63 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Opciones";
             this.groupBox9.Visible = false;
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.button8);
+            this.groupBox10.Controls.Add(this.Btn_Delete);
+            this.groupBox10.Controls.Add(this.Btn_Modificar);
+            this.groupBox10.Controls.Add(this.Btn_Salir);
+            this.groupBox10.Location = new System.Drawing.Point(0, 0);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(224, 265);
+            this.groupBox10.TabIndex = 130;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "Opciones";
+            this.groupBox10.Visible = false;
+            // 
+            // button8
+            // 
+            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
+            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button8.Location = new System.Drawing.Point(48, 86);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(136, 36);
+            this.button8.TabIndex = 27;
+            this.button8.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Delete
+            // 
+            this.Btn_Delete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Delete.BackgroundImage")));
+            this.Btn_Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Delete.Location = new System.Drawing.Point(46, 132);
+            this.Btn_Delete.Name = "Btn_Delete";
+            this.Btn_Delete.Size = new System.Drawing.Size(136, 36);
+            this.Btn_Delete.TabIndex = 26;
+            this.Btn_Delete.UseVisualStyleBackColor = true;
+            this.Btn_Delete.Click += new System.EventHandler(this.Btn_Delete_Click);
+            // 
+            // Btn_Modificar
+            // 
+            this.Btn_Modificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Modificar.BackgroundImage")));
+            this.Btn_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Modificar.Location = new System.Drawing.Point(46, 37);
+            this.Btn_Modificar.Name = "Btn_Modificar";
+            this.Btn_Modificar.Size = new System.Drawing.Size(136, 36);
+            this.Btn_Modificar.TabIndex = 23;
+            this.Btn_Modificar.UseVisualStyleBackColor = true;
+            this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
+            // 
+            // Btn_Salir
+            // 
+            this.Btn_Salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Salir.BackgroundImage")));
+            this.Btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Salir.Location = new System.Drawing.Point(47, 183);
+            this.Btn_Salir.Name = "Btn_Salir";
+            this.Btn_Salir.Size = new System.Drawing.Size(137, 35);
+            this.Btn_Salir.TabIndex = 25;
+            this.Btn_Salir.UseVisualStyleBackColor = true;
+            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
             // 
             // Btn_Print
             // 
@@ -1277,6 +1334,7 @@
             this.TxtBins.Name = "TxtBins";
             this.TxtBins.Size = new System.Drawing.Size(53, 21);
             this.TxtBins.TabIndex = 21;
+            this.TxtBins.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBins_KeyPress);
             // 
             // label3
             // 
@@ -1296,6 +1354,7 @@
             this.Txt_Tarja.Name = "Txt_Tarja";
             this.Txt_Tarja.Size = new System.Drawing.Size(91, 21);
             this.Txt_Tarja.TabIndex = 23;
+            this.Txt_Tarja.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_Tarja_KeyPress);
             // 
             // label4
             // 
@@ -1314,6 +1373,7 @@
             this.Txt_proceso.Name = "Txt_proceso";
             this.Txt_proceso.Size = new System.Drawing.Size(53, 21);
             this.Txt_proceso.TabIndex = 25;
+            this.Txt_proceso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Txt_proceso_KeyPress);
             // 
             // Txt_Observaciones
             // 
@@ -1331,69 +1391,12 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(417, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(529, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(175, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 125;
             this.pictureBox1.TabStop = false;
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.button8);
-            this.groupBox10.Controls.Add(this.Btn_Delete);
-            this.groupBox10.Controls.Add(this.Btn_Modificar);
-            this.groupBox10.Controls.Add(this.Btn_Salir);
-            this.groupBox10.Location = new System.Drawing.Point(0, 0);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(224, 265);
-            this.groupBox10.TabIndex = 130;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Opciones";
-            this.groupBox10.Visible = false;
-            // 
-            // button8
-            // 
-            this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
-            this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Location = new System.Drawing.Point(48, 86);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(136, 36);
-            this.button8.TabIndex = 27;
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // Btn_Delete
-            // 
-            this.Btn_Delete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Delete.BackgroundImage")));
-            this.Btn_Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Delete.Location = new System.Drawing.Point(46, 132);
-            this.Btn_Delete.Name = "Btn_Delete";
-            this.Btn_Delete.Size = new System.Drawing.Size(136, 36);
-            this.Btn_Delete.TabIndex = 26;
-            this.Btn_Delete.UseVisualStyleBackColor = true;
-            this.Btn_Delete.Click += new System.EventHandler(this.Btn_Delete_Click);
-            // 
-            // Btn_Modificar
-            // 
-            this.Btn_Modificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Modificar.BackgroundImage")));
-            this.Btn_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Modificar.Location = new System.Drawing.Point(46, 37);
-            this.Btn_Modificar.Name = "Btn_Modificar";
-            this.Btn_Modificar.Size = new System.Drawing.Size(136, 36);
-            this.Btn_Modificar.TabIndex = 23;
-            this.Btn_Modificar.UseVisualStyleBackColor = true;
-            this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
-            // 
-            // Btn_Salir
-            // 
-            this.Btn_Salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Salir.BackgroundImage")));
-            this.Btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Salir.Location = new System.Drawing.Point(47, 183);
-            this.Btn_Salir.Name = "Btn_Salir";
-            this.Btn_Salir.Size = new System.Drawing.Size(137, 35);
-            this.Btn_Salir.TabIndex = 25;
-            this.Btn_Salir.UseVisualStyleBackColor = true;
-            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
             // 
             // FormPreseleccion
             // 
@@ -1413,6 +1416,7 @@
             this.Text = "FormPreseleccion";
             this.Load += new System.EventHandler(this.FormPreseleccion_Load);
             this.groupBox9.ResumeLayout(false);
+            this.groupBox10.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -1425,7 +1429,6 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox10.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

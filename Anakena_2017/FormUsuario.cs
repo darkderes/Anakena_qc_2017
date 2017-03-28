@@ -68,8 +68,20 @@ namespace Anakena_2017
 					sqlCommand.Parameters["@Rut"].Value = this.txt_Rut.Text;
 					sqlCommand.Parameters["@nombre"].Value = this.txt_Nombre.Text.ToUpper();
 					sqlCommand.Parameters["@password"].Value = this.txtPassword.Text;
-					chr = (!(this.CmbTipo.Text == "Administrador") ? '2' : '1');
-					sqlCommand.Parameters["@tipo"].Value = chr;
+                    if (CmbTipo.Text == "Administrador")
+                    {
+                        chr = '1';
+                    }
+                    else
+              if (CmbTipo.Text == "Normal")
+                    {
+                        chr = '2';
+                    }
+                    else
+                    {
+                        chr = '3';
+                    }
+                    sqlCommand.Parameters["@tipo"].Value = chr;
 					sqlCommand.Parameters["@msg"].Value = 1;
 					this.cn.Abrir();
 					sqlCommand.ExecuteNonQuery();
@@ -207,8 +219,22 @@ namespace Anakena_2017
 					sqlCommand.Parameters["@Rut"].Value = this.txt_Rut.Text;
 					sqlCommand.Parameters["@nombre"].Value = this.txt_Nombre.Text.ToUpper();
 					sqlCommand.Parameters["@password"].Value = this.txtPassword.Text;
-					chr = (!(this.CmbTipo.Text == "Administrador") ? '2' : '1');
-					sqlCommand.Parameters["@tipo"].Value = chr;
+                   
+                    if(CmbTipo.Text == "Administrador")
+                    {
+                        chr = '1';
+                    }
+                    else
+                    if(CmbTipo.Text == "Normal")
+                    {
+                        chr = '2';
+                    }
+                    else
+                    {
+                        chr = '3';
+                    }
+
+                    sqlCommand.Parameters["@tipo"].Value = chr;
 					sqlCommand.Parameters["@msg"].Value = 1;
 					this.cn.Abrir();
 					sqlCommand.ExecuteNonQuery();
@@ -282,7 +308,8 @@ namespace Anakena_2017
             this.CmbTipo.Items.AddRange(new object[] {
             "--Seleccione Opcion--",
             "Administrador",
-            "Normal"});
+            "Normal",
+            "Agricola"});
             this.CmbTipo.Location = new System.Drawing.Point(158, 270);
             this.CmbTipo.Name = "CmbTipo";
             this.CmbTipo.Size = new System.Drawing.Size(203, 28);

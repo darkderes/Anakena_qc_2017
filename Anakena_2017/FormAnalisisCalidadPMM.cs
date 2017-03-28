@@ -287,6 +287,7 @@ namespace Anakena_2017
             s.Btn_Guardar.Enabled = true;
             s.Btn_Print.Enabled = false;
             s.ShowDialog();
+            Traer_Analisis_Calidad_PPM();
         }
 
         private void button1_Click(object sender, EventArgs e)

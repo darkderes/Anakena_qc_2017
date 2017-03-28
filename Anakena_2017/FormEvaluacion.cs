@@ -264,6 +264,7 @@ namespace Anakena_2017
 				{
 					this.update_parametro(Convert.ToInt32(this.txtVerde_min.Text), Convert.ToInt32(this.txtAmarillo_max.Text), "Impurezas_Piedras");
 					this.update_parametro(Convert.ToInt32(this.txtPalos_min.Text), Convert.ToInt32(this.txtPalos_max.Text), "Impurezas_Palo");
+                    this.update_parametro(Convert.ToInt32(txtPelonSuelto_min.Text), Convert.ToInt32(txtPelonSuelto_max.Text), "Impurezas_Pelon");
                     this.update_parametro(Convert.ToInt32(txtPelonSuelto_min.Text), Convert.ToInt32(txtPelonSuelto_max.Text), "Pelon_Adherido");
                     this.update_parametro(Convert.ToInt32(this.txtPartidas_min.Text), Convert.ToInt32(this.txtPartidas_max.Text), "Partidas_Quebradas");
 					this.update_parametro(Convert.ToInt32(this.txtNegra_min.Text), Convert.ToInt32(this.txtNegra_max.Text), "Negras_Momificadas");
@@ -1955,7 +1956,7 @@ namespace Anakena_2017
 			this.lblPalo_min.Text = num.ToString();
 			num = Convert.ToInt32(this.max);
 			this.lblPalo_max.Text = num.ToString();
-            this.extraerMedicion("Pelon_Adherido", Variedad_2);
+            this.extraerMedicion("Impurezas_Pelon", Variedad_2);
             txtPelonSuelto_min.Text = this.min;
             txtPelonSuelto_max.Text = this.max;
             num = Convert.ToInt32(this.min) + 1;

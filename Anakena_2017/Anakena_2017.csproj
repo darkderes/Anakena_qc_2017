@@ -25,7 +25,7 @@
     <MapFileExtensions>true</MapFileExtensions>
     <UpdateUrl>\\192.168.0.103\user\Jorge Darderes\Anakena_2017\</UpdateUrl>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>21</ApplicationRevision>
+    <ApplicationRevision>39</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -386,6 +386,12 @@
       <IncludeHash>True</IncludeHash>
       <FileType>Assembly</FileType>
     </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Recepcion_Nueces\Recepcion_Nueces\Recepcion_Nueces.csproj">
+      <Project>{6ea7d3fc-5a2d-478d-8cda-a5dedd4420c5}</Project>
+      <Name>Recepcion_Nueces</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
