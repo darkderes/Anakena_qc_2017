@@ -276,6 +276,11 @@ namespace Anakena_2017
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
             }
+            else if ((e.KeyChar == Convert.ToChar(Keys.Return)))
+            {
+                Txt_Cascara.Enabled = true;
+                Txt_Cascara.Focus();
+            }
         }
 
         private void Txt_Cascara_KeyPress(object sender, KeyPressEventArgs e)
@@ -285,6 +290,11 @@ namespace Anakena_2017
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
             }
+            else if ((e.KeyChar == Convert.ToChar(Keys.Return)))
+            {
+                Txt_Septum.Enabled = true;
+                Txt_Septum.Focus();
+            }
         }
 
         private void Txt_Septum_KeyPress(object sender, KeyPressEventArgs e)
@@ -293,6 +303,11 @@ namespace Anakena_2017
             {
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
+            }
+            else if ((e.KeyChar == Convert.ToChar(Keys.Return)))
+            {
+                Txt_extraña.Enabled = true;
+                Txt_extraña.Focus();
             }
         }
 
@@ -397,6 +412,11 @@ namespace Anakena_2017
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
             }
+            else if ((e.KeyChar == Convert.ToChar(Keys.Return)))
+            {
+                Txt_Large_Pieces.Enabled = true;
+                Txt_Large_Pieces.Focus();
+            }
         }
 
         private void Txt_Large_Pieces_KeyPress(object sender, KeyPressEventArgs e)
@@ -406,6 +426,12 @@ namespace Anakena_2017
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
             }
+            else if ((e.KeyChar == Convert.ToChar(Keys.Return)))
+            {
+                Txt_Medium_Pieces.Enabled = true;
+                Txt_Medium_Pieces.Focus();
+            }
+
         }
 
         private void Txt_Medium_Pieces_KeyPress(object sender, KeyPressEventArgs e)
@@ -414,6 +440,11 @@ namespace Anakena_2017
             {
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
+            }
+            else if ((e.KeyChar == Convert.ToChar(Keys.Return)))
+            {
+                Txt_Small_Pieces.Enabled = true;
+                Txt_Small_Pieces.Focus();
             }
         }
 
@@ -433,6 +464,11 @@ namespace Anakena_2017
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
             }
+            else if ((e.KeyChar == Convert.ToChar(Keys.Return)))
+            {
+                Txt_Light.Enabled = true;
+                Txt_Light.Focus();
+            }
         }
 
         private void Txt_Light_KeyPress(object sender, KeyPressEventArgs e)
@@ -442,6 +478,11 @@ namespace Anakena_2017
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
             }
+            else if ((e.KeyChar == Convert.ToChar(Keys.Return)))
+            {
+                Txt_Light_Ambar.Enabled = true;
+                Txt_Light_Ambar.Focus();
+            }
         }
 
         private void Txt_Light_Ambar_KeyPress(object sender, KeyPressEventArgs e)
@@ -450,6 +491,11 @@ namespace Anakena_2017
             {
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
+            }
+            else if ((e.KeyChar == Convert.ToChar(Keys.Return)))
+            {
+                Txt_Ambar.Enabled = true;
+                Txt_Ambar.Focus();
             }
 
         }
@@ -461,6 +507,11 @@ namespace Anakena_2017
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
             }
+            else if ((e.KeyChar == Convert.ToChar(Keys.Return)))
+            {
+                Txt_Amarillo.Focus();
+                Txt_Amarillo.Enabled = true;
+            }
         }
 
         private void Txt_Amarillo_KeyPress(object sender, KeyPressEventArgs e)
@@ -469,6 +520,7 @@ namespace Anakena_2017
             {
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
+
             }
         }
 
@@ -488,6 +540,11 @@ namespace Anakena_2017
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
             }
+            else if ((e.KeyChar == Convert.ToChar(Keys.Return)))
+            {
+                TxtReseca_Grave.Focus();
+                TxtReseca_Grave.Enabled = true;
+            }
         }
 
         private void TxtReseca_Grave_KeyPress(object sender, KeyPressEventArgs e)
@@ -496,6 +553,11 @@ namespace Anakena_2017
             {
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
+            }
+            else if ((e.KeyChar == Convert.ToChar(Keys.Return)))
+            {
+                TxtDaño_Insecto.Enabled = true;
+                TxtDaño_Insecto.Focus();
             }
         }
 
@@ -506,6 +568,12 @@ namespace Anakena_2017
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
             }
+            else if ((e.KeyChar == Convert.ToChar(Keys.Return)))
+            {
+                TxtMancha_Agua.Focus();
+                TxtMancha_Agua.Enabled = true;
+
+            }
         }
 
         private void TxtMancha_Agua_KeyPress(object sender, KeyPressEventArgs e)
@@ -515,6 +583,11 @@ namespace Anakena_2017
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
             }
+            else if ((e.KeyChar == Convert.ToChar(Keys.Return)))
+            {
+                TxtHongo_Inactivo.Enabled = true;
+                TxtHongo_Inactivo.Focus();
+            }
         }
 
         private void TxtHongo_Inactivo_KeyPress(object sender, KeyPressEventArgs e)
@@ -523,6 +596,11 @@ namespace Anakena_2017
             {
                 MessageBox.Show("Solo se permiten numeros decimales", "Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 e.Handled = true;
+            }
+            else if ((e.KeyChar == Convert.ToChar(Keys.Return)))
+            {
+                TxtHongo_Activo.Focus();
+                TxtHongo_Activo.Enabled = true;
             }
         }
 
@@ -662,15 +740,37 @@ namespace Anakena_2017
                 if (string.IsNullOrEmpty(TxtReseca_Leve.Text))
                 {
                     TxtReseca_Leve.Text = "0";
+                  //  TxtReseca_Leve_por.Text = "0";
+
+
                 }
                 Txt_Total_Defectos.Text = (Convert.ToDouble(TxtReseca_Leve.Text) + (Convert.ToDouble(TxtReseca_Grave.Text)) + (Convert.ToDouble(TxtDaño_Insecto.Text)) + (Convert.ToDouble(TxtMancha_Agua.Text)) + (Convert.ToDouble(TxtHongo_Inactivo.Text))+(Convert.ToDouble(TxtHongo_Activo.Text))).ToString();
-                TxtReseca_Leve_por.Text = ((Convert.ToDouble(TxtReseca_Leve.Text) / Convert.ToDouble(Txt_Defectos.Text))*100).ToString();
-                TxtReseca_Grave_por.Text = ((Convert.ToDouble(TxtReseca_Grave.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtDaño_Insecto_por.Text = ((Convert.ToDouble(TxtDaño_Insecto.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtMancha_Agua_por.Text = ((Convert.ToDouble(TxtMancha_Agua.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtHongo_Inactivo_por.Text =((Convert.ToDouble(TxtHongo_Inactivo.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtHongo_Activo_por.Text = ((Convert.ToDouble(TxtHongo_Activo.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                Txt_Total_Defectos_por.Text = (Convert.ToDouble(TxtReseca_Leve_por.Text) + (Convert.ToDouble(TxtReseca_Grave_por.Text)) + (Convert.ToDouble(TxtDaño_Insecto_por.Text)) + (Convert.ToDouble(TxtMancha_Agua_por.Text)) + (Convert.ToDouble(TxtHongo_Inactivo_por.Text)) + (Convert.ToDouble(TxtHongo_Activo_por.Text))).ToString();
+                if(Convert.ToDouble(Txt_Total_Defectos.Text)>0)
+                {
+               
+                TxtReseca_Leve_por.Text = ((Convert.ToDouble(TxtReseca_Leve.Text) / Convert.ToDouble(Txt_Total_Defectos.Text))*100).ToString();
+                TxtReseca_Grave_por.Text = ((Convert.ToDouble(TxtReseca_Grave.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                TxtDaño_Insecto_por.Text = ((Convert.ToDouble(TxtDaño_Insecto.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                TxtMancha_Agua_por.Text = ((Convert.ToDouble(TxtMancha_Agua.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                TxtHongo_Inactivo_por.Text =((Convert.ToDouble(TxtHongo_Inactivo.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                TxtHongo_Activo_por.Text = ((Convert.ToDouble(TxtHongo_Activo.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                Txt_Total_Defectos_por.Text = Math.Round((Convert.ToDouble(TxtReseca_Leve_por.Text) + (Convert.ToDouble(TxtReseca_Grave_por.Text)) + (Convert.ToDouble(TxtDaño_Insecto_por.Text)) + (Convert.ToDouble(TxtMancha_Agua_por.Text)) + (Convert.ToDouble(TxtHongo_Inactivo_por.Text)) + (Convert.ToDouble(TxtHongo_Activo_por.Text))),1).ToString();
+                Txt_Defectos.Text = Txt_Total_Defectos.Text;
+                }
+                else
+
+                {
+                    TxtReseca_Leve_por.Text = "0";
+                    TxtReseca_Grave_por.Text = "0";
+                    TxtDaño_Insecto_por.Text = "0";
+                    TxtMancha_Agua_por.Text = "0";
+                    TxtHongo_Inactivo_por.Text = "0";
+                    TxtHongo_Activo_por.Text = "0";
+                    Txt_Total_Defectos_por.Text = "100";
+                    Txt_Defectos.Text = Txt_Total_Defectos.Text;
+                }
+              
+                
             }
             catch { }
         }
@@ -683,14 +783,33 @@ namespace Anakena_2017
                 {
                     TxtReseca_Grave.Text = "0";
                 }
+
                 Txt_Total_Defectos.Text = (Convert.ToDouble(TxtReseca_Leve.Text) + (Convert.ToDouble(TxtReseca_Grave.Text)) + (Convert.ToDouble(TxtDaño_Insecto.Text)) + (Convert.ToDouble(TxtMancha_Agua.Text)) + (Convert.ToDouble(TxtHongo_Inactivo.Text)) + (Convert.ToDouble(TxtHongo_Activo.Text))).ToString();
-                TxtReseca_Leve_por.Text = ((Convert.ToDouble(TxtReseca_Leve.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtReseca_Grave_por.Text = ((Convert.ToDouble(TxtReseca_Grave.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtDaño_Insecto_por.Text = ((Convert.ToDouble(TxtDaño_Insecto.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtMancha_Agua_por.Text = ((Convert.ToDouble(TxtMancha_Agua.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtHongo_Inactivo_por.Text = ((Convert.ToDouble(TxtHongo_Inactivo.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtHongo_Activo_por.Text = ((Convert.ToDouble(TxtHongo_Activo.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                Txt_Total_Defectos_por.Text = (Convert.ToDouble(TxtReseca_Leve_por.Text) + (Convert.ToDouble(TxtReseca_Grave_por.Text)) + (Convert.ToDouble(TxtDaño_Insecto_por.Text)) + (Convert.ToDouble(TxtMancha_Agua_por.Text)) + (Convert.ToDouble(TxtHongo_Inactivo_por.Text)) + (Convert.ToDouble(TxtHongo_Activo_por.Text))).ToString();
+                if (Convert.ToDouble(Txt_Total_Defectos.Text) > 0)
+                {
+
+                    TxtReseca_Leve_por.Text = ((Convert.ToDouble(TxtReseca_Leve.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtReseca_Grave_por.Text = ((Convert.ToDouble(TxtReseca_Grave.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtDaño_Insecto_por.Text = ((Convert.ToDouble(TxtDaño_Insecto.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtMancha_Agua_por.Text = ((Convert.ToDouble(TxtMancha_Agua.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtHongo_Inactivo_por.Text = ((Convert.ToDouble(TxtHongo_Inactivo.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtHongo_Activo_por.Text = ((Convert.ToDouble(TxtHongo_Activo.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    Txt_Total_Defectos_por.Text = Math.Round((Convert.ToDouble(TxtReseca_Leve_por.Text) + (Convert.ToDouble(TxtReseca_Grave_por.Text)) + (Convert.ToDouble(TxtDaño_Insecto_por.Text)) + (Convert.ToDouble(TxtMancha_Agua_por.Text)) + (Convert.ToDouble(TxtHongo_Inactivo_por.Text)) + (Convert.ToDouble(TxtHongo_Activo_por.Text))), 1).ToString();
+                    Txt_Defectos.Text = Txt_Total_Defectos.Text;
+                }
+                else
+
+                {
+                    TxtReseca_Leve_por.Text = "0";
+                    TxtReseca_Grave_por.Text = "0";
+                    TxtDaño_Insecto_por.Text = "0";
+                    TxtMancha_Agua_por.Text = "0";
+                    TxtHongo_Inactivo_por.Text = "0";
+                    TxtHongo_Activo_por.Text = "0";
+                    Txt_Total_Defectos_por.Text = "100";
+                    Txt_Defectos.Text = Txt_Total_Defectos.Text;
+                }
+
             }
             catch { }
         }
@@ -704,13 +823,30 @@ namespace Anakena_2017
                     TxtDaño_Insecto.Text = "0";
                 }
                 Txt_Total_Defectos.Text = (Convert.ToDouble(TxtReseca_Leve.Text) + (Convert.ToDouble(TxtReseca_Grave.Text)) + (Convert.ToDouble(TxtDaño_Insecto.Text)) + (Convert.ToDouble(TxtMancha_Agua.Text)) + (Convert.ToDouble(TxtHongo_Inactivo.Text)) + (Convert.ToDouble(TxtHongo_Activo.Text))).ToString();
-                TxtReseca_Leve_por.Text = ((Convert.ToDouble(TxtReseca_Leve.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtReseca_Grave_por.Text = ((Convert.ToDouble(TxtReseca_Grave.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtDaño_Insecto_por.Text = ((Convert.ToDouble(TxtDaño_Insecto.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtMancha_Agua_por.Text = ((Convert.ToDouble(TxtMancha_Agua.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtHongo_Inactivo_por.Text = ((Convert.ToDouble(TxtHongo_Inactivo.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtHongo_Activo_por.Text = ((Convert.ToDouble(TxtHongo_Activo.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                Txt_Total_Defectos_por.Text = (Convert.ToDouble(TxtReseca_Leve_por.Text) + (Convert.ToDouble(TxtReseca_Grave_por.Text)) + (Convert.ToDouble(TxtDaño_Insecto_por.Text)) + (Convert.ToDouble(TxtMancha_Agua_por.Text)) + (Convert.ToDouble(TxtHongo_Inactivo_por.Text)) + (Convert.ToDouble(TxtHongo_Activo_por.Text))).ToString();
+                if (Convert.ToDouble(Txt_Total_Defectos.Text) > 0)
+                {
+
+                    TxtReseca_Leve_por.Text = ((Convert.ToDouble(TxtReseca_Leve.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtReseca_Grave_por.Text = ((Convert.ToDouble(TxtReseca_Grave.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtDaño_Insecto_por.Text = ((Convert.ToDouble(TxtDaño_Insecto.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtMancha_Agua_por.Text = ((Convert.ToDouble(TxtMancha_Agua.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtHongo_Inactivo_por.Text = ((Convert.ToDouble(TxtHongo_Inactivo.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtHongo_Activo_por.Text = ((Convert.ToDouble(TxtHongo_Activo.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    Txt_Total_Defectos_por.Text = Math.Round((Convert.ToDouble(TxtReseca_Leve_por.Text) + (Convert.ToDouble(TxtReseca_Grave_por.Text)) + (Convert.ToDouble(TxtDaño_Insecto_por.Text)) + (Convert.ToDouble(TxtMancha_Agua_por.Text)) + (Convert.ToDouble(TxtHongo_Inactivo_por.Text)) + (Convert.ToDouble(TxtHongo_Activo_por.Text))), 1).ToString();
+                    Txt_Defectos.Text = Txt_Total_Defectos.Text;
+                }
+                else
+
+                {
+                    TxtReseca_Leve_por.Text = "0";
+                    TxtReseca_Grave_por.Text = "0";
+                    TxtDaño_Insecto_por.Text = "0";
+                    TxtMancha_Agua_por.Text = "0";
+                    TxtHongo_Inactivo_por.Text = "0";
+                    TxtHongo_Activo_por.Text = "0";
+                    Txt_Total_Defectos_por.Text = "100";
+                    Txt_Defectos.Text = Txt_Total_Defectos.Text;
+                }
             }
             catch { }
         }
@@ -724,13 +860,30 @@ namespace Anakena_2017
                     TxtMancha_Agua.Text = "0";
                 }
                 Txt_Total_Defectos.Text = (Convert.ToDouble(TxtReseca_Leve.Text) + (Convert.ToDouble(TxtReseca_Grave.Text)) + (Convert.ToDouble(TxtDaño_Insecto.Text)) + (Convert.ToDouble(TxtMancha_Agua.Text)) + (Convert.ToDouble(TxtHongo_Inactivo.Text)) + (Convert.ToDouble(TxtHongo_Activo.Text))).ToString();
-                TxtReseca_Leve_por.Text = ((Convert.ToDouble(TxtReseca_Leve.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtReseca_Grave_por.Text = ((Convert.ToDouble(TxtReseca_Grave.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtDaño_Insecto_por.Text = ((Convert.ToDouble(TxtDaño_Insecto.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtMancha_Agua_por.Text = ((Convert.ToDouble(TxtMancha_Agua.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtHongo_Inactivo_por.Text = ((Convert.ToDouble(TxtHongo_Inactivo.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtHongo_Activo_por.Text = ((Convert.ToDouble(TxtHongo_Activo.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                Txt_Total_Defectos_por.Text = (Convert.ToDouble(TxtReseca_Leve_por.Text) + (Convert.ToDouble(TxtReseca_Grave_por.Text)) + (Convert.ToDouble(TxtDaño_Insecto_por.Text)) + (Convert.ToDouble(TxtMancha_Agua_por.Text)) + (Convert.ToDouble(TxtHongo_Inactivo_por.Text)) + (Convert.ToDouble(TxtHongo_Activo_por.Text))).ToString();
+                if (Convert.ToDouble(Txt_Total_Defectos.Text) > 0)
+                {
+
+                    TxtReseca_Leve_por.Text = ((Convert.ToDouble(TxtReseca_Leve.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtReseca_Grave_por.Text = ((Convert.ToDouble(TxtReseca_Grave.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtDaño_Insecto_por.Text = ((Convert.ToDouble(TxtDaño_Insecto.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtMancha_Agua_por.Text = ((Convert.ToDouble(TxtMancha_Agua.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtHongo_Inactivo_por.Text = ((Convert.ToDouble(TxtHongo_Inactivo.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtHongo_Activo_por.Text = ((Convert.ToDouble(TxtHongo_Activo.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    Txt_Total_Defectos_por.Text = Math.Round((Convert.ToDouble(TxtReseca_Leve_por.Text) + (Convert.ToDouble(TxtReseca_Grave_por.Text)) + (Convert.ToDouble(TxtDaño_Insecto_por.Text)) + (Convert.ToDouble(TxtMancha_Agua_por.Text)) + (Convert.ToDouble(TxtHongo_Inactivo_por.Text)) + (Convert.ToDouble(TxtHongo_Activo_por.Text))), 1).ToString();
+                    Txt_Defectos.Text = Txt_Total_Defectos.Text;
+                }
+                else
+
+                {
+                    TxtReseca_Leve_por.Text = "0";
+                    TxtReseca_Grave_por.Text = "0";
+                    TxtDaño_Insecto_por.Text = "0";
+                    TxtMancha_Agua_por.Text = "0";
+                    TxtHongo_Inactivo_por.Text = "0";
+                    TxtHongo_Activo_por.Text = "0";
+                    Txt_Total_Defectos_por.Text = "100";
+                    Txt_Defectos.Text = Txt_Total_Defectos.Text;
+                }
             }
             catch { }
         }
@@ -744,13 +897,30 @@ namespace Anakena_2017
                     TxtHongo_Inactivo.Text = "0";
                 }
                 Txt_Total_Defectos.Text = (Convert.ToDouble(TxtReseca_Leve.Text) + (Convert.ToDouble(TxtReseca_Grave.Text)) + (Convert.ToDouble(TxtDaño_Insecto.Text)) + (Convert.ToDouble(TxtMancha_Agua.Text)) + (Convert.ToDouble(TxtHongo_Inactivo.Text)) + (Convert.ToDouble(TxtHongo_Activo.Text))).ToString();
-                TxtReseca_Leve_por.Text = ((Convert.ToDouble(TxtReseca_Leve.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtReseca_Grave_por.Text = ((Convert.ToDouble(TxtReseca_Grave.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtDaño_Insecto_por.Text = ((Convert.ToDouble(TxtDaño_Insecto.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtMancha_Agua_por.Text = ((Convert.ToDouble(TxtMancha_Agua.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtHongo_Inactivo_por.Text = ((Convert.ToDouble(TxtHongo_Inactivo.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtHongo_Activo_por.Text = ((Convert.ToDouble(TxtHongo_Activo.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                Txt_Total_Defectos_por.Text = (Convert.ToDouble(TxtReseca_Leve_por.Text) + (Convert.ToDouble(TxtReseca_Grave_por.Text)) + (Convert.ToDouble(TxtDaño_Insecto_por.Text)) + (Convert.ToDouble(TxtMancha_Agua_por.Text)) + (Convert.ToDouble(TxtHongo_Inactivo_por.Text)) + (Convert.ToDouble(TxtHongo_Activo_por.Text))).ToString();
+                if (Convert.ToDouble(Txt_Total_Defectos.Text) > 0)
+                {
+
+                    TxtReseca_Leve_por.Text = ((Convert.ToDouble(TxtReseca_Leve.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtReseca_Grave_por.Text = ((Convert.ToDouble(TxtReseca_Grave.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtDaño_Insecto_por.Text = ((Convert.ToDouble(TxtDaño_Insecto.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtMancha_Agua_por.Text = ((Convert.ToDouble(TxtMancha_Agua.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtHongo_Inactivo_por.Text = ((Convert.ToDouble(TxtHongo_Inactivo.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtHongo_Activo_por.Text = ((Convert.ToDouble(TxtHongo_Activo.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    Txt_Total_Defectos_por.Text = Math.Round((Convert.ToDouble(TxtReseca_Leve_por.Text) + (Convert.ToDouble(TxtReseca_Grave_por.Text)) + (Convert.ToDouble(TxtDaño_Insecto_por.Text)) + (Convert.ToDouble(TxtMancha_Agua_por.Text)) + (Convert.ToDouble(TxtHongo_Inactivo_por.Text)) + (Convert.ToDouble(TxtHongo_Activo_por.Text))), 1).ToString();
+                    Txt_Defectos.Text = Txt_Total_Defectos.Text;
+                }
+                else
+
+                {
+                    TxtReseca_Leve_por.Text = "0";
+                    TxtReseca_Grave_por.Text = "0";
+                    TxtDaño_Insecto_por.Text = "0";
+                    TxtMancha_Agua_por.Text = "0";
+                    TxtHongo_Inactivo_por.Text = "0";
+                    TxtHongo_Activo_por.Text = "0";
+                    Txt_Total_Defectos_por.Text = "100";
+                    Txt_Defectos.Text = Txt_Total_Defectos.Text;
+                }
             }
             catch { }
         }
@@ -764,13 +934,30 @@ namespace Anakena_2017
                     TxtHongo_Activo.Text = "0";
                 }
                 Txt_Total_Defectos.Text = (Convert.ToDouble(TxtReseca_Leve.Text) + (Convert.ToDouble(TxtReseca_Grave.Text)) + (Convert.ToDouble(TxtDaño_Insecto.Text)) + (Convert.ToDouble(TxtMancha_Agua.Text)) + (Convert.ToDouble(TxtHongo_Inactivo.Text)) + (Convert.ToDouble(TxtHongo_Activo.Text))).ToString();
-                TxtReseca_Leve_por.Text = ((Convert.ToDouble(TxtReseca_Leve.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtReseca_Grave_por.Text = ((Convert.ToDouble(TxtReseca_Grave.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtDaño_Insecto_por.Text = ((Convert.ToDouble(TxtDaño_Insecto.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtMancha_Agua_por.Text = ((Convert.ToDouble(TxtMancha_Agua.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtHongo_Inactivo_por.Text = ((Convert.ToDouble(TxtHongo_Inactivo.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                TxtHongo_Activo_por.Text = ((Convert.ToDouble(TxtHongo_Activo.Text) / Convert.ToDouble(Txt_Defectos.Text)) * 100).ToString();
-                Txt_Total_Defectos_por.Text = (Convert.ToDouble(TxtReseca_Leve_por.Text) + (Convert.ToDouble(TxtReseca_Grave_por.Text)) + (Convert.ToDouble(TxtDaño_Insecto_por.Text)) + (Convert.ToDouble(TxtMancha_Agua_por.Text)) + (Convert.ToDouble(TxtHongo_Inactivo_por.Text)) + (Convert.ToDouble(TxtHongo_Activo_por.Text))).ToString();
+                if (Convert.ToDouble(Txt_Total_Defectos.Text) > 0)
+                {
+
+                    TxtReseca_Leve_por.Text = ((Convert.ToDouble(TxtReseca_Leve.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtReseca_Grave_por.Text = ((Convert.ToDouble(TxtReseca_Grave.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtDaño_Insecto_por.Text = ((Convert.ToDouble(TxtDaño_Insecto.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtMancha_Agua_por.Text = ((Convert.ToDouble(TxtMancha_Agua.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtHongo_Inactivo_por.Text = ((Convert.ToDouble(TxtHongo_Inactivo.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    TxtHongo_Activo_por.Text = ((Convert.ToDouble(TxtHongo_Activo.Text) / Convert.ToDouble(Txt_Total_Defectos.Text)) * 100).ToString();
+                    Txt_Total_Defectos_por.Text = Math.Round((Convert.ToDouble(TxtReseca_Leve_por.Text) + (Convert.ToDouble(TxtReseca_Grave_por.Text)) + (Convert.ToDouble(TxtDaño_Insecto_por.Text)) + (Convert.ToDouble(TxtMancha_Agua_por.Text)) + (Convert.ToDouble(TxtHongo_Inactivo_por.Text)) + (Convert.ToDouble(TxtHongo_Activo_por.Text))), 1).ToString();
+                    Txt_Defectos.Text = Txt_Total_Defectos.Text;
+                }
+                else
+
+                {
+                    TxtReseca_Leve_por.Text = "0";
+                    TxtReseca_Grave_por.Text = "0";
+                    TxtDaño_Insecto_por.Text = "0";
+                    TxtMancha_Agua_por.Text = "0";
+                    TxtHongo_Inactivo_por.Text = "0";
+                    TxtHongo_Activo_por.Text = "0";
+                    Txt_Total_Defectos_por.Text = "100";
+                    Txt_Defectos.Text = Txt_Total_Defectos.Text;
+                }
             }
             catch { }
         }
@@ -784,6 +971,8 @@ namespace Anakena_2017
                     timer1.Enabled = false;
                     agregar_calidad_preseleccion();
                     MessageBox.Show("Control de calidad guardada correctamente", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Btn_Guardar.Enabled = false;
+                    Btn_Print.Enabled = true;
                   
                 }
             }

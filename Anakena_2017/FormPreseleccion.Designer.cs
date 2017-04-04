@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPreseleccion));
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.Btn_Print = new System.Windows.Forms.Button();
+            this.Btn_Guardar = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.button8 = new System.Windows.Forms.Button();
             this.Btn_Delete = new System.Windows.Forms.Button();
             this.Btn_Modificar = new System.Windows.Forms.Button();
             this.Btn_Salir = new System.Windows.Forms.Button();
-            this.Btn_Print = new System.Windows.Forms.Button();
-            this.Btn_Guardar = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.label51 = new System.Windows.Forms.Label();
             this.Lbl_Analisis = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -158,7 +158,6 @@
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.groupBox10);
             this.groupBox9.Controls.Add(this.Btn_Print);
             this.groupBox9.Controls.Add(this.Btn_Guardar);
             this.groupBox9.Controls.Add(this.button3);
@@ -170,19 +169,52 @@
             this.groupBox9.Text = "Opciones";
             this.groupBox9.Visible = false;
             // 
+            // Btn_Print
+            // 
+            this.Btn_Print.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Print.BackgroundImage")));
+            this.Btn_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Print.Location = new System.Drawing.Point(45, 98);
+            this.Btn_Print.Name = "Btn_Print";
+            this.Btn_Print.Size = new System.Drawing.Size(137, 36);
+            this.Btn_Print.TabIndex = 26;
+            this.Btn_Print.UseVisualStyleBackColor = true;
+            this.Btn_Print.Click += new System.EventHandler(this.Btn_Print_Click);
+            // 
+            // Btn_Guardar
+            // 
+            this.Btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Guardar.BackgroundImage")));
+            this.Btn_Guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Guardar.Enabled = false;
+            this.Btn_Guardar.Location = new System.Drawing.Point(46, 37);
+            this.Btn_Guardar.Name = "Btn_Guardar";
+            this.Btn_Guardar.Size = new System.Drawing.Size(136, 36);
+            this.Btn_Guardar.TabIndex = 23;
+            this.Btn_Guardar.UseVisualStyleBackColor = true;
+            this.Btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Location = new System.Drawing.Point(45, 165);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(137, 35);
+            this.button3.TabIndex = 122;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.button8);
             this.groupBox10.Controls.Add(this.Btn_Delete);
             this.groupBox10.Controls.Add(this.Btn_Modificar);
             this.groupBox10.Controls.Add(this.Btn_Salir);
-            this.groupBox10.Location = new System.Drawing.Point(0, 0);
+            this.groupBox10.Location = new System.Drawing.Point(933, 181);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(224, 265);
             this.groupBox10.TabIndex = 130;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Opciones";
-            this.groupBox10.Visible = false;
             // 
             // button8
             // 
@@ -226,40 +258,6 @@
             this.Btn_Salir.TabIndex = 25;
             this.Btn_Salir.UseVisualStyleBackColor = true;
             this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
-            // 
-            // Btn_Print
-            // 
-            this.Btn_Print.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Print.BackgroundImage")));
-            this.Btn_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Print.Location = new System.Drawing.Point(45, 98);
-            this.Btn_Print.Name = "Btn_Print";
-            this.Btn_Print.Size = new System.Drawing.Size(137, 36);
-            this.Btn_Print.TabIndex = 26;
-            this.Btn_Print.UseVisualStyleBackColor = true;
-            this.Btn_Print.Click += new System.EventHandler(this.Btn_Print_Click);
-            // 
-            // Btn_Guardar
-            // 
-            this.Btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Guardar.BackgroundImage")));
-            this.Btn_Guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Guardar.Enabled = false;
-            this.Btn_Guardar.Location = new System.Drawing.Point(46, 37);
-            this.Btn_Guardar.Name = "Btn_Guardar";
-            this.Btn_Guardar.Size = new System.Drawing.Size(136, 36);
-            this.Btn_Guardar.TabIndex = 23;
-            this.Btn_Guardar.UseVisualStyleBackColor = true;
-            this.Btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(45, 165);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 35);
-            this.button3.TabIndex = 122;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label51
             // 
@@ -1065,7 +1063,7 @@
             this.Txt_Total_Defectos_por.Name = "Txt_Total_Defectos_por";
             this.Txt_Total_Defectos_por.Size = new System.Drawing.Size(41, 21);
             this.Txt_Total_Defectos_por.TabIndex = 87;
-            this.Txt_Total_Defectos_por.Text = "0";
+            this.Txt_Total_Defectos_por.Text = "100";
             // 
             // TxtHongo_Inactivo_por
             // 
@@ -1404,6 +1402,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1190, 507);
+            this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.label51);
             this.Controls.Add(this.Lbl_Analisis);

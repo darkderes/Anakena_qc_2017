@@ -159,8 +159,10 @@ namespace Anakena_2017
             {
                 s.groupBox9.Visible = false;
                 s.groupBox10.Visible = true;
-            } this.Hide();
+            }
+            this.Hide();
             s.ShowDialog();
+            this.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -116,6 +116,7 @@ namespace Anakena_2017
             s.Txt_Observacion_Mat_Extraña.Text = dataGridView1.Rows[e.RowIndex].Cells["Observacion_Mat_Extraña"].Value.ToString();
             s.Txt_Observacion_Cascara.Text = dataGridView1.Rows[e.RowIndex].Cells["Observacion_Cascara"].Value.ToString();
             s.Txt_Observacion_Septum.Text = dataGridView1.Rows[e.RowIndex].Cells["Observacion_Septum"].Value.ToString();
+
             if (Btn_Agregar.Visible == true)
             {
                 s.groupBox9.Visible = true;
@@ -128,6 +129,7 @@ namespace Anakena_2017
             }
             this.Hide();
             s.ShowDialog();
+            this.Show();
         }
 
         private void Btn_Agregar_Click(object sender, EventArgs e)

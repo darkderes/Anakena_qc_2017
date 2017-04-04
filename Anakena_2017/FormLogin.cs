@@ -45,11 +45,11 @@ namespace Anakena_2017
 
 		private void FormLogin_Load(object sender, EventArgs e)
 		{
-			if ((int)Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName).Length > 1)
-			{
-				MessageBox.Show("La aplicación ya se está ejecutando...");
-				base.Close();
-			}
+			//if ((int)Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName).Length > 1)
+			//{
+			//	MessageBox.Show("La aplicación ya se está ejecutando...");
+			//	base.Close();
+			//}
 		}
 
 		private void InitializeComponent()
