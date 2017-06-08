@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAnalisisCalidadPreseleccion));
             this.DT_Fecha = new System.Windows.Forms.DateTimePicker();
@@ -35,12 +36,53 @@
             this.txt_filtro = new System.Windows.Forms.TextBox();
             this.Cmb_Busqueda = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.analisisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tarjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.binsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.turnoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.procesoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productoAnalisisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productoTarjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codProductoUserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codProductoTarjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pesoMuestraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cascaraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.septumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.matExtrañaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.halvesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.largePiecesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mediumPiecesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.smallPiecesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.extraLightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lightDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lightAmbarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ambarDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.amarilloDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.defectosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.resecaLeveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.resecaGraveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dañoInsectoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.manchaAguaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hongoInactivoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hongoActivoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.observacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.observacionMatExtrañaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.observacionCascaraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.observacionSeptumDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.spTraer_Analisis_Calidad_PreseleccionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.prueba_2017_PMM = new Anakena_2017.Prueba_2017_PMM();
             this.button1 = new System.Windows.Forms.Button();
             this.Btn_Agregar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.Btn_Buscar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.spTraer_Analisis_Calidad_PreseleccionTableAdapter = new Anakena_2017.Prueba_2017_PMMTableAdapters.spTraer_Analisis_Calidad_PreseleccionTableAdapter();
+            this.tableAdapterManager = new Anakena_2017.Prueba_2017_PMMTableAdapters.TableAdapterManager();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spTraer_Analisis_Calidad_PreseleccionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prueba_2017_PMM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,7 +99,7 @@
             // 
             this.Cmb_Filtro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cmb_Filtro.FormattingEnabled = true;
-            this.Cmb_Filtro.Location = new System.Drawing.Point(454, 55);
+            this.Cmb_Filtro.Location = new System.Drawing.Point(454, 57);
             this.Cmb_Filtro.Name = "Cmb_Filtro";
             this.Cmb_Filtro.Size = new System.Drawing.Size(171, 21);
             this.Cmb_Filtro.TabIndex = 132;
@@ -87,21 +129,311 @@
             this.Cmb_Busqueda.Name = "Cmb_Busqueda";
             this.Cmb_Busqueda.Size = new System.Drawing.Size(171, 21);
             this.Cmb_Busqueda.TabIndex = 129;
+            this.Cmb_Busqueda.SelectedIndexChanged += new System.EventHandler(this.Cmb_Busqueda_SelectedIndexChanged);
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 137);
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.analisisDataGridViewTextBoxColumn,
+            this.fechaDataGridViewTextBoxColumn,
+            this.tarjaDataGridViewTextBoxColumn,
+            this.binsDataGridViewTextBoxColumn,
+            this.turnoDataGridViewTextBoxColumn,
+            this.procesoDataGridViewTextBoxColumn,
+            this.productoAnalisisDataGridViewTextBoxColumn,
+            this.productoTarjaDataGridViewTextBoxColumn,
+            this.estadoDataGridViewTextBoxColumn,
+            this.codProductoUserDataGridViewTextBoxColumn,
+            this.codProductoTarjaDataGridViewTextBoxColumn,
+            this.pesoMuestraDataGridViewTextBoxColumn,
+            this.cascaraDataGridViewTextBoxColumn,
+            this.septumDataGridViewTextBoxColumn,
+            this.matExtrañaDataGridViewTextBoxColumn,
+            this.halvesDataGridViewTextBoxColumn,
+            this.largePiecesDataGridViewTextBoxColumn,
+            this.mediumPiecesDataGridViewTextBoxColumn,
+            this.smallPiecesDataGridViewTextBoxColumn,
+            this.extraLightDataGridViewTextBoxColumn,
+            this.lightDataGridViewTextBoxColumn,
+            this.lightAmbarDataGridViewTextBoxColumn,
+            this.ambarDataGridViewTextBoxColumn,
+            this.amarilloDataGridViewTextBoxColumn,
+            this.defectosDataGridViewTextBoxColumn,
+            this.resecaLeveDataGridViewTextBoxColumn,
+            this.resecaGraveDataGridViewTextBoxColumn,
+            this.dañoInsectoDataGridViewTextBoxColumn,
+            this.manchaAguaDataGridViewTextBoxColumn,
+            this.hongoInactivoDataGridViewTextBoxColumn,
+            this.hongoActivoDataGridViewTextBoxColumn,
+            this.observacionDataGridViewTextBoxColumn,
+            this.observacionMatExtrañaDataGridViewTextBoxColumn,
+            this.observacionCascaraDataGridViewTextBoxColumn,
+            this.observacionSeptumDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.spTraer_Analisis_Calidad_PreseleccionBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(37, 110);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(793, 349);
             this.dataGridView1.TabIndex = 127;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // analisisDataGridViewTextBoxColumn
+            // 
+            this.analisisDataGridViewTextBoxColumn.DataPropertyName = "Analisis";
+            this.analisisDataGridViewTextBoxColumn.HeaderText = "Analisis";
+            this.analisisDataGridViewTextBoxColumn.Name = "analisisDataGridViewTextBoxColumn";
+            this.analisisDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fechaDataGridViewTextBoxColumn
+            // 
+            this.fechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha";
+            this.fechaDataGridViewTextBoxColumn.HeaderText = "Fecha";
+            this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
+            // 
+            // tarjaDataGridViewTextBoxColumn
+            // 
+            this.tarjaDataGridViewTextBoxColumn.DataPropertyName = "Tarja";
+            this.tarjaDataGridViewTextBoxColumn.HeaderText = "Tarja";
+            this.tarjaDataGridViewTextBoxColumn.Name = "tarjaDataGridViewTextBoxColumn";
+            // 
+            // binsDataGridViewTextBoxColumn
+            // 
+            this.binsDataGridViewTextBoxColumn.DataPropertyName = "Bins";
+            this.binsDataGridViewTextBoxColumn.HeaderText = "Bins";
+            this.binsDataGridViewTextBoxColumn.Name = "binsDataGridViewTextBoxColumn";
+            // 
+            // turnoDataGridViewTextBoxColumn
+            // 
+            this.turnoDataGridViewTextBoxColumn.DataPropertyName = "Turno";
+            this.turnoDataGridViewTextBoxColumn.HeaderText = "Turno";
+            this.turnoDataGridViewTextBoxColumn.Name = "turnoDataGridViewTextBoxColumn";
+            this.turnoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // procesoDataGridViewTextBoxColumn
+            // 
+            this.procesoDataGridViewTextBoxColumn.DataPropertyName = "Proceso";
+            this.procesoDataGridViewTextBoxColumn.HeaderText = "Proceso";
+            this.procesoDataGridViewTextBoxColumn.Name = "procesoDataGridViewTextBoxColumn";
+            // 
+            // productoAnalisisDataGridViewTextBoxColumn
+            // 
+            this.productoAnalisisDataGridViewTextBoxColumn.DataPropertyName = "Producto_Analisis";
+            this.productoAnalisisDataGridViewTextBoxColumn.HeaderText = "Producto_Analisis";
+            this.productoAnalisisDataGridViewTextBoxColumn.Name = "productoAnalisisDataGridViewTextBoxColumn";
+            this.productoAnalisisDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // productoTarjaDataGridViewTextBoxColumn
+            // 
+            this.productoTarjaDataGridViewTextBoxColumn.DataPropertyName = "Producto_Tarja";
+            this.productoTarjaDataGridViewTextBoxColumn.HeaderText = "Producto_Tarja";
+            this.productoTarjaDataGridViewTextBoxColumn.Name = "productoTarjaDataGridViewTextBoxColumn";
+            this.productoTarjaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // estadoDataGridViewTextBoxColumn
+            // 
+            this.estadoDataGridViewTextBoxColumn.DataPropertyName = "Estado";
+            this.estadoDataGridViewTextBoxColumn.HeaderText = "Estado";
+            this.estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";
+            this.estadoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // codProductoUserDataGridViewTextBoxColumn
+            // 
+            this.codProductoUserDataGridViewTextBoxColumn.DataPropertyName = "Cod_Producto_User";
+            this.codProductoUserDataGridViewTextBoxColumn.HeaderText = "Cod_Producto_User";
+            this.codProductoUserDataGridViewTextBoxColumn.Name = "codProductoUserDataGridViewTextBoxColumn";
+            this.codProductoUserDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // codProductoTarjaDataGridViewTextBoxColumn
+            // 
+            this.codProductoTarjaDataGridViewTextBoxColumn.DataPropertyName = "Cod_Producto_Tarja";
+            this.codProductoTarjaDataGridViewTextBoxColumn.HeaderText = "Cod_Producto_Tarja";
+            this.codProductoTarjaDataGridViewTextBoxColumn.Name = "codProductoTarjaDataGridViewTextBoxColumn";
+            this.codProductoTarjaDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // pesoMuestraDataGridViewTextBoxColumn
+            // 
+            this.pesoMuestraDataGridViewTextBoxColumn.DataPropertyName = "Peso_Muestra";
+            this.pesoMuestraDataGridViewTextBoxColumn.HeaderText = "Peso_Muestra";
+            this.pesoMuestraDataGridViewTextBoxColumn.Name = "pesoMuestraDataGridViewTextBoxColumn";
+            this.pesoMuestraDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // cascaraDataGridViewTextBoxColumn
+            // 
+            this.cascaraDataGridViewTextBoxColumn.DataPropertyName = "Cascara";
+            this.cascaraDataGridViewTextBoxColumn.HeaderText = "Cascara";
+            this.cascaraDataGridViewTextBoxColumn.Name = "cascaraDataGridViewTextBoxColumn";
+            this.cascaraDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // septumDataGridViewTextBoxColumn
+            // 
+            this.septumDataGridViewTextBoxColumn.DataPropertyName = "Septum";
+            this.septumDataGridViewTextBoxColumn.HeaderText = "Septum";
+            this.septumDataGridViewTextBoxColumn.Name = "septumDataGridViewTextBoxColumn";
+            this.septumDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // matExtrañaDataGridViewTextBoxColumn
+            // 
+            this.matExtrañaDataGridViewTextBoxColumn.DataPropertyName = "Mat_Extraña";
+            this.matExtrañaDataGridViewTextBoxColumn.HeaderText = "Mat_Extraña";
+            this.matExtrañaDataGridViewTextBoxColumn.Name = "matExtrañaDataGridViewTextBoxColumn";
+            this.matExtrañaDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // halvesDataGridViewTextBoxColumn
+            // 
+            this.halvesDataGridViewTextBoxColumn.DataPropertyName = "Halves";
+            this.halvesDataGridViewTextBoxColumn.HeaderText = "Halves";
+            this.halvesDataGridViewTextBoxColumn.Name = "halvesDataGridViewTextBoxColumn";
+            this.halvesDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // largePiecesDataGridViewTextBoxColumn
+            // 
+            this.largePiecesDataGridViewTextBoxColumn.DataPropertyName = "Large_Pieces";
+            this.largePiecesDataGridViewTextBoxColumn.HeaderText = "Large_Pieces";
+            this.largePiecesDataGridViewTextBoxColumn.Name = "largePiecesDataGridViewTextBoxColumn";
+            this.largePiecesDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // mediumPiecesDataGridViewTextBoxColumn
+            // 
+            this.mediumPiecesDataGridViewTextBoxColumn.DataPropertyName = "Medium_Pieces";
+            this.mediumPiecesDataGridViewTextBoxColumn.HeaderText = "Medium_Pieces";
+            this.mediumPiecesDataGridViewTextBoxColumn.Name = "mediumPiecesDataGridViewTextBoxColumn";
+            this.mediumPiecesDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // smallPiecesDataGridViewTextBoxColumn
+            // 
+            this.smallPiecesDataGridViewTextBoxColumn.DataPropertyName = "Small_Pieces";
+            this.smallPiecesDataGridViewTextBoxColumn.HeaderText = "Small_Pieces";
+            this.smallPiecesDataGridViewTextBoxColumn.Name = "smallPiecesDataGridViewTextBoxColumn";
+            this.smallPiecesDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // extraLightDataGridViewTextBoxColumn
+            // 
+            this.extraLightDataGridViewTextBoxColumn.DataPropertyName = "Extra_Light";
+            this.extraLightDataGridViewTextBoxColumn.HeaderText = "Extra_Light";
+            this.extraLightDataGridViewTextBoxColumn.Name = "extraLightDataGridViewTextBoxColumn";
+            this.extraLightDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // lightDataGridViewTextBoxColumn
+            // 
+            this.lightDataGridViewTextBoxColumn.DataPropertyName = "Light";
+            this.lightDataGridViewTextBoxColumn.HeaderText = "Light";
+            this.lightDataGridViewTextBoxColumn.Name = "lightDataGridViewTextBoxColumn";
+            this.lightDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // lightAmbarDataGridViewTextBoxColumn
+            // 
+            this.lightAmbarDataGridViewTextBoxColumn.DataPropertyName = "Light_Ambar";
+            this.lightAmbarDataGridViewTextBoxColumn.HeaderText = "Light_Ambar";
+            this.lightAmbarDataGridViewTextBoxColumn.Name = "lightAmbarDataGridViewTextBoxColumn";
+            this.lightAmbarDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // ambarDataGridViewTextBoxColumn
+            // 
+            this.ambarDataGridViewTextBoxColumn.DataPropertyName = "Ambar";
+            this.ambarDataGridViewTextBoxColumn.HeaderText = "Ambar";
+            this.ambarDataGridViewTextBoxColumn.Name = "ambarDataGridViewTextBoxColumn";
+            this.ambarDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // amarilloDataGridViewTextBoxColumn
+            // 
+            this.amarilloDataGridViewTextBoxColumn.DataPropertyName = "Amarillo";
+            this.amarilloDataGridViewTextBoxColumn.HeaderText = "Amarillo";
+            this.amarilloDataGridViewTextBoxColumn.Name = "amarilloDataGridViewTextBoxColumn";
+            this.amarilloDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // defectosDataGridViewTextBoxColumn
+            // 
+            this.defectosDataGridViewTextBoxColumn.DataPropertyName = "Defectos";
+            this.defectosDataGridViewTextBoxColumn.HeaderText = "Defectos";
+            this.defectosDataGridViewTextBoxColumn.Name = "defectosDataGridViewTextBoxColumn";
+            this.defectosDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // resecaLeveDataGridViewTextBoxColumn
+            // 
+            this.resecaLeveDataGridViewTextBoxColumn.DataPropertyName = "Reseca_Leve";
+            this.resecaLeveDataGridViewTextBoxColumn.HeaderText = "Reseca_Leve";
+            this.resecaLeveDataGridViewTextBoxColumn.Name = "resecaLeveDataGridViewTextBoxColumn";
+            this.resecaLeveDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // resecaGraveDataGridViewTextBoxColumn
+            // 
+            this.resecaGraveDataGridViewTextBoxColumn.DataPropertyName = "Reseca_Grave";
+            this.resecaGraveDataGridViewTextBoxColumn.HeaderText = "Reseca_Grave";
+            this.resecaGraveDataGridViewTextBoxColumn.Name = "resecaGraveDataGridViewTextBoxColumn";
+            this.resecaGraveDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // dañoInsectoDataGridViewTextBoxColumn
+            // 
+            this.dañoInsectoDataGridViewTextBoxColumn.DataPropertyName = "Daño_Insecto";
+            this.dañoInsectoDataGridViewTextBoxColumn.HeaderText = "Daño_Insecto";
+            this.dañoInsectoDataGridViewTextBoxColumn.Name = "dañoInsectoDataGridViewTextBoxColumn";
+            this.dañoInsectoDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // manchaAguaDataGridViewTextBoxColumn
+            // 
+            this.manchaAguaDataGridViewTextBoxColumn.DataPropertyName = "Mancha_Agua";
+            this.manchaAguaDataGridViewTextBoxColumn.HeaderText = "Mancha_Agua";
+            this.manchaAguaDataGridViewTextBoxColumn.Name = "manchaAguaDataGridViewTextBoxColumn";
+            this.manchaAguaDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // hongoInactivoDataGridViewTextBoxColumn
+            // 
+            this.hongoInactivoDataGridViewTextBoxColumn.DataPropertyName = "Hongo_Inactivo";
+            this.hongoInactivoDataGridViewTextBoxColumn.HeaderText = "Hongo_Inactivo";
+            this.hongoInactivoDataGridViewTextBoxColumn.Name = "hongoInactivoDataGridViewTextBoxColumn";
+            this.hongoInactivoDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // hongoActivoDataGridViewTextBoxColumn
+            // 
+            this.hongoActivoDataGridViewTextBoxColumn.DataPropertyName = "Hongo_Activo";
+            this.hongoActivoDataGridViewTextBoxColumn.HeaderText = "Hongo_Activo";
+            this.hongoActivoDataGridViewTextBoxColumn.Name = "hongoActivoDataGridViewTextBoxColumn";
+            this.hongoActivoDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // observacionDataGridViewTextBoxColumn
+            // 
+            this.observacionDataGridViewTextBoxColumn.DataPropertyName = "Observacion";
+            this.observacionDataGridViewTextBoxColumn.HeaderText = "Observacion";
+            this.observacionDataGridViewTextBoxColumn.Name = "observacionDataGridViewTextBoxColumn";
+            this.observacionDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // observacionMatExtrañaDataGridViewTextBoxColumn
+            // 
+            this.observacionMatExtrañaDataGridViewTextBoxColumn.DataPropertyName = "Observacion_Mat_Extraña";
+            this.observacionMatExtrañaDataGridViewTextBoxColumn.HeaderText = "Observacion_Mat_Extraña";
+            this.observacionMatExtrañaDataGridViewTextBoxColumn.Name = "observacionMatExtrañaDataGridViewTextBoxColumn";
+            this.observacionMatExtrañaDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // observacionCascaraDataGridViewTextBoxColumn
+            // 
+            this.observacionCascaraDataGridViewTextBoxColumn.DataPropertyName = "Observacion_Cascara";
+            this.observacionCascaraDataGridViewTextBoxColumn.HeaderText = "Observacion_Cascara";
+            this.observacionCascaraDataGridViewTextBoxColumn.Name = "observacionCascaraDataGridViewTextBoxColumn";
+            this.observacionCascaraDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // observacionSeptumDataGridViewTextBoxColumn
+            // 
+            this.observacionSeptumDataGridViewTextBoxColumn.DataPropertyName = "Observacion_Septum";
+            this.observacionSeptumDataGridViewTextBoxColumn.HeaderText = "Observacion_Septum";
+            this.observacionSeptumDataGridViewTextBoxColumn.Name = "observacionSeptumDataGridViewTextBoxColumn";
+            this.observacionSeptumDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // spTraer_Analisis_Calidad_PreseleccionBindingSource
+            // 
+            this.spTraer_Analisis_Calidad_PreseleccionBindingSource.DataMember = "spTraer_Analisis_Calidad_Preseleccion";
+            this.spTraer_Analisis_Calidad_PreseleccionBindingSource.DataSource = this.prueba_2017_PMM;
+            // 
+            // prueba_2017_PMM
+            // 
+            this.prueba_2017_PMM.DataSetName = "Prueba_2017_PMM";
+            this.prueba_2017_PMM.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button1
             // 
@@ -134,6 +466,7 @@
             this.button2.Size = new System.Drawing.Size(89, 26);
             this.button2.TabIndex = 134;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Btn_Buscar
             // 
@@ -144,6 +477,7 @@
             this.Btn_Buscar.Size = new System.Drawing.Size(89, 28);
             this.Btn_Buscar.TabIndex = 131;
             this.Btn_Buscar.UseVisualStyleBackColor = true;
+            this.Btn_Buscar.Click += new System.EventHandler(this.Btn_Buscar_Click);
             // 
             // pictureBox1
             // 
@@ -154,6 +488,16 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 128;
             this.pictureBox1.TabStop = false;
+            // 
+            // spTraer_Analisis_Calidad_PreseleccionTableAdapter
+            // 
+            this.spTraer_Analisis_Calidad_PreseleccionTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.UpdateOrder = Anakena_2017.Prueba_2017_PMMTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // FormAnalisisCalidadPreseleccion
             // 
@@ -176,6 +520,8 @@
             this.Text = "FormAnalisisCalidadPreseleccion";
             this.Load += new System.EventHandler(this.FormAnalisisCalidadPreseleccion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spTraer_Analisis_Calidad_PreseleccionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prueba_2017_PMM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -194,5 +540,44 @@
         private System.Windows.Forms.ComboBox Cmb_Busqueda;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private Prueba_2017_PMM prueba_2017_PMM;
+        private System.Windows.Forms.BindingSource spTraer_Analisis_Calidad_PreseleccionBindingSource;
+        private Prueba_2017_PMMTableAdapters.spTraer_Analisis_Calidad_PreseleccionTableAdapter spTraer_Analisis_Calidad_PreseleccionTableAdapter;
+        private Prueba_2017_PMMTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.DataGridViewTextBoxColumn analisisDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tarjaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn binsDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn turnoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn procesoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productoAnalisisDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productoTarjaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codProductoUserDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codProductoTarjaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pesoMuestraDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cascaraDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn septumDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn matExtrañaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn halvesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn largePiecesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mediumPiecesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn smallPiecesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn extraLightDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lightDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn lightAmbarDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ambarDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn amarilloDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn defectosDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn resecaLeveDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn resecaGraveDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dañoInsectoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn manchaAguaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hongoInactivoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hongoActivoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn observacionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn observacionMatExtrañaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn observacionCascaraDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn observacionSeptumDataGridViewTextBoxColumn;
     }
 }

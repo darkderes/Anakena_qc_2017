@@ -51,6 +51,10 @@ namespace Anakena_2017
         private ToolStripMenuItem procesoDeSecadoToolStripMenuItem;
         private ToolStripMenuItem totalesToolStripMenuItem;
         private ToolStripMenuItem filtradoToolStripMenuItem;
+        private ToolStripMenuItem salaProcesosToolStripMenuItem;
+        private ToolStripMenuItem cToolStripMenuItem;
+        private ToolStripMenuItem rToolStripMenuItem;
+        private ToolStripMenuItem generalToolStripMenuItem;
         string nivel = "";
         public FormPrincipal(string pass)
         {
@@ -66,6 +70,9 @@ namespace Anakena_2017
                 saveAsToolStripMenuItem.Enabled = false;
                 extracciónDeDatosToolStripMenuItem.Enabled = false;
                 informeProductorToolStripMenuItem.Enabled = false;
+                totalesToolStripMenuItem.Enabled = false;
+                filtradoToolStripMenuItem.Enabled = false;
+                salaProcesosToolStripMenuItem.Enabled = false;
 
 
             }
@@ -85,6 +92,9 @@ namespace Anakena_2017
                 newToolStripMenuItem.Enabled = false;
                 partidoMecanicoToolStripMenuItem.Enabled = false;
                 preselecciónToolStripMenuItem.Enabled = false;
+                totalesToolStripMenuItem.Enabled = false;
+                filtradoToolStripMenuItem.Enabled = false;
+                salaProcesosToolStripMenuItem.Enabled = false;
 
             }
 		}
@@ -148,6 +158,9 @@ namespace Anakena_2017
             this.admistrarPatidoMecanicoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrarPreseleccionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.imagenesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.procesoDeSecadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.totalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.filtradoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controlCalidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recepcionConPelonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -161,9 +174,10 @@ namespace Anakena_2017
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.procesoDeSecadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.totalesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.filtradoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salaProcesosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.rToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.generalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -177,7 +191,8 @@ namespace Anakena_2017
             this.fileToolStripMenuItem,
             this.procesoNSCToolStripMenuItem,
             this.imagenesToolStripMenuItem,
-            this.procesoDeSecadoToolStripMenuItem});
+            this.procesoDeSecadoToolStripMenuItem,
+            this.salaProcesosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -307,6 +322,31 @@ namespace Anakena_2017
             this.imagenesToolStripMenuItem.Text = "Imagenes";
             this.imagenesToolStripMenuItem.Click += new System.EventHandler(this.imagenesToolStripMenuItem_Click);
             // 
+            // procesoDeSecadoToolStripMenuItem
+            // 
+            this.procesoDeSecadoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.totalesToolStripMenuItem,
+            this.filtradoToolStripMenuItem});
+            this.procesoDeSecadoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.procesoDeSecadoToolStripMenuItem.Name = "procesoDeSecadoToolStripMenuItem";
+            this.procesoDeSecadoToolStripMenuItem.Size = new System.Drawing.Size(117, 20);
+            this.procesoDeSecadoToolStripMenuItem.Text = "Proceso de secado";
+            this.procesoDeSecadoToolStripMenuItem.Click += new System.EventHandler(this.procesoDeSecadoToolStripMenuItem_Click);
+            // 
+            // totalesToolStripMenuItem
+            // 
+            this.totalesToolStripMenuItem.Name = "totalesToolStripMenuItem";
+            this.totalesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.totalesToolStripMenuItem.Text = "Totales";
+            this.totalesToolStripMenuItem.Click += new System.EventHandler(this.totalesToolStripMenuItem_Click);
+            // 
+            // filtradoToolStripMenuItem
+            // 
+            this.filtradoToolStripMenuItem.Name = "filtradoToolStripMenuItem";
+            this.filtradoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.filtradoToolStripMenuItem.Text = "Filtrado";
+            this.filtradoToolStripMenuItem.Click += new System.EventHandler(this.filtradoToolStripMenuItem_Click);
+            // 
             // controlCalidadToolStripMenuItem
             // 
             this.controlCalidadToolStripMenuItem.Name = "controlCalidadToolStripMenuItem";
@@ -412,30 +452,39 @@ namespace Anakena_2017
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // procesoDeSecadoToolStripMenuItem
+            // salaProcesosToolStripMenuItem
             // 
-            this.procesoDeSecadoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.totalesToolStripMenuItem,
-            this.filtradoToolStripMenuItem});
-            this.procesoDeSecadoToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.procesoDeSecadoToolStripMenuItem.Name = "procesoDeSecadoToolStripMenuItem";
-            this.procesoDeSecadoToolStripMenuItem.Size = new System.Drawing.Size(117, 20);
-            this.procesoDeSecadoToolStripMenuItem.Text = "Proceso de secado";
-            this.procesoDeSecadoToolStripMenuItem.Click += new System.EventHandler(this.procesoDeSecadoToolStripMenuItem_Click);
+            this.salaProcesosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cToolStripMenuItem});
+            this.salaProcesosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.salaProcesosToolStripMenuItem.Name = "salaProcesosToolStripMenuItem";
+            this.salaProcesosToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+            this.salaProcesosToolStripMenuItem.Text = "Sala Procesos";
+            this.salaProcesosToolStripMenuItem.Click += new System.EventHandler(this.salaProcesosToolStripMenuItem_Click);
             // 
-            // totalesToolStripMenuItem
+            // cToolStripMenuItem
             // 
-            this.totalesToolStripMenuItem.Name = "totalesToolStripMenuItem";
-            this.totalesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.totalesToolStripMenuItem.Text = "Totales";
-            this.totalesToolStripMenuItem.Click += new System.EventHandler(this.totalesToolStripMenuItem_Click);
+            this.cToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.rToolStripMenuItem,
+            this.generalToolStripMenuItem});
+            this.cToolStripMenuItem.Name = "cToolStripMenuItem";
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cToolStripMenuItem.Text = "Control SP";
+            this.cToolStripMenuItem.Click += new System.EventHandler(this.cToolStripMenuItem_Click);
             // 
-            // filtradoToolStripMenuItem
+            // rToolStripMenuItem
             // 
-            this.filtradoToolStripMenuItem.Name = "filtradoToolStripMenuItem";
-            this.filtradoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.filtradoToolStripMenuItem.Text = "Filtrado";
-            this.filtradoToolStripMenuItem.Click += new System.EventHandler(this.filtradoToolStripMenuItem_Click);
+            this.rToolStripMenuItem.Name = "rToolStripMenuItem";
+            this.rToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.rToolStripMenuItem.Text = "Resumen Diario";
+            this.rToolStripMenuItem.Click += new System.EventHandler(this.rToolStripMenuItem_Click);
+            // 
+            // generalToolStripMenuItem
+            // 
+            this.generalToolStripMenuItem.Name = "generalToolStripMenuItem";
+            this.generalToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.generalToolStripMenuItem.Text = "General";
+            this.generalToolStripMenuItem.Click += new System.EventHandler(this.generalToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
@@ -597,6 +646,28 @@ namespace Anakena_2017
         {
             Recepcion_Nueces.FormFiltro_Secado s = new Recepcion_Nueces.FormFiltro_Secado();
             s.ShowDialog();
+        }
+
+        private void cToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void generalToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Recepcion_Nueces.FormTurno_Seleccion_Embalaje s = new Recepcion_Nueces.FormTurno_Seleccion_Embalaje();
+            s.ShowDialog();
+        }
+
+        private void rToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Recepcion_Nueces.FormResumen_Embalaje s = new Recepcion_Nueces.FormResumen_Embalaje();
+            s.ShowDialog();
+        }
+
+        private void salaProcesosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -148,6 +148,8 @@ namespace Anakena_2017 {
         
         private traer_tarifazDataTable tabletraer_tarifaz;
         
+        private spTraer_Analisis_Calidad_PreseleccionDataTable tablespTraer_Analisis_Calidad_Preseleccion;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -361,6 +363,9 @@ namespace Anakena_2017 {
                 }
                 if ((ds.Tables["traer_tarifaz"] != null)) {
                     base.Tables.Add(new traer_tarifazDataTable(ds.Tables["traer_tarifaz"]));
+                }
+                if ((ds.Tables["spTraer_Analisis_Calidad_Preseleccion"] != null)) {
+                    base.Tables.Add(new spTraer_Analisis_Calidad_PreseleccionDataTable(ds.Tables["spTraer_Analisis_Calidad_Preseleccion"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -1002,6 +1007,16 @@ namespace Anakena_2017 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public spTraer_Analisis_Calidad_PreseleccionDataTable spTraer_Analisis_Calidad_Preseleccion {
+            get {
+                return this.tablespTraer_Analisis_Calidad_Preseleccion;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -1252,6 +1267,9 @@ namespace Anakena_2017 {
                 }
                 if ((ds.Tables["traer_tarifaz"] != null)) {
                     base.Tables.Add(new traer_tarifazDataTable(ds.Tables["traer_tarifaz"]));
+                }
+                if ((ds.Tables["spTraer_Analisis_Calidad_Preseleccion"] != null)) {
+                    base.Tables.Add(new spTraer_Analisis_Calidad_PreseleccionDataTable(ds.Tables["spTraer_Analisis_Calidad_Preseleccion"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -1658,6 +1676,12 @@ namespace Anakena_2017 {
                     this.tabletraer_tarifaz.InitVars();
                 }
             }
+            this.tablespTraer_Analisis_Calidad_Preseleccion = ((spTraer_Analisis_Calidad_PreseleccionDataTable)(base.Tables["spTraer_Analisis_Calidad_Preseleccion"]));
+            if ((initTable == true)) {
+                if ((this.tablespTraer_Analisis_Calidad_Preseleccion != null)) {
+                    this.tablespTraer_Analisis_Calidad_Preseleccion.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1792,6 +1816,8 @@ namespace Anakena_2017 {
             base.Tables.Add(this.tablespTraerVariedad);
             this.tabletraer_tarifaz = new traer_tarifazDataTable();
             base.Tables.Add(this.tabletraer_tarifaz);
+            this.tablespTraer_Analisis_Calidad_Preseleccion = new spTraer_Analisis_Calidad_PreseleccionDataTable();
+            base.Tables.Add(this.tablespTraer_Analisis_Calidad_Preseleccion);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2168,6 +2194,12 @@ namespace Anakena_2017 {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializespTraer_Analisis_Calidad_Preseleccion() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -2406,6 +2438,9 @@ namespace Anakena_2017 {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void traer_tarifazRowChangeEventHandler(object sender, traer_tarifazRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void spTraer_Analisis_Calidad_PreseleccionRowChangeEventHandler(object sender, spTraer_Analisis_Calidad_PreseleccionRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -25324,6 +25359,816 @@ namespace Anakena_2017 {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class spTraer_Analisis_Calidad_PreseleccionDataTable : global::System.Data.TypedTableBase<spTraer_Analisis_Calidad_PreseleccionRow> {
+            
+            private global::System.Data.DataColumn columnAnalisis;
+            
+            private global::System.Data.DataColumn columnFecha;
+            
+            private global::System.Data.DataColumn columnTarja;
+            
+            private global::System.Data.DataColumn columnBins;
+            
+            private global::System.Data.DataColumn columnTurno;
+            
+            private global::System.Data.DataColumn columnProceso;
+            
+            private global::System.Data.DataColumn columnProducto_Analisis;
+            
+            private global::System.Data.DataColumn columnProducto_Tarja;
+            
+            private global::System.Data.DataColumn columnEstado;
+            
+            private global::System.Data.DataColumn columnCod_Producto_User;
+            
+            private global::System.Data.DataColumn columnCod_Producto_Tarja;
+            
+            private global::System.Data.DataColumn columnPeso_Muestra;
+            
+            private global::System.Data.DataColumn columnCascara;
+            
+            private global::System.Data.DataColumn columnSeptum;
+            
+            private global::System.Data.DataColumn columnMat_Extraña;
+            
+            private global::System.Data.DataColumn columnHalves;
+            
+            private global::System.Data.DataColumn columnLarge_Pieces;
+            
+            private global::System.Data.DataColumn columnMedium_Pieces;
+            
+            private global::System.Data.DataColumn columnSmall_Pieces;
+            
+            private global::System.Data.DataColumn columnExtra_Light;
+            
+            private global::System.Data.DataColumn columnLight;
+            
+            private global::System.Data.DataColumn columnLight_Ambar;
+            
+            private global::System.Data.DataColumn columnAmbar;
+            
+            private global::System.Data.DataColumn columnAmarillo;
+            
+            private global::System.Data.DataColumn columnDefectos;
+            
+            private global::System.Data.DataColumn columnReseca_Leve;
+            
+            private global::System.Data.DataColumn columnReseca_Grave;
+            
+            private global::System.Data.DataColumn columnDaño_Insecto;
+            
+            private global::System.Data.DataColumn columnMancha_Agua;
+            
+            private global::System.Data.DataColumn columnHongo_Inactivo;
+            
+            private global::System.Data.DataColumn columnHongo_Activo;
+            
+            private global::System.Data.DataColumn columnObservacion;
+            
+            private global::System.Data.DataColumn columnObservacion_Mat_Extraña;
+            
+            private global::System.Data.DataColumn columnObservacion_Cascara;
+            
+            private global::System.Data.DataColumn columnObservacion_Septum;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Analisis_Calidad_PreseleccionDataTable() {
+                this.TableName = "spTraer_Analisis_Calidad_Preseleccion";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spTraer_Analisis_Calidad_PreseleccionDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected spTraer_Analisis_Calidad_PreseleccionDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AnalisisColumn {
+                get {
+                    return this.columnAnalisis;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FechaColumn {
+                get {
+                    return this.columnFecha;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TarjaColumn {
+                get {
+                    return this.columnTarja;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn BinsColumn {
+                get {
+                    return this.columnBins;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TurnoColumn {
+                get {
+                    return this.columnTurno;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ProcesoColumn {
+                get {
+                    return this.columnProceso;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Producto_AnalisisColumn {
+                get {
+                    return this.columnProducto_Analisis;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Producto_TarjaColumn {
+                get {
+                    return this.columnProducto_Tarja;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn EstadoColumn {
+                get {
+                    return this.columnEstado;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Cod_Producto_UserColumn {
+                get {
+                    return this.columnCod_Producto_User;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Cod_Producto_TarjaColumn {
+                get {
+                    return this.columnCod_Producto_Tarja;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Peso_MuestraColumn {
+                get {
+                    return this.columnPeso_Muestra;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CascaraColumn {
+                get {
+                    return this.columnCascara;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SeptumColumn {
+                get {
+                    return this.columnSeptum;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Mat_ExtrañaColumn {
+                get {
+                    return this.columnMat_Extraña;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn HalvesColumn {
+                get {
+                    return this.columnHalves;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Large_PiecesColumn {
+                get {
+                    return this.columnLarge_Pieces;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Medium_PiecesColumn {
+                get {
+                    return this.columnMedium_Pieces;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Small_PiecesColumn {
+                get {
+                    return this.columnSmall_Pieces;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Extra_LightColumn {
+                get {
+                    return this.columnExtra_Light;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LightColumn {
+                get {
+                    return this.columnLight;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Light_AmbarColumn {
+                get {
+                    return this.columnLight_Ambar;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AmbarColumn {
+                get {
+                    return this.columnAmbar;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AmarilloColumn {
+                get {
+                    return this.columnAmarillo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DefectosColumn {
+                get {
+                    return this.columnDefectos;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Reseca_LeveColumn {
+                get {
+                    return this.columnReseca_Leve;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Reseca_GraveColumn {
+                get {
+                    return this.columnReseca_Grave;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Daño_InsectoColumn {
+                get {
+                    return this.columnDaño_Insecto;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Mancha_AguaColumn {
+                get {
+                    return this.columnMancha_Agua;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Hongo_InactivoColumn {
+                get {
+                    return this.columnHongo_Inactivo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Hongo_ActivoColumn {
+                get {
+                    return this.columnHongo_Activo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ObservacionColumn {
+                get {
+                    return this.columnObservacion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Observacion_Mat_ExtrañaColumn {
+                get {
+                    return this.columnObservacion_Mat_Extraña;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Observacion_CascaraColumn {
+                get {
+                    return this.columnObservacion_Cascara;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Observacion_SeptumColumn {
+                get {
+                    return this.columnObservacion_Septum;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Analisis_Calidad_PreseleccionRow this[int index] {
+                get {
+                    return ((spTraer_Analisis_Calidad_PreseleccionRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Analisis_Calidad_PreseleccionRowChangeEventHandler spTraer_Analisis_Calidad_PreseleccionRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Analisis_Calidad_PreseleccionRowChangeEventHandler spTraer_Analisis_Calidad_PreseleccionRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Analisis_Calidad_PreseleccionRowChangeEventHandler spTraer_Analisis_Calidad_PreseleccionRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event spTraer_Analisis_Calidad_PreseleccionRowChangeEventHandler spTraer_Analisis_Calidad_PreseleccionRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddspTraer_Analisis_Calidad_PreseleccionRow(spTraer_Analisis_Calidad_PreseleccionRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Analisis_Calidad_PreseleccionRow AddspTraer_Analisis_Calidad_PreseleccionRow(
+                        System.DateTime Fecha, 
+                        string Tarja, 
+                        int Bins, 
+                        string Turno, 
+                        decimal Proceso, 
+                        string Producto_Analisis, 
+                        string Producto_Tarja, 
+                        string Estado, 
+                        string Cod_Producto_User, 
+                        string Cod_Producto_Tarja, 
+                        double Peso_Muestra, 
+                        double Cascara, 
+                        double Septum, 
+                        double Mat_Extraña, 
+                        double Halves, 
+                        double Large_Pieces, 
+                        double Medium_Pieces, 
+                        double Small_Pieces, 
+                        double Extra_Light, 
+                        double Light, 
+                        double Light_Ambar, 
+                        double Ambar, 
+                        double Amarillo, 
+                        double Defectos, 
+                        double Reseca_Leve, 
+                        double Reseca_Grave, 
+                        double Daño_Insecto, 
+                        double Mancha_Agua, 
+                        double Hongo_Inactivo, 
+                        double Hongo_Activo, 
+                        string Observacion, 
+                        string Observacion_Mat_Extraña, 
+                        string Observacion_Cascara, 
+                        string Observacion_Septum) {
+                spTraer_Analisis_Calidad_PreseleccionRow rowspTraer_Analisis_Calidad_PreseleccionRow = ((spTraer_Analisis_Calidad_PreseleccionRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        null,
+                        Fecha,
+                        Tarja,
+                        Bins,
+                        Turno,
+                        Proceso,
+                        Producto_Analisis,
+                        Producto_Tarja,
+                        Estado,
+                        Cod_Producto_User,
+                        Cod_Producto_Tarja,
+                        Peso_Muestra,
+                        Cascara,
+                        Septum,
+                        Mat_Extraña,
+                        Halves,
+                        Large_Pieces,
+                        Medium_Pieces,
+                        Small_Pieces,
+                        Extra_Light,
+                        Light,
+                        Light_Ambar,
+                        Ambar,
+                        Amarillo,
+                        Defectos,
+                        Reseca_Leve,
+                        Reseca_Grave,
+                        Daño_Insecto,
+                        Mancha_Agua,
+                        Hongo_Inactivo,
+                        Hongo_Activo,
+                        Observacion,
+                        Observacion_Mat_Extraña,
+                        Observacion_Cascara,
+                        Observacion_Septum};
+                rowspTraer_Analisis_Calidad_PreseleccionRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowspTraer_Analisis_Calidad_PreseleccionRow);
+                return rowspTraer_Analisis_Calidad_PreseleccionRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Analisis_Calidad_PreseleccionRow FindByAnalisis(short Analisis) {
+                return ((spTraer_Analisis_Calidad_PreseleccionRow)(this.Rows.Find(new object[] {
+                            Analisis})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                spTraer_Analisis_Calidad_PreseleccionDataTable cln = ((spTraer_Analisis_Calidad_PreseleccionDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new spTraer_Analisis_Calidad_PreseleccionDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnAnalisis = base.Columns["Analisis"];
+                this.columnFecha = base.Columns["Fecha"];
+                this.columnTarja = base.Columns["Tarja"];
+                this.columnBins = base.Columns["Bins"];
+                this.columnTurno = base.Columns["Turno"];
+                this.columnProceso = base.Columns["Proceso"];
+                this.columnProducto_Analisis = base.Columns["Producto_Analisis"];
+                this.columnProducto_Tarja = base.Columns["Producto_Tarja"];
+                this.columnEstado = base.Columns["Estado"];
+                this.columnCod_Producto_User = base.Columns["Cod_Producto_User"];
+                this.columnCod_Producto_Tarja = base.Columns["Cod_Producto_Tarja"];
+                this.columnPeso_Muestra = base.Columns["Peso_Muestra"];
+                this.columnCascara = base.Columns["Cascara"];
+                this.columnSeptum = base.Columns["Septum"];
+                this.columnMat_Extraña = base.Columns["Mat_Extraña"];
+                this.columnHalves = base.Columns["Halves"];
+                this.columnLarge_Pieces = base.Columns["Large_Pieces"];
+                this.columnMedium_Pieces = base.Columns["Medium_Pieces"];
+                this.columnSmall_Pieces = base.Columns["Small_Pieces"];
+                this.columnExtra_Light = base.Columns["Extra_Light"];
+                this.columnLight = base.Columns["Light"];
+                this.columnLight_Ambar = base.Columns["Light_Ambar"];
+                this.columnAmbar = base.Columns["Ambar"];
+                this.columnAmarillo = base.Columns["Amarillo"];
+                this.columnDefectos = base.Columns["Defectos"];
+                this.columnReseca_Leve = base.Columns["Reseca_Leve"];
+                this.columnReseca_Grave = base.Columns["Reseca_Grave"];
+                this.columnDaño_Insecto = base.Columns["Daño_Insecto"];
+                this.columnMancha_Agua = base.Columns["Mancha_Agua"];
+                this.columnHongo_Inactivo = base.Columns["Hongo_Inactivo"];
+                this.columnHongo_Activo = base.Columns["Hongo_Activo"];
+                this.columnObservacion = base.Columns["Observacion"];
+                this.columnObservacion_Mat_Extraña = base.Columns["Observacion_Mat_Extraña"];
+                this.columnObservacion_Cascara = base.Columns["Observacion_Cascara"];
+                this.columnObservacion_Septum = base.Columns["Observacion_Septum"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnAnalisis = new global::System.Data.DataColumn("Analisis", typeof(short), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAnalisis);
+                this.columnFecha = new global::System.Data.DataColumn("Fecha", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFecha);
+                this.columnTarja = new global::System.Data.DataColumn("Tarja", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTarja);
+                this.columnBins = new global::System.Data.DataColumn("Bins", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBins);
+                this.columnTurno = new global::System.Data.DataColumn("Turno", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTurno);
+                this.columnProceso = new global::System.Data.DataColumn("Proceso", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProceso);
+                this.columnProducto_Analisis = new global::System.Data.DataColumn("Producto_Analisis", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProducto_Analisis);
+                this.columnProducto_Tarja = new global::System.Data.DataColumn("Producto_Tarja", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProducto_Tarja);
+                this.columnEstado = new global::System.Data.DataColumn("Estado", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEstado);
+                this.columnCod_Producto_User = new global::System.Data.DataColumn("Cod_Producto_User", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCod_Producto_User);
+                this.columnCod_Producto_Tarja = new global::System.Data.DataColumn("Cod_Producto_Tarja", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCod_Producto_Tarja);
+                this.columnPeso_Muestra = new global::System.Data.DataColumn("Peso_Muestra", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPeso_Muestra);
+                this.columnCascara = new global::System.Data.DataColumn("Cascara", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCascara);
+                this.columnSeptum = new global::System.Data.DataColumn("Septum", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSeptum);
+                this.columnMat_Extraña = new global::System.Data.DataColumn("Mat_Extraña", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMat_Extraña);
+                this.columnHalves = new global::System.Data.DataColumn("Halves", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHalves);
+                this.columnLarge_Pieces = new global::System.Data.DataColumn("Large_Pieces", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLarge_Pieces);
+                this.columnMedium_Pieces = new global::System.Data.DataColumn("Medium_Pieces", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMedium_Pieces);
+                this.columnSmall_Pieces = new global::System.Data.DataColumn("Small_Pieces", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSmall_Pieces);
+                this.columnExtra_Light = new global::System.Data.DataColumn("Extra_Light", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnExtra_Light);
+                this.columnLight = new global::System.Data.DataColumn("Light", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLight);
+                this.columnLight_Ambar = new global::System.Data.DataColumn("Light_Ambar", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLight_Ambar);
+                this.columnAmbar = new global::System.Data.DataColumn("Ambar", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAmbar);
+                this.columnAmarillo = new global::System.Data.DataColumn("Amarillo", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAmarillo);
+                this.columnDefectos = new global::System.Data.DataColumn("Defectos", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDefectos);
+                this.columnReseca_Leve = new global::System.Data.DataColumn("Reseca_Leve", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnReseca_Leve);
+                this.columnReseca_Grave = new global::System.Data.DataColumn("Reseca_Grave", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnReseca_Grave);
+                this.columnDaño_Insecto = new global::System.Data.DataColumn("Daño_Insecto", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDaño_Insecto);
+                this.columnMancha_Agua = new global::System.Data.DataColumn("Mancha_Agua", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMancha_Agua);
+                this.columnHongo_Inactivo = new global::System.Data.DataColumn("Hongo_Inactivo", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHongo_Inactivo);
+                this.columnHongo_Activo = new global::System.Data.DataColumn("Hongo_Activo", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHongo_Activo);
+                this.columnObservacion = new global::System.Data.DataColumn("Observacion", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnObservacion);
+                this.columnObservacion_Mat_Extraña = new global::System.Data.DataColumn("Observacion_Mat_Extraña", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnObservacion_Mat_Extraña);
+                this.columnObservacion_Cascara = new global::System.Data.DataColumn("Observacion_Cascara", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnObservacion_Cascara);
+                this.columnObservacion_Septum = new global::System.Data.DataColumn("Observacion_Septum", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnObservacion_Septum);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnAnalisis}, true));
+                this.columnAnalisis.AutoIncrement = true;
+                this.columnAnalisis.AllowDBNull = false;
+                this.columnAnalisis.ReadOnly = true;
+                this.columnAnalisis.Unique = true;
+                this.columnFecha.AllowDBNull = false;
+                this.columnTarja.MaxLength = 10;
+                this.columnBins.AllowDBNull = false;
+                this.columnTurno.ReadOnly = true;
+                this.columnTurno.MaxLength = 5;
+                this.columnProducto_Analisis.ReadOnly = true;
+                this.columnProducto_Analisis.MaxLength = 50;
+                this.columnProducto_Tarja.ReadOnly = true;
+                this.columnProducto_Tarja.MaxLength = 50;
+                this.columnEstado.ReadOnly = true;
+                this.columnEstado.MaxLength = 10;
+                this.columnCod_Producto_User.AllowDBNull = false;
+                this.columnCod_Producto_User.MaxLength = 10;
+                this.columnCod_Producto_Tarja.AllowDBNull = false;
+                this.columnCod_Producto_Tarja.MaxLength = 10;
+                this.columnPeso_Muestra.AllowDBNull = false;
+                this.columnCascara.AllowDBNull = false;
+                this.columnSeptum.AllowDBNull = false;
+                this.columnMat_Extraña.AllowDBNull = false;
+                this.columnHalves.AllowDBNull = false;
+                this.columnLarge_Pieces.AllowDBNull = false;
+                this.columnMedium_Pieces.AllowDBNull = false;
+                this.columnSmall_Pieces.AllowDBNull = false;
+                this.columnExtra_Light.AllowDBNull = false;
+                this.columnLight.AllowDBNull = false;
+                this.columnLight_Ambar.AllowDBNull = false;
+                this.columnAmbar.AllowDBNull = false;
+                this.columnAmarillo.AllowDBNull = false;
+                this.columnDefectos.AllowDBNull = false;
+                this.columnReseca_Leve.AllowDBNull = false;
+                this.columnReseca_Grave.AllowDBNull = false;
+                this.columnDaño_Insecto.AllowDBNull = false;
+                this.columnMancha_Agua.AllowDBNull = false;
+                this.columnHongo_Inactivo.AllowDBNull = false;
+                this.columnHongo_Activo.AllowDBNull = false;
+                this.columnObservacion.AllowDBNull = false;
+                this.columnObservacion.MaxLength = 2147483647;
+                this.columnObservacion_Mat_Extraña.MaxLength = 2147483647;
+                this.columnObservacion_Cascara.MaxLength = 2147483647;
+                this.columnObservacion_Septum.MaxLength = 2147483647;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Analisis_Calidad_PreseleccionRow NewspTraer_Analisis_Calidad_PreseleccionRow() {
+                return ((spTraer_Analisis_Calidad_PreseleccionRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new spTraer_Analisis_Calidad_PreseleccionRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(spTraer_Analisis_Calidad_PreseleccionRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.spTraer_Analisis_Calidad_PreseleccionRowChanged != null)) {
+                    this.spTraer_Analisis_Calidad_PreseleccionRowChanged(this, new spTraer_Analisis_Calidad_PreseleccionRowChangeEvent(((spTraer_Analisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.spTraer_Analisis_Calidad_PreseleccionRowChanging != null)) {
+                    this.spTraer_Analisis_Calidad_PreseleccionRowChanging(this, new spTraer_Analisis_Calidad_PreseleccionRowChangeEvent(((spTraer_Analisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.spTraer_Analisis_Calidad_PreseleccionRowDeleted != null)) {
+                    this.spTraer_Analisis_Calidad_PreseleccionRowDeleted(this, new spTraer_Analisis_Calidad_PreseleccionRowChangeEvent(((spTraer_Analisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.spTraer_Analisis_Calidad_PreseleccionRowDeleting != null)) {
+                    this.spTraer_Analisis_Calidad_PreseleccionRowDeleting(this, new spTraer_Analisis_Calidad_PreseleccionRowChangeEvent(((spTraer_Analisis_Calidad_PreseleccionRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemovespTraer_Analisis_Calidad_PreseleccionRow(spTraer_Analisis_Calidad_PreseleccionRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                Prueba_2017_PMM ds = new Prueba_2017_PMM();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "spTraer_Analisis_Calidad_PreseleccionDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class spBusqueda_Variedad_DecisionRow : global::System.Data.DataRow {
@@ -38145,6 +38990,568 @@ namespace Anakena_2017 {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class spTraer_Analisis_Calidad_PreseleccionRow : global::System.Data.DataRow {
+            
+            private spTraer_Analisis_Calidad_PreseleccionDataTable tablespTraer_Analisis_Calidad_Preseleccion;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal spTraer_Analisis_Calidad_PreseleccionRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablespTraer_Analisis_Calidad_Preseleccion = ((spTraer_Analisis_Calidad_PreseleccionDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public short Analisis {
+                get {
+                    return ((short)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.AnalisisColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.AnalisisColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime Fecha {
+                get {
+                    return ((global::System.DateTime)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.FechaColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.FechaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Tarja {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.TarjaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Tarja\' de la tabla \'spTraer_Analisis_Calidad_Preseleccion" +
+                                "\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.TarjaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Bins {
+                get {
+                    return ((int)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.BinsColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.BinsColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Turno {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.TurnoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Turno\' de la tabla \'spTraer_Analisis_Calidad_Preseleccion" +
+                                "\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.TurnoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal Proceso {
+                get {
+                    try {
+                        return ((decimal)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.ProcesoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Proceso\' de la tabla \'spTraer_Analisis_Calidad_Preselecci" +
+                                "on\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.ProcesoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Producto_Analisis {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_AnalisisColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Producto_Analisis\' de la tabla \'spTraer_Analisis_Calidad_" +
+                                "Preseleccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_AnalisisColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Producto_Tarja {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_TarjaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Producto_Tarja\' de la tabla \'spTraer_Analisis_Calidad_Pre" +
+                                "seleccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_TarjaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Estado {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.EstadoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Estado\' de la tabla \'spTraer_Analisis_Calidad_Preseleccio" +
+                                "n\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.EstadoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Cod_Producto_User {
+                get {
+                    return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Cod_Producto_UserColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Cod_Producto_UserColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Cod_Producto_Tarja {
+                get {
+                    return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Cod_Producto_TarjaColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Cod_Producto_TarjaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Peso_Muestra {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Peso_MuestraColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Peso_MuestraColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Cascara {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.CascaraColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.CascaraColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Septum {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.SeptumColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.SeptumColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Mat_Extraña {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Mat_ExtrañaColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Mat_ExtrañaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Halves {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.HalvesColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.HalvesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Large_Pieces {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Large_PiecesColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Large_PiecesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Medium_Pieces {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Medium_PiecesColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Medium_PiecesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Small_Pieces {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Small_PiecesColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Small_PiecesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Extra_Light {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Extra_LightColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Extra_LightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Light {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.LightColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.LightColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Light_Ambar {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Light_AmbarColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Light_AmbarColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Ambar {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.AmbarColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.AmbarColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Amarillo {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.AmarilloColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.AmarilloColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Defectos {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.DefectosColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.DefectosColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Reseca_Leve {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Reseca_LeveColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Reseca_LeveColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Reseca_Grave {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Reseca_GraveColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Reseca_GraveColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Daño_Insecto {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Daño_InsectoColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Daño_InsectoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Mancha_Agua {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Mancha_AguaColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Mancha_AguaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Hongo_Inactivo {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Hongo_InactivoColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Hongo_InactivoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Hongo_Activo {
+                get {
+                    return ((double)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Hongo_ActivoColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Hongo_ActivoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Observacion {
+                get {
+                    return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.ObservacionColumn]));
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.ObservacionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Observacion_Mat_Extraña {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_Mat_ExtrañaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Observacion_Mat_Extraña\' de la tabla \'spTraer_Analisis_Ca" +
+                                "lidad_Preseleccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_Mat_ExtrañaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Observacion_Cascara {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_CascaraColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Observacion_Cascara\' de la tabla \'spTraer_Analisis_Calida" +
+                                "d_Preseleccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_CascaraColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Observacion_Septum {
+                get {
+                    try {
+                        return ((string)(this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_SeptumColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Observacion_Septum\' de la tabla \'spTraer_Analisis_Calidad" +
+                                "_Preseleccion\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_SeptumColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTarjaNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.TarjaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTarjaNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.TarjaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTurnoNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.TurnoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTurnoNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.TurnoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsProcesoNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.ProcesoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetProcesoNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.ProcesoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsProducto_AnalisisNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_AnalisisColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetProducto_AnalisisNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_AnalisisColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsProducto_TarjaNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_TarjaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetProducto_TarjaNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.Producto_TarjaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEstadoNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.EstadoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEstadoNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.EstadoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsObservacion_Mat_ExtrañaNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_Mat_ExtrañaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetObservacion_Mat_ExtrañaNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_Mat_ExtrañaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsObservacion_CascaraNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_CascaraColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetObservacion_CascaraNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_CascaraColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsObservacion_SeptumNull() {
+                return this.IsNull(this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_SeptumColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetObservacion_SeptumNull() {
+                this[this.tablespTraer_Analisis_Calidad_Preseleccion.Observacion_SeptumColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -40238,6 +41645,40 @@ namespace Anakena_2017 {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public traer_tarifazRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class spTraer_Analisis_Calidad_PreseleccionRowChangeEvent : global::System.EventArgs {
+            
+            private spTraer_Analisis_Calidad_PreseleccionRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Analisis_Calidad_PreseleccionRowChangeEvent(spTraer_Analisis_Calidad_PreseleccionRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public spTraer_Analisis_Calidad_PreseleccionRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -51861,6 +53302,208 @@ namespace Anakena_2017.Prueba_2017_PMMTableAdapters {
         public virtual Prueba_2017_PMM.traer_tarifazDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             Prueba_2017_PMM.traer_tarifazDataTable dataTable = new Prueba_2017_PMM.traer_tarifazDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class spTraer_Analisis_Calidad_PreseleccionTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public spTraer_Analisis_Calidad_PreseleccionTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "spTraer_Analisis_Calidad_Preseleccion";
+            tableMapping.ColumnMappings.Add("Analisis", "Analisis");
+            tableMapping.ColumnMappings.Add("Fecha", "Fecha");
+            tableMapping.ColumnMappings.Add("Tarja", "Tarja");
+            tableMapping.ColumnMappings.Add("Bins", "Bins");
+            tableMapping.ColumnMappings.Add("Turno", "Turno");
+            tableMapping.ColumnMappings.Add("Proceso", "Proceso");
+            tableMapping.ColumnMappings.Add("Producto_Analisis", "Producto_Analisis");
+            tableMapping.ColumnMappings.Add("Producto_Tarja", "Producto_Tarja");
+            tableMapping.ColumnMappings.Add("Estado", "Estado");
+            tableMapping.ColumnMappings.Add("Cod_Producto_User", "Cod_Producto_User");
+            tableMapping.ColumnMappings.Add("Cod_Producto_Tarja", "Cod_Producto_Tarja");
+            tableMapping.ColumnMappings.Add("Peso_Muestra", "Peso_Muestra");
+            tableMapping.ColumnMappings.Add("Cascara", "Cascara");
+            tableMapping.ColumnMappings.Add("Septum", "Septum");
+            tableMapping.ColumnMappings.Add("Mat_Extraña", "Mat_Extraña");
+            tableMapping.ColumnMappings.Add("Halves", "Halves");
+            tableMapping.ColumnMappings.Add("Large_Pieces", "Large_Pieces");
+            tableMapping.ColumnMappings.Add("Medium_Pieces", "Medium_Pieces");
+            tableMapping.ColumnMappings.Add("Small_Pieces", "Small_Pieces");
+            tableMapping.ColumnMappings.Add("Extra_Light", "Extra_Light");
+            tableMapping.ColumnMappings.Add("Light", "Light");
+            tableMapping.ColumnMappings.Add("Light_Ambar", "Light_Ambar");
+            tableMapping.ColumnMappings.Add("Ambar", "Ambar");
+            tableMapping.ColumnMappings.Add("Amarillo", "Amarillo");
+            tableMapping.ColumnMappings.Add("Defectos", "Defectos");
+            tableMapping.ColumnMappings.Add("Reseca_Leve", "Reseca_Leve");
+            tableMapping.ColumnMappings.Add("Reseca_Grave", "Reseca_Grave");
+            tableMapping.ColumnMappings.Add("Daño_Insecto", "Daño_Insecto");
+            tableMapping.ColumnMappings.Add("Mancha_Agua", "Mancha_Agua");
+            tableMapping.ColumnMappings.Add("Hongo_Inactivo", "Hongo_Inactivo");
+            tableMapping.ColumnMappings.Add("Hongo_Activo", "Hongo_Activo");
+            tableMapping.ColumnMappings.Add("Observacion", "Observacion");
+            tableMapping.ColumnMappings.Add("Observacion_Mat_Extraña", "Observacion_Mat_Extraña");
+            tableMapping.ColumnMappings.Add("Observacion_Cascara", "Observacion_Cascara");
+            tableMapping.ColumnMappings.Add("Observacion_Septum", "Observacion_Septum");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = global::Anakena_2017.Properties.Settings.Default.Prueba_2017ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.spTraer_Analisis_Calidad_Preseleccion";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(Prueba_2017_PMM.spTraer_Analisis_Calidad_PreseleccionDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual Prueba_2017_PMM.spTraer_Analisis_Calidad_PreseleccionDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            Prueba_2017_PMM.spTraer_Analisis_Calidad_PreseleccionDataTable dataTable = new Prueba_2017_PMM.spTraer_Analisis_Calidad_PreseleccionDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
