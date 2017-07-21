@@ -24,34 +24,8 @@ namespace Anakena_2017
         {
             // TODO: esta línea de código carga datos en la tabla 'prueba_2017_PMM.spTraer_Analisis_Calidad_Preseleccion' Puede moverla o quitarla según sea necesario.
             this.spTraer_Analisis_Calidad_PreseleccionTableAdapter.Fill(this.prueba_2017_PMM.spTraer_Analisis_Calidad_Preseleccion);
-            //  Traer_Analisis_Calidad_Preseleccion();
             Cmb_Busqueda.SelectedIndex = 0;
-        //    dataGridView1.Columns["Cod_Producto_User"].Visible = false;
-        //    dataGridView1.Columns["Cod_Producto_Tarja"].Visible = false;
-        //    dataGridView1.Columns["Peso_Muestra"].Visible = false;
-        //    dataGridView1.Columns["Cascara"].Visible = false;
-        //    dataGridView1.Columns["Mat_Extraña"].Visible = false;
-        //    dataGridView1.Columns["Halves"].Visible = false;
-        //    dataGridView1.Columns["Large_Pieces"].Visible = false;
-        //    dataGridView1.Columns["Medium_Pieces"].Visible = false;
-        //    dataGridView1.Columns["Small_Pieces"].Visible = false;
-        //    dataGridView1.Columns["Extra_Light"].Visible = false;
-        //    dataGridView1.Columns["Light"].Visible = false;
-        //    dataGridView1.Columns["Light_Ambar"].Visible = false;
-        //    dataGridView1.Columns["Ambar"].Visible = false;
-        //    dataGridView1.Columns["Amarillo"].Visible = false;
-        //    dataGridView1.Columns["Defectos"].Visible = false;
-        //    dataGridView1.Columns["Observacion"].Visible = false;
-        //    dataGridView1.Columns["Observacion_Mat_Extraña"].Visible = false;
-        //    dataGridView1.Columns["Septum"].Visible = false;
-        //    dataGridView1.Columns["Reseca_Leve"].Visible = false;
-        //    dataGridView1.Columns["Reseca_Grave"].Visible = false;
-        //    dataGridView1.Columns["Daño_Insecto"].Visible = false;
-        //    dataGridView1.Columns["Mancha_Agua"].Visible = false;
-        //    dataGridView1.Columns["Hongo_Inactivo"].Visible = false;
-        //    dataGridView1.Columns["Hongo_Activo"].Visible = false;
-        //    dataGridView1.Columns["Observacion_Cascara"].Visible = false;
-        //    dataGridView1.Columns["Observacion_Septum"].Visible = false;
+
        }
         public void Traer_Analisis_Calidad_Preseleccion()
         {
@@ -183,8 +157,8 @@ namespace Anakena_2017
                 Cmb_Filtro.Visible = false;
                 DT_Fecha.Visible = false;
             }
-            else
-          if (Cmb_Busqueda.Text == "Bins")
+           else
+           if (Cmb_Busqueda.Text == "Bins")
             {
                 txt_filtro.Text = "";
                 txt_filtro.Visible = true;
@@ -199,7 +173,7 @@ namespace Anakena_2017
                 Cmb_Filtro.Visible = false;
                 DT_Fecha.Visible = false;
             }
-            else
+          else
           if (Cmb_Busqueda.Text == "Estado")
             {
                 try
@@ -216,7 +190,7 @@ namespace Anakena_2017
                 catch { }
 
             }
-            else
+          else
           if (Cmb_Busqueda.Text == "Turno")
             {
                 try
@@ -233,7 +207,7 @@ namespace Anakena_2017
                 catch { }
 
             }
-            else
+          else
           if ((Cmb_Busqueda.Text == "Producto Analisis") || (Cmb_Busqueda.Text == "Producto Tarja"))
             {
                 try
@@ -249,7 +223,7 @@ namespace Anakena_2017
                 catch { }
 
             }
-            else
+          else
           if (Cmb_Busqueda.Text == "Fecha")
             {
                 txt_filtro.Text = "";
@@ -264,8 +238,7 @@ namespace Anakena_2017
             if (Cmb_Busqueda.Text == "Analisis")
             {
 
-                string str2 = string.Concat("Analisis = ", txt_filtro.Text);
-            
+                string str2 = string.Concat("Analisis = ", txt_filtro.Text);            
                 prueba_2017_PMM.spTraer_Analisis_Calidad_Preseleccion.DefaultView.RowFilter = str2;
                
             }
@@ -321,11 +294,8 @@ namespace Anakena_2017
         }
 
         private void button2_Click(object sender, EventArgs e)
-        {
-    
+        {  
             this.spTraer_Analisis_Calidad_PreseleccionTableAdapter.Fill(this.prueba_2017_PMM.spTraer_Analisis_Calidad_Preseleccion);
-       
-
         }
     }
 }

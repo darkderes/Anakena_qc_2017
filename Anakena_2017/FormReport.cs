@@ -26,10 +26,6 @@ namespace Anakena_2017
         {
             // TODO: esta línea de código carga datos en la tabla 'Prueba_2017DataSet.spTraerReporte' Puede moverla o quitarla según sea necesario.
             this.spTraerReporteTableAdapter.Fill(this.Prueba_2017DataSet.spTraerReporte,report_analisis,condicion_analisis);
-            // TODO: esta línea de código carga datos en la tabla 'Prueba_2017DataSet1.spTraerReporte' Puede moverla o quitarla según sea necesario.
-
-
-          
             this.reportViewer2.RefreshReport();
         }
     }

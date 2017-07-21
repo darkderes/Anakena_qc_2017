@@ -1060,5 +1060,14 @@ namespace Anakena_2017
         {
 
         }
+
+        private void DT_Calidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                Txt_proceso.Focus();
+            }
+        }
+            
     }
 }

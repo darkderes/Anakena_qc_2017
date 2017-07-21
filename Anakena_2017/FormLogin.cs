@@ -45,11 +45,7 @@ namespace Anakena_2017
 
 		private void FormLogin_Load(object sender, EventArgs e)
 		{
-			//if ((int)Process.GetProcessesByName(Process.GetCurrentProcess().ProcessName).Length > 1)
-			//{
-			//	MessageBox.Show("La aplicación ya se está ejecutando...");
-			//	base.Close();
-			//}
+
 		}
 
 		private void InitializeComponent()
@@ -63,20 +59,25 @@ namespace Anakena_2017
             // 
             // Txt_Rut
             // 
-            this.Txt_Rut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Txt_Rut.Location = new System.Drawing.Point(12, 210);
+            this.Txt_Rut.BackColor = System.Drawing.SystemColors.Window;
+            this.Txt_Rut.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Rut.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.Txt_Rut.Location = new System.Drawing.Point(25, 172);
             this.Txt_Rut.Name = "Txt_Rut";
-            this.Txt_Rut.Size = new System.Drawing.Size(168, 26);
+            this.Txt_Rut.Size = new System.Drawing.Size(148, 22);
             this.Txt_Rut.TabIndex = 2;
             this.Txt_Rut.Tag = "";
             this.Txt_Rut.Text = "RUT";
+            this.Txt_Rut.TextChanged += new System.EventHandler(this.Txt_Rut_TextChanged);
             // 
             // TxtPass
             // 
-            this.TxtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPass.Location = new System.Drawing.Point(12, 254);
+            this.TxtPass.BackColor = System.Drawing.SystemColors.Window;
+            this.TxtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPass.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.TxtPass.Location = new System.Drawing.Point(25, 200);
             this.TxtPass.Name = "TxtPass";
-            this.TxtPass.Size = new System.Drawing.Size(168, 26);
+            this.TxtPass.Size = new System.Drawing.Size(148, 22);
             this.TxtPass.TabIndex = 3;
             this.TxtPass.Text = "PASSWORD";
             this.TxtPass.TextChanged += new System.EventHandler(this.TxtPass_TextChanged);
@@ -85,21 +86,22 @@ namespace Anakena_2017
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.SaddleBrown;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(35, 304);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(52, 245);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(98, 34);
+            this.button1.Size = new System.Drawing.Size(93, 32);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Login";
+            this.button1.Text = "Ingresar";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Pc_New
             // 
             this.Pc_New.Image = global::Anakena_2017.Properties.Resources.compartir_anakena;
-            this.Pc_New.Location = new System.Drawing.Point(-5, -3);
+            this.Pc_New.Location = new System.Drawing.Point(12, 0);
             this.Pc_New.Name = "Pc_New";
-            this.Pc_New.Size = new System.Drawing.Size(200, 195);
+            this.Pc_New.Size = new System.Drawing.Size(182, 177);
             this.Pc_New.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Pc_New.TabIndex = 5;
             this.Pc_New.TabStop = false;
@@ -109,12 +111,13 @@ namespace Anakena_2017
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(195, 366);
-            this.Controls.Add(this.Pc_New);
+            this.ClientSize = new System.Drawing.Size(201, 305);
+            this.ControlBox = false;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TxtPass);
             this.Controls.Add(this.Txt_Rut);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Controls.Add(this.Pc_New);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormLogin";
@@ -191,5 +194,15 @@ namespace Anakena_2017
         {
 
         }
-	}
+
+        private void Txt_Rut_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
 }

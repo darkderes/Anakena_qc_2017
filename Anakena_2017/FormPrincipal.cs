@@ -578,9 +578,9 @@ namespace Anakena_2017
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            switch (MessageBox.Show("Esta seguro que desea salir", "Anakena", MessageBoxButtons.OKCancel, MessageBoxIcon.Question))
+            switch (MessageBox.Show("Esta seguro que desea salir", "Anakena", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
             {
-                case System.Windows.Forms.DialogResult.OK:
+                case System.Windows.Forms.DialogResult.Yes:
                     {
                         base.Close();
                         break;

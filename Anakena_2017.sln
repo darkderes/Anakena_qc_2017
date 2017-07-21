@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Anakena_2017", "Anakena_201
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recepcion_Nueces", "..\Recepcion_Nueces\Recepcion_Nueces\Recepcion_Nueces.csproj", "{6EA7D3FC-5A2D-478D-8CDA-A5DEDD4420C5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "splash", "splash\splash.csproj", "{ACC0E51A-C854-4355-B582-7F2ED8C3BAFF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{6EA7D3FC-5A2D-478D-8CDA-A5DEDD4420C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EA7D3FC-5A2D-478D-8CDA-A5DEDD4420C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EA7D3FC-5A2D-478D-8CDA-A5DEDD4420C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACC0E51A-C854-4355-B582-7F2ED8C3BAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACC0E51A-C854-4355-B582-7F2ED8C3BAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACC0E51A-C854-4355-B582-7F2ED8C3BAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACC0E51A-C854-4355-B582-7F2ED8C3BAFF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

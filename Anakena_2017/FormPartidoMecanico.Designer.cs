@@ -801,6 +801,7 @@
             this.DT_Calidad.Name = "DT_Calidad";
             this.DT_Calidad.Size = new System.Drawing.Size(115, 21);
             this.DT_Calidad.TabIndex = 5;
+            this.DT_Calidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DT_Calidad_KeyPress);
             // 
             // label2
             // 
