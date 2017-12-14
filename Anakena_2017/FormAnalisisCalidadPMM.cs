@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-
+using System.Threading;
 
 namespace Anakena_2017
 {
@@ -24,11 +24,29 @@ namespace Anakena_2017
 
         private void FormAnalisisCalidadPMM_Load(object sender, EventArgs e)
         {
-            this.spTraer_Analisis_Calidad_PPMTableAdapter.Fill(this.prueba_2017Preseleccion.spTraer_Analisis_Calidad_PPM);
-            Cmb_Busqueda.SelectedIndex = 0;
-       
-        }
+            panel1.Visible = true;
+            pictureBox1.Visible = false;
+            groupBox1.Visible = false;
+            dataGridView1.Visible = false;
+            Btn_Agregar.Visible = false;
+            button1.Visible  = false;
+            Control.CheckForIllegalCrossThreadCalls = false;
+ 
+            Thread hilo = new Thread(new ThreadStart(this.cargarDatos));
+            hilo.Start();
 
+        }
+        public void cargarDatos()
+        {
+               this.spTraer_Analisis_Calidad_PPMTableAdapter.Fill(this.prueba_2017Preseleccion.spTraer_Analisis_Calidad_PPM);
+            Cmb_Busqueda.SelectedIndex = 0;
+            panel1.Visible = false;
+            pictureBox1.Visible = true;
+            groupBox1.Visible = true;
+            dataGridView1.Visible = true;
+            Btn_Agregar.Visible = true;
+            button1.Visible = true;
+        }
 
         private void Btn_Buscar_Click(object sender, EventArgs e)
         {
@@ -269,5 +287,7 @@ namespace Anakena_2017
         {
             this.Close();
         }
+
+
     }
 }

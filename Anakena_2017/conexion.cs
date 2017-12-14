@@ -29,10 +29,6 @@ namespace Anakena_2017
 			this.Con.Close();
 		}
 
-		public void Conexion()
-		{
-		}
-
 		public SqlConnection getConexion()
 		{
 			return this.Con;

@@ -33,7 +33,6 @@
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.Btn_Print = new System.Windows.Forms.Button();
             this.Btn_Guardar = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.button8 = new System.Windows.Forms.Button();
             this.Btn_Delete = new System.Windows.Forms.Button();
@@ -145,6 +144,8 @@
             this.Txt_Observaciones = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label39 = new System.Windows.Forms.Label();
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -154,16 +155,16 @@
             this.tabPage4.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.Btn_Print);
             this.groupBox9.Controls.Add(this.Btn_Guardar);
-            this.groupBox9.Controls.Add(this.button3);
-            this.groupBox9.Location = new System.Drawing.Point(933, 181);
+            this.groupBox9.Location = new System.Drawing.Point(933, 148);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(224, 235);
+            this.groupBox9.Size = new System.Drawing.Size(109, 108);
             this.groupBox9.TabIndex = 129;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Opciones";
@@ -173,9 +174,9 @@
             // 
             this.Btn_Print.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Print.BackgroundImage")));
             this.Btn_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Print.Location = new System.Drawing.Point(45, 98);
+            this.Btn_Print.Location = new System.Drawing.Point(7, 60);
             this.Btn_Print.Name = "Btn_Print";
-            this.Btn_Print.Size = new System.Drawing.Size(137, 36);
+            this.Btn_Print.Size = new System.Drawing.Size(93, 26);
             this.Btn_Print.TabIndex = 26;
             this.Btn_Print.UseVisualStyleBackColor = true;
             this.Btn_Print.Click += new System.EventHandler(this.Btn_Print_Click);
@@ -185,33 +186,21 @@
             this.Btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Guardar.BackgroundImage")));
             this.Btn_Guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn_Guardar.Enabled = false;
-            this.Btn_Guardar.Location = new System.Drawing.Point(46, 37);
+            this.Btn_Guardar.Location = new System.Drawing.Point(7, 24);
             this.Btn_Guardar.Name = "Btn_Guardar";
-            this.Btn_Guardar.Size = new System.Drawing.Size(136, 36);
+            this.Btn_Guardar.Size = new System.Drawing.Size(93, 26);
             this.Btn_Guardar.TabIndex = 23;
             this.Btn_Guardar.UseVisualStyleBackColor = true;
             this.Btn_Guardar.Click += new System.EventHandler(this.Btn_Guardar_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(45, 165);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 35);
-            this.button3.TabIndex = 122;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.button8);
             this.groupBox10.Controls.Add(this.Btn_Delete);
             this.groupBox10.Controls.Add(this.Btn_Modificar);
-            this.groupBox10.Controls.Add(this.Btn_Salir);
-            this.groupBox10.Location = new System.Drawing.Point(933, 181);
+            this.groupBox10.Location = new System.Drawing.Point(933, 183);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(224, 265);
+            this.groupBox10.Size = new System.Drawing.Size(112, 124);
             this.groupBox10.TabIndex = 130;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Opciones";
@@ -220,9 +209,9 @@
             // 
             this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Location = new System.Drawing.Point(48, 86);
+            this.button8.Location = new System.Drawing.Point(9, 51);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(136, 36);
+            this.button8.Size = new System.Drawing.Size(93, 26);
             this.button8.TabIndex = 27;
             this.button8.UseVisualStyleBackColor = true;
             // 
@@ -230,9 +219,9 @@
             // 
             this.Btn_Delete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Delete.BackgroundImage")));
             this.Btn_Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Delete.Location = new System.Drawing.Point(46, 132);
+            this.Btn_Delete.Location = new System.Drawing.Point(9, 83);
             this.Btn_Delete.Name = "Btn_Delete";
-            this.Btn_Delete.Size = new System.Drawing.Size(136, 36);
+            this.Btn_Delete.Size = new System.Drawing.Size(93, 26);
             this.Btn_Delete.TabIndex = 26;
             this.Btn_Delete.UseVisualStyleBackColor = true;
             this.Btn_Delete.Click += new System.EventHandler(this.Btn_Delete_Click);
@@ -241,9 +230,9 @@
             // 
             this.Btn_Modificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Modificar.BackgroundImage")));
             this.Btn_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Modificar.Location = new System.Drawing.Point(46, 37);
+            this.Btn_Modificar.Location = new System.Drawing.Point(9, 19);
             this.Btn_Modificar.Name = "Btn_Modificar";
-            this.Btn_Modificar.Size = new System.Drawing.Size(136, 36);
+            this.Btn_Modificar.Size = new System.Drawing.Size(93, 26);
             this.Btn_Modificar.TabIndex = 23;
             this.Btn_Modificar.UseVisualStyleBackColor = true;
             this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
@@ -252,9 +241,9 @@
             // 
             this.Btn_Salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Salir.BackgroundImage")));
             this.Btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Salir.Location = new System.Drawing.Point(47, 183);
+            this.Btn_Salir.Location = new System.Drawing.Point(952, 390);
             this.Btn_Salir.Name = "Btn_Salir";
-            this.Btn_Salir.Size = new System.Drawing.Size(137, 35);
+            this.Btn_Salir.Size = new System.Drawing.Size(81, 26);
             this.Btn_Salir.TabIndex = 25;
             this.Btn_Salir.UseVisualStyleBackColor = true;
             this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
@@ -262,20 +251,22 @@
             // label51
             // 
             this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(45, 116);
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.Color.Maroon;
+            this.label51.Location = new System.Drawing.Point(33, 103);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(134, 25);
+            this.label51.Size = new System.Drawing.Size(100, 20);
             this.label51.TabIndex = 128;
             this.label51.Text = "Nº Analisis:";
             // 
             // Lbl_Analisis
             // 
             this.Lbl_Analisis.AutoSize = true;
-            this.Lbl_Analisis.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Analisis.Location = new System.Drawing.Point(185, 116);
+            this.Lbl_Analisis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lbl_Analisis.ForeColor = System.Drawing.Color.Maroon;
+            this.Lbl_Analisis.Location = new System.Drawing.Point(139, 103);
             this.Lbl_Analisis.Name = "Lbl_Analisis";
-            this.Lbl_Analisis.Size = new System.Drawing.Size(64, 25);
+            this.Lbl_Analisis.Size = new System.Drawing.Size(49, 20);
             this.Lbl_Analisis.TabIndex = 127;
             this.Lbl_Analisis.Text = "1000";
             // 
@@ -285,7 +276,7 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Location = new System.Drawing.Point(525, 159);
+            this.tabControl1.Location = new System.Drawing.Point(525, 126);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(402, 261);
@@ -1183,7 +1174,7 @@
             this.groupBox1.Controls.Add(this.Txt_Tarja);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.Txt_proceso);
-            this.groupBox1.Location = new System.Drawing.Point(29, 159);
+            this.groupBox1.Location = new System.Drawing.Point(29, 126);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(484, 261);
             this.groupBox1.TabIndex = 123;
@@ -1376,9 +1367,9 @@
             // 
             // Txt_Observaciones
             // 
-            this.Txt_Observaciones.Location = new System.Drawing.Point(204, 426);
+            this.Txt_Observaciones.Location = new System.Drawing.Point(29, 396);
             this.Txt_Observaciones.Name = "Txt_Observaciones";
-            this.Txt_Observaciones.Size = new System.Drawing.Size(653, 20);
+            this.Txt_Observaciones.Size = new System.Drawing.Size(894, 20);
             this.Txt_Observaciones.TabIndex = 124;
             this.Txt_Observaciones.Text = "Observaciones";
             // 
@@ -1390,20 +1381,43 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(529, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(29, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(175, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 125;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(511, 48);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(59, 55);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 132;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(325, 9);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(367, 25);
+            this.label39.TabIndex = 131;
+            this.label39.Text = " Analisis de calidad pre-seleccion";
+            // 
             // FormPreseleccion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1190, 507);
+            this.ClientSize = new System.Drawing.Size(1049, 435);
             this.Controls.Add(this.groupBox10);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label39);
+            this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.label51);
             this.Controls.Add(this.Lbl_Analisis);
@@ -1413,7 +1427,7 @@
             this.Controls.Add(this.Txt_Observaciones);
             this.Name = "FormPreseleccion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormPreseleccion";
+            this.Text = "Calidad Preseleccion";
             this.Load += new System.EventHandler(this.FormPreseleccion_Load);
             this.groupBox9.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
@@ -1429,6 +1443,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1440,7 +1455,6 @@
         public System.Windows.Forms.Button Btn_Print;
         public System.Windows.Forms.Button Btn_Guardar;
         public System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Button button3;
         public System.Windows.Forms.Label Lbl_Analisis;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
@@ -1551,5 +1565,7 @@
         public System.Windows.Forms.Button Btn_Delete;
         public System.Windows.Forms.Button Btn_Modificar;
         private System.Windows.Forms.Button Btn_Salir;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        public System.Windows.Forms.Label label39;
     }
 }

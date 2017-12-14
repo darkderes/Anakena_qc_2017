@@ -218,8 +218,6 @@ namespace Anakena_2017
 		private Panel panel3;
 
 		private PictureBox pictureBox1;
-
-        private BindingSource analisis_ExternoBindingSource;
         public ComboBox CmbVariedad;
         private Label label45;
         private Label LblPelonSuelto_max;
@@ -559,7 +557,6 @@ namespace Anakena_2017
             this.label22.Size = new System.Drawing.Size(81, 18);
             this.label22.TabIndex = 13;
             this.label22.Text = "Extra Light:";
-            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // label23
             // 
@@ -1518,9 +1515,9 @@ namespace Anakena_2017
             this.btn_modificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_modificar.BackgroundImage")));
             this.btn_modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_modificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_modificar.Location = new System.Drawing.Point(265, 689);
+            this.btn_modificar.Location = new System.Drawing.Point(309, 694);
             this.btn_modificar.Name = "btn_modificar";
-            this.btn_modificar.Size = new System.Drawing.Size(162, 34);
+            this.btn_modificar.Size = new System.Drawing.Size(91, 29);
             this.btn_modificar.TabIndex = 107;
             this.btn_modificar.UseVisualStyleBackColor = true;
             this.btn_modificar.Click += new System.EventHandler(this.button1_Click);
@@ -2088,13 +2085,7 @@ namespace Anakena_2017
 			}
 		}
 
-        private void analisis_ExternoBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.analisis_ExternoBindingSource.EndEdit();
-
-
-        }
+ 
 
         private void CmbVariedad_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -2105,9 +2096,5 @@ namespace Anakena_2017
             }
         }
 
-        private void label22_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

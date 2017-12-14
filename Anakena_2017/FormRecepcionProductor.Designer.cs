@@ -100,10 +100,9 @@
             // groupBox9
             // 
             this.groupBox9.Controls.Add(this.Btn_Print);
-            this.groupBox9.Controls.Add(this.button3);
-            this.groupBox9.Location = new System.Drawing.Point(986, 402);
+            this.groupBox9.Location = new System.Drawing.Point(944, 412);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(224, 149);
+            this.groupBox9.Size = new System.Drawing.Size(153, 73);
             this.groupBox9.TabIndex = 39;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Opciones";
@@ -112,9 +111,9 @@
             // 
             this.Btn_Print.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Print.BackgroundImage")));
             this.Btn_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Print.Location = new System.Drawing.Point(41, 29);
+            this.Btn_Print.Location = new System.Drawing.Point(38, 26);
             this.Btn_Print.Name = "Btn_Print";
-            this.Btn_Print.Size = new System.Drawing.Size(137, 36);
+            this.Btn_Print.Size = new System.Drawing.Size(88, 32);
             this.Btn_Print.TabIndex = 26;
             this.Btn_Print.UseVisualStyleBackColor = true;
             this.Btn_Print.Click += new System.EventHandler(this.Btn_Print_Click);
@@ -123,9 +122,9 @@
             // 
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(41, 82);
+            this.button3.Location = new System.Drawing.Point(1182, 570);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 35);
+            this.button3.Size = new System.Drawing.Size(82, 27);
             this.button3.TabIndex = 25;
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -163,7 +162,7 @@
             this.lbl_condiciones.BackColor = System.Drawing.Color.White;
             this.lbl_condiciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_condiciones.ForeColor = System.Drawing.Color.Green;
-            this.lbl_condiciones.Location = new System.Drawing.Point(112, 78);
+            this.lbl_condiciones.Location = new System.Drawing.Point(84, 72);
             this.lbl_condiciones.Name = "lbl_condiciones";
             this.lbl_condiciones.Size = new System.Drawing.Size(0, 42);
             this.lbl_condiciones.TabIndex = 1;
@@ -700,6 +699,7 @@
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ClientSize = new System.Drawing.Size(1276, 627);
             this.Controls.Add(this.Lbl_Analisis);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.label51);
             this.Controls.Add(this.pictureBox1);

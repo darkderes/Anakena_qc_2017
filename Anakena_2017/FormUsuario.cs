@@ -142,7 +142,7 @@ namespace Anakena_2017
 			}
 			else if (this.CmbTipo.SelectedIndex == 0)
 			{
-				MessageBox.Show("Debe completar nombre del usuario", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+				MessageBox.Show("Debe completar tipo de usuario", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Hand);
 				this.txt_Nombre.Focus();
 			}
 			else if (!(this.txt_Nombre.Text != ""))
@@ -276,82 +276,82 @@ namespace Anakena_2017
             // 
             // txt_Rut
             // 
-            this.txt_Rut.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Rut.Location = new System.Drawing.Point(158, 100);
+            this.txt_Rut.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Rut.Location = new System.Drawing.Point(119, 97);
             this.txt_Rut.Name = "txt_Rut";
-            this.txt_Rut.Size = new System.Drawing.Size(155, 26);
+            this.txt_Rut.Size = new System.Drawing.Size(155, 20);
             this.txt_Rut.TabIndex = 0;
             this.txt_Rut.Leave += new System.EventHandler(this.txt_Rut_Leave);
             // 
             // txtPassword
             // 
-            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(158, 182);
+            this.txtPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword.Location = new System.Drawing.Point(119, 157);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(228, 26);
+            this.txtPassword.Size = new System.Drawing.Size(228, 20);
             this.txtPassword.TabIndex = 2;
             // 
             // txt_Nombre
             // 
-            this.txt_Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Nombre.Location = new System.Drawing.Point(158, 140);
+            this.txt_Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Nombre.Location = new System.Drawing.Point(119, 125);
             this.txt_Nombre.Name = "txt_Nombre";
-            this.txt_Nombre.Size = new System.Drawing.Size(228, 26);
+            this.txt_Nombre.Size = new System.Drawing.Size(228, 20);
             this.txt_Nombre.TabIndex = 1;
             // 
             // CmbTipo
             // 
             this.CmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CmbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CmbTipo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmbTipo.FormattingEnabled = true;
             this.CmbTipo.Items.AddRange(new object[] {
             "--Seleccione Opcion--",
             "Administrador",
             "Normal",
             "Agricola"});
-            this.CmbTipo.Location = new System.Drawing.Point(158, 270);
+            this.CmbTipo.Location = new System.Drawing.Point(136, 224);
             this.CmbTipo.Name = "CmbTipo";
-            this.CmbTipo.Size = new System.Drawing.Size(203, 28);
+            this.CmbTipo.Size = new System.Drawing.Size(203, 21);
             this.CmbTipo.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(25, 100);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 16);
+            this.label1.Size = new System.Drawing.Size(31, 13);
             this.label1.TabIndex = 4;
             this.label1.Text = "Rut:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 145);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(25, 132);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 16);
+            this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Nombre:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 188);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(25, 164);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 16);
+            this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 6;
             this.label3.Text = "Password:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(21, 276);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(25, 227);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(99, 16);
+            this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 7;
             this.label4.Text = "Tipo usuario:";
             // 
@@ -359,9 +359,9 @@ namespace Anakena_2017
             // 
             this.btn_guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_guardar.BackgroundImage")));
             this.btn_guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_guardar.Location = new System.Drawing.Point(33, 329);
+            this.btn_guardar.Location = new System.Drawing.Point(83, 271);
             this.btn_guardar.Name = "btn_guardar";
-            this.btn_guardar.Size = new System.Drawing.Size(123, 35);
+            this.btn_guardar.Size = new System.Drawing.Size(87, 26);
             this.btn_guardar.TabIndex = 8;
             this.btn_guardar.UseVisualStyleBackColor = true;
             this.btn_guardar.Click += new System.EventHandler(this.btn_guardar_Click);
@@ -370,7 +370,7 @@ namespace Anakena_2017
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(319, 106);
+            this.label5.Location = new System.Drawing.Point(280, 98);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(137, 16);
             this.label5.TabIndex = 9;
@@ -379,7 +379,7 @@ namespace Anakena_2017
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(171, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(158, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(149, 61);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -389,29 +389,29 @@ namespace Anakena_2017
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(21, 227);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(25, 195);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(129, 16);
+            this.label6.Size = new System.Drawing.Size(105, 13);
             this.label6.TabIndex = 12;
             this.label6.Text = "Repita password:";
             // 
             // txt_repite
             // 
-            this.txt_repite.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_repite.Location = new System.Drawing.Point(158, 227);
+            this.txt_repite.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_repite.Location = new System.Drawing.Point(136, 192);
             this.txt_repite.Name = "txt_repite";
             this.txt_repite.PasswordChar = '*';
-            this.txt_repite.Size = new System.Drawing.Size(228, 26);
+            this.txt_repite.Size = new System.Drawing.Size(211, 20);
             this.txt_repite.TabIndex = 3;
             // 
             // btn_modificar
             // 
             this.btn_modificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_modificar.BackgroundImage")));
             this.btn_modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_modificar.Location = new System.Drawing.Point(167, 329);
+            this.btn_modificar.Location = new System.Drawing.Point(176, 271);
             this.btn_modificar.Name = "btn_modificar";
-            this.btn_modificar.Size = new System.Drawing.Size(122, 35);
+            this.btn_modificar.Size = new System.Drawing.Size(84, 26);
             this.btn_modificar.TabIndex = 13;
             this.btn_modificar.UseVisualStyleBackColor = true;
             this.btn_modificar.Click += new System.EventHandler(this.btn_modificar_Click);
@@ -420,9 +420,9 @@ namespace Anakena_2017
             // 
             this.Btn_Eliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Eliminar.BackgroundImage")));
             this.Btn_Eliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Eliminar.Location = new System.Drawing.Point(304, 329);
+            this.Btn_Eliminar.Location = new System.Drawing.Point(266, 271);
             this.Btn_Eliminar.Name = "Btn_Eliminar";
-            this.Btn_Eliminar.Size = new System.Drawing.Size(126, 35);
+            this.Btn_Eliminar.Size = new System.Drawing.Size(82, 26);
             this.Btn_Eliminar.TabIndex = 14;
             this.Btn_Eliminar.UseVisualStyleBackColor = true;
             this.Btn_Eliminar.Click += new System.EventHandler(this.Btn_Eliminar_Click);
@@ -432,7 +432,7 @@ namespace Anakena_2017
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(455, 379);
+            this.ClientSize = new System.Drawing.Size(432, 317);
             this.Controls.Add(this.Btn_Eliminar);
             this.Controls.Add(this.btn_modificar);
             this.Controls.Add(this.label6);
@@ -501,6 +501,7 @@ namespace Anakena_2017
 			}
 			catch (Exception exception)
 			{
+                MessageBox.Show(exception.ToString(),"Anakena",MessageBoxButtons.OK,MessageBoxIcon.Error);
 			}
 			return flag;
 		}

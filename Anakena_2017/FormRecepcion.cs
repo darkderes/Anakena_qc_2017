@@ -195,8 +195,6 @@ namespace Anakena_2017
 
 		public GroupBox groupBox5;
 
-		private Button button3;
-
 		public Label label51;
 
 		public Button Btn_Print;
@@ -1295,7 +1293,6 @@ namespace Anakena_2017
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.Btn_Print = new System.Windows.Forms.Button();
             this.Btn_Guardar = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.button8 = new System.Windows.Forms.Button();
             this.Btn_Delete = new System.Windows.Forms.Button();
@@ -1320,7 +1317,7 @@ namespace Anakena_2017
             // 
             this.Lbl_Analisis.AutoSize = true;
             this.Lbl_Analisis.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Analisis.Location = new System.Drawing.Point(1150, 65);
+            this.Lbl_Analisis.Location = new System.Drawing.Point(1081, 40);
             this.Lbl_Analisis.Name = "Lbl_Analisis";
             this.Lbl_Analisis.Size = new System.Drawing.Size(64, 25);
             this.Lbl_Analisis.TabIndex = 0;
@@ -2323,9 +2320,9 @@ namespace Anakena_2017
             // 
             this.groupBox6.Controls.Add(this.Lbl_Pelon);
             this.groupBox6.Controls.Add(this.label34);
-            this.groupBox6.Location = new System.Drawing.Point(945, 133);
+            this.groupBox6.Location = new System.Drawing.Point(941, 80);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(323, 148);
+            this.groupBox6.Size = new System.Drawing.Size(227, 148);
             this.groupBox6.TabIndex = 19;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "-";
@@ -2334,7 +2331,7 @@ namespace Anakena_2017
             // 
             this.Lbl_Pelon.AutoSize = true;
             this.Lbl_Pelon.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Pelon.Location = new System.Drawing.Point(138, 53);
+            this.Lbl_Pelon.Location = new System.Drawing.Point(74, 42);
             this.Lbl_Pelon.Name = "Lbl_Pelon";
             this.Lbl_Pelon.Size = new System.Drawing.Size(0, 73);
             this.Lbl_Pelon.TabIndex = 1;
@@ -2343,7 +2340,7 @@ namespace Anakena_2017
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(66, 22);
+            this.label34.Location = new System.Drawing.Point(13, 16);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(191, 24);
             this.label34.TabIndex = 0;
@@ -2353,11 +2350,12 @@ namespace Anakena_2017
             // 
             this.groupBox7.Controls.Add(this.lbl_condiciones);
             this.groupBox7.Controls.Add(this.label29);
-            this.groupBox7.Location = new System.Drawing.Point(945, 307);
+            this.groupBox7.Location = new System.Drawing.Point(941, 261);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(323, 148);
+            this.groupBox7.Size = new System.Drawing.Size(227, 148);
             this.groupBox7.TabIndex = 20;
             this.groupBox7.TabStop = false;
+            this.groupBox7.Enter += new System.EventHandler(this.groupBox7_Enter);
             // 
             // lbl_condiciones
             // 
@@ -2365,8 +2363,9 @@ namespace Anakena_2017
             this.lbl_condiciones.BackColor = System.Drawing.Color.White;
             this.lbl_condiciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_condiciones.ForeColor = System.Drawing.Color.Green;
-            this.lbl_condiciones.Location = new System.Drawing.Point(112, 78);
+            this.lbl_condiciones.Location = new System.Drawing.Point(17, 59);
             this.lbl_condiciones.Name = "lbl_condiciones";
+            this.lbl_condiciones.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.lbl_condiciones.Size = new System.Drawing.Size(0, 42);
             this.lbl_condiciones.TabIndex = 1;
             this.lbl_condiciones.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -2375,7 +2374,7 @@ namespace Anakena_2017
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(99, 36);
+            this.label29.Location = new System.Drawing.Point(47, 16);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(124, 24);
             this.label29.TabIndex = 0;
@@ -2402,7 +2401,7 @@ namespace Anakena_2017
             // 
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(1010, 65);
+            this.label51.Location = new System.Drawing.Point(951, 40);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(134, 25);
             this.label51.TabIndex = 26;
@@ -2412,21 +2411,21 @@ namespace Anakena_2017
             // 
             this.groupBox9.Controls.Add(this.Btn_Print);
             this.groupBox9.Controls.Add(this.Btn_Guardar);
-            this.groupBox9.Controls.Add(this.button3);
-            this.groupBox9.Location = new System.Drawing.Point(1002, 490);
+            this.groupBox9.Location = new System.Drawing.Point(1003, 456);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(224, 220);
+            this.groupBox9.Size = new System.Drawing.Size(106, 106);
             this.groupBox9.TabIndex = 27;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Opciones";
+            this.groupBox9.Enter += new System.EventHandler(this.groupBox9_Enter);
             // 
             // Btn_Print
             // 
             this.Btn_Print.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Print.BackgroundImage")));
             this.Btn_Print.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Print.Location = new System.Drawing.Point(45, 98);
+            this.Btn_Print.Location = new System.Drawing.Point(8, 62);
             this.Btn_Print.Name = "Btn_Print";
-            this.Btn_Print.Size = new System.Drawing.Size(137, 36);
+            this.Btn_Print.Size = new System.Drawing.Size(93, 26);
             this.Btn_Print.TabIndex = 26;
             this.Btn_Print.UseVisualStyleBackColor = true;
             this.Btn_Print.Click += new System.EventHandler(this.Btn_Print_Click_1);
@@ -2436,33 +2435,21 @@ namespace Anakena_2017
             this.Btn_Guardar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Guardar.BackgroundImage")));
             this.Btn_Guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn_Guardar.Enabled = false;
-            this.Btn_Guardar.Location = new System.Drawing.Point(46, 37);
+            this.Btn_Guardar.Location = new System.Drawing.Point(8, 26);
             this.Btn_Guardar.Name = "Btn_Guardar";
-            this.Btn_Guardar.Size = new System.Drawing.Size(136, 36);
+            this.Btn_Guardar.Size = new System.Drawing.Size(93, 26);
             this.Btn_Guardar.TabIndex = 23;
             this.Btn_Guardar.UseVisualStyleBackColor = true;
             this.Btn_Guardar.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button3
-            // 
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(46, 160);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 35);
-            this.button3.TabIndex = 25;
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // groupBox10
             // 
             this.groupBox10.Controls.Add(this.button8);
             this.groupBox10.Controls.Add(this.Btn_Delete);
             this.groupBox10.Controls.Add(this.Btn_Modificar);
-            this.groupBox10.Controls.Add(this.Btn_Salir);
-            this.groupBox10.Location = new System.Drawing.Point(1002, 477);
+            this.groupBox10.Location = new System.Drawing.Point(1003, 452);
             this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(224, 251);
+            this.groupBox10.Size = new System.Drawing.Size(116, 144);
             this.groupBox10.TabIndex = 28;
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Opciones";
@@ -2471,9 +2458,9 @@ namespace Anakena_2017
             // 
             this.button8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button8.BackgroundImage")));
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button8.Location = new System.Drawing.Point(48, 86);
+            this.button8.Location = new System.Drawing.Point(13, 65);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(136, 36);
+            this.button8.Size = new System.Drawing.Size(93, 26);
             this.button8.TabIndex = 27;
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
@@ -2482,9 +2469,9 @@ namespace Anakena_2017
             // 
             this.Btn_Delete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Delete.BackgroundImage")));
             this.Btn_Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Delete.Location = new System.Drawing.Point(46, 132);
+            this.Btn_Delete.Location = new System.Drawing.Point(13, 102);
             this.Btn_Delete.Name = "Btn_Delete";
-            this.Btn_Delete.Size = new System.Drawing.Size(136, 36);
+            this.Btn_Delete.Size = new System.Drawing.Size(93, 26);
             this.Btn_Delete.TabIndex = 26;
             this.Btn_Delete.UseVisualStyleBackColor = true;
             this.Btn_Delete.Click += new System.EventHandler(this.Btn_Delete_Click);
@@ -2493,9 +2480,9 @@ namespace Anakena_2017
             // 
             this.Btn_Modificar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Modificar.BackgroundImage")));
             this.Btn_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Modificar.Location = new System.Drawing.Point(46, 37);
+            this.Btn_Modificar.Location = new System.Drawing.Point(13, 29);
             this.Btn_Modificar.Name = "Btn_Modificar";
-            this.Btn_Modificar.Size = new System.Drawing.Size(136, 36);
+            this.Btn_Modificar.Size = new System.Drawing.Size(93, 26);
             this.Btn_Modificar.TabIndex = 23;
             this.Btn_Modificar.UseVisualStyleBackColor = true;
             this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
@@ -2504,9 +2491,9 @@ namespace Anakena_2017
             // 
             this.Btn_Salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Salir.BackgroundImage")));
             this.Btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Salir.Location = new System.Drawing.Point(47, 183);
+            this.Btn_Salir.Location = new System.Drawing.Point(1019, 658);
             this.Btn_Salir.Name = "Btn_Salir";
-            this.Btn_Salir.Size = new System.Drawing.Size(137, 35);
+            this.Btn_Salir.Size = new System.Drawing.Size(93, 26);
             this.Btn_Salir.TabIndex = 25;
             this.Btn_Salir.UseVisualStyleBackColor = true;
             this.Btn_Salir.Click += new System.EventHandler(this.button7_Click);
@@ -2541,10 +2528,11 @@ namespace Anakena_2017
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1276, 741);
-            this.Controls.Add(this.button6);
+            this.ClientSize = new System.Drawing.Size(1186, 696);
             this.Controls.Add(this.groupBox10);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.groupBox9);
+            this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.label51);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Txt_Observaciones);
@@ -3527,6 +3515,16 @@ namespace Anakena_2017
         }
 
         private void Txt_Pelon_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox9_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox7_Enter(object sender, EventArgs e)
         {
 
         }

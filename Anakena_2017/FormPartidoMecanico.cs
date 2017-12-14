@@ -978,12 +978,7 @@ namespace Anakena_2017
             this.Close();
         }
 
-        private void Txt_Observacion_Mat_Extraña_KeyPress(object sender, KeyPressEventArgs e)
-        {
-           
-              
-            
-        }
+
 
         private void Btn_Salir_Click(object sender, EventArgs e)
         {
@@ -1055,12 +1050,6 @@ namespace Anakena_2017
 
             }
         }
-
-        private void Txt_Observacion_Mat_Extraña_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void DT_Calidad_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == Convert.ToChar(Keys.Enter))

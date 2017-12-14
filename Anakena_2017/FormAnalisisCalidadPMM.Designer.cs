@@ -30,7 +30,14 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAnalisisCalidadPMM));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button2 = new System.Windows.Forms.Button();
             this.DT_Fecha = new System.Windows.Forms.DateTimePicker();
             this.Cmb_Filtro = new System.Windows.Forms.ComboBox();
@@ -38,13 +45,6 @@
             this.txt_filtro = new System.Windows.Forms.TextBox();
             this.Cmb_Busqueda = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.Btn_Agregar = new System.Windows.Forms.Button();
-            this.prueba_2017Preseleccion = new Anakena_2017.Prueba_2017Preseleccion();
-            this.spTraer_Analisis_Calidad_PPMBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.spTraer_Analisis_Calidad_PPMTableAdapter = new Anakena_2017.Prueba_2017PreseleccionTableAdapters.spTraer_Analisis_Calidad_PPMTableAdapter();
-            this.tableAdapterManager = new Anakena_2017.Prueba_2017PreseleccionTableAdapters.TableAdapterManager();
             this.analisisDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tarjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -71,19 +71,32 @@
             this.defectosDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.observacionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.observacionMatExtrañaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.spTraer_Analisis_Calidad_PPMBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.prueba_2017Preseleccion = new Anakena_2017.Prueba_2017Preseleccion();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.Btn_Agregar = new System.Windows.Forms.Button();
+            this.spTraer_Analisis_Calidad_PPMTableAdapter = new Anakena_2017.Prueba_2017PreseleccionTableAdapters.spTraer_Analisis_Calidad_PPMTableAdapter();
+            this.tableAdapterManager = new Anakena_2017.Prueba_2017PreseleccionTableAdapters.TableAdapterManager();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prueba_2017Preseleccion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_Analisis_Calidad_PPMBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prueba_2017Preseleccion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(739, 40);
+            this.button2.Location = new System.Drawing.Point(438, 28);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 26);
+            this.button2.Size = new System.Drawing.Size(72, 26);
             this.button2.TabIndex = 124;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -91,7 +104,7 @@
             // DT_Fecha
             // 
             this.DT_Fecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DT_Fecha.Location = new System.Drawing.Point(467, 43);
+            this.DT_Fecha.Location = new System.Drawing.Point(183, 31);
             this.DT_Fecha.Name = "DT_Fecha";
             this.DT_Fecha.Size = new System.Drawing.Size(171, 20);
             this.DT_Fecha.TabIndex = 123;
@@ -101,7 +114,7 @@
             // 
             this.Cmb_Filtro.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Cmb_Filtro.FormattingEnabled = true;
-            this.Cmb_Filtro.Location = new System.Drawing.Point(467, 42);
+            this.Cmb_Filtro.Location = new System.Drawing.Point(183, 31);
             this.Cmb_Filtro.Name = "Cmb_Filtro";
             this.Cmb_Filtro.Size = new System.Drawing.Size(171, 21);
             this.Cmb_Filtro.TabIndex = 122;
@@ -110,18 +123,18 @@
             // 
             this.Btn_Buscar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Buscar.BackgroundImage")));
             this.Btn_Buscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Buscar.Location = new System.Drawing.Point(644, 39);
+            this.Btn_Buscar.Location = new System.Drawing.Point(360, 28);
             this.Btn_Buscar.Name = "Btn_Buscar";
-            this.Btn_Buscar.Size = new System.Drawing.Size(89, 28);
+            this.Btn_Buscar.Size = new System.Drawing.Size(72, 26);
             this.Btn_Buscar.TabIndex = 121;
             this.Btn_Buscar.UseVisualStyleBackColor = true;
             this.Btn_Buscar.Click += new System.EventHandler(this.Btn_Buscar_Click);
             // 
             // txt_filtro
             // 
-            this.txt_filtro.Location = new System.Drawing.Point(467, 44);
+            this.txt_filtro.Location = new System.Drawing.Point(183, 32);
             this.txt_filtro.Name = "txt_filtro";
-            this.txt_filtro.Size = new System.Drawing.Size(161, 20);
+            this.txt_filtro.Size = new System.Drawing.Size(171, 20);
             this.txt_filtro.TabIndex = 120;
             // 
             // Cmb_Busqueda
@@ -138,7 +151,7 @@
             "Producto Analisis",
             "Producto Tarja",
             "Estado"});
-            this.Cmb_Busqueda.Location = new System.Drawing.Point(271, 44);
+            this.Cmb_Busqueda.Location = new System.Drawing.Point(6, 31);
             this.Cmb_Busqueda.Name = "Cmb_Busqueda";
             this.Cmb_Busqueda.Size = new System.Drawing.Size(171, 21);
             this.Cmb_Busqueda.TabIndex = 119;
@@ -147,11 +160,19 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.analisisDataGridViewTextBoxColumn,
@@ -181,122 +202,101 @@
             this.observacionDataGridViewTextBoxColumn,
             this.observacionMatExtrañaDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.spTraer_Analisis_Calidad_PPMBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(35, 107);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 107);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(793, 349);
+            this.dataGridView1.RowHeadersVisible = false;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle16;
+            this.dataGridView1.Size = new System.Drawing.Size(767, 349);
             this.dataGridView1.TabIndex = 117;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(67, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 79);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 118;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Location = new System.Drawing.Point(710, 490);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 34);
-            this.button1.TabIndex = 126;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Btn_Agregar
-            // 
-            this.Btn_Agregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Agregar.BackgroundImage")));
-            this.Btn_Agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Agregar.Location = new System.Drawing.Point(563, 490);
-            this.Btn_Agregar.Name = "Btn_Agregar";
-            this.Btn_Agregar.Size = new System.Drawing.Size(118, 34);
-            this.Btn_Agregar.TabIndex = 125;
-            this.Btn_Agregar.UseVisualStyleBackColor = true;
-            this.Btn_Agregar.Click += new System.EventHandler(this.Btn_Agregar_Click);
-            // 
-            // prueba_2017Preseleccion
-            // 
-            this.prueba_2017Preseleccion.DataSetName = "Prueba_2017Preseleccion";
-            this.prueba_2017Preseleccion.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // spTraer_Analisis_Calidad_PPMBindingSource
-            // 
-            this.spTraer_Analisis_Calidad_PPMBindingSource.DataMember = "spTraer_Analisis_Calidad_PPM";
-            this.spTraer_Analisis_Calidad_PPMBindingSource.DataSource = this.prueba_2017Preseleccion;
-            // 
-            // spTraer_Analisis_Calidad_PPMTableAdapter
-            // 
-            this.spTraer_Analisis_Calidad_PPMTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.Connection = null;
-            this.tableAdapterManager.UpdateOrder = Anakena_2017.Prueba_2017PreseleccionTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             // 
             // analisisDataGridViewTextBoxColumn
             // 
             this.analisisDataGridViewTextBoxColumn.DataPropertyName = "Analisis";
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.analisisDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle11;
+            this.analisisDataGridViewTextBoxColumn.FillWeight = 456.8527F;
             this.analisisDataGridViewTextBoxColumn.HeaderText = "Analisis";
             this.analisisDataGridViewTextBoxColumn.Name = "analisisDataGridViewTextBoxColumn";
             this.analisisDataGridViewTextBoxColumn.ReadOnly = true;
+            this.analisisDataGridViewTextBoxColumn.Width = 67;
             // 
             // fechaDataGridViewTextBoxColumn
             // 
             this.fechaDataGridViewTextBoxColumn.DataPropertyName = "Fecha";
+            this.fechaDataGridViewTextBoxColumn.FillWeight = 55.39341F;
             this.fechaDataGridViewTextBoxColumn.HeaderText = "Fecha";
             this.fechaDataGridViewTextBoxColumn.Name = "fechaDataGridViewTextBoxColumn";
+            this.fechaDataGridViewTextBoxColumn.Width = 62;
             // 
             // tarjaDataGridViewTextBoxColumn
             // 
             this.tarjaDataGridViewTextBoxColumn.DataPropertyName = "Tarja";
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.tarjaDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle12;
+            this.tarjaDataGridViewTextBoxColumn.FillWeight = 55.39341F;
             this.tarjaDataGridViewTextBoxColumn.HeaderText = "Tarja";
             this.tarjaDataGridViewTextBoxColumn.Name = "tarjaDataGridViewTextBoxColumn";
+            this.tarjaDataGridViewTextBoxColumn.Width = 56;
             // 
             // binsDataGridViewTextBoxColumn
             // 
             this.binsDataGridViewTextBoxColumn.DataPropertyName = "Bins";
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.binsDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle13;
+            this.binsDataGridViewTextBoxColumn.FillWeight = 55.39341F;
             this.binsDataGridViewTextBoxColumn.HeaderText = "Bins";
             this.binsDataGridViewTextBoxColumn.Name = "binsDataGridViewTextBoxColumn";
+            this.binsDataGridViewTextBoxColumn.Width = 52;
             // 
             // turnoDataGridViewTextBoxColumn
             // 
             this.turnoDataGridViewTextBoxColumn.DataPropertyName = "Turno";
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.turnoDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle14;
+            this.turnoDataGridViewTextBoxColumn.FillWeight = 55.39341F;
             this.turnoDataGridViewTextBoxColumn.HeaderText = "Turno";
             this.turnoDataGridViewTextBoxColumn.Name = "turnoDataGridViewTextBoxColumn";
             this.turnoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.turnoDataGridViewTextBoxColumn.Width = 60;
             // 
             // procesoDataGridViewTextBoxColumn
             // 
             this.procesoDataGridViewTextBoxColumn.DataPropertyName = "Proceso";
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.procesoDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle15;
+            this.procesoDataGridViewTextBoxColumn.FillWeight = 55.39341F;
             this.procesoDataGridViewTextBoxColumn.HeaderText = "Proceso";
             this.procesoDataGridViewTextBoxColumn.Name = "procesoDataGridViewTextBoxColumn";
+            this.procesoDataGridViewTextBoxColumn.Width = 71;
             // 
             // productoAnalisisDataGridViewTextBoxColumn
             // 
             this.productoAnalisisDataGridViewTextBoxColumn.DataPropertyName = "Producto_Analisis";
-            this.productoAnalisisDataGridViewTextBoxColumn.HeaderText = "Producto_Analisis";
+            this.productoAnalisisDataGridViewTextBoxColumn.FillWeight = 55.39341F;
+            this.productoAnalisisDataGridViewTextBoxColumn.HeaderText = "Producto Analisis";
             this.productoAnalisisDataGridViewTextBoxColumn.Name = "productoAnalisisDataGridViewTextBoxColumn";
             this.productoAnalisisDataGridViewTextBoxColumn.ReadOnly = true;
+            this.productoAnalisisDataGridViewTextBoxColumn.Width = 104;
             // 
             // productoTarjaDataGridViewTextBoxColumn
             // 
             this.productoTarjaDataGridViewTextBoxColumn.DataPropertyName = "Producto_Tarja";
-            this.productoTarjaDataGridViewTextBoxColumn.HeaderText = "Producto_Tarja";
+            this.productoTarjaDataGridViewTextBoxColumn.FillWeight = 55.39341F;
+            this.productoTarjaDataGridViewTextBoxColumn.HeaderText = "Producto Tarja";
             this.productoTarjaDataGridViewTextBoxColumn.Name = "productoTarjaDataGridViewTextBoxColumn";
             this.productoTarjaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.productoTarjaDataGridViewTextBoxColumn.Width = 94;
             // 
             // estadoDataGridViewTextBoxColumn
             // 
             this.estadoDataGridViewTextBoxColumn.DataPropertyName = "Estado";
+            this.estadoDataGridViewTextBoxColumn.FillWeight = 55.39341F;
             this.estadoDataGridViewTextBoxColumn.HeaderText = "Estado";
             this.estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";
             this.estadoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.estadoDataGridViewTextBoxColumn.Width = 65;
             // 
             // codProductoUserDataGridViewTextBoxColumn
             // 
@@ -304,6 +304,7 @@
             this.codProductoUserDataGridViewTextBoxColumn.HeaderText = "Cod_Producto_User";
             this.codProductoUserDataGridViewTextBoxColumn.Name = "codProductoUserDataGridViewTextBoxColumn";
             this.codProductoUserDataGridViewTextBoxColumn.Visible = false;
+            this.codProductoUserDataGridViewTextBoxColumn.Width = 128;
             // 
             // codProductoTarjaDataGridViewTextBoxColumn
             // 
@@ -311,6 +312,7 @@
             this.codProductoTarjaDataGridViewTextBoxColumn.HeaderText = "Cod_Producto_Tarja";
             this.codProductoTarjaDataGridViewTextBoxColumn.Name = "codProductoTarjaDataGridViewTextBoxColumn";
             this.codProductoTarjaDataGridViewTextBoxColumn.Visible = false;
+            this.codProductoTarjaDataGridViewTextBoxColumn.Width = 130;
             // 
             // pesoMuestraDataGridViewTextBoxColumn
             // 
@@ -325,6 +327,7 @@
             this.cascaraDataGridViewTextBoxColumn.HeaderText = "Cascara";
             this.cascaraDataGridViewTextBoxColumn.Name = "cascaraDataGridViewTextBoxColumn";
             this.cascaraDataGridViewTextBoxColumn.Visible = false;
+            this.cascaraDataGridViewTextBoxColumn.Width = 71;
             // 
             // matExtrañaDataGridViewTextBoxColumn
             // 
@@ -332,6 +335,7 @@
             this.matExtrañaDataGridViewTextBoxColumn.HeaderText = "Mat_Extraña";
             this.matExtrañaDataGridViewTextBoxColumn.Name = "matExtrañaDataGridViewTextBoxColumn";
             this.matExtrañaDataGridViewTextBoxColumn.Visible = false;
+            this.matExtrañaDataGridViewTextBoxColumn.Width = 92;
             // 
             // halvesDataGridViewTextBoxColumn
             // 
@@ -339,6 +343,7 @@
             this.halvesDataGridViewTextBoxColumn.HeaderText = "Halves";
             this.halvesDataGridViewTextBoxColumn.Name = "halvesDataGridViewTextBoxColumn";
             this.halvesDataGridViewTextBoxColumn.Visible = false;
+            this.halvesDataGridViewTextBoxColumn.Width = 65;
             // 
             // largePiecesDataGridViewTextBoxColumn
             // 
@@ -346,6 +351,7 @@
             this.largePiecesDataGridViewTextBoxColumn.HeaderText = "Large_Pieces";
             this.largePiecesDataGridViewTextBoxColumn.Name = "largePiecesDataGridViewTextBoxColumn";
             this.largePiecesDataGridViewTextBoxColumn.Visible = false;
+            this.largePiecesDataGridViewTextBoxColumn.Width = 97;
             // 
             // mediumPiecesDataGridViewTextBoxColumn
             // 
@@ -353,6 +359,7 @@
             this.mediumPiecesDataGridViewTextBoxColumn.HeaderText = "Medium_Pieces";
             this.mediumPiecesDataGridViewTextBoxColumn.Name = "mediumPiecesDataGridViewTextBoxColumn";
             this.mediumPiecesDataGridViewTextBoxColumn.Visible = false;
+            this.mediumPiecesDataGridViewTextBoxColumn.Width = 107;
             // 
             // smallPiecesDataGridViewTextBoxColumn
             // 
@@ -360,6 +367,7 @@
             this.smallPiecesDataGridViewTextBoxColumn.HeaderText = "Small_Pieces";
             this.smallPiecesDataGridViewTextBoxColumn.Name = "smallPiecesDataGridViewTextBoxColumn";
             this.smallPiecesDataGridViewTextBoxColumn.Visible = false;
+            this.smallPiecesDataGridViewTextBoxColumn.Width = 95;
             // 
             // extraLightDataGridViewTextBoxColumn
             // 
@@ -367,6 +375,7 @@
             this.extraLightDataGridViewTextBoxColumn.HeaderText = "Extra_Light";
             this.extraLightDataGridViewTextBoxColumn.Name = "extraLightDataGridViewTextBoxColumn";
             this.extraLightDataGridViewTextBoxColumn.Visible = false;
+            this.extraLightDataGridViewTextBoxColumn.Width = 85;
             // 
             // lightDataGridViewTextBoxColumn
             // 
@@ -374,6 +383,7 @@
             this.lightDataGridViewTextBoxColumn.HeaderText = "Light";
             this.lightDataGridViewTextBoxColumn.Name = "lightDataGridViewTextBoxColumn";
             this.lightDataGridViewTextBoxColumn.Visible = false;
+            this.lightDataGridViewTextBoxColumn.Width = 55;
             // 
             // lightAmbarDataGridViewTextBoxColumn
             // 
@@ -381,6 +391,7 @@
             this.lightAmbarDataGridViewTextBoxColumn.HeaderText = "Light_Ambar";
             this.lightAmbarDataGridViewTextBoxColumn.Name = "lightAmbarDataGridViewTextBoxColumn";
             this.lightAmbarDataGridViewTextBoxColumn.Visible = false;
+            this.lightAmbarDataGridViewTextBoxColumn.Width = 91;
             // 
             // ambarDataGridViewTextBoxColumn
             // 
@@ -388,6 +399,7 @@
             this.ambarDataGridViewTextBoxColumn.HeaderText = "Ambar";
             this.ambarDataGridViewTextBoxColumn.Name = "ambarDataGridViewTextBoxColumn";
             this.ambarDataGridViewTextBoxColumn.Visible = false;
+            this.ambarDataGridViewTextBoxColumn.Width = 62;
             // 
             // amarilloDataGridViewTextBoxColumn
             // 
@@ -395,6 +407,7 @@
             this.amarilloDataGridViewTextBoxColumn.HeaderText = "Amarillo";
             this.amarilloDataGridViewTextBoxColumn.Name = "amarilloDataGridViewTextBoxColumn";
             this.amarilloDataGridViewTextBoxColumn.Visible = false;
+            this.amarilloDataGridViewTextBoxColumn.Width = 68;
             // 
             // defectosDataGridViewTextBoxColumn
             // 
@@ -402,6 +415,7 @@
             this.defectosDataGridViewTextBoxColumn.HeaderText = "Defectos";
             this.defectosDataGridViewTextBoxColumn.Name = "defectosDataGridViewTextBoxColumn";
             this.defectosDataGridViewTextBoxColumn.Visible = false;
+            this.defectosDataGridViewTextBoxColumn.Width = 75;
             // 
             // observacionDataGridViewTextBoxColumn
             // 
@@ -409,6 +423,7 @@
             this.observacionDataGridViewTextBoxColumn.HeaderText = "Observacion";
             this.observacionDataGridViewTextBoxColumn.Name = "observacionDataGridViewTextBoxColumn";
             this.observacionDataGridViewTextBoxColumn.Visible = false;
+            this.observacionDataGridViewTextBoxColumn.Width = 92;
             // 
             // observacionMatExtrañaDataGridViewTextBoxColumn
             // 
@@ -416,33 +431,118 @@
             this.observacionMatExtrañaDataGridViewTextBoxColumn.HeaderText = "Observacion_Mat_Extraña";
             this.observacionMatExtrañaDataGridViewTextBoxColumn.Name = "observacionMatExtrañaDataGridViewTextBoxColumn";
             this.observacionMatExtrañaDataGridViewTextBoxColumn.Visible = false;
+            this.observacionMatExtrañaDataGridViewTextBoxColumn.Width = 158;
+            // 
+            // spTraer_Analisis_Calidad_PPMBindingSource
+            // 
+            this.spTraer_Analisis_Calidad_PPMBindingSource.DataMember = "spTraer_Analisis_Calidad_PPM";
+            this.spTraer_Analisis_Calidad_PPMBindingSource.DataSource = this.prueba_2017Preseleccion;
+            // 
+            // prueba_2017Preseleccion
+            // 
+            this.prueba_2017Preseleccion.DataSetName = "Prueba_2017Preseleccion";
+            this.prueba_2017Preseleccion.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(175, 79);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 118;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(704, 474);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 30);
+            this.button1.TabIndex = 126;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // Btn_Agregar
+            // 
+            this.Btn_Agregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Agregar.BackgroundImage")));
+            this.Btn_Agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Btn_Agregar.Location = new System.Drawing.Point(605, 474);
+            this.Btn_Agregar.Name = "Btn_Agregar";
+            this.Btn_Agregar.Size = new System.Drawing.Size(75, 30);
+            this.Btn_Agregar.TabIndex = 125;
+            this.Btn_Agregar.UseVisualStyleBackColor = true;
+            this.Btn_Agregar.Click += new System.EventHandler(this.Btn_Agregar_Click);
+            // 
+            // spTraer_Analisis_Calidad_PPMTableAdapter
+            // 
+            this.spTraer_Analisis_Calidad_PPMTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.UpdateOrder = Anakena_2017.Prueba_2017PreseleccionTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.Cmb_Busqueda);
+            this.groupBox1.Controls.Add(this.DT_Fecha);
+            this.groupBox1.Controls.Add(this.txt_filtro);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Controls.Add(this.Btn_Buscar);
+            this.groupBox1.Controls.Add(this.Cmb_Filtro);
+            this.groupBox1.Location = new System.Drawing.Point(193, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(533, 79);
+            this.groupBox1.TabIndex = 127;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Busqueda";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Location = new System.Drawing.Point(316, 186);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(166, 125);
+            this.panel1.TabIndex = 139;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(16, 6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(132, 119);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
             // 
             // FormAnalisisCalidadPMM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(872, 536);
+            this.ClientSize = new System.Drawing.Size(791, 524);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Btn_Agregar);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.DT_Fecha);
-            this.Controls.Add(this.Cmb_Filtro);
-            this.Controls.Add(this.Btn_Buscar);
-            this.Controls.Add(this.txt_filtro);
-            this.Controls.Add(this.Cmb_Busqueda);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "FormAnalisisCalidadPMM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormAnalisisCalidadPMM";
+            this.Text = "Calidad partido mecanico";
             this.Load += new System.EventHandler(this.FormAnalisisCalidadPMM_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prueba_2017Preseleccion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_Analisis_Calidad_PPMBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prueba_2017Preseleccion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -462,6 +562,7 @@
         private System.Windows.Forms.BindingSource spTraer_Analisis_Calidad_PPMBindingSource;
         private Prueba_2017PreseleccionTableAdapters.spTraer_Analisis_Calidad_PPMTableAdapter spTraer_Analisis_Calidad_PPMTableAdapter;
         private Prueba_2017PreseleccionTableAdapters.TableAdapterManager tableAdapterManager;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn analisisDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tarjaDataGridViewTextBoxColumn;
@@ -488,5 +589,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn defectosDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn observacionDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn observacionMatExtrañaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

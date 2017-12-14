@@ -81,8 +81,6 @@
         }
 
         #endregion
-
-        private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer2;
         private System.Windows.Forms.BindingSource spTraerReporteBindingSource;
         private Prueba_2017DataSet Prueba_2017DataSet;

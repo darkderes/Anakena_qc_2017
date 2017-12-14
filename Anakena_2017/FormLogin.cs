@@ -68,7 +68,7 @@ namespace Anakena_2017
             this.Txt_Rut.TabIndex = 2;
             this.Txt_Rut.Tag = "";
             this.Txt_Rut.Text = "RUT";
-            this.Txt_Rut.TextChanged += new System.EventHandler(this.Txt_Rut_TextChanged);
+     
             // 
             // TxtPass
             // 
@@ -99,7 +99,7 @@ namespace Anakena_2017
             // Pc_New
             // 
             this.Pc_New.Image = global::Anakena_2017.Properties.Resources.compartir_anakena;
-            this.Pc_New.Location = new System.Drawing.Point(12, 0);
+            this.Pc_New.Location = new System.Drawing.Point(12, -11);
             this.Pc_New.Name = "Pc_New";
             this.Pc_New.Size = new System.Drawing.Size(182, 177);
             this.Pc_New.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -111,13 +111,12 @@ namespace Anakena_2017
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(201, 305);
-            this.ControlBox = false;
+            this.ClientSize = new System.Drawing.Size(193, 297);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.TxtPass);
             this.Controls.Add(this.Txt_Rut);
             this.Controls.Add(this.Pc_New);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormLogin";
@@ -189,17 +188,6 @@ namespace Anakena_2017
 		{
 			this.TxtPass.UseSystemPasswordChar = true;
 		}
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Txt_Rut_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
