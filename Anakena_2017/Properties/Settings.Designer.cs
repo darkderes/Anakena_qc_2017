@@ -32,5 +32,15 @@ namespace Anakena_2017.Properties {
                 return ((string)(this["Prueba_2017ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SERVIDORERP;Initial Catalog=ANAKENA;User ID=sa;Password=Pall2015")]
+        public string ANAKENAConnectionString {
+            get {
+                return ((string)(this["ANAKENAConnectionString"]));
+            }
+        }
     }
 }

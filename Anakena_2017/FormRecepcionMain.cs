@@ -489,7 +489,7 @@ namespace Anakena_2017
             // 
             this.Btn_Agregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Agregar.BackgroundImage")));
             this.Btn_Agregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Agregar.Location = new System.Drawing.Point(735, 641);
+            this.Btn_Agregar.Location = new System.Drawing.Point(750, 623);
             this.Btn_Agregar.Name = "Btn_Agregar";
             this.Btn_Agregar.Size = new System.Drawing.Size(75, 26);
             this.Btn_Agregar.TabIndex = 0;
@@ -620,7 +620,7 @@ namespace Anakena_2017
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(820, 641);
+            this.button2.Location = new System.Drawing.Point(831, 623);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(73, 26);
             this.button2.TabIndex = 10;
@@ -670,7 +670,7 @@ namespace Anakena_2017
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(916, 679);
+            this.ClientSize = new System.Drawing.Size(916, 661);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button2);

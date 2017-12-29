@@ -102,6 +102,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ANAKENADataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ANAKENADataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="conexion.cs" />
     <Compile Include="FormAnalisisCalidadPMM.cs">
       <SubType>Form</SubType>
@@ -123,6 +128,18 @@
     </Compile>
     <Compile Include="FormBusquedaProductor.cs">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDestinatario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDestinatario.Designer.cs">
+      <DependentUpon>FormDestinatario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmisionGuia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmisionGuia.Designer.cs">
+      <DependentUpon>FormEmisionGuia.cs</DependentUpon>
     </Compile>
     <Compile Include="FormEvaluacion.cs">
       <SubType>Form</SubType>
@@ -178,6 +195,12 @@
     <Compile Include="FormReport_Preseleccion.Designer.cs">
       <DependentUpon>FormReport_Preseleccion.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTransportistas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTransportistas.Designer.cs">
+      <DependentUpon>FormTransportistas.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +245,12 @@
     <EmbeddedResource Include="FormBuscarTarja.resx">
       <DependentUpon>FormBuscarTarja.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDestinatario.resx">
+      <DependentUpon>FormDestinatario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmisionGuia.resx">
+      <DependentUpon>FormEmisionGuia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEvaluacion.resx">
       <DependentUpon>FormEvaluacion.cs</DependentUpon>
     </EmbeddedResource>
@@ -258,6 +287,9 @@
     <EmbeddedResource Include="FormReport_Preseleccion.resx">
       <DependentUpon>FormReport_Preseleccion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormTransportistas.resx">
+      <DependentUpon>FormTransportistas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormUsuario.resx">
       <DependentUpon>FormUsuario.cs</DependentUpon>
     </EmbeddedResource>
@@ -284,6 +316,17 @@
     <EmbeddedResource Include="splash.resx">
       <DependentUpon>splash.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ANAKENADataSet.xsc">
+      <DependentUpon>ANAKENADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ANAKENADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ANAKENADataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ANAKENADataSet.xss">
+      <DependentUpon>ANAKENADataSet.xsd</DependentUpon>
+    </None>
     <None Include="Anakena_2017_ClaveTemporal.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

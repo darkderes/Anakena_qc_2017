@@ -25,37 +25,44 @@ namespace Anakena_2017
         private void FormAnalisisCalidadPMM_Load(object sender, EventArgs e)
         {
             panel1.Visible = true;
-            pictureBox1.Visible = false;
+            pictureBox1.Visible = true;
             groupBox1.Visible = false;
             dataGridView1.Visible = false;
             Btn_Agregar.Visible = false;
             button1.Visible  = false;
-            Control.CheckForIllegalCrossThreadCalls = false;
- 
+            Control.CheckForIllegalCrossThreadCalls = false; 
             Thread hilo = new Thread(new ThreadStart(this.cargarDatos));
             hilo.Start();
-
         }
         public void cargarDatos()
-        {
-               this.spTraer_Analisis_Calidad_PPMTableAdapter.Fill(this.prueba_2017Preseleccion.spTraer_Analisis_Calidad_PPM);
-            Cmb_Busqueda.SelectedIndex = 0;
-            panel1.Visible = false;
-            pictureBox1.Visible = true;
-            groupBox1.Visible = true;
-            dataGridView1.Visible = true;
-            Btn_Agregar.Visible = true;
-            button1.Visible = true;
+           
+        {        
+            this.Invoke((MethodInvoker)delegate
+            {
+             
+                //DataGridview Refreshment
+                dataGridView1.Enabled = true;
+                dataGridView1.ScrollBars = ScrollBars.Both;
+                this.spTraer_Analisis_Calidad_PPMTableAdapter.Fill(this.prueba_2017Preseleccion.spTraer_Analisis_Calidad_PPM);
+                dataGridView1.Refresh();
+                Cmb_Busqueda.SelectedIndex = 0;
+                panel1.Visible = false;
+                pictureBox1.Visible = true;
+                Btn_Agregar.Visible = true;
+                button1.Visible = true;
+                groupBox1.Visible = true;
+                dataGridView1.Visible = true;
+            });
+          
+         
         }
 
         private void Btn_Buscar_Click(object sender, EventArgs e)
         {
             if (Cmb_Busqueda.Text == "Analisis")
             {
-
                 string str2 = string.Concat("Analisis = ", txt_filtro.Text);
-                prueba_2017Preseleccion.spTraer_Analisis_Calidad_PPM.DefaultView.RowFilter = str2;
-              
+                prueba_2017Preseleccion.spTraer_Analisis_Calidad_PPM.DefaultView.RowFilter = str2;            
             }
            else
            if (Cmb_Busqueda.Text == "Bins")
@@ -161,8 +168,8 @@ namespace Anakena_2017
         }
         public void CmbProducto()
         {         
-                try
-                {
+            try
+            {
                     this.cn.Abrir();
                     SqlCommand sqlCommand = new SqlCommand("spTraer_Control_pmm", this.cn.getConexion());
                     SqlDataAdapter sqlDataAdapter = new SqlDataAdapter(sqlCommand);
@@ -173,11 +180,11 @@ namespace Anakena_2017
                     Cmb_Filtro.DataSource = dataSet.Tables["Producto"].DefaultView;
                     Cmb_Filtro.DisplayMember = "Des_Producto";
                     Cmb_Filtro.ValueMember = "Cod_Producto";
-                }
-                catch
-                {
+            }
+            catch
+            {
                     MessageBox.Show("Ocurrio un problema al cargar variedades", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-                }
+            }
             
             finally
             {
@@ -194,7 +201,7 @@ namespace Anakena_2017
                 Cmb_Filtro.Visible = false;
                 DT_Fecha.Visible = false;
             }
-            else
+           else
            if (Cmb_Busqueda.Text == "Bins")
             {
                 txt_filtro.Text = "";
@@ -202,7 +209,7 @@ namespace Anakena_2017
                 Cmb_Filtro.Visible = false;
                 DT_Fecha.Visible = false;
             }
-            else
+           else
            if (Cmb_Busqueda.Text == "Proceso")
             {
                 txt_filtro.Text = "";
@@ -210,7 +217,7 @@ namespace Anakena_2017
                 Cmb_Filtro.Visible = false;
                 DT_Fecha.Visible = false;
             }
-            else
+           else
            if (Cmb_Busqueda.Text == "Estado")
             {
                 try
@@ -227,7 +234,7 @@ namespace Anakena_2017
                 catch { }
 
             }
-            else
+           else
            if (Cmb_Busqueda.Text == "Turno")
             {
                 try
@@ -244,7 +251,7 @@ namespace Anakena_2017
                 catch { }
 
             }
-            else
+           else
            if ((Cmb_Busqueda.Text == "Producto Analisis") || (Cmb_Busqueda.Text == "Producto Tarja"))
             {
                 try
@@ -260,7 +267,7 @@ namespace Anakena_2017
                 catch { }
 
             }
-            else
+           else
            if (Cmb_Busqueda.Text == "Fecha")
             {
                 txt_filtro.Text = "";
@@ -287,7 +294,9 @@ namespace Anakena_2017
         {
             this.Close();
         }
-
-
+        private void dataGridView1_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            dataGridView1.Refresh();
+        }
     }
 }
