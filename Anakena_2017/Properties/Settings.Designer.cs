@@ -26,7 +26,7 @@ namespace Anakena_2017.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SERVIDORERP;Initial Catalog=Prueba_2017;User ID=sa;Password=Pall2015")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=SERVIDORERP;Initial Catalog=Prueba-2017;User ID=sa;Password=Pall2015")]
         public string Prueba_2017ConnectionString {
             get {
                 return ((string)(this["Prueba_2017ConnectionString"]));

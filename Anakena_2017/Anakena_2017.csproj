@@ -236,6 +236,7 @@
     <Compile Include="splash.Designer.cs">
       <DependentUpon>splash.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sqlexception.cs" />
     <EmbeddedResource Include="FormAnalisisCalidadPMM.resx">
       <DependentUpon>FormAnalisisCalidadPMM.cs</DependentUpon>
     </EmbeddedResource>
@@ -360,8 +361,8 @@
     </None>
     <None Include="Prueba_2017DataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>Prueba_2017DataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Prueba_2017DataSet.Designer.cs</LastGenOutput>
     </None>
     <None Include="Prueba_2017DataSet.xss">
       <DependentUpon>Prueba_2017DataSet.xsd</DependentUpon>
