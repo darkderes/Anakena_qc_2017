@@ -21,9 +21,11 @@ namespace Anakena_2017
         }
         private void FormEmisionGuia_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'prueba_2017DataSet1.Direccion' Puede moverla o quitarla según sea necesario.
+            //this.direccionTableAdapter.Fill(this.prueba_2017DataSet1.Direccion);
             // TODO: esta línea de código carga datos en la tabla 'aNAKENADataSet.Productores' Puede moverla o quitarla según sea necesario.
-          
-            this.transportistaTableAdapter1.Fill(this.prueba_2017DataSet1.Transportista);
+
+         //   this.transportistaTableAdapter1.Fill(this.prueba_2017DataSet1.Transportista);
             this.envaseTableAdapter.Fill(this.aNAKENADataSet.Envase);
             radioButton1.Checked = true;
             radioButton8.Checked = true;
@@ -274,9 +276,17 @@ namespace Anakena_2017
         private void button2_Click(object sender, EventArgs e)
         {
             Datos_productor();
+            if (spTraer_guia_productorDataGridView.RowCount > 0)
+            {
+                CargaDireccion();
+                Link_Direccion.Visible = true;
+            }
+
+
         }
         public void Datos_productor()
         {
+          
           if (radioButton1.Checked)
             {
                 tipo_guia = '1';
@@ -315,11 +325,18 @@ namespace Anakena_2017
                 try
                 {
                     this.spTraer_guia_productorTableAdapter.Fill(this.prueba_2017DataSet1.spTraer_guia_productor, CODIGO, RUT);
-                    Txt_Rut.Text = spTraer_guia_productorDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn14"].Value.ToString();
-                    TxtCodigo.Text = spTraer_guia_productorDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn13"].Value.ToString();
-                    LblDestinatario.Text = spTraer_guia_productorDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn15"].Value.ToString();
-                    LblGiro.Text = spTraer_guia_productorDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn18"].Value.ToString();
-                    LblFono.Text = spTraer_guia_productorDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn17"].Value.ToString();
+                    if (spTraer_guia_productorDataGridView.RowCount > 0)
+                    {
+                        TxtCodigo.Text = spTraer_guia_productorDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn13"].Value.ToString();
+                        Txt_Rut.Text = spTraer_guia_productorDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn14"].Value.ToString();
+                        LblDestinatario.Text = spTraer_guia_productorDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn15"].Value.ToString();
+                        LblGiro.Text = spTraer_guia_productorDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn18"].Value.ToString();
+                        LblFono.Text = spTraer_guia_productorDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn17"].Value.ToString();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Datos no se encuentran registrado","Anakena",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                    }
                 }
                 catch (Sqlexception ex)
                 {
@@ -336,6 +353,11 @@ namespace Anakena_2017
             if ((e.KeyChar != Convert.ToChar(Keys.Return) ? false : this.Txt_Rut.Text != ""))
             {
                 Datos_productor();
+                if (spTraer_guia_productorDataGridView.RowCount > 0)
+                {
+                    CargaDireccion();
+                    Link_Direccion.Visible = true;
+                }
             }
         }
 
@@ -344,7 +366,73 @@ namespace Anakena_2017
             if ((e.KeyChar != Convert.ToChar(Keys.Return) ? false : this.TxtCodigo.Text != ""))
             {
                 Datos_productor();
+                if(spTraer_guia_productorDataGridView.RowCount > 0)
+                {
+                CargaDireccion();
+                Link_Direccion.Visible = true;
+                }
             }
         }
+
+        public void CargaDireccion()
+        {
+        try
+        {
+            this.direccionTableAdapter.FillByRut(this.prueba_2017DataSet1.Direccion,Txt_Rut.Text);
+
+            if (direccionDataGridView.RowCount == 0)
+            {
+             
+                    switch (MessageBox.Show("No existe direccion agregadas,Desea agregarla ??", "Anakena", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
+                    {
+                        case System.Windows.Forms.DialogResult.Yes:
+                            {
+                                FormAdminDireccion d = new FormAdminDireccion();
+                                d.rut_DestinatarioTextBox.Text = Txt_Rut.Text;
+                              
+                                d.rut_DestinatarioTextBox.ReadOnly = true;
+                                d.ShowDialog();
+                                LblDireccion.Text = d.direccionTextBox.Text;
+                                LblComuna.Text = d.comunaTextBox.Text;
+                                break;
+                            }
+                    }
+
+                }
+            else if (direccionDataGridView.RowCount == 1)
+            {
+                LblDireccion.Text = direccionDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn5"].Value.ToString();
+                LblComuna.Text = direccionDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn6"].Value.ToString();
+            }
+                else if (direccionDataGridView.RowCount > 1)
+                {
+                    FormDireccion s = new FormDireccion();
+                    s.rut = Txt_Rut.Text;                 
+                    s.ShowDialog();
+                    LblDireccion.Text = s.direccion;
+                    LblComuna.Text = s.comuna;
+                }
+            }
+           catch (System.Exception ex)
+           {
+            System.Windows.Forms.MessageBox.Show(ex.Message);
+           }
     }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Link_Direccion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormAdminDireccion d = new FormAdminDireccion();
+            d.rut_DestinatarioTextBox.Text = Txt_Rut.Text;
+            d.rut_DestinatarioTextBox.ReadOnly = true;
+            d.ShowDialog();
+            LblDireccion.Text = d.direccionTextBox.Text;
+            LblComuna.Text = d.comunaTextBox.Text;
+        }
+    }
+    
 }

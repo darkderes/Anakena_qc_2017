@@ -34,15 +34,15 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Txt_Rut = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -98,12 +98,12 @@
             this.label3.TabIndex = 19;
             this.label3.Text = "Destinatario";
             // 
-            // textBox1
+            // Txt_Rut
             // 
-            this.textBox1.Location = new System.Drawing.Point(113, 51);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 20);
-            this.textBox1.TabIndex = 29;
+            this.Txt_Rut.Location = new System.Drawing.Point(113, 51);
+            this.Txt_Rut.Name = "Txt_Rut";
+            this.Txt_Rut.Size = new System.Drawing.Size(205, 20);
+            this.Txt_Rut.TabIndex = 29;
             // 
             // textBox2
             // 
@@ -159,17 +159,6 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Direcciones";
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
-            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(445, 47);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(29, 22);
-            this.button3.TabIndex = 34;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
@@ -180,6 +169,18 @@
             this.button2.Size = new System.Drawing.Size(29, 22);
             this.button2.TabIndex = 35;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button3.Location = new System.Drawing.Point(445, 47);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(29, 22);
+            this.button3.TabIndex = 34;
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // FormDestinatario
             // 
@@ -192,7 +193,7 @@
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Txt_Rut);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label4);
@@ -215,7 +216,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Txt_Rut;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;

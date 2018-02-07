@@ -40,6 +40,7 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Link_Direccion = new System.Windows.Forms.LinkLabel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -48,9 +49,9 @@
             this.label12 = new System.Windows.Forms.Label();
             this.LblGiro = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.LblComuna = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.LblDireccion = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.LblDestinatario = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -112,6 +113,13 @@
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.direccionBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.direccionTableAdapter = new Anakena_2017.Prueba_2017DataSetTableAdapters.DireccionTableAdapter();
+            this.direccionDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -128,6 +136,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.productoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_guia_productorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_guia_productorDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.direccionBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.direccionDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -236,6 +246,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.Link_Direccion);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.textBox6);
@@ -244,9 +255,9 @@
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.LblGiro);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.LblComuna);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.LblDireccion);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.LblDestinatario);
             this.groupBox2.Controls.Add(this.label3);
@@ -254,12 +265,25 @@
             this.groupBox2.Controls.Add(this.LblCodigo);
             this.groupBox2.Controls.Add(this.Txt_Rut);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(85, 159);
+            this.groupBox2.Location = new System.Drawing.Point(8, 159);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(544, 149);
+            this.groupBox2.Size = new System.Drawing.Size(692, 149);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos destinatario";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // Link_Direccion
+            // 
+            this.Link_Direccion.AutoSize = true;
+            this.Link_Direccion.Location = new System.Drawing.Point(593, 90);
+            this.Link_Direccion.Name = "Link_Direccion";
+            this.Link_Direccion.Size = new System.Drawing.Size(90, 13);
+            this.Link_Direccion.TabIndex = 21;
+            this.Link_Direccion.TabStop = true;
+            this.Link_Direccion.Text = "Agregar dirección";
+            this.Link_Direccion.Visible = false;
+            this.Link_Direccion.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Link_Direccion_LinkClicked);
             // 
             // button3
             // 
@@ -339,31 +363,31 @@
             this.label10.TabIndex = 14;
             this.label10.Text = "Giro";
             // 
-            // label8
+            // LblComuna
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(393, 90);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(0, 13);
-            this.label8.TabIndex = 13;
+            this.LblComuna.AutoSize = true;
+            this.LblComuna.Location = new System.Drawing.Point(433, 90);
+            this.LblComuna.Name = "LblComuna";
+            this.LblComuna.Size = new System.Drawing.Size(0, 13);
+            this.LblComuna.TabIndex = 13;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(341, 90);
+            this.label7.Location = new System.Drawing.Point(375, 90);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 13);
             this.label7.TabIndex = 12;
             this.label7.Text = "Comuna";
             // 
-            // label5
+            // LblDireccion
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(75, 90);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 13);
-            this.label5.TabIndex = 11;
+            this.LblDireccion.AutoSize = true;
+            this.LblDireccion.Location = new System.Drawing.Point(75, 90);
+            this.LblDireccion.Name = "LblDireccion";
+            this.LblDireccion.Size = new System.Drawing.Size(0, 13);
+            this.LblDireccion.TabIndex = 11;
             // 
             // label6
             // 
@@ -756,6 +780,7 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.DireccionTableAdapter = null;
             this.tableAdapterManager.TransporteTableAdapter = null;
             this.tableAdapterManager.TransportistaTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Anakena_2017.Prueba_2017DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
@@ -783,7 +808,7 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.transportistaDataGridView.DataSource = this.transportistaBindingSource;
-            this.transportistaDataGridView.Location = new System.Drawing.Point(121, 680);
+            this.transportistaDataGridView.Location = new System.Drawing.Point(92, 680);
             this.transportistaDataGridView.Name = "transportistaDataGridView";
             this.transportistaDataGridView.Size = new System.Drawing.Size(13, 30);
             this.transportistaDataGridView.TabIndex = 18;
@@ -849,9 +874,9 @@
             this.dataGridViewTextBoxColumn18,
             this.dataGridViewTextBoxColumn19});
             this.spTraer_guia_productorDataGridView.DataSource = this.spTraer_guia_productorBindingSource;
-            this.spTraer_guia_productorDataGridView.Location = new System.Drawing.Point(8, 680);
+            this.spTraer_guia_productorDataGridView.Location = new System.Drawing.Point(210, 684);
             this.spTraer_guia_productorDataGridView.Name = "spTraer_guia_productorDataGridView";
-            this.spTraer_guia_productorDataGridView.Size = new System.Drawing.Size(72, 30);
+            this.spTraer_guia_productorDataGridView.Size = new System.Drawing.Size(36, 22);
             this.spTraer_guia_productorDataGridView.TabIndex = 19;
             this.spTraer_guia_productorDataGridView.Visible = false;
             // 
@@ -897,13 +922,65 @@
             this.dataGridViewTextBoxColumn19.HeaderText = "Ciudad";
             this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
             // 
+            // direccionBindingSource
+            // 
+            this.direccionBindingSource.DataMember = "Direccion";
+            this.direccionBindingSource.DataSource = this.prueba_2017DataSet1;
+            // 
+            // direccionTableAdapter
+            // 
+            this.direccionTableAdapter.ClearBeforeFill = true;
+            // 
+            // direccionDataGridView
+            // 
+            this.direccionDataGridView.AllowUserToAddRows = false;
+            this.direccionDataGridView.AutoGenerateColumns = false;
+            this.direccionDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.direccionDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6});
+            this.direccionDataGridView.DataSource = this.direccionBindingSource;
+            this.direccionDataGridView.Location = new System.Drawing.Point(564, 680);
+            this.direccionDataGridView.Name = "direccionDataGridView";
+            this.direccionDataGridView.Size = new System.Drawing.Size(56, 30);
+            this.direccionDataGridView.TabIndex = 19;
+            this.direccionDataGridView.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Id_Direccion";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Id_Direccion";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Rut_Destinatario";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Rut_Destinatario";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Direccion";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Direccion";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "Comuna";
+            this.dataGridViewTextBoxColumn6.HeaderText = "Comuna";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
             // FormEmisionGuia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(717, 721);
+            this.ClientSize = new System.Drawing.Size(719, 718);
+            this.Controls.Add(this.direccionDataGridView);
             this.Controls.Add(this.spTraer_guia_productorDataGridView);
             this.Controls.Add(this.transportistaDataGridView);
             this.Controls.Add(this.LblFecha);
@@ -939,6 +1016,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.productoresBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_guia_productorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_guia_productorDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.direccionBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.direccionDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -960,9 +1039,9 @@
         private System.Windows.Forms.TextBox TxtCodigo;
         private System.Windows.Forms.Label LblCodigo;
         private System.Windows.Forms.TextBox Txt_Rut;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label LblComuna;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label LblDireccion;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label LblDestinatario;
         private System.Windows.Forms.Label label3;
@@ -1030,5 +1109,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
+        private System.Windows.Forms.LinkLabel Link_Direccion;
+        private System.Windows.Forms.BindingSource direccionBindingSource;
+        private Prueba_2017DataSetTableAdapters.DireccionTableAdapter direccionTableAdapter;
+        private System.Windows.Forms.DataGridView direccionDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
     }
 }

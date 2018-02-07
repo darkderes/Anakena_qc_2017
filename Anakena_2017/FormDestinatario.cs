@@ -16,5 +16,12 @@ namespace Anakena_2017
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            FormAdminDireccion s = new FormAdminDireccion();
+            s.rut_DestinatarioTextBox.Text = Txt_Rut.Text;
+            s.ShowDialog();
+        }
     }
 }
