@@ -201,6 +201,12 @@
     <Compile Include="FormReporte_Analisis_Productor.Designer.cs">
       <DependentUpon>FormReporte_Analisis_Productor.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReportGuia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportGuia.Designer.cs">
+      <DependentUpon>FormReportGuia.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormReport_Preseleccion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -303,6 +309,9 @@
     <EmbeddedResource Include="FormReporte_Analisis_Productor.resx">
       <DependentUpon>FormReporte_Analisis_Productor.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormReportGuia.resx">
+      <DependentUpon>FormReportGuia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormReport_Preseleccion.resx">
       <DependentUpon>FormReport_Preseleccion.cs</DependentUpon>
     </EmbeddedResource>
@@ -328,6 +337,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReportEmisionGuia.rdlc" />
     <EmbeddedResource Include="Reporte_Analisis_Productor.rdlc" />
     <EmbeddedResource Include="Reporte_Analisis.rdlc" />
     <EmbeddedResource Include="Reporte_Analisis_Calidad_PMM.rdlc" />

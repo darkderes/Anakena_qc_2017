@@ -30,8 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEmisionGuia));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Txt_NumGuia = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.radioButton4 = new System.Windows.Forms.RadioButton();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
@@ -43,7 +45,7 @@
             this.Link_Direccion = new System.Windows.Forms.LinkLabel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.Txt_Orden = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.LblFono = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -65,6 +67,14 @@
             this.TxtPrecio = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.traer_DetalleGuiaDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.traer_DetalleGuiaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.prueba_2017DataSet1 = new Anakena_2017.Prueba_2017DataSet();
             this.button6 = new System.Windows.Forms.Button();
             this.CmbEnvases = new System.Windows.Forms.ComboBox();
             this.envaseBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -75,10 +85,8 @@
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.radioButton8 = new System.Windows.Forms.RadioButton();
             this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Descripción = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.transporteBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.detalle_GuiaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Transportes = new System.Windows.Forms.GroupBox();
             this.button5 = new System.Windows.Forms.Button();
             this.Lbl_Transportista = new System.Windows.Forms.Label();
@@ -87,18 +95,16 @@
             this.label18 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.TxtPatente = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Btn_Emision = new System.Windows.Forms.Button();
             this.LblFecha = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.envaseTableAdapter = new Anakena_2017.ANAKENADataSetTableAdapters.EnvaseTableAdapter();
             this.tableAdapterManager = new Anakena_2017.Prueba_2017DataSetTableAdapters.TableAdapterManager();
-            this.prueba_2017DataSet1 = new Anakena_2017.Prueba_2017DataSet();
             this.transportistaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.transportistaTableAdapter1 = new Anakena_2017.Prueba_2017DataSetTableAdapters.TransportistaTableAdapter();
             this.transportistaDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.transporteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.transporteTableAdapter = new Anakena_2017.Prueba_2017DataSetTableAdapters.TransporteTableAdapter();
             this.productoresBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productoresTableAdapter = new Anakena_2017.ANAKENADataSetTableAdapters.ProductoresTableAdapter();
@@ -120,45 +126,66 @@
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guiaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.guiaTableAdapter = new Anakena_2017.Prueba_2017DataSetTableAdapters.GuiaTableAdapter();
+            this.detalle_GuiaTableAdapter = new Anakena_2017.Prueba_2017DataSetTableAdapters.Detalle_GuiaTableAdapter();
+            this.traer_DetalleGuiaTableAdapter = new Anakena_2017.Prueba_2017DataSetTableAdapters.Traer_DetalleGuiaTableAdapter();
+            this.transporte1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.transporte1TableAdapter = new Anakena_2017.Prueba_2017DataSetTableAdapters.Transporte1TableAdapter();
+            this.label4 = new System.Windows.Forms.Label();
+            this.destinatarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.destinatarioTableAdapter = new Anakena_2017.Prueba_2017DataSetTableAdapters.DestinatarioTableAdapter();
+            this.destinatarioDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.traer_DetalleGuiaDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.traer_DetalleGuiaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prueba_2017DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.envaseBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aNAKENADataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aNAKENADataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transporteBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detalle_GuiaBindingSource)).BeginInit();
             this.Transportes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prueba_2017DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transportistaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.transportistaDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.transporteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productoresBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_guia_productorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_guia_productorDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.direccionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.direccionDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guiaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transporte1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.destinatarioBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.destinatarioDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(459, 1);
+            this.label1.Location = new System.Drawing.Point(518, 1);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "N° Guia";
             // 
-            // textBox1
+            // Txt_NumGuia
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.ForeColor = System.Drawing.Color.Maroon;
-            this.textBox1.Location = new System.Drawing.Point(405, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(236, 38);
-            this.textBox1.TabIndex = 2;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Txt_NumGuia.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_NumGuia.ForeColor = System.Drawing.Color.Maroon;
+            this.Txt_NumGuia.Location = new System.Drawing.Point(464, 35);
+            this.Txt_NumGuia.Name = "Txt_NumGuia";
+            this.Txt_NumGuia.Size = new System.Drawing.Size(236, 38);
+            this.Txt_NumGuia.TabIndex = 2;
+            this.Txt_NumGuia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // groupBox1
             // 
@@ -249,7 +276,7 @@
             this.groupBox2.Controls.Add(this.Link_Direccion);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.Txt_Orden);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.LblFono);
             this.groupBox2.Controls.Add(this.label12);
@@ -309,13 +336,13 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // textBox6
+            // Txt_Orden
             // 
-            this.textBox6.Location = new System.Drawing.Point(420, 119);
-            this.textBox6.MaxLength = 10;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(80, 20);
-            this.textBox6.TabIndex = 14;
+            this.Txt_Orden.Location = new System.Drawing.Point(420, 119);
+            this.Txt_Orden.MaxLength = 10;
+            this.Txt_Orden.Name = "Txt_Orden";
+            this.Txt_Orden.Size = new System.Drawing.Size(80, 20);
+            this.Txt_Orden.TabIndex = 14;
             // 
             // label14
             // 
@@ -501,6 +528,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.traer_DetalleGuiaDataGridView);
             this.groupBox3.Controls.Add(this.button6);
             this.groupBox3.Controls.Add(this.CmbEnvases);
             this.groupBox3.Controls.Add(this.CmbProductos);
@@ -508,7 +536,6 @@
             this.groupBox3.Controls.Add(this.radioButton7);
             this.groupBox3.Controls.Add(this.radioButton8);
             this.groupBox3.Controls.Add(this.button4);
-            this.groupBox3.Controls.Add(this.dataGridView1);
             this.groupBox3.Controls.Add(this.TxtPrecio);
             this.groupBox3.Controls.Add(this.label16);
             this.groupBox3.Controls.Add(this.label17);
@@ -517,17 +544,89 @@
             this.groupBox3.Controls.Add(this.label15);
             this.groupBox3.Location = new System.Drawing.Point(8, 314);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(692, 301);
+            this.groupBox3.Size = new System.Drawing.Size(692, 331);
             this.groupBox3.TabIndex = 14;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Detalle guia";
+            // 
+            // traer_DetalleGuiaDataGridView
+            // 
+            this.traer_DetalleGuiaDataGridView.AllowUserToAddRows = false;
+            this.traer_DetalleGuiaDataGridView.AutoGenerateColumns = false;
+            this.traer_DetalleGuiaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.traer_DetalleGuiaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11});
+            this.traer_DetalleGuiaDataGridView.DataSource = this.traer_DetalleGuiaBindingSource;
+            this.traer_DetalleGuiaDataGridView.Location = new System.Drawing.Point(36, 81);
+            this.traer_DetalleGuiaDataGridView.Name = "traer_DetalleGuiaDataGridView";
+            this.traer_DetalleGuiaDataGridView.Size = new System.Drawing.Size(600, 220);
+            this.traer_DetalleGuiaDataGridView.TabIndex = 27;
+            this.traer_DetalleGuiaDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.traer_DetalleGuiaDataGridView_CellClick);
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "Id_Detalle";
+            this.dataGridViewTextBoxColumn7.HeaderText = "Id_Detalle";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            this.dataGridViewTextBoxColumn7.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "Num_Guia";
+            this.dataGridViewTextBoxColumn8.HeaderText = "Num_Guia";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            this.dataGridViewTextBoxColumn8.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Cantidad";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewTextBoxColumn9.HeaderText = "Cantidad";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Descripcion";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Descripcion";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Width = 350;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Precio";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Format = "C0";
+            dataGridViewCellStyle2.NullValue = null;
+            this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewTextBoxColumn11.HeaderText = "Precio";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            // 
+            // traer_DetalleGuiaBindingSource
+            // 
+            this.traer_DetalleGuiaBindingSource.DataMember = "Traer_DetalleGuia";
+            this.traer_DetalleGuiaBindingSource.DataSource = this.prueba_2017DataSet1;
+            // 
+            // prueba_2017DataSet1
+            // 
+            this.prueba_2017DataSet1.DataSetName = "Prueba_2017DataSet";
+            this.prueba_2017DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
             this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Location = new System.Drawing.Point(657, 91);
+            this.button6.Location = new System.Drawing.Point(642, 91);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(29, 22);
             this.button6.TabIndex = 27;
@@ -624,35 +723,15 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // dataGridView1
+            // transporteBindingSource
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Cantidad,
-            this.Descripción,
-            this.precio});
-            this.dataGridView1.Location = new System.Drawing.Point(21, 91);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(626, 204);
-            this.dataGridView1.TabIndex = 14;
+            this.transporteBindingSource.DataMember = "Transporte";
+            this.transporteBindingSource.DataSource = this.prueba_2017DataSet1;
             // 
-            // Cantidad
+            // detalle_GuiaBindingSource
             // 
-            this.Cantidad.HeaderText = "Cantidad";
-            this.Cantidad.Name = "Cantidad";
-            // 
-            // Descripción
-            // 
-            this.Descripción.HeaderText = "Descripción";
-            this.Descripción.Name = "Descripción";
-            this.Descripción.Width = 420;
-            // 
-            // precio
-            // 
-            this.precio.HeaderText = "Precio";
-            this.precio.Name = "precio";
+            this.detalle_GuiaBindingSource.DataMember = "Detalle_Guia";
+            this.detalle_GuiaBindingSource.DataSource = this.prueba_2017DataSet1;
             // 
             // Transportes
             // 
@@ -663,7 +742,7 @@
             this.Transportes.Controls.Add(this.label18);
             this.Transportes.Controls.Add(this.label13);
             this.Transportes.Controls.Add(this.TxtPatente);
-            this.Transportes.Location = new System.Drawing.Point(8, 621);
+            this.Transportes.Location = new System.Drawing.Point(8, 651);
             this.Transportes.Name = "Transportes";
             this.Transportes.Size = new System.Drawing.Size(692, 49);
             this.Transportes.TabIndex = 15;
@@ -687,9 +766,9 @@
             this.Lbl_Transportista.AutoSize = true;
             this.Lbl_Transportista.Location = new System.Drawing.Point(332, 22);
             this.Lbl_Transportista.Name = "Lbl_Transportista";
-            this.Lbl_Transportista.Size = new System.Drawing.Size(41, 13);
+            this.Lbl_Transportista.Size = new System.Drawing.Size(0, 13);
             this.Lbl_Transportista.TabIndex = 20;
-            this.Lbl_Transportista.Text = "label19";
+            this.Lbl_Transportista.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label20
             // 
@@ -738,27 +817,28 @@
             this.TxtPatente.Size = new System.Drawing.Size(57, 20);
             this.TxtPatente.TabIndex = 16;
             // 
-            // button1
+            // Btn_Emision
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(290, 676);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 39);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Emitir guia";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Btn_Emision.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Btn_Emision.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Emision.BackgroundImage")));
+            this.Btn_Emision.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Btn_Emision.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Emision.Location = new System.Drawing.Point(290, 706);
+            this.Btn_Emision.Name = "Btn_Emision";
+            this.Btn_Emision.Size = new System.Drawing.Size(104, 39);
+            this.Btn_Emision.TabIndex = 16;
+            this.Btn_Emision.Text = "Emitir guia";
+            this.Btn_Emision.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Btn_Emision.UseVisualStyleBackColor = false;
+            this.Btn_Emision.Click += new System.EventHandler(this.button1_Click);
             // 
             // LblFecha
             // 
             this.LblFecha.AutoSize = true;
-            this.LblFecha.Location = new System.Drawing.Point(512, 84);
+            this.LblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblFecha.Location = new System.Drawing.Point(580, 84);
             this.LblFecha.Name = "LblFecha";
-            this.LblFecha.Size = new System.Drawing.Size(41, 13);
+            this.LblFecha.Size = new System.Drawing.Size(48, 13);
             this.LblFecha.TabIndex = 18;
             this.LblFecha.Text = "label22";
             // 
@@ -780,15 +860,14 @@
             // 
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.Connection = null;
+            this.tableAdapterManager.DestinatarioTableAdapter = null;
+            this.tableAdapterManager.Detalle_GuiaTableAdapter = null;
             this.tableAdapterManager.DireccionTableAdapter = null;
+            this.tableAdapterManager.GuiaTableAdapter = null;
+            this.tableAdapterManager.Transporte1TableAdapter = null;
             this.tableAdapterManager.TransporteTableAdapter = null;
             this.tableAdapterManager.TransportistaTableAdapter = null;
             this.tableAdapterManager.UpdateOrder = Anakena_2017.Prueba_2017DataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // prueba_2017DataSet1
-            // 
-            this.prueba_2017DataSet1.DataSetName = "Prueba_2017DataSet";
-            this.prueba_2017DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // transportistaBindingSource
             // 
@@ -808,7 +887,7 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.transportistaDataGridView.DataSource = this.transportistaBindingSource;
-            this.transportistaDataGridView.Location = new System.Drawing.Point(92, 680);
+            this.transportistaDataGridView.Location = new System.Drawing.Point(8, 706);
             this.transportistaDataGridView.Name = "transportistaDataGridView";
             this.transportistaDataGridView.Size = new System.Drawing.Size(13, 30);
             this.transportistaDataGridView.TabIndex = 18;
@@ -825,11 +904,6 @@
             this.dataGridViewTextBoxColumn2.DataPropertyName = "Nombre";
             this.dataGridViewTextBoxColumn2.HeaderText = "Nombre";
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // transporteBindingSource
-            // 
-            this.transporteBindingSource.DataMember = "Transporte";
-            this.transporteBindingSource.DataSource = this.prueba_2017DataSet1;
             // 
             // transporteTableAdapter
             // 
@@ -874,7 +948,7 @@
             this.dataGridViewTextBoxColumn18,
             this.dataGridViewTextBoxColumn19});
             this.spTraer_guia_productorDataGridView.DataSource = this.spTraer_guia_productorBindingSource;
-            this.spTraer_guia_productorDataGridView.Location = new System.Drawing.Point(210, 684);
+            this.spTraer_guia_productorDataGridView.Location = new System.Drawing.Point(23, 706);
             this.spTraer_guia_productorDataGridView.Name = "spTraer_guia_productorDataGridView";
             this.spTraer_guia_productorDataGridView.Size = new System.Drawing.Size(36, 22);
             this.spTraer_guia_productorDataGridView.TabIndex = 19;
@@ -942,7 +1016,7 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.direccionDataGridView.DataSource = this.direccionBindingSource;
-            this.direccionDataGridView.Location = new System.Drawing.Point(564, 680);
+            this.direccionDataGridView.Location = new System.Drawing.Point(65, 706);
             this.direccionDataGridView.Name = "direccionDataGridView";
             this.direccionDataGridView.Size = new System.Drawing.Size(56, 30);
             this.direccionDataGridView.TabIndex = 19;
@@ -973,25 +1047,120 @@
             this.dataGridViewTextBoxColumn6.HeaderText = "Comuna";
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
+            // guiaBindingSource
+            // 
+            this.guiaBindingSource.DataMember = "Guia";
+            this.guiaBindingSource.DataSource = this.prueba_2017DataSet1;
+            // 
+            // guiaTableAdapter
+            // 
+            this.guiaTableAdapter.ClearBeforeFill = true;
+            // 
+            // detalle_GuiaTableAdapter
+            // 
+            this.detalle_GuiaTableAdapter.ClearBeforeFill = true;
+            // 
+            // traer_DetalleGuiaTableAdapter
+            // 
+            this.traer_DetalleGuiaTableAdapter.ClearBeforeFill = true;
+            // 
+            // transporte1BindingSource
+            // 
+            this.transporte1BindingSource.DataMember = "Transporte1";
+            this.transporte1BindingSource.DataSource = this.prueba_2017DataSet1;
+            // 
+            // transporte1TableAdapter
+            // 
+            this.transporte1TableAdapter.ClearBeforeFill = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(524, 84);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.TabIndex = 20;
+            this.label4.Text = "Fecha :";
+            // 
+            // destinatarioBindingSource
+            // 
+            this.destinatarioBindingSource.DataMember = "Destinatario";
+            this.destinatarioBindingSource.DataSource = this.prueba_2017DataSet1;
+            // 
+            // destinatarioTableAdapter
+            // 
+            this.destinatarioTableAdapter.ClearBeforeFill = true;
+            // 
+            // destinatarioDataGridView
+            // 
+            this.destinatarioDataGridView.AllowUserToAddRows = false;
+            this.destinatarioDataGridView.AutoGenerateColumns = false;
+            this.destinatarioDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.destinatarioDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn12,
+            this.dataGridViewTextBoxColumn20,
+            this.dataGridViewTextBoxColumn21,
+            this.dataGridViewTextBoxColumn22,
+            this.dataGridViewTextBoxColumn23});
+            this.destinatarioDataGridView.DataSource = this.destinatarioBindingSource;
+            this.destinatarioDataGridView.Location = new System.Drawing.Point(621, 706);
+            this.destinatarioDataGridView.Name = "destinatarioDataGridView";
+            this.destinatarioDataGridView.Size = new System.Drawing.Size(70, 47);
+            this.destinatarioDataGridView.TabIndex = 20;
+            this.destinatarioDataGridView.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn12
+            // 
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Rut_Destinatario";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Rut_Destinatario";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
+            // 
+            // dataGridViewTextBoxColumn20
+            // 
+            this.dataGridViewTextBoxColumn20.DataPropertyName = "Nombre";
+            this.dataGridViewTextBoxColumn20.HeaderText = "Nombre";
+            this.dataGridViewTextBoxColumn20.Name = "dataGridViewTextBoxColumn20";
+            // 
+            // dataGridViewTextBoxColumn21
+            // 
+            this.dataGridViewTextBoxColumn21.DataPropertyName = "Giro";
+            this.dataGridViewTextBoxColumn21.HeaderText = "Giro";
+            this.dataGridViewTextBoxColumn21.Name = "dataGridViewTextBoxColumn21";
+            // 
+            // dataGridViewTextBoxColumn22
+            // 
+            this.dataGridViewTextBoxColumn22.DataPropertyName = "Fono";
+            this.dataGridViewTextBoxColumn22.HeaderText = "Fono";
+            this.dataGridViewTextBoxColumn22.Name = "dataGridViewTextBoxColumn22";
+            // 
+            // dataGridViewTextBoxColumn23
+            // 
+            this.dataGridViewTextBoxColumn23.DataPropertyName = "Tipo_Guia";
+            this.dataGridViewTextBoxColumn23.HeaderText = "Tipo_Guia";
+            this.dataGridViewTextBoxColumn23.Name = "dataGridViewTextBoxColumn23";
+            // 
             // FormEmisionGuia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(719, 718);
+            this.ClientSize = new System.Drawing.Size(709, 765);
+            this.Controls.Add(this.destinatarioDataGridView);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.Transportes);
             this.Controls.Add(this.direccionDataGridView);
+            this.Controls.Add(this.LblFecha);
             this.Controls.Add(this.spTraer_guia_productorDataGridView);
             this.Controls.Add(this.transportistaDataGridView);
-            this.Controls.Add(this.LblFecha);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Transportes);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Txt_NumGuia);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Btn_Emision);
             this.Name = "FormEmisionGuia";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormEmisionGuia";
@@ -1002,22 +1171,28 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.traer_DetalleGuiaDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.traer_DetalleGuiaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prueba_2017DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.envaseBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aNAKENADataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.aNAKENADataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transporteBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.detalle_GuiaBindingSource)).EndInit();
             this.Transportes.ResumeLayout(false);
             this.Transportes.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prueba_2017DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transportistaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.transportistaDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.transporteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productoresBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_guia_productorBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_guia_productorDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.direccionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.direccionDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guiaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.transporte1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.destinatarioBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.destinatarioDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1027,7 +1202,7 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox Txt_NumGuia;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
@@ -1056,12 +1231,8 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox TxtPrecio;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox Txt_Orden;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripción;
-        private System.Windows.Forms.DataGridViewTextBoxColumn precio;
         private System.Windows.Forms.GroupBox Transportes;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox TxtPatente;
@@ -1069,7 +1240,7 @@
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label Lbl_Transportista;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Btn_Emision;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button4;
@@ -1117,5 +1288,28 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.BindingSource guiaBindingSource;
+        private Prueba_2017DataSetTableAdapters.GuiaTableAdapter guiaTableAdapter;
+        private System.Windows.Forms.BindingSource detalle_GuiaBindingSource;
+        private Prueba_2017DataSetTableAdapters.Detalle_GuiaTableAdapter detalle_GuiaTableAdapter;
+        private System.Windows.Forms.BindingSource traer_DetalleGuiaBindingSource;
+        private Prueba_2017DataSetTableAdapters.Traer_DetalleGuiaTableAdapter traer_DetalleGuiaTableAdapter;
+        private System.Windows.Forms.DataGridView traer_DetalleGuiaDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.BindingSource transporte1BindingSource;
+        private Prueba_2017DataSetTableAdapters.Transporte1TableAdapter transporte1TableAdapter;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.BindingSource destinatarioBindingSource;
+        private Prueba_2017DataSetTableAdapters.DestinatarioTableAdapter destinatarioTableAdapter;
+        private System.Windows.Forms.DataGridView destinatarioDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn20;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
     }
 }

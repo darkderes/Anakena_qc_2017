@@ -43,5 +43,14 @@ namespace Anakena_2017
             comuna = direccionDataGridView.Rows[e.RowIndex].Cells["dataGridViewTextBoxColumn4"].Value.ToString();
             this.Close();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FormAdminDireccion s = new FormAdminDireccion();
+            s.rut_DestinatarioTextBox.Text = rut;
+            s.rut_DestinatarioTextBox.ReadOnly = true;
+            s.ShowDialog();
+            this.direccionTableAdapter.FillByRut(this.prueba_2017DataSet.Direccion, rut);
+        }
     }
 }
