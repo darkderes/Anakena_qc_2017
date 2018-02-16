@@ -195,6 +195,12 @@
     <Compile Include="FormReport.Designer.cs">
       <DependentUpon>FormReport.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReporteGuia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteGuia.Designer.cs">
+      <DependentUpon>FormReporteGuia.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormReporte_Analisis_Productor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -247,6 +253,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Prueba_2017_PMM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Prueba_2018DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Prueba_2018DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="splash.cs">
       <SubType>Form</SubType>
@@ -305,6 +316,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormReport.resx">
       <DependentUpon>FormReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteGuia.resx">
+      <DependentUpon>FormReporteGuia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormReporte_Analisis_Productor.resx">
       <DependentUpon>FormReporte_Analisis_Productor.cs</DependentUpon>
@@ -416,6 +430,17 @@
     </None>
     <None Include="Prueba_2017_PMM.xss">
       <DependentUpon>Prueba_2017_PMM.xsd</DependentUpon>
+    </None>
+    <None Include="Prueba_2018DataSet.xsc">
+      <DependentUpon>Prueba_2018DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Prueba_2018DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Prueba_2018DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Prueba_2018DataSet.xss">
+      <DependentUpon>Prueba_2018DataSet.xsd</DependentUpon>
     </None>
     <None Include="Resources\banner1.jpg" />
   </ItemGroup>

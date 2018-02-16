@@ -293,6 +293,8 @@ namespace Anakena_2017
 
                             transporte1TableAdapter.InsertarTransporte(Txt_NumGuia.Text, TxtRut.Text, TxtPatente.Text);
                             MessageBox.Show("Guia ingresada correctamente", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            FormReporteGuia s = new FormReporteGuia(Txt_NumGuia.Text);
+                            s.ShowDialog();
                         }
                         else
                         {
@@ -317,7 +319,8 @@ namespace Anakena_2017
             {
                 MessageBox.Show("no puede ingresar datos sin describir elementos ", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-         
+          
+
         }
 
         private void button2_Click(object sender, EventArgs e)

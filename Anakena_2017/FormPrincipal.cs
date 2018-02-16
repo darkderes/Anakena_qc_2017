@@ -58,6 +58,9 @@ namespace Anakena_2017
         private ToolStripMenuItem inventarioBinsToolStripMenuItem;
         private ToolStripMenuItem inventarioToolStripMenuItem;
         private ToolStripMenuItem emisionDeGuiaToolStripMenuItem;
+        private ToolStripMenuItem ordenDeCompraToolStripMenuItem;
+        private ToolStripMenuItem ordenesDeCompraToolStripMenuItem;
+        private ToolStripMenuItem proveedoresToolStripMenuItem;
         string nivel = "";
         public FormPrincipal(string pass)
         {
@@ -168,6 +171,10 @@ namespace Anakena_2017
             this.cToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inventarioBinsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.emisionDeGuiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controlCalidadToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.recepcionConPelonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -181,9 +188,8 @@ namespace Anakena_2017
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.inventarioBinsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.inventarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.emisionDeGuiaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ordenesDeCompraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.proveedoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -199,7 +205,8 @@ namespace Anakena_2017
             this.imagenesToolStripMenuItem,
             this.procesoDeSecadoToolStripMenuItem,
             this.salaProcesosToolStripMenuItem,
-            this.inventarioBinsToolStripMenuItem});
+            this.inventarioBinsToolStripMenuItem,
+            this.ordenDeCompraToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
@@ -222,7 +229,6 @@ namespace Anakena_2017
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(104, 20);
             this.fileToolStripMenuItem.Text = "Programa Pelon";
- 
             // 
             // newToolStripMenuItem
             // 
@@ -338,7 +344,6 @@ namespace Anakena_2017
             this.procesoDeSecadoToolStripMenuItem.Name = "procesoDeSecadoToolStripMenuItem";
             this.procesoDeSecadoToolStripMenuItem.Size = new System.Drawing.Size(117, 20);
             this.procesoDeSecadoToolStripMenuItem.Text = "Proceso de secado";
-         
             // 
             // totalesToolStripMenuItem
             // 
@@ -362,7 +367,6 @@ namespace Anakena_2017
             this.salaProcesosToolStripMenuItem.Name = "salaProcesosToolStripMenuItem";
             this.salaProcesosToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
             this.salaProcesosToolStripMenuItem.Text = "Sala Procesos";
-
             // 
             // cToolStripMenuItem
             // 
@@ -370,9 +374,8 @@ namespace Anakena_2017
             this.rToolStripMenuItem,
             this.generalToolStripMenuItem});
             this.cToolStripMenuItem.Name = "cToolStripMenuItem";
-            this.cToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.cToolStripMenuItem.Text = "Control SP";
-
             // 
             // rToolStripMenuItem
             // 
@@ -387,6 +390,41 @@ namespace Anakena_2017
             this.generalToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.generalToolStripMenuItem.Text = "General";
             this.generalToolStripMenuItem.Click += new System.EventHandler(this.generalToolStripMenuItem_Click);
+            // 
+            // inventarioBinsToolStripMenuItem
+            // 
+            this.inventarioBinsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inventarioToolStripMenuItem,
+            this.emisionDeGuiaToolStripMenuItem});
+            this.inventarioBinsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.inventarioBinsToolStripMenuItem.Name = "inventarioBinsToolStripMenuItem";
+            this.inventarioBinsToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
+            this.inventarioBinsToolStripMenuItem.Text = "Inventario Bins";
+            // 
+            // inventarioToolStripMenuItem
+            // 
+            this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
+            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.inventarioToolStripMenuItem.Text = "Inventario";
+            this.inventarioToolStripMenuItem.Click += new System.EventHandler(this.inventarioToolStripMenuItem_Click);
+            // 
+            // emisionDeGuiaToolStripMenuItem
+            // 
+            this.emisionDeGuiaToolStripMenuItem.Name = "emisionDeGuiaToolStripMenuItem";
+            this.emisionDeGuiaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
+            this.emisionDeGuiaToolStripMenuItem.Text = "Emision de guia";
+            this.emisionDeGuiaToolStripMenuItem.Click += new System.EventHandler(this.emisionDeGuiaToolStripMenuItem_Click);
+            // 
+            // ordenDeCompraToolStripMenuItem
+            // 
+            this.ordenDeCompraToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ordenesDeCompraToolStripMenuItem,
+            this.proveedoresToolStripMenuItem});
+            this.ordenDeCompraToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ordenDeCompraToolStripMenuItem.Name = "ordenDeCompraToolStripMenuItem";
+            this.ordenDeCompraToolStripMenuItem.Size = new System.Drawing.Size(114, 20);
+            this.ordenDeCompraToolStripMenuItem.Text = "Orden de Compra";
+            this.ordenDeCompraToolStripMenuItem.Click += new System.EventHandler(this.ordenDeCompraToolStripMenuItem_Click);
             // 
             // controlCalidadToolStripMenuItem
             // 
@@ -449,7 +487,7 @@ namespace Anakena_2017
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(953, 46);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 16);
+            this.label1.Size = new System.Drawing.Size(143, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Conectado como : ";
             // 
@@ -459,7 +497,7 @@ namespace Anakena_2017
             this.lbl_poductor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_poductor.Location = new System.Drawing.Point(1086, 46);
             this.lbl_poductor.Name = "lbl_poductor";
-            this.lbl_poductor.Size = new System.Drawing.Size(51, 16);
+            this.lbl_poductor.Size = new System.Drawing.Size(52, 16);
             this.lbl_poductor.TabIndex = 4;
             this.lbl_poductor.Text = "label2";
             // 
@@ -493,28 +531,19 @@ namespace Anakena_2017
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
-            // inventarioBinsToolStripMenuItem
+            // ordenesDeCompraToolStripMenuItem
             // 
-            this.inventarioBinsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.inventarioToolStripMenuItem,
-            this.emisionDeGuiaToolStripMenuItem});
-            this.inventarioBinsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.inventarioBinsToolStripMenuItem.Name = "inventarioBinsToolStripMenuItem";
-            this.inventarioBinsToolStripMenuItem.Size = new System.Drawing.Size(97, 20);
-            this.inventarioBinsToolStripMenuItem.Text = "Inventario Bins";
+            this.ordenesDeCompraToolStripMenuItem.Name = "ordenesDeCompraToolStripMenuItem";
+            this.ordenesDeCompraToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.ordenesDeCompraToolStripMenuItem.Text = "Ordenes de compra";
+            this.ordenesDeCompraToolStripMenuItem.Click += new System.EventHandler(this.ordenesDeCompraToolStripMenuItem_Click);
             // 
-            // inventarioToolStripMenuItem
+            // proveedoresToolStripMenuItem
             // 
-            this.inventarioToolStripMenuItem.Name = "inventarioToolStripMenuItem";
-            this.inventarioToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.inventarioToolStripMenuItem.Text = "Inventario";
-            // 
-            // emisionDeGuiaToolStripMenuItem
-            // 
-            this.emisionDeGuiaToolStripMenuItem.Name = "emisionDeGuiaToolStripMenuItem";
-            this.emisionDeGuiaToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.emisionDeGuiaToolStripMenuItem.Text = "Emision de guia";
-            this.emisionDeGuiaToolStripMenuItem.Click += new System.EventHandler(this.emisionDeGuiaToolStripMenuItem_Click);
+            this.proveedoresToolStripMenuItem.Name = "proveedoresToolStripMenuItem";
+            this.proveedoresToolStripMenuItem.Size = new System.Drawing.Size(178, 22);
+            this.proveedoresToolStripMenuItem.Text = "Proveedores";
+            this.proveedoresToolStripMenuItem.Click += new System.EventHandler(this.proveedoresToolStripMenuItem_Click);
             // 
             // FormPrincipal
             // 
@@ -673,6 +702,29 @@ namespace Anakena_2017
         {
             FormEmisionGuia guia = new FormEmisionGuia();
             guia.ShowDialog();
+        }
+
+        private void inventarioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormReporteGuia s = new FormReporteGuia("35000");
+            s.ShowDialog();
+        }
+
+        private void ordenDeCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void ordenesDeCompraToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Recepcion_Nueces.FormTraerOrdenesCompra s = new Recepcion_Nueces.FormTraerOrdenesCompra();
+            s.ShowDialog();
+        }
+
+        private void proveedoresToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Recepcion_Nueces.FormProveedores s = new Recepcion_Nueces.FormProveedores();
+            s.ShowDialog();
         }
     }
 }
