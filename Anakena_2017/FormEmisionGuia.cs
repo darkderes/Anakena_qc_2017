@@ -16,8 +16,10 @@ namespace Anakena_2017
         string RUT = null;
         string CODIGO = null;
         short id = 0;
-        public FormEmisionGuia()
+        public string usuario;
+        public FormEmisionGuia(string user)
         {
+            usuario = user;
             InitializeComponent();
         }
         private void FormEmisionGuia_Load(object sender, EventArgs e)
@@ -25,6 +27,7 @@ namespace Anakena_2017
             this.envaseTableAdapter.Fill(this.aNAKENADataSet.Envase);
             radioButton1.Checked = true;
             radioButton8.Checked = true;
+            CmbUnidad.SelectedIndex = 0;
             LblFecha.Text = DateTime.Now.ToShortDateString();
         }
 
@@ -107,6 +110,19 @@ namespace Anakena_2017
                 TxtCodigo.Visible = false;
                 button2.Location = new Point(141, 25);
                 button3.Location = new Point(176, 25);
+                this.destinatarioTableAdapter.FillByDestinatario(this.prueba_2017DataSet1.Destinatario,"78185710-6", "2");
+                if (destinatarioDataGridView.RowCount > 0)
+                {
+                    Txt_Rut.Text = "78185710-6";
+                    LblDestinatario.Text = destinatarioDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn20"].Value.ToString();
+                    LblGiro.Text = destinatarioDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn21"].Value.ToString();
+                    LblFono.Text = destinatarioDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn22"].Value.ToString();
+                    CargaDireccion();
+                }
+                else
+                {
+                    MessageBox.Show("Datos no se encuentran registrado", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             else
             {
@@ -117,43 +133,46 @@ namespace Anakena_2017
             }
         }
         private void button4_Click(object sender, EventArgs e)         
-        {                 
-            if ((TxtCantidad.TextLength > 0) && (TxtPrecio.TextLength > 0)&&(Txt_NumGuia.Text.Length > 0))
-
+        {
+            if (traer_DetalleGuiaDataGridView.RowCount <= 18)
             {
-                string tipo_detalle = "";
-                string descripcion = "";
-                string envases = "";
-                if (radioButton8.Checked)
+                if ((TxtCantidad.TextLength > 0) && (TxtPrecio.TextLength > 0) && (Txt_NumGuia.Text.Length > 0))
                 {
-                    tipo_detalle = "1";
-                    descripcion ="";
-                    envases = CmbEnvases.SelectedValue.ToString();
+                    string tipo_detalle = "";
+                    string descripcion = "";
+                    string envases = "";
+                    if (radioButton8.Checked)
+                    {
+                        tipo_detalle = "1";
+                        descripcion = "";
+                        envases = CmbEnvases.SelectedValue.ToString();
+                    }
+                    else
+                    if (radioButton7.Checked)
+                    {
+                        tipo_detalle = "2";
+                        descripcion = TxtDescripcion.Text.ToUpper();
+                        envases = null;
+                    }
+                    else
+                    if (radioButton6.Checked)
+                    {
+                        tipo_detalle = "3";
+                        descripcion = CmbProductos.Text.ToUpper();
+                        envases = null;
+                    }
+                    this.detalle_GuiaTableAdapter.InsertarDetalle(Txt_NumGuia.Text, tipo_detalle, Convert.ToInt32(TxtCantidad.Text), descripcion, Convert.ToInt32(TxtPrecio.Text), envases, CmbUnidad.Text);
+                    this.traer_DetalleGuiaTableAdapter.Fill(this.prueba_2017DataSet1.Traer_DetalleGuia, Txt_NumGuia.Text);
                 }
                 else
-                if (radioButton7.Checked)
                 {
-                    tipo_detalle = "2";
-                    descripcion = TxtDescripcion.Text.ToUpper();
-                    envases = null;
+                    MessageBox.Show("Debe rellenar los datos de cantidad y precio para poder agregar", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-                else
-                if (radioButton6.Checked)
-                {
-                    tipo_detalle = "3";
-                    descripcion = CmbProductos.Text.ToUpper();
-                    envases = null;
-                }
-                this.detalle_GuiaTableAdapter.InsertarDetalle(Txt_NumGuia.Text, tipo_detalle, Convert.ToInt32(TxtCantidad.Text), descripcion, Convert.ToInt32(TxtPrecio.Text),envases);
-                this.traer_DetalleGuiaTableAdapter.Fill(this.prueba_2017DataSet1.Traer_DetalleGuia,Txt_NumGuia.Text);
-            
-                //  consultaDetalle();
-
             }
             else
             {
-                MessageBox.Show("Debe rellenar los datos de cantidad y precio para poder agregar","Anakena",MessageBoxButtons.OK,MessageBoxIcon.Information);
-            }           
+                MessageBox.Show("Solo se permiten detallar como maximo 18 descripciones de producto,Si necesita mas realice una nueva guia", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }    
         }
       
         private void button5_Click(object sender, EventArgs e)
@@ -273,25 +292,21 @@ namespace Anakena_2017
         {
             if (traer_DetalleGuiaDataGridView.RowCount > 0)
             {
-
                 try
                 {
-
                     if ((!String.IsNullOrEmpty(Txt_NumGuia.Text)) && (!String.IsNullOrEmpty(tipo_guia.ToString())))
                     {
-
                         if (TxtRut.TextLength > 0)
                         {
                             try
                             {
-                                this.guiaTableAdapter.InsertarGuia(Txt_NumGuia.Text, tipo_guia.ToString(), Txt_Rut.Text, Txt_Orden.Text, id, Convert.ToDateTime(LblFecha.Text));
+                                this.guiaTableAdapter.InsertarGuia(Txt_NumGuia.Text, tipo_guia.ToString(), Txt_Rut.Text, Txt_Orden.Text, id, Convert.ToDateTime(LblFecha.Text), "Emitida", usuario);
                             }
                             catch (Sqlexception ez)
                             {
                                 MessageBox.Show(ez.Message);
                             }
-
-                            transporte1TableAdapter.InsertarTransporte(Txt_NumGuia.Text, TxtRut.Text, TxtPatente.Text);
+                            transporte1TableAdapter.InsertarTransporte(Txt_NumGuia.Text, TxtRut.Text, TxtPatente.Text.ToUpper(), TxtCarro.Text.ToUpper());
                             MessageBox.Show("Guia ingresada correctamente", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             FormReporteGuia s = new FormReporteGuia(Txt_NumGuia.Text);
                             s.ShowDialog();
@@ -301,38 +316,53 @@ namespace Anakena_2017
                             MessageBox.Show("De ingresar un trasportista", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             TxtRut.Focus();
                         }
-
                     }
                     else
                     {
                         MessageBox.Show("Debe ingresar todos los valores solicitados", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
-
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error " + ex.Message, "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-
             }
             else
             {
                 MessageBox.Show("no puede ingresar datos sin describir elementos ", "Anakena", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-          
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-           
+
+            if (radioButton1.Checked)
+            {
+                FormBusquedaProductor s = new FormBusquedaProductor();
+                s.ShowDialog();
+                TxtCodigo.Text = s.codigo;
                 Datos_Destiantario();
-               if((spTraer_guia_productorDataGridView.RowCount > 0) || (destinatarioDataGridView.RowCount > 0))
+                if (spTraer_guia_productorDataGridView.RowCount > 0)
                 {
                     CargaDireccion();
                     Link_Direccion.Visible = true;
                 }
-           
+            }
+            else
+            {
+                FormBusquedaDestino s = new FormBusquedaDestino();
+                s.ShowDialog();
+                Txt_Rut.Text = s.rut;
+
+                Datos_Destiantario();
+                if ((spTraer_guia_productorDataGridView.RowCount > 0) || (destinatarioDataGridView.RowCount > 0))
+                {
+                    CargaDireccion();
+                    Link_Direccion.Visible = true;
+                }
+
+            }
+
 
         }
         public void Datos_Destiantario()
@@ -478,54 +508,53 @@ namespace Anakena_2017
 
         public void CargaDireccion()
         {
-        try
-        {
-            this.direccionTableAdapter.FillByRut(this.prueba_2017DataSet1.Direccion,Txt_Rut.Text);
-
-            if (direccionDataGridView.RowCount == 0)
+            try
             {
-             
+                this.direccionTableAdapter.FillByRut(this.prueba_2017DataSet1.Direccion, Txt_Rut.Text);
+
+                if (direccionDataGridView.RowCount == 0)
+                {
+
                     switch (MessageBox.Show("No existe direccion agregadas,Desea agregarla ??", "Anakena", MessageBoxButtons.YesNo, MessageBoxIcon.Question))
                     {
                         case System.Windows.Forms.DialogResult.Yes:
                             {
                                 FormAdminDireccion d = new FormAdminDireccion();
-                                d.rut_DestinatarioTextBox.Text = Txt_Rut.Text;                          
+                                d.rut_DestinatarioTextBox.Text = Txt_Rut.Text;
                                 d.rut_DestinatarioTextBox.ReadOnly = true;
                                 d.ShowDialog();
-                                LblDireccion.Text = d.direccionTextBox.Text;
-                                LblComuna.Text = d.comunaTextBox.Text;
+                                this.direccionTableAdapter.FillByRut(this.prueba_2017DataSet1.Direccion, Txt_Rut.Text);
+                                id = Convert.ToInt16(direccionDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn3"].Value.ToString());
+                                LblDireccion.Text = direccionDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn5"].Value.ToString();
+                                LblComuna.Text = direccionDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn6"].Value.ToString();
                                 break;
                             }
                     }
 
                 }
-            else if (direccionDataGridView.RowCount == 1)
-            {
-                id = Convert.ToInt16(direccionDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn3"].Value.ToString());
-                     LblDireccion.Text = direccionDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn5"].Value.ToString();
-                     LblComuna.Text = direccionDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn6"].Value.ToString();
-            }
+                else if (direccionDataGridView.RowCount == 1)
+                {
+                    id = Convert.ToInt16(direccionDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn3"].Value.ToString());
+                    LblDireccion.Text = direccionDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn5"].Value.ToString();
+                    LblComuna.Text = direccionDataGridView.Rows[0].Cells["dataGridViewTextBoxColumn6"].Value.ToString();
+                }
                 else if (direccionDataGridView.RowCount > 1)
                 {
                     FormDireccion s = new FormDireccion();
-                    s.rut = Txt_Rut.Text;                 
+                    s.rut = Txt_Rut.Text;
                     s.ShowDialog();
+                    //   this.direccionTableAdapter.FillByRut(this.prueba_2017DataSet1.Direccion, Txt_Rut.Text);
                     id = Convert.ToInt16(s.id);
                     LblDireccion.Text = s.direccion;
                     LblComuna.Text = s.comuna;
                 }
             }
-           catch (System.Exception ex)
-           {
-            System.Windows.Forms.MessageBox.Show(ex.Message);
-           }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+           
     }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
 
         private void Link_Direccion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
@@ -540,6 +569,42 @@ namespace Anakena_2017
         private void traer_DetalleGuiaDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             id = Convert.ToInt16(traer_DetalleGuiaDataGridView.Rows[e.RowIndex].Cells["dataGridViewTextBoxColumn7"].Value.ToString());
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Txt_Rut.Text = "";
+            TxtCodigo.Text = "";
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            if (radioButton1.Checked)
+            {
+                FormBusquedaProductor s = new FormBusquedaProductor();
+                s.ShowDialog();
+                TxtCodigo.Text = s.codigo;
+                Datos_Destiantario();
+                if (spTraer_guia_productorDataGridView.RowCount > 0)
+                {
+                    CargaDireccion();
+                    Link_Direccion.Visible = true;
+                }
+            }
+            else
+            {
+                FormBusquedaDestino s = new FormBusquedaDestino();
+                s.ShowDialog();
+                Txt_Rut.Text = s.rut;
+              
+                Datos_Destiantario();
+                if ((spTraer_guia_productorDataGridView.RowCount > 0) || (destinatarioDataGridView.RowCount > 0))
+                {
+                    CargaDireccion();
+                    Link_Direccion.Visible = true;
+                }
+
+            }
         }
     }
     

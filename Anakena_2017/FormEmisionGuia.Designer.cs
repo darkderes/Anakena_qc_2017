@@ -42,6 +42,7 @@
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.Link_Direccion = new System.Windows.Forms.LinkLabel();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -67,6 +68,7 @@
             this.TxtPrecio = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.CmbUnidad = new System.Windows.Forms.ComboBox();
             this.traer_DetalleGuiaDataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -88,6 +90,8 @@
             this.transporteBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.detalle_GuiaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Transportes = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TxtCarro = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.Lbl_Transportista = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -170,20 +174,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(518, 1);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(502, 2);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 31);
+            this.label1.Size = new System.Drawing.Size(81, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "N° Guia";
             // 
             // Txt_NumGuia
             // 
-            this.Txt_NumGuia.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_NumGuia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_NumGuia.ForeColor = System.Drawing.Color.Maroon;
-            this.Txt_NumGuia.Location = new System.Drawing.Point(464, 35);
+            this.Txt_NumGuia.Location = new System.Drawing.Point(462, 29);
             this.Txt_NumGuia.Name = "Txt_NumGuia";
-            this.Txt_NumGuia.Size = new System.Drawing.Size(236, 38);
+            this.Txt_NumGuia.Size = new System.Drawing.Size(174, 29);
             this.Txt_NumGuia.TabIndex = 2;
             this.Txt_NumGuia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -194,7 +198,7 @@
             this.groupBox1.Controls.Add(this.radioButton3);
             this.groupBox1.Controls.Add(this.radioButton2);
             this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(85, 100);
+            this.groupBox1.Location = new System.Drawing.Point(75, 80);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(544, 53);
             this.groupBox1.TabIndex = 3;
@@ -273,6 +277,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.linkLabel1);
             this.groupBox2.Controls.Add(this.Link_Direccion);
             this.groupBox2.Controls.Add(this.button3);
             this.groupBox2.Controls.Add(this.button2);
@@ -292,13 +297,23 @@
             this.groupBox2.Controls.Add(this.LblCodigo);
             this.groupBox2.Controls.Add(this.Txt_Rut);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(8, 159);
+            this.groupBox2.Location = new System.Drawing.Point(10, 139);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(692, 149);
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos destinatario";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(327, 27);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(40, 13);
+            this.linkLabel1.TabIndex = 22;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Limpiar";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // Link_Direccion
             // 
@@ -317,7 +332,7 @@
             this.button3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button3.Location = new System.Drawing.Point(280, 25);
+            this.button3.Location = new System.Drawing.Point(267, 25);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(29, 22);
             this.button3.TabIndex = 20;
@@ -329,7 +344,7 @@
             this.button2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.Location = new System.Drawing.Point(245, 25);
+            this.button2.Location = new System.Drawing.Point(232, 25);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(29, 22);
             this.button2.TabIndex = 19;
@@ -474,17 +489,17 @@
             // 
             // TxtDescripcion
             // 
-            this.TxtDescripcion.Location = new System.Drawing.Point(226, 52);
+            this.TxtDescripcion.Location = new System.Drawing.Point(282, 43);
             this.TxtDescripcion.MaxLength = 103000;
             this.TxtDescripcion.Name = "TxtDescripcion";
-            this.TxtDescripcion.Size = new System.Drawing.Size(254, 20);
+            this.TxtDescripcion.Size = new System.Drawing.Size(217, 20);
             this.TxtDescripcion.TabIndex = 11;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(146, 55);
+            this.label15.Location = new System.Drawing.Point(207, 48);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(74, 13);
             this.label15.TabIndex = 10;
@@ -492,17 +507,17 @@
             // 
             // TxtCantidad
             // 
-            this.TxtCantidad.Location = new System.Drawing.Point(80, 52);
+            this.TxtCantidad.Location = new System.Drawing.Point(78, 45);
             this.TxtCantidad.MaxLength = 10;
             this.TxtCantidad.Name = "TxtCantidad";
-            this.TxtCantidad.Size = new System.Drawing.Size(57, 20);
+            this.TxtCantidad.Size = new System.Drawing.Size(45, 20);
             this.TxtCantidad.TabIndex = 9;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(18, 55);
+            this.label16.Location = new System.Drawing.Point(16, 48);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(61, 13);
             this.label16.TabIndex = 8;
@@ -510,7 +525,7 @@
             // 
             // TxtPrecio
             // 
-            this.TxtPrecio.Location = new System.Drawing.Point(532, 52);
+            this.TxtPrecio.Location = new System.Drawing.Point(554, 45);
             this.TxtPrecio.MaxLength = 10;
             this.TxtPrecio.Name = "TxtPrecio";
             this.TxtPrecio.Size = new System.Drawing.Size(80, 20);
@@ -520,7 +535,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(489, 55);
+            this.label17.Location = new System.Drawing.Point(505, 48);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(43, 13);
             this.label17.TabIndex = 12;
@@ -528,6 +543,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.CmbUnidad);
             this.groupBox3.Controls.Add(this.traer_DetalleGuiaDataGridView);
             this.groupBox3.Controls.Add(this.button6);
             this.groupBox3.Controls.Add(this.CmbEnvases);
@@ -542,12 +558,26 @@
             this.groupBox3.Controls.Add(this.TxtCantidad);
             this.groupBox3.Controls.Add(this.TxtDescripcion);
             this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Location = new System.Drawing.Point(8, 314);
+            this.groupBox3.Location = new System.Drawing.Point(10, 294);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(692, 331);
+            this.groupBox3.Size = new System.Drawing.Size(692, 286);
             this.groupBox3.TabIndex = 14;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Detalle guia";
+            // 
+            // CmbUnidad
+            // 
+            this.CmbUnidad.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CmbUnidad.FormattingEnabled = true;
+            this.CmbUnidad.Items.AddRange(new object[] {
+            "Unidad",
+            "Kg",
+            "Lts",
+            "Paquetes"});
+            this.CmbUnidad.Location = new System.Drawing.Point(129, 45);
+            this.CmbUnidad.Name = "CmbUnidad";
+            this.CmbUnidad.Size = new System.Drawing.Size(71, 21);
+            this.CmbUnidad.TabIndex = 28;
             // 
             // traer_DetalleGuiaDataGridView
             // 
@@ -561,9 +591,9 @@
             this.dataGridViewTextBoxColumn10,
             this.dataGridViewTextBoxColumn11});
             this.traer_DetalleGuiaDataGridView.DataSource = this.traer_DetalleGuiaBindingSource;
-            this.traer_DetalleGuiaDataGridView.Location = new System.Drawing.Point(36, 81);
+            this.traer_DetalleGuiaDataGridView.Location = new System.Drawing.Point(26, 71);
             this.traer_DetalleGuiaDataGridView.Name = "traer_DetalleGuiaDataGridView";
-            this.traer_DetalleGuiaDataGridView.Size = new System.Drawing.Size(600, 220);
+            this.traer_DetalleGuiaDataGridView.Size = new System.Drawing.Size(600, 202);
             this.traer_DetalleGuiaDataGridView.TabIndex = 27;
             this.traer_DetalleGuiaDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.traer_DetalleGuiaDataGridView_CellClick);
             // 
@@ -638,9 +668,9 @@
             this.CmbEnvases.DataSource = this.envaseBindingSource;
             this.CmbEnvases.DisplayMember = "Des_Envase";
             this.CmbEnvases.FormattingEnabled = true;
-            this.CmbEnvases.Location = new System.Drawing.Point(226, 52);
+            this.CmbEnvases.Location = new System.Drawing.Point(282, 43);
             this.CmbEnvases.Name = "CmbEnvases";
-            this.CmbEnvases.Size = new System.Drawing.Size(254, 21);
+            this.CmbEnvases.Size = new System.Drawing.Size(217, 21);
             this.CmbEnvases.TabIndex = 26;
             this.CmbEnvases.ValueMember = "Cod_Envase";
             this.CmbEnvases.Visible = false;
@@ -669,16 +699,16 @@
             "Lodo",
             "Cascara ",
             "Polvo"});
-            this.CmbProductos.Location = new System.Drawing.Point(226, 52);
+            this.CmbProductos.Location = new System.Drawing.Point(282, 43);
             this.CmbProductos.Name = "CmbProductos";
-            this.CmbProductos.Size = new System.Drawing.Size(254, 21);
+            this.CmbProductos.Size = new System.Drawing.Size(217, 21);
             this.CmbProductos.TabIndex = 25;
             this.CmbProductos.Visible = false;
             // 
             // radioButton6
             // 
             this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(400, 19);
+            this.radioButton6.Location = new System.Drawing.Point(427, 19);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(73, 17);
             this.radioButton6.TabIndex = 24;
@@ -690,7 +720,7 @@
             // radioButton7
             // 
             this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(303, 19);
+            this.radioButton7.Location = new System.Drawing.Point(330, 19);
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(73, 17);
             this.radioButton7.TabIndex = 23;
@@ -702,7 +732,7 @@
             // radioButton8
             // 
             this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(202, 19);
+            this.radioButton8.Location = new System.Drawing.Point(229, 19);
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(66, 17);
             this.radioButton8.TabIndex = 22;
@@ -716,7 +746,7 @@
             this.button4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button4.Location = new System.Drawing.Point(618, 50);
+            this.button4.Location = new System.Drawing.Point(640, 43);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(29, 22);
             this.button4.TabIndex = 21;
@@ -735,6 +765,8 @@
             // 
             // Transportes
             // 
+            this.Transportes.Controls.Add(this.label5);
+            this.Transportes.Controls.Add(this.TxtCarro);
             this.Transportes.Controls.Add(this.button5);
             this.Transportes.Controls.Add(this.Lbl_Transportista);
             this.Transportes.Controls.Add(this.label20);
@@ -742,19 +774,37 @@
             this.Transportes.Controls.Add(this.label18);
             this.Transportes.Controls.Add(this.label13);
             this.Transportes.Controls.Add(this.TxtPatente);
-            this.Transportes.Location = new System.Drawing.Point(8, 651);
+            this.Transportes.Location = new System.Drawing.Point(10, 586);
             this.Transportes.Name = "Transportes";
-            this.Transportes.Size = new System.Drawing.Size(692, 49);
+            this.Transportes.Size = new System.Drawing.Size(692, 46);
             this.Transportes.TabIndex = 15;
             this.Transportes.TabStop = false;
             this.Transportes.Text = "Transportes";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(493, 20);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(37, 13);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Carro";
+            // 
+            // TxtCarro
+            // 
+            this.TxtCarro.Location = new System.Drawing.Point(536, 17);
+            this.TxtCarro.MaxLength = 10;
+            this.TxtCarro.Name = "TxtCarro";
+            this.TxtCarro.Size = new System.Drawing.Size(57, 20);
+            this.TxtCarro.TabIndex = 24;
             // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.button5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button5.BackgroundImage")));
             this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button5.Location = new System.Drawing.Point(596, 17);
+            this.button5.Location = new System.Drawing.Point(613, 17);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(29, 22);
             this.button5.TabIndex = 22;
@@ -764,7 +814,7 @@
             // Lbl_Transportista
             // 
             this.Lbl_Transportista.AutoSize = true;
-            this.Lbl_Transportista.Location = new System.Drawing.Point(332, 22);
+            this.Lbl_Transportista.Location = new System.Drawing.Point(229, 22);
             this.Lbl_Transportista.Name = "Lbl_Transportista";
             this.Lbl_Transportista.Size = new System.Drawing.Size(0, 13);
             this.Lbl_Transportista.TabIndex = 20;
@@ -774,7 +824,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(245, 22);
+            this.label20.Location = new System.Drawing.Point(142, 22);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(81, 13);
             this.label20.TabIndex = 19;
@@ -785,7 +835,7 @@
             this.TxtRut.Location = new System.Drawing.Point(45, 17);
             this.TxtRut.MaxLength = 10;
             this.TxtRut.Name = "TxtRut";
-            this.TxtRut.Size = new System.Drawing.Size(100, 20);
+            this.TxtRut.Size = new System.Drawing.Size(78, 20);
             this.TxtRut.TabIndex = 18;
             this.TxtRut.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtRut_KeyPress);
             // 
@@ -803,7 +853,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(473, 22);
+            this.label13.Location = new System.Drawing.Point(376, 22);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(51, 13);
             this.label13.TabIndex = 15;
@@ -811,7 +861,7 @@
             // 
             // TxtPatente
             // 
-            this.TxtPatente.Location = new System.Drawing.Point(530, 19);
+            this.TxtPatente.Location = new System.Drawing.Point(430, 17);
             this.TxtPatente.MaxLength = 10;
             this.TxtPatente.Name = "TxtPatente";
             this.TxtPatente.Size = new System.Drawing.Size(57, 20);
@@ -823,9 +873,9 @@
             this.Btn_Emision.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Emision.BackgroundImage")));
             this.Btn_Emision.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Btn_Emision.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Emision.Location = new System.Drawing.Point(290, 706);
+            this.Btn_Emision.Location = new System.Drawing.Point(308, 638);
             this.Btn_Emision.Name = "Btn_Emision";
-            this.Btn_Emision.Size = new System.Drawing.Size(104, 39);
+            this.Btn_Emision.Size = new System.Drawing.Size(105, 38);
             this.Btn_Emision.TabIndex = 16;
             this.Btn_Emision.Text = "Emitir guia";
             this.Btn_Emision.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -836,7 +886,7 @@
             // 
             this.LblFecha.AutoSize = true;
             this.LblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblFecha.Location = new System.Drawing.Point(580, 84);
+            this.LblFecha.Location = new System.Drawing.Point(544, 64);
             this.LblFecha.Name = "LblFecha";
             this.LblFecha.Size = new System.Drawing.Size(48, 13);
             this.LblFecha.TabIndex = 18;
@@ -887,7 +937,7 @@
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2});
             this.transportistaDataGridView.DataSource = this.transportistaBindingSource;
-            this.transportistaDataGridView.Location = new System.Drawing.Point(8, 706);
+            this.transportistaDataGridView.Location = new System.Drawing.Point(10, 638);
             this.transportistaDataGridView.Name = "transportistaDataGridView";
             this.transportistaDataGridView.Size = new System.Drawing.Size(13, 30);
             this.transportistaDataGridView.TabIndex = 18;
@@ -948,7 +998,7 @@
             this.dataGridViewTextBoxColumn18,
             this.dataGridViewTextBoxColumn19});
             this.spTraer_guia_productorDataGridView.DataSource = this.spTraer_guia_productorBindingSource;
-            this.spTraer_guia_productorDataGridView.Location = new System.Drawing.Point(23, 706);
+            this.spTraer_guia_productorDataGridView.Location = new System.Drawing.Point(36, 643);
             this.spTraer_guia_productorDataGridView.Name = "spTraer_guia_productorDataGridView";
             this.spTraer_guia_productorDataGridView.Size = new System.Drawing.Size(36, 22);
             this.spTraer_guia_productorDataGridView.TabIndex = 19;
@@ -1016,7 +1066,7 @@
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.direccionDataGridView.DataSource = this.direccionBindingSource;
-            this.direccionDataGridView.Location = new System.Drawing.Point(65, 706);
+            this.direccionDataGridView.Location = new System.Drawing.Point(90, 638);
             this.direccionDataGridView.Name = "direccionDataGridView";
             this.direccionDataGridView.Size = new System.Drawing.Size(56, 30);
             this.direccionDataGridView.TabIndex = 19;
@@ -1077,7 +1127,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(524, 84);
+            this.label4.Location = new System.Drawing.Point(487, 64);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 13);
             this.label4.TabIndex = 20;
@@ -1104,9 +1154,9 @@
             this.dataGridViewTextBoxColumn22,
             this.dataGridViewTextBoxColumn23});
             this.destinatarioDataGridView.DataSource = this.destinatarioBindingSource;
-            this.destinatarioDataGridView.Location = new System.Drawing.Point(621, 706);
+            this.destinatarioDataGridView.Location = new System.Drawing.Point(585, 643);
             this.destinatarioDataGridView.Name = "destinatarioDataGridView";
-            this.destinatarioDataGridView.Size = new System.Drawing.Size(70, 47);
+            this.destinatarioDataGridView.Size = new System.Drawing.Size(51, 30);
             this.destinatarioDataGridView.TabIndex = 20;
             this.destinatarioDataGridView.Visible = false;
             // 
@@ -1146,7 +1196,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(709, 765);
+            this.ClientSize = new System.Drawing.Size(710, 681);
             this.Controls.Add(this.destinatarioDataGridView);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Transportes);
@@ -1256,8 +1306,8 @@
         private ANAKENADataSet aNAKENADataSet;
         private System.Windows.Forms.BindingSource envaseBindingSource;
         private ANAKENADataSetTableAdapters.EnvaseTableAdapter envaseTableAdapter;
-        private Prueba_2017DataSet prueba_2017DataSet;
-        private Prueba_2017DataSetTableAdapters.TransportistaTableAdapter transportistaTableAdapter;
+        //private Prueba_2017DataSet prueba_2017DataSet;
+        //private Prueba_2017DataSetTableAdapters.TransportistaTableAdapter transportistaTableAdapter;
         private Prueba_2017DataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private Prueba_2017DataSet prueba_2017DataSet1;
         private System.Windows.Forms.BindingSource transportistaBindingSource;
@@ -1311,5 +1361,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn21;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn22;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn23;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.ComboBox CmbUnidad;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox TxtCarro;
     }
 }

@@ -2447,7 +2447,7 @@ namespace Anakena_2017
             this.groupBox10.Controls.Add(this.button8);
             this.groupBox10.Controls.Add(this.Btn_Delete);
             this.groupBox10.Controls.Add(this.Btn_Modificar);
-            this.groupBox10.Location = new System.Drawing.Point(1003, 452);
+            this.groupBox10.Location = new System.Drawing.Point(1003, 442);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(116, 144);
             this.groupBox10.TabIndex = 28;
@@ -2460,7 +2460,7 @@ namespace Anakena_2017
             this.button8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button8.Location = new System.Drawing.Point(13, 65);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(93, 26);
+            this.button8.Size = new System.Drawing.Size(87, 26);
             this.button8.TabIndex = 27;
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
@@ -2471,7 +2471,7 @@ namespace Anakena_2017
             this.Btn_Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn_Delete.Location = new System.Drawing.Point(13, 102);
             this.Btn_Delete.Name = "Btn_Delete";
-            this.Btn_Delete.Size = new System.Drawing.Size(93, 26);
+            this.Btn_Delete.Size = new System.Drawing.Size(87, 26);
             this.Btn_Delete.TabIndex = 26;
             this.Btn_Delete.UseVisualStyleBackColor = true;
             this.Btn_Delete.Click += new System.EventHandler(this.Btn_Delete_Click);
@@ -2482,7 +2482,7 @@ namespace Anakena_2017
             this.Btn_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Btn_Modificar.Location = new System.Drawing.Point(13, 29);
             this.Btn_Modificar.Name = "Btn_Modificar";
-            this.Btn_Modificar.Size = new System.Drawing.Size(93, 26);
+            this.Btn_Modificar.Size = new System.Drawing.Size(87, 26);
             this.Btn_Modificar.TabIndex = 23;
             this.Btn_Modificar.UseVisualStyleBackColor = true;
             this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
@@ -2491,9 +2491,9 @@ namespace Anakena_2017
             // 
             this.Btn_Salir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Btn_Salir.BackgroundImage")));
             this.Btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Btn_Salir.Location = new System.Drawing.Point(1019, 658);
+            this.Btn_Salir.Location = new System.Drawing.Point(1040, 658);
             this.Btn_Salir.Name = "Btn_Salir";
-            this.Btn_Salir.Size = new System.Drawing.Size(93, 26);
+            this.Btn_Salir.Size = new System.Drawing.Size(72, 26);
             this.Btn_Salir.TabIndex = 25;
             this.Btn_Salir.UseVisualStyleBackColor = true;
             this.Btn_Salir.Click += new System.EventHandler(this.button7_Click);
