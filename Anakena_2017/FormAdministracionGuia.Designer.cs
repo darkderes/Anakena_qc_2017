@@ -102,6 +102,9 @@
             this.dataGridViewTextBoxColumn37 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn38 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn39 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_Administracion_GuiaDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_Administracion_GuiaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prueba_2018DataSet)).BeginInit();
@@ -117,6 +120,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_Administracion_Guia_PorEstadoBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_Administracion_Guia_PorEstadoBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_Administracion_Guia_PorEstadoDataGridView)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // spTraer_Administracion_GuiaDataGridView
@@ -685,12 +689,44 @@
             this.dataGridViewTextBoxColumn39.Name = "dataGridViewTextBoxColumn39";
             this.dataGridViewTextBoxColumn39.ReadOnly = true;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.button2);
+            this.groupBox1.Location = new System.Drawing.Point(1223, 189);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(84, 93);
+            this.groupBox1.TabIndex = 131;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Opciones";
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button1.Location = new System.Drawing.Point(6, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(74, 26);
+            this.button1.TabIndex = 27;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.Location = new System.Drawing.Point(6, 51);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(74, 26);
+            this.button2.TabIndex = 26;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // FormAdministracionGuia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(1327, 611);
+            this.ClientSize = new System.Drawing.Size(1327, 593);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.spTraer_Administracion_Guia_PorEstadoDataGridView);
             this.Controls.Add(this.CmbEstado);
             this.Controls.Add(this.spTraer_Administracion_Guia_PorRutDataGridView);
@@ -720,6 +756,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_Administracion_Guia_PorEstadoBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_Administracion_Guia_PorEstadoBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spTraer_Administracion_Guia_PorEstadoDataGridView)).EndInit();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -795,5 +832,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn37;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn38;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn39;
+        public System.Windows.Forms.GroupBox groupBox1;
+        public System.Windows.Forms.Button button1;
+        public System.Windows.Forms.Button button2;
     }
 }
